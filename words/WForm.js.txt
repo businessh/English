@@ -1,0 +1,424 @@
+
+//data1 +='phonetic}-{word}-{definitions_e}-{definitions_c}-{definitions_d}-{|,| ';
+var obj1Rows = numOfRow(data1);
+var obj1_phoneticSymbol = getColFromList(data1, "phonetic"); //getColFromList(data1, 0); 
+var obj1_word = getColFromList(data1, "word");
+var obj1_definitions_e = getColFromList(data1, "definitions_e");
+var obj1_definitions_c = getColFromList(data1, "definitions_c");
+var obj1_definitions_d = getColFromList(data1, "definitions_d");
+
+data1_reversed +='word}-{|,| ';
+var obj1RRows = numOfRow(data1_reversed)-1;
+var obj1R_word = getColFromList(data1_reversed, 0);
+
+var pos = 0;
+var volume = 0;
+var snd ;
+var tmpstr ="";
+var view_pane = "view_pane1";
+var doubleClick = "0";
+
+function frmLoad(){
+
+	//window.screen.width;
+	//window.screen.height;		
+	//window.screen.availHeight;
+	//document.body.clientWidth;
+	//document.body.clientWidth;
+
+	if(document.body.clientWidth >= 1024){
+		view_pane = "view_pane2";
+		briefDisplay();
+	}else
+		view_pane = "view_pane1";
+
+	get_loation_base(window.location.href);
+	if (wordlist!="W"){
+	  pos = beginat;
+	}else
+	retrieve();
+	
+	moveto(pos,0);
+    wFormLoadInit();
+    document.onkeydown = shortcutOfDoc;
+	
+	if (0){
+	  snd = null;
+	}else if(0){
+	   //snd.pause();
+	   //snd = null;
+		snd = new Audio();// snd = new Audio(url2); // buffers automatically when created
+	}else{
+		snd = document.getElementById('myplayer');
+	}
+	document.forms[0].Mode.selectedIndex = 0;
+}
+
+var OFF_NUM = 2;
+var CUR_POS=0;
+
+function moveto(curpos,shiftD) {
+	var offset = 0;
+	var offsetPrefix = "";
+
+	curpos = getCurcularPossition(data1,curpos,0,obj1Rows-1);
+	CUR_POS = curpos;
+    document.forms[0].possition.value = curpos.toString();
+	document.forms[0].failcount.value = getfailcount(curpos);
+
+	for(offset = 0 - OFF_NUM; offset < OFF_NUM+1; offset++){
+		if (offset < 0)
+			offsetPrefix = "m"+String(Math.abs(offset));
+		else
+			offsetPrefix = "p"+String(offset);
+		offsetPrefix = 	String(offsetPrefix);
+		
+		document.getElementById("w"+offsetPrefix).value   = trim(obj1_word[getCurcularPossition(data1,curpos,offset,obj1Rows-1)]);
+		
+		if ( offset == 0){ 	
+			document.getElementById("p"+offsetPrefix).value   = trim(obj1_phoneticSymbol[getCurcularPossition(data1,curpos,offset,obj1Rows-1)]);
+			document.getElementById("de"+offsetPrefix).value   = trim(obj1_definitions_e[getCurcularPossition(data1,curpos,offset+shiftD,obj1Rows-1)]);
+            document.getElementById("dc"+offsetPrefix).value   = trim(obj1_definitions_c[getCurcularPossition(data1,curpos,offset+shiftD,obj1Rows-1)]);
+            document.getElementById("dd"+offsetPrefix).value   = trim(obj1_definitions_d[getCurcularPossition(data1,curpos,offset+shiftD,obj1Rows-1)]);			
+
+			document.getElementById("p"+offsetPrefix+"_1").value   = trim(obj1_phoneticSymbol[getCurcularPossition(data1,curpos,offset,obj1Rows-1)]);
+			document.getElementById("de"+offsetPrefix+"_1").value   = trim(obj1_definitions_e[getCurcularPossition(data1,curpos,offset+shiftD,obj1Rows-1)]);
+			document.getElementById("dc"+offsetPrefix+"_1").value   = trim(obj1_definitions_c[getCurcularPossition(data1,curpos,offset+shiftD,obj1Rows-1)]);
+			document.getElementById("dd"+offsetPrefix+"_1").value   = trim(obj1_definitions_d[getCurcularPossition(data1,curpos,offset+shiftD,obj1Rows-1)]);			
+			
+		var Rindex = search_W(obj1R_word,trim(obj1_word[getCurcularPossition(data1,curpos,offset,obj1RRows-1)]),obj1RRows-1);
+			document.getElementById("wm2"+"_R").value   = trim(obj1R_word[getCurcularPossition(data1_reversed,Rindex,-2,obj1RRows-1)]);
+			document.getElementById("wm1"+"_R").value   = trim(obj1R_word[getCurcularPossition(data1_reversed,Rindex,-1,obj1RRows-1)]);
+			document.getElementById("wp1"+"_R").value   = trim(obj1R_word[getCurcularPossition(data1_reversed,Rindex,1,obj1RRows-1)]);
+			document.getElementById("wp2"+"_R").value   = trim(obj1R_word[getCurcularPossition(data1_reversed,Rindex,2,obj1RRows-1)]);	 		
+			
+			if (shiftD !=0 ){
+				document.getElementById("dc"+offsetPrefix).style.backgroundColor  = "#E6E6FA";
+				document.getElementById("dc"+offsetPrefix+"_1").style.backgroundColor  = "#E6E6FA";
+			}else{
+				document.getElementById("dc"+offsetPrefix).style.backgroundColor  = "#FFFFFF";
+				document.getElementById("dc"+offsetPrefix+"_1").style.backgroundColor  = "#FFFFFF";	 
+			}
+			
+			document.getElementById("w"+offsetPrefix+"_1").value   = trim(obj1_word[getCurcularPossition(data1,curpos,offset,obj1Rows-1)]);
+		}
+	}
+	if (document.getElementById("ShiftV").checked == false)
+		play_voice(snd,obj1_word[getCurcularPossition(data1,curpos,0,obj1Rows-1)]);
+}
+
+var pos_search =0;
+function PreviousClick() {
+    var vol = 10;
+	if (document.forms[0].Mode.selectedIndex == 0){
+	   if(document.getElementById("ShiftV").checked ==true){
+			if (doubleClick =='1'){
+			    pos = getCurcularPossition(data1,pos,-1,obj1Rows-1);
+			    if (getfailcount(pos)-getviewlevel()<0){
+				pos = getCurcularPossition(data1,pos,-1,obj1Rows-1);
+			    }
+				moveto(pos,0);
+				doubleClick = '0';
+			}else{
+				play_voice(snd,obj1_word[getCurcularPossition(data1,pos,-1,obj1Rows-1)]);
+				doubleClick = '1';
+		    }
+	   }else if (document.getElementById("ShiftD").checked ==true){
+	        pos = getCurcularPossition(data1,pos,-1,obj1Rows-1);
+		if (getfailcount(pos)-getviewlevel()<0){
+			pos = getCurcularPossition(data1,pos,-1,obj1Rows-1);
+		} 		
+			moveto(pos,1);
+		}else{
+		    pos = getCurcularPossition(data1,pos,-1,obj1Rows-1);
+		    if (getfailcount(pos)-getviewlevel()<0){
+			pos = getCurcularPossition(data1,pos,-1,obj1Rows-1);
+		    } 
+		    moveto(pos,0);
+        }
+	}
+	else if(document.forms[0].Mode.selectedIndex == 1){
+	   volume = getRemainder(volume,-2,10);
+	   setCookie(document,'media_volume',volume.toString());
+	   document.forms[0].possition.value = volume.toString();
+	}else{
+		pos_search = parseInt(document.forms[0].possition.value);
+		pos_search = getCurcularPossition(data1,pos_search,-1,obj1Rows-1);
+		
+
+		moveto(pos_search,0);
+	}
+}
+
+function nextClick() {
+	if (document.forms[0].Mode.selectedIndex == 0){
+	   if(document.getElementById("ShiftV").checked ==true){
+			if (doubleClick =='1'){
+			    pos = getCurcularPossition(data1,pos,1,obj1Rows-1);
+			    if (getfailcount(pos)-getviewlevel()<0){
+				pos = getCurcularPossition(data1,pos,1,obj1Rows-1);
+			    }
+				moveto(pos,0);
+				doubleClick = '0';
+			}else{
+				play_voice(snd,obj1_word[getCurcularPossition(data1,pos,1,obj1Rows-1)]);
+				doubleClick = '1';
+		   }
+	   }else if (document.getElementById("ShiftD").checked ==true){
+	       pos = getCurcularPossition(data1,pos,1,obj1Rows-1);
+	       if (getfailcount(pos)-getviewlevel()<0){
+			pos = getCurcularPossition(data1,pos,1,obj1Rows-1);
+	       }	       
+		   moveto(pos,1);
+	   }else{
+	       pos = getCurcularPossition(data1,pos,1,obj1Rows-1);
+	       if (getfailcount(pos)-getviewlevel()<0){
+			pos = getCurcularPossition(data1,pos,1,obj1Rows-1);
+		}	       
+	       moveto(pos,0);
+	   }
+	}
+	else if(document.forms[0].Mode.selectedIndex ==1){   
+	   volume = getRemainder(volume,2,10);
+	   setCookie(document,'media_volume',volume.toString());
+	   document.forms[0].possition.value = volume.toString();
+	}else{
+		pos_search = parseInt(document.forms[0].possition.value);
+		pos_search = getCurcularPossition(data1,pos_search,1,obj1Rows-1);
+		
+
+		moveto(pos_search,0);
+	}		
+}
+
+function OKClick(){
+	var tmppos  = 0;
+	
+	if (document.forms[0].Mode.selectedIndex == 0){
+	    pos = parseInt(document.forms[0].possition.value);
+		moveto(pos,0);	
+    }else if(document.forms[0].Mode.selectedIndex == 1){
+
+	}else if (document.forms[0].Mode.selectedIndex == 2){
+		if (isVisible("view_pane2") =='1'){
+			tmppos = search_W(obj1_word,document.getElementById("wp0_1").value,obj1Rows-1);
+		}else{
+			tmppos = search_W(obj1_word,document.getElementById("wp0").value,obj1Rows-1);
+		}
+		if (tmppos != -1)
+			pos_search = tmppos;
+			
+		moveto(pos_search,0);	
+	}
+}
+
+function Store() {
+	if (document.forms[0].Mode.selectedIndex == 0){	
+	    tmppos = search_W(obj1_word,document.getElementById("wp0").value,obj1Rows-1);
+		setCookie(document,'last_position',pos.toString());
+		setviewlevel(pos.toString(),document.forms[0].failcount.value);
+    }else if(document.forms[0].Mode.selectedIndex == 1){
+		setCookie(document,'media_volume',volume.toString());
+	}else{
+
+	}
+	
+	if ( document.getElementById("ShiftV").checked == true ){
+		setCookie(document,'ShiftV',"1");
+	}else
+		setCookie(document,'ShiftV',"0");
+	if ( document.getElementById("ShiftD").checked == true ){
+		setCookie(document,'ShiftD',"1");
+	}else
+		setCookie(document,'ShiftD',"0");
+	play_voice(snd,"OK");
+}	
+
+function retrieve(){
+	var tmpstr = getCookie(document,'last_position');
+	if (tmpstr == "" )
+	{
+		pos = 0;
+		setCookie(document,'last_position',pos.toString());
+	}else
+		pos = parseInt(tmpstr);
+//------------------------------------------------------------
+	tmpstr = getCookie(document,'media_volume');
+	if (tmpstr == "" )
+	{
+		volume = 10;
+		setCookie(document,'media_volume',volume.toString());
+	}else
+		volume = parseInt(tmpstr);	
+		
+//------------------------------------------------------------		
+	tmpstr = getCookie(document,'ShiftV');//first voice ,then definition
+	if (tmpstr == "" )
+	{
+		setCookie(document,'ShiftV',"0");
+		document.getElementById("ShiftV").checked = false;
+	}else if(tmpstr == "1" )
+		document.getElementById("ShiftV").checked = true;
+	else
+		document.getElementById("ShiftV").checked = false;
+//------------------------------------------------------------
+	tmpstr = getCookie(document,'ShiftD'); //first definition then voice
+	if (tmpstr == "" )
+	{
+		setCookie(document,'ShiftD',"0");
+		document.getElementById("ShiftD").checked = false;
+	}else if(tmpstr == "1" ){
+		document.getElementById("ShiftD").checked = true;
+    }else 
+		document.getElementById("ShiftD").checked = false;
+	
+}
+
+function spell_check(obj)
+{
+	if(document.getElementById("SpellInput").value == document.getElementById("wp0").value)
+	{
+		nextClick();
+		document.getElementById("SpellInput").value = "";
+		document.getElementById("SpellEnable").value ="1";
+	}
+}
+
+function modeChange(obj){
+	document.onkeydown = nullfunc;
+	if (document.forms[0].Mode.selectedIndex == 0){
+		if (isVisible("wp0_1") =='1'){
+			showhide("nav_pane",0);
+		}
+	    document.onkeyup = shortcutOfDoc;
+		document.forms[0].possition.value = pos.toString();
+		moveto(pos,0);
+	}else if(document.forms[0].Mode.selectedIndex == 2){
+		if (isVisible("wp0_1")=='1'){
+			showhide("nav_pane",1);
+			toggle_pane();
+		}
+    }else if(document.forms[0].Mode.selectedIndex == 3){
+		play_html5_audio(snd,"./test.mp3");
+    }
+}
+
+// This object maps keyCode values to key names for common nonprinting
+// function keys. IE and Firefox use mostly compatible keycodes for these.
+// Note, however that these keycodes may be device-dependent and different
+// keyboard layouts may have different values.
+keyCodeToFunctionKey = {
+    8:"backspace", 9:"tab", 13:"return", 19:"pause", 27:"escape", 32:"space",
+    33:"pageup", 34:"pagedown", 35:"end", 36:"home", 37:"left", 38:"up",
+    39:"right", 40:"down", 44:"printscreen", 45:"insert", 46:"delete",
+    112:"f1", 113:"f2", 114:"f3", 115:"f4", 116:"f5", 117:"f6", 118:"f7",
+    119:"f8", 120:"f9", 121:"f10", 122:"f11", 123:"f12",
+    144:"numlock", 145:"scrolllock"
+};
+
+// This object maps keydown keycode values to key names for printable
+// characters. Alphanumeric characters have their ASCII code, but
+// punctuation characters do not. Note that this may be locale-dependent
+// and may not work correctly on international keyboards.
+keyCodeToPrintableChar = {
+    48:"0", 49:"1", 50:"2", 51:"3", 52:"4", 53:"5", 54:"6", 55:"7", 56:"8",
+    57:"9", 59:";", 61:"=", 65:"a", 66:"b", 67:"c", 68:"d",
+    69:"e", 70:"f", 71:"g", 72:"h", 73:"i", 74:"j", 75:"k", 76:"l", 77:"m",
+    78:"n", 79:"o", 80:"p", 81:"q", 82:"r", 83:"s", 84:"t", 85:"u", 86:"v",
+    87:"w", 88:"x", 89:"y", 90:"z", 107:"+", 109:"-", 110:".", 188:",",
+    190:".", 191:"/", 192:"'", 219:"[", 220:"\\", 221:"]", 222:"\""
+};
+
+
+function  shortcutOfDoc(e) {
+    e = e ? e : window.event;
+    var keyCode = e.which ? e.which : e.keyCode;
+	if(document.getElementById("SpellEnable").checked)
+	{
+
+	}
+	else
+	{
+		if(keyCode == 80){
+			PreviousClick();
+		}else if (keyCode ==78){
+			nextClick();
+		}else if (keyCode ==83){
+			Store();
+		}else if (keyCode == 79){
+			OKClick();
+		}else if (keyCode == 84){
+			toggle_pane();
+		}else if (keyCode == 82){
+			OKClick();
+		}
+	}
+}
+
+function  nullfunc(e) {
+}
+
+function briefDisplay(){
+    showhide("view_pane1",0);
+    showhide("view_pane2",1);
+   	showhide("nav_pane",0);
+	document.all["wp0_1"].style.backgroundColor  = "#DCDCDC";
+}
+
+function  toggle_pane(){
+	if (isVisible(view_pane) =='1'){
+		showhide(view_pane,0);
+		showhide("setting_pane",1);
+	}else{
+		showhide(view_pane,1);
+		showhide("setting_pane",0);
+    }
+}
+
+function  OKCheck(){
+}
+
+function failInc(){
+	var tmp = getfailcount(CUR_POS);
+	if (tmp =="")
+		tmp ="0";
+	if (parseInt(tmp)+1 >5)
+		tmp = "5"
+	else
+		tmp =parseInt(tmp) +1;
+	setCookie(document,CUR_POS,tmp);
+	document.forms[0].failcount.value=tmp;
+}
+
+function failDec(){
+	var tmp = getfailcount(CUR_POS);
+	if (tmp =="")
+		tmp ="0";
+	if (parseInt(tmp)-1 <=0 )
+		tmp ="0"
+	else
+		tmp =parseInt(tmp) -1;
+	setCookie(document,CUR_POS,tmp);
+	document.forms[0].failcount.value=tmp;
+}
+
+function getviewlevel(){
+	var tmp = getCookie(document,"viewlevel");
+	if (tmp =="")
+		tmp ="0";
+	return parseInt(tmp);
+}
+
+function setviewlevel(pos ,value){
+	if (value =="")
+		value ="0";
+	setCookie(document,pos,value);
+}
+
+function getfailcount(pos){
+	var tmp = getCookie(document,pos);
+	if (tmp =="")
+		tmp ="0";
+	return parseInt(tmp);
+}
+

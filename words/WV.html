@@ -1,0 +1,212 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> --><!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Pragma" content="no-cache" /> 
+  <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" /> 
+  <link rel="stylesheet" href="W.css" type="text/css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+  <meta http-equiv="Content-Type" content="text/html; charset=HZ" />
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+  <title>WV</title>
+  <meta http-equiv="Pragma" content="no-cache" />
+  <base target="_self" /> 
+ </head> 
+ <body onload="frmLoad()"> 
+  <script language="javascript" src="W.js.txt"></script>
+  <script language="javascript">
+  <!--
+		var wordlist = getRequestParameter("wl");
+		if (wordlist ==""){
+			wordlist ="GREYU"
+		}
+    document.write("<script src='");
+	document.write(wordlist);
+	document.write(".txt'><\/script>");
+	document.title = document.title + "-" +wordlist;
+	-->
+</script>  
+  <script language="javascript" src="WR.txt"></script> 
+  <script language="javascript" src="WVForm.js.txt"></script> 
+  <!----> 
+  <audio src="test.mp3" id="myplayer"> 
+   <source src="vincent.mp3" type="audio/mpeg"></source> 
+   <source src="vincent.ogg" type="audio/ogg"></source> 
+   <object type="application/x-shockwave-flash" data="voiceW/T/test.mp3" width="225" height="86"> <param name="movie" value="voiceW/T/test.mp3"></param> <param name="FlashVars" value="mediaPath=test.mp3"></param> </object> 
+   <a href="test.mp3">Download this lovely song and wish you all the best!</a> 
+  </audio> 
+  <form> 
+   <bgsound loop="false" autostart="false" id="bgss"></bgsound> 
+  <script language="javascript">   
+   document.write("<a href=\"words.html\">");
+   document.write(document.title);
+   document.write("</a>");
+   </script>
+   <table style="text-align: left;border:0px solid grey; border-collapse:collapse;" border="0" cellpadding="0" cellspacing="0" id="stb" width="100%"> 
+    <tbody> 
+     <script language="javascript">
+		<!--
+
+		var GROUP_SIZE = 160;
+		var group = 0;
+		var from =0
+		var gsize = GROUP_SIZE;
+		
+		var tmpstr = getRequestParameter("g");
+		group  =  parseInt(tmpstr);
+		if (isNaN(group))
+		{
+			if (tmpstr =='')
+				group = 0;
+			else
+			{	
+				from = search_W(obj1_word,tmpstr+"*",obj1_word.length-1,0,true);
+				group = 0;
+			}
+		}
+
+		tmpstr = getRequestParameter("b");//start at
+		beginat  =  parseInt(tmpstr);
+		if (isNaN(beginat))
+		{	
+			beginat =0;
+		}else
+		    ;//beginat --;
+		
+		tmpstr = getRequestParameter("s");
+		 if(tmpstr =='h')
+			gsize  =  gsize/2;
+		else 
+			gsize = gsize;
+		
+	   tmpstr = getRequestParameter("gs");//start at
+		gsize  =  parseInt(tmpstr);
+		if (isNaN(gsize))
+		{	
+			gsize =GROUP_SIZE;
+		}
+		
+       var tr1;
+       var tr2;
+	   var tr3;
+	   var old_table ;
+	   
+		var i=0;
+		var pos = 0;
+		for( i =0;i<gsize;i++)
+		{   
+		    pos = i+beginat+group*gsize + from;
+			if (pos <obj1Rows)
+			{
+			document.writeln('<tr><td><table style="text-align: left;border:0px solid gray; border-collapse:collapse;" border="1" cellpadding="0" cellspacing="0" id = "stb');
+			document.writeln(pos.toString());
+			document.writeln('" width = "100%">');	
+				
+			document.writeln('<tr id= class = "w8rows">');
+			
+			document.writeln('<td width="42"><a href="javascript:void(0)" onclick ="onclick_v(this,this.innerHTML)" id ="span2'+pos.toString()+'">');
+			document.writeln(pos.toString());
+			document.writeln('</a>	</td>');
+			
+			document.writeln('<td class = "cellw" colspan="1" rowspan="1" style="vertical-align: top;" align="left"><span id ="span3'+pos.toString()+'">');
+			document.writeln(obj1_word[pos]);
+			document.writeln('</span></td>');
+
+			document.writeln('</tr>');	
+            document.writeln('</table></td></tr>');
+			
+			}
+		 }		
+		
+		-->
+		</script> 
+     <script language="javascript">
+		<!--
+		function frmLoad(){
+		}
+		function onclick_v(incell,_pos){
+		   var tmpstr;
+		   var cur_table = document.getElementById("stb"+_pos);
+		   var length=cur_table.rows.length;
+           var tr;
+		   var td;
+
+		   if (incell.parentNode.style.backgroundColor=="gray")
+				incell.parentNode.style.backgroundColor="white";
+		   else
+				incell.parentNode.style.backgroundColor="gray";
+           play_voice(null,obj1_word[parseInt(_pos)]);		
+		   
+			if (old_table !=null){
+				old_table.deleteRow(1); 
+				old_table.deleteRow(1); 	
+				old_table.deleteRow(1); 	
+				old_table.deleteRow(1);				
+		   }
+		   old_table = cur_table;
+		   
+			length++;
+			tr=document.createElement("tr");
+			td=document.createElement("td");
+			tr.id=length;
+			td.id=tr.id+"_/"+i;
+			td.appendChild(document.createTextNode(""));
+			tr.appendChild(td);
+			td=document.createElement("td");
+			td.id=tr.id+"/"+i;
+			td.appendChild(document.createTextNode(obj1_phoneticSymbol[parseInt(_pos)]));
+			tr.appendChild(td);			
+			cur_table.appendChild(tr);
+
+			length++;
+			tr=document.createElement("tr");
+			td=document.createElement("td");
+			tr.id=length;
+			td.id=tr.id+"_/"+i;
+			td.appendChild(document.createTextNode(""));
+			tr.appendChild(td);
+			td=document.createElement("td");
+			td.id=tr.id+"/"+i;
+			tmpstr = carrige_replace(obj1_definitions_e[parseInt(_pos)],"|"," <br/>");
+			td.appendChild(document.createTextNode(""));
+			td.innerHTML =tmpstr;
+			tr.appendChild(td);			
+			cur_table.appendChild(tr);
+
+			length++;
+			tr=document.createElement("tr");
+			td=document.createElement("td");
+			tr.id=length;
+			td.id=tr.id+"_/"+i;
+			td.appendChild(document.createTextNode(""));
+			tr.appendChild(td);
+			td=document.createElement("td");
+			td.id=tr.id+"/"+i;
+			tmpstr = carrige_replace(obj1_definitions_c[parseInt(_pos)],"|"," <br/>");
+			td.appendChild(document.createTextNode(""));
+			td.innerHTML =tmpstr;
+			tr.appendChild(td);			
+			cur_table.appendChild(tr);
+
+			length++;
+			tr=document.createElement("tr");
+			td=document.createElement("td");
+			tr.id=length;
+			td.id=tr.id+"_/"+i;
+			td.appendChild(document.createTextNode(""));
+			tr.appendChild(td);
+			td=document.createElement("td");
+			td.id=tr.id+"/"+i;
+			tmpstr = carrige_replace(obj1_definitions_d[parseInt(_pos)],"|"," <br/>");
+			td.appendChild(document.createTextNode(""));
+			td.innerHTML =tmpstr;
+			tr.appendChild(td);			
+			cur_table.appendChild(tr);			
+         }
+		-->
+		</script> 
+    </tbody> 
+   </table> 
+  </form>  
+ </body>
+</html>

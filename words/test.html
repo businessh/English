@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head> 
+ 
+  <script type="text/javascript">  
+   <!--
+	// This will parse a delimited string into an array of  
+	// arrays. The default delimiter is the comma, but this  
+	// can be overriden in the second argument.  
+function CSVToArray( strData, strDelimiter ){  
+	// Check to see if the delimiter is defined. If not,  
+	// then default to comma.  
+	strDelimiter = (strDelimiter || ",");  
+	   
+	// Create a regular expression to parse the CSV values.  
+	var objPattern = new RegExp(  
+	(  
+	// Delimiters.  
+	"(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +  
+	   
+	// Quoted fields.  
+	"(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +  
+	   
+	// Standard fields.  
+	"([^\"\\" + strDelimiter + "\\r\\n]*))"  
+	),  
+	"gi"  
+	);  
+	   
+	   
+	// Create an array to hold our data. Give the array  
+	// a default empty first row.  
+	var arrData = [[]];  
+	   
+	// Create an array to hold our individual pattern  
+	// matching groups.  
+	var arrMatches = null;  
+	   
+	   
+	// Keep looping over the regular expression matches  
+	// until we can no longer find a match.  
+	while (arrMatches = objPattern.exec( strData )){  
+	   
+	// Get the delimiter that was found.  
+	var strMatchedDelimiter = arrMatches[ 1 ];  
+	   
+	// Check to see if the given delimiter has a length  
+	// (is not the start of string) and if it matches  
+	// field delimiter. If id does not, then we know  
+	// that this delimiter is a row delimiter.  
+	if (  
+	strMatchedDelimiter.length &&  
+	(strMatchedDelimiter != strDelimiter)  
+	){  
+	   
+	// Since we have reached a new row of data,  
+	// add an empty row to our data array.  
+	arrData.push( [] );  
+	   
+	}  
+	   
+	   
+	// Now that we have our delimiter out of the way,  
+	// let's check to see which kind of value we  
+	// captured (quoted or unquoted).  
+	if (arrMatches[ 2 ]){  
+	   
+	// We found a quoted value. When we capture  
+	// this value, unescape any double quotes.  
+	var strMatchedValue = arrMatches[ 2 ].replace(  
+	new RegExp( "\"\"", "g" ),  
+	"\""  
+	);  
+	   
+	} else {  
+	   
+	// We found a non-quoted value.  
+	var strMatchedValue = arrMatches[ 3 ];  
+	   
+	}  
+	   
+	   
+	// Now that we have our value string, let's add  
+	// it to the data array.  
+	arrData[ arrData.length - 1 ].push( strMatchedValue );  
+	}  
+	   
+	// Return the parsed data.  
+	return( arrData );  
+}  
+
+
+function readAsText(){  
+    var file = document.getElementById("file").files[0];  
+    var reader = new FileReader();  
+    //将文件以文本形式读入页面  
+    reader.readAsText(file);  
+    reader.onload=function(f){  
+        var result=document.getElementById("result");  
+        //显示文件  
+        result.innerHTML=this.result;  
+    }  
+}  
+	   -->
+</script>  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" /> 
+  <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" /> 
+  <title>
+     test
+  </title> 
+  <!-- < audio src="test.mp3" controls loop="true" autoplay="true" id="player">--> 
+
+  
+ </head>
+ <body>
+  <audio src="test.mp3" id="player"> 
+   <source src="vincent.mp3" type="audio/mpeg"></source> 
+   <source src="vincent.ogg" type="audio/ogg"></source> 
+   <object type="application/x-shockwave-flash" data="media/OriginalMusicPlayer.swf" width="225" height="86"> <param name="movie" value="media/OriginalMusicPlayer.swf"></param> <param name="FlashVars" value="mediaPath=test.mp3"></param> </object> 
+   <a href="test.mp3"> Download this lovely song and wish you all the best! </a> 
+  </audio>   volume 
+  <br /> 
+
+  <div> 
+   <button onclick="document.getElementById('player').play()"> Play </button> 
+   <button onclick="document.getElementById('player').pause()"> Pause </button> 
+   <button onclick="document.getElementById('player').volume += 0.1"> Vol+ </button> 
+   <button onclick="document.getElementById('player').volume -= 0.1"> Vol- </button> 
+   
+   <button  onmousedown ="document.getElementById('player').play();"  onmouseup ="document.getElementById('player').pause();">press</button>
+
+  </div>  
+  
+  <p>
+  <input type="text" value="" size="40" onblur="console.log(CSVToArray( this.value, ' ' ) );"/>
+  </p>
+  
+  
+  <p>  
+    <label>aa</label>  
+    <input type="file" id="file" />  
+    <input type="button" value="bb" onclick="readAsText()" />  
+</p>  
+<div id="result" name="result"></div>  
+  
+ </body>
+</html>

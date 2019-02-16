@@ -1,0 +1,176 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> --><!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Pragma" content="no-cache" /> 
+  <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" /> 
+  <link rel="stylesheet" href="W.css" type="text/css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+  <meta http-equiv="Content-Type" content="text/html; charset=HZ" />
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+  <title>Word Search</title>
+  <meta http-equiv="Pragma" content="no-cache" />
+  <base target="_self" /> 
+  <script language="javascript">
+	<!--
+	function frmLoad(){
+		
+	}
+
+	-->
+	</script> 
+ </head>
+ <body onload="frmLoad()"> 
+  <script language="javascript" src="W.js.txt"></script> 
+  <script language="javascript" src="W.txt"></script> 
+  <script language="javascript" src="WR.txt"></script> 
+  <script language="javascript" src="WForm.js.txt"></script> 
+  <audio src="test.mp3" id="myplayer"> 
+   <source src="vincent.mp3" type="audio/mpeg"></source> 
+   <source src="vincent.ogg" type="audio/ogg"></source> 
+   <object type="application/x-shockwave-flash" data="voiceW/T/test.mp3" width="225" height="86"> <param name="movie" value="voiceW/T/test.mp3"></param> <param name="FlashVars" value="mediaPath=test.mp3"></param> </object> 
+   <a href="test.mp3">Download this lovely song and wish you all the best!</a> 
+  </audio> 
+  <form> 
+   <bgsound loop="false" autostart="false" id="bgss"></bgsound> 
+   <div id="search_pane"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="stbU" width="100%"> 
+     <tbody> 
+      <tr class="wlist"> 
+       <td class="cellw" style="vertical-align: top;"><input id="wsf" class="word" name="m2" wrap="soft" cols="32" rows="1" type="text" /></td> 
+      </tr> 
+      <tr class="wlist"> 
+       <td class="cellw" style="vertical-align: top;"><input id="wsb" class="word" name="m1" wrap="soft" cols="32" rows="1" type="text" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div id="nav_pane"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="0" id="stbc" width="100%"> 
+     <tbody> 
+      <tr> 
+       <td style="vertical-align: top; width: 20%;"><input id="buttonp" tabindex="1" style="width: 100%;border-style:hidden;background:#FFFFFF;text-align: center;" value="&lt;&lt;" name="UP" onclick="searchClick(this.value)" type="button" /> </td> 
+       <td style="vertical-align: top; width: 20%;"><input id="buttonn" tabindex="2" style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: center;" value="&lt;" name="PREP" onclick="searchClick(this.value)" type="button" /></td> 
+       <td style="vertical-align: top; width: 20%;"><input id="buttono" tabindex="3" style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: center;" value="&gt;" name="NEXT" onclick="searchClick(this.value)" type="button" /></td> 
+       <td style="vertical-align: top; width: 20%;"><input id="buttons" tabindex="4" style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: center;" value="&gt;&gt;" name="DOWN" onclick="searchClick(this.value)" type="button" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div id="view_pane"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="tablev" width="100%"> 
+     <tbody> 
+      <script language="javascript">
+	<!--  
+	 var viewcount = 8;
+	for( var i = 0 ;i<viewcount;i++)
+	{
+		document.writeln('<tr class = "wlist">');
+		document.writeln('<td class = "cellw" style="vertical-align: top;"></td>           <td width="42"></td>');
+		document.writeln('</tr>');
+	} 
+	-->
+	</script> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div id="view_detail_pane"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="tablevd" width="100%"> 
+     <tbody> 
+      <tr class="wlist"> 
+       <td class="cellw" style="vertical-align: top;"></td> 
+      </tr> 
+      <tr class="wlist"> 
+       <td class="cellw" style="vertical-align: top;"></td> 
+      </tr> 
+      <tr class="wlist"> 
+       <td class="cellw" style="vertical-align: top;"></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <script language="javascript">
+<!--
+var lastpos  = -1;
+var lastasc = true;
+var lastword = "" ;
+var viewcount = 8;
+
+function searchClick(mode){
+	var ret = -1;
+	var asc = true;
+	var curword  = "";
+	var spos = 0;
+	var column;
+	var max = 0;
+
+	if (document.getElementById("wsf").value.length > 0){
+		asc = true;
+		curword = trim(document.getElementById("wsf").value);
+		column = obj1_word;
+	}else{
+		asc = false;
+        curword = trim(document.getElementById("wsb").value);
+		column = obj1R_word;
+	}
+	if (curword == '')
+		return 0;
+	max = column.length-1;
+	if (lastword != curword || lastasc != asc){
+		lastpos = -1;
+	}
+	lastasc  = asc;
+	lastword = curword;
+
+	if (mode == '<<'){
+			spos = lastpos - viewcount;
+			if ((lastpos != -1)&&(spos < 0)){
+				spos = 0;
+			}
+	}else if (mode == '<'){
+		spos = lastpos -1;
+		if(spos > -1)
+			spos = search_W(column,curword,max,spos,false);
+	}else if (mode == '>'){
+		if(lastpos != -1){
+			spos = lastpos + viewcount;
+			if (spos < max+1)
+				spos = search_W(column,curword,max,spos,true);
+		}else
+			spos = search_W(column,curword,max,0,true);
+	}else if (mode == '>>'){
+			spos = lastpos + viewcount;
+	}
+
+	if ((spos > -1)&&(spos < max+1)){
+        lastpos =  spos;
+        fillview(column,spos,max);
+   }
+}
+
+function fillview(column,cpos,max){
+	for( var i =0 ;i<viewcount;i++)
+	{
+		if ((cpos+i > -1)&&(cpos+i < max+1)){
+			document.getElementById("tablev").rows[i].cells[0].innerHTML = '<a href="javascript:void(0)" onclick ="on_detail_click(null,this.innerHTML)">'+column[cpos+i]+'</a>';
+			document.getElementById("tablev").rows[i].cells[1].innerHTML = (cpos+i).toString();
+		}else{
+			document.getElementById("tablev").rows[i].cells[0].innerHTML = '';
+			document.getElementById("tablev").rows[i].cells[1].innerHTML = '';
+		}
+	}
+}
+
+function on_detail_click(player,word){
+    var tmppos = search_W(obj1_word,trim(word),obj1Rows,0,true);
+	document.getElementById("tablevd").rows[0].cells[0].innerHTML = trim(obj1_phoneticSymbol[tmppos]);
+	document.getElementById("tablevd").rows[1].cells[0].innerHTML = trim(obj1_definitions_e[tmppos]);
+	document.getElementById("tablevd").rows[2].cells[0].innerHTML = trim(obj1_definitions_c[tmppos]);
+	play_voice(player,word);
+}
+
+-->
+</script> 
+  </form> 
+ </body>
+</html>

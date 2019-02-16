@@ -1,0 +1,16 @@
+
+//data1 +='phonetic}-{word}-{definitions_e}-{definitions_c}-{definitions_d}-{|,| ';
+var obj1Rows = numOfRow(data1);
+var obj1_phoneticSymbol = getColFromList(data1, "phonetic"); //getColFromList(data1, 0); 
+var obj1_word = getColFromList(data1, "word");
+var obj1_definitions_e = getColFromList(data1, "definitions_e");
+var obj1_definitions_c = getColFromList(data1, "definitions_c");
+var obj1_definitions_d = getColFromList(data1, "definitions_d");
+
+data1_reversed +='word}-{|,| ';
+var obj1RRows = numOfRow(data1_reversed)-1;
+var obj1R_word = getColFromList(data1_reversed, 0);
+
+//var unicode= data2.replace(/#/\"/g,''));
+//var data4 = CSVToArray(unicode);
+

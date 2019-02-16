@@ -1,0 +1,1137 @@
+﻿//replace " with ' or \"
+var data1 = "\
+ˈæbəkəs|ˈæbəkəs}-{abacus}-{use abacus for statistic}-{n. 算盘； <建>（圆柱）顶板；|,|\
+ə'beɪtmənt|əˈbetmənt}-{abatement}-{noise abatement;the abatement of carbon dioxide emissions}-{n. 减少； 减轻； 折扣； 废除|,|\
+æˈberənt|æˈbɛrənt, ˈæbə-}-{aberrant}-{aberrant conditions exceptional errant`;aberrant human behavior}-{adj. 离开正路的； 与正确（或真实情况）相背的； <生物>异常的； 畸变的|n. 离开正路的人； <生物>畸变生物（群）； 畸变器官； 反常|adv. 反常地，异常地；|,|\
+ˈæbdʒekt|ˈæbˌdʒɛkt, æbˈdʒɛkt}-{abject}-{an abject rival poor}-{adj. 卑鄙的，下贱的； （指境况）凄惨的； 轻蔑的，被鄙视的； 厚颜无耻的|,|\
+əˈbleɪz|əˈblez}-{ablaze}-{blaze n v Her yard was ablaze with summer flowers.}-{adj. 着火的； 发光的； 闪耀的；|adv. 着火； 闪耀；|,|\
+ə'brʌptlɪ|ə'brʌptlɪ}-{abruptly}-{come to an abrupt end/halt}-{adv. 突然地； 意外地； （言谈举止）唐突地； <地质>陡起地|,|\
+əbˈsɔ:bɪŋ|əbˈsɔrbɪŋ}-{absorbing}-{an absorbing hobby}-{adj. 吸引人的； 非常有趣的；|v. 吸收(absorb的ing形式)； 引人注意；|,|\
+əbˈstru:s|æbˈstrus, əb-}-{abstruse}-{abstruse theory ; abstract;construe解释}-{adj. 难解的；  深奥的； <古>秘密的； 隐藏的|,|\
+əb'sɜ:dlɪ|əb'sɜdlɪ}-{absurdly}-{Prices seem absurdly low to Western tourists.}-{adv. 荒谬地，荒唐地；|,|\
+ˌæksɪ'dentəlɪ|ˌæksɪ'dentəlɪ}-{accidentally}-{I accidentally locked myself out of the house.}-{adv. 偶然地，意外地，非故意地；|,|\
+əˈkʌmplɪʃmənt|əˈkɑmplɪʃmənt}-{accomplishment}-{impressive/significant/great etc accomplishment}-{n. 成就； 完成； 技能； 履行|,|\
+ˌækjuˈzeɪʃn|ˌækjuˈzeʃən}-{accusation}-{accusation against}-{n. 指责，谴责； 指控，控告； （被告发、控告的）罪名；|,|\
+əˈsɪdɪk|əˈsɪdɪk}-{acidic}-{Some fruit juices taste a bit acidic.}-{adj. （味）酸的； [化]酸的，酸性的； 含有大量硅酸的；|,|\
+ˌækrəˈbætɪk|ˌækrəˈbætɪk}-{acrobatic}-{They performed some amazing acrobatic feats.}-{adj. 杂技的，杂技般的，杂技演员的；|,|\
+ˈæktrəs|ˈæktrɪs}-{actress}-{a great dramatic actress}-{n. 女演员； 女表演者；|,|\
+ˌæktʃuˈæləti|ˌæktʃuˈælɪti}-{actuality}-{the grim actualities of prison life}-{n. （常用复数）现状； 现实； 事实；|,|\
+ˈædəmənt|ˈædəmənt, -ˌmænt}-{adamant}-{an adamant shortage of;sb be adamant about something;}-{adj. 坚硬无比的； 牢不可破的； 坚定不移的； 坚决的|n. 坚硬的物质； <地质>硬石； <诗>牢不可破；|,|\
+ədˈmɪnɪstə(r)|ædˈmɪnɪstɚ}-{administer}-{administer something to somebody}-{vt. 管理； 治理（国家）； 给予； 执行|vi. 执行遗产管理人的职责； 给予帮助； 担当管理人；|,|\
+ədˈmɪtɪdli|ædˈmɪtɪdli}-{admittedly}-{This has led to financial losses, though admittedly on a fairly small scale.}-{adv. 公认地；|,|\
+ˌædəˈlesns|ˌædlˈɛsəns}-{adolescence}-{puberty;adolescent girls}-{n. 青春期； 青年期；|,|\
+əˈdɔ:n|əˈdɔrn}-{adorn}-{adorn something with something}-{vt. 装饰，修饰； 佩戴； 使生色；|,|\
+ˈædvent|ˈædˌvɛnt}-{advent}-{the advent of something}-{n. 出现； 到来； 基督降临节（圣诞节前的四个星期）；|,|\
+ˈædvətaɪzə(r)|ˈædvərtaɪzə(r)}-{advertiser}-{the Stockport Advertiser}-{n. 登广告的人；|,|\
+ədˈvaɪzəri|ædˈvaɪzəri}-{advisory}-{advise v. advisory committee/body}-{adj. 劝告的，忠告的； 提供咨询的； 顾问的；|n. 报告； 公告；|,|\
+i:'dʒi:ən|i'dʒiən}-{Aegean}-{islands of the Aegean Sea}-{n. 爱琴海(地中海的一部分，在希腊同土耳其之间]；|adj. 爱琴海的；|,|\
+əˈfekʃənət|əˈfɛkʃənɪt}-{affectionate}-{Jo is very affectionate towards her.}-{adj. 深情的，挚爱的； 慈爱的； 有感情的； 亲热|,|\
+ˈæfluənt|ˈæfluənt, əˈflu-}-{affluent}-{an affluent society/area etc}-{adj. 富裕的，富足的； 流畅，滔滔不绝的；|n. 富裕的人； 支流；|,|\
+əˈfreʃ|əˈfrɛʃ}-{afresh}-{He moved to America to start afresh .}-{adv. 重新；|,|\
+ˈeɪdʒɪŋ|ˈedʒɪŋ}-{ageing}-{aging}-{n. 成熟，变老； 老化； [冶]时效；|adj. 变老的； 老化的；|v. 变老(age的现在分词)；|,|\
+ˈægənaɪzɪŋ|ˈæɡəˌnaɪzɪŋ}-{agonizing}-{agonize over/about}-{adj. 痛苦难忍的； 使人苦恼的；|v. 使极度痛苦； 折磨(agonize的ing形式)；|,|\
+ˈeəfi:ld|ˈerfild}-{airfield}-{The plane circled over the airfield}-{n. 飞机场；|,|\
+əˈlɑ:mɪŋ|əˈlɑrmɪŋ}-{alarming}-{an alarming increase in violent crime}-{adj. 使人害怕的，扰乱人心的； 使人惊慌的； 告急的； 危言耸听的|v. 警告(alarm的现在分词)；|,|\
+ˈælbətrɒs|ˈælbətrɔs}-{albatross}-{an albatross (around your neck)}-{n. 信天翁，沉重负担；|,|\
+ˈæləbaɪ|ˈæləˌbaɪ}-{alibi}-{have good alibis;a perfect/cast-iron/unshakeable etc alibi}-{n. 犯罪现场； <美口>辩解，托辞； [法]不在犯罪现场的抗辩事实；|vi. 辩解； 找借口；|vt. 为…辩解； 为（某人）提供不在现场的证词；|,|\
+ˌæləˈgeɪʃn|ˌælɪˈɡeʃən}-{allegation}-{allegations of corruption/fraud/misconduct etc}-{n. 陈述，主张； 宣称； 陈词，陈述； 指控|,|\
+ˈælpɪnɪst}-{alpinist}-{the famous alpinist}-{n. 登山家，阿尔卑斯登山家；|,|\
+əm|æm}-{am}-{.}-{abbr. (=amplitude modulation) <无>调频，调谐；|vi. （用于第一人称单数现在时）是；|aux. （与v-ing连用构成现在进行时，与v-ed连用构成被动语态）；|,|\
+əˈmæs|əˈmæs}-{amass}-{He amassed a fortune after the war.}-{vt. 积累，积聚；|,|\
+}-{American}-{the American ambassador}-{n. 美国人； 美洲人；  美国英语；|adj. 美国的  ； 美洲的； 地道美国式的；|,|\
+ˈæmi:tə(r)|ˈæmˌmitɚ}-{ammeter}-{digital ammeter}-{n. 电表； 电流表；|,|\
+æmplɪ|'æmplɪ}-{amply}-{ample time/evidence/opportunity}-{adv. 充足地，详细地；|,|\
+əˈmju:zd}-{amused}-{amused at/by}-{adj. 被逗笑的； 愉快的； 顽皮的；|v. “amuse”的过去式和过去分词；|,|\
+əˈmju:zɪŋ|əˈmjuzɪŋ}-{amusing}-{an amusing story/anecdote/incident etc}-{adj. 有趣的，好玩的，逗人笑的；|,|\
+ˈænəki|ˈænərki}-{anarchy}-{slide/fall/descend into anarchy}-{n. 混乱； 无秩序； 无政府状态；|,|\
+ˈænɪkdəʊt|ˈænɪkdoʊt}-{anecdote}-{anecdotes of celebrities;amusing anecdotes about}-{n. 趣闻，轶事； [复数]秘史；|,|\
+æŋɡrəlɪ|ˈæŋɡrɪlɪ}-{angrily}-{had never spoken angrily}-{adv. 愤怒地，生气地； 气呼呼； 气冲冲；|,|\
+əˈnaʊnsə(r)|əˈnaʊnsɚ}-{announcer}-{The radio announcer}-{n. 宣告者； 播音员；|,|\
+əˈnɔɪɪŋ|əˈnɔɪɪŋ}-{annoying}-{an annoying habit of interrupting}-{adj. 讨厌的； 恼人的；|v. 骚扰(annoy的ing形式)；|,|\
+ænt|ænt}-{ant}-{Ants swarmed up out of the ground}-{n. 蚂蚁；|,|\
+ˌænθrəˈpɒlədʒɪst|ˌænθrəˈpɑlədʒɪst}-{anthropologist}-{an enigma to your anthropologist}-{n. 人类学家；|,|\
+ænˈtɪpədi:z|ænˈtɪpəˌdiz}-{Antipodes}-{antipodean culture}-{n. 澳大利亚和新西兰；|,|\
+æŋkʃəslɪ|ˈæŋkʃəslɪ}-{anxiously}-{anxious about}-{adv. 焦急地，担忧地； 眼巴巴； 亟；|,|\
+ˈeɪfɪd|ˈefɪd, ˈæfɪd}-{aphid}-{The leaves have been attacked by aphids.}-{n. [昆]蚜虫；|,|\
+ə'pɒləʊ|ə'pɑloʊ}-{Apollo}-{the Apollo 7 spacecraft}-{n. 阿波罗； 太阳神； <诗>太阳； 美男子|,|\
+əˌpɒləˈdʒetɪk|əˌpɑləˈdʒetɪk}-{apologetic}-{apologetic about}-{adj. 道歉的； 辩解的；|n. 辩解； （为事业、信仰等所作的）辩护；|adv. 抱歉地；|,|\
+ˈeɪprəl|ˈeprəl}-{April}-{april fools' day}-{n. 四月；|,|\
+ˈækwəpleɪn|ˈækwəˌplen, ˈɑkwə-}-{aquaplane}-{shove him across the tank like an aquaplane}-{n. 滑水板；|vt. 乘滑水板滑行； （指车辆）在积水的路面上打滑；|,|\
+ɑ:ˈkeɪd|ɑrˈkeɪd}-{arcade}-{arcade games}-{n. 商场，游乐中心； 拱廊，连拱廊； 有拱廊的街道；|,|\
+ˌɑ:kiˈɒlədʒɪst|ˌɑrkɪˈɑlədʒɪst}-{archaeologist}-{a field archaeologist}-{n. 考古学家；|,|\
+ˌɑ:kɪˈtektʃərəl|ˌɑrkɪˈtektʃərəl}-{architectural}-{architectural features}-{adj. 建筑学的； 建筑上的； 有关建筑的； 符合建筑法的|,|\
+ˈɑ:tʃweɪ|ˈɑrtʃweɪ}-{archway}-{in the archway outside the club.}-{n. 拱门，拱道；|,|\
+ˈɑ:djuəs|ˈɑrdʒuəs}-{arduous}-{an arduous task}-{adj. 努力的； 艰巨的； 难克服的； 陡峭的|,|\
+ɑ:(r)|ɑr}-{are}-{.}-{vi. （用于第二人称单复数现在时，第一、三人称复数现在时）是；|n. 公亩（等于100平方米）；|,|\
+ˈærɪstəkræt|əˈrɪsttəkræt}-{aristocrat}-{a wealthy southern aristocrat}-{n. 贵族； 贵族政治论者； 有贵族派头的人；|,|\
+ˌærɪstəˈti:liən}-{Aristotelian}-{the Aristotelian theory of motion}-{adj. 亚里斯多德的，亚里斯多德学派的；|n. 亚里斯多德学派的人；|,|\
+ˈæristɔtl|ˈærɪˌstɑtl}-{Aristotle}-{As Aristotle said}-{n. 亚里斯多德（古希腊大哲学家，科学家）；|,|\
+ˈɑ:məmənt|ˈɑrməmənt}-{armament}-{missile armament}-{n. 军备； 武器装备； [复]军事力量； 军队|,|\
+ˈɑ:mtʃeə(r)|ˈɑrmtʃer}-{armchair}-{in an armchair}-{n. 扶手椅；|adj. 脱离实际的； 安逸的；|,|\
+ˈɑ:snɪk|ˈɑrsnɪk}-{arsenic}-{His wife poisoned him with arsenic}-{n. 砷； 三氧化二砷，砒霜；|adj. 砷的，含砷（主要指五价砷）的；|,|\
+ɑ:ˈti:st|ɑrˈtist}-{artiste}-{the outstanding artiste}-{n. 职业表演者； 艺人； <谑>（擅长某手艺的）能手； 大师|,|\
+əˈʃɔ:(r)|əˈʃɔr, əˈʃor}-{ashore}-{Seals come ashore to breed.}-{adv. 上岸； 上陆； 在岸上； 在陆上|,|\
+ˈæʃtreɪ|ˈæʃˌtre}-{ashtray}-{I ground my cigarette into the ashtray}-{n. 烟灰缸；|,|\
+ˈæsprɪn|ˈæspərɪn, -prɪn}-{aspirin}-{The nurse dosed the patient with aspirin}-{n. 阿司匹林； 阿司匹林药片；|,|\
+əˈseɪl|əˈsel}-{assail}-{assail somebody for something}-{vt. 攻击，袭击； （用言论）指责； 质问； 着手解决|,|\
+ə'sɪdjʊəslɪ|ə'sɪdjʊrslɪ}-{assiduously}-{assiduous in}-{adv. 勤勉地，恳切地； 孜孜不倦；|,|\
+əˈsɔ:tɪd|əˈsɔrtəd}-{assorted}-{assorted vegetables}-{adj. 各式各样的； 五颜六色的； 混杂的；|,|\
+ˈæstərɪsk|ˈæstəˌrɪsk}-{asterisk}-{aster-astro-之变体, 表示“星”之义double asterisk}-{n. 星号，星状物；|vt. 加星号于；|,|\
+əˈstaʊnd|əˈstaʊnd}-{astound}-{astonish ;astound his friends with feats}-{vt. 使震惊，使大吃一惊；|,|\
+əˈstraɪd|əˈstraɪd}-{astride}-{sitting astride a horse}-{adv. 两腿分开着（地）；|prep. 两腿分开着，跨着，跨越；|,|\
+ˈæstrənɔ:t|ˈæstrəˌnɔt}-{astronaut}-{like an astronaut}-{n. 宇航员； 太空人； 航天员；|,|\
+ˌæstrəˈnɒmɪkl|ˌæstrəˈnɑmɪkl}-{astronomical}-{astronomically high rents}-{adj. 天文学的； 极大的；|,|\
+əˈstrɒnəmi|əˈstrɑnəmi}-{astronomy}-{be interested in astronomy}-{n. 天文学；|,|\
+æθənz|'æθənz}-{Athens}-{the city of Athens}-{n. 雅典（希腊首都）；|,|\
+ˈætɪk|ˈætɪk}-{attic}-{a small attic room;loft;garret;antic}-{n. 阁楼； 顶楼； 鼓室上的隐窝； 飞檐矮墙，飞檐矮楼|adj. 文雅的，古雅的； 古希腊阿蒂卡 [雅典]的； 雅典派的；|,|\
+ˈɔ:dətri|ˈɔdətɔri}-{auditory}-{the limits of the human auditory range}-{adj. 听觉的，听觉器官的；|n. 听众； 礼堂；|,|\
+ˈɔ:gəst|'ɔɡəst}-{August}-{That night in August;an august professor}-{adj. 尊严的，威严的，令人敬畏的； 威风凛凛的； 堂堂的，雄赳赳的；|n. 八月（简写为Aug）； 奥古斯特；|,|\
+ɒ'streɪlɪə|ɔˈstreljə}-{Australia}-{He went out to Australia}-{n. [地名][大洋洲]澳大利亚，澳洲； 澳元；|,|\
+ɒˈstreɪliən|ɔˈstreljən}-{Australian}-{with a hint of an Australian accent}-{n. 澳大利亚人；|adj. 澳大利亚的； 澳大利亚人的；|,|\
+ɒstrɪə|'ɔstrɪr}-{Austria}-{village in Austria}-{n. 奥地利；|,|\
+ɒstrɪən|'ɔstrɪrn}-{Austrian}-{the Austrian government}-{n. 奥地利人；|,|\
+ɔ:ˌθɒrɪˈteəriən|əˌθɔrəˈteriən}-{authoritarian}-{an authoritarian government}-{adj. 权力主义的； 独裁主义的；|n. 权力主义者，专制者，独裁者； 独裁主义者；|,|\
+əˈvendʒ|əˈvɛndʒ}-{avenge}-{avenge a murder.}-{vt. 为…复仇； 为…报复；|vi. 报复； 报仇；|,|\
+ˈbækwəd|ˈbækwərd}-{backward}-{a backward country}-{adj. 向后的； 反向的； 怯生生的； 落后的|adv. 向后地； 相反地； 回溯地；|,|\
+ˈbækwɔ:tə(r)|ˈbækˌwɔtɚ, -ˌwɑtɚ}-{backwater}-{a rural backwater}-{n. 回水，回流； 滞水，死水； 闭塞的地方； 不受外界事件或新思想影响的地方|v. 倒开船； 食言；|,|\
+bækˌtɪərɪ'saɪdl|bækˌtɪərɪ'saɪdl}-{bactericidal}-{Bactericidal Power;a bactericidal treatment}-{adj. 杀菌的；|,|\
+ˈbægɪdʒ|ˈbæɡɪdʒ}-{baggage}-{bag}-{n. 行李； 辎重； 精神包袱； 荡妇|,|\
+ˈbeɪkə(r)|ˈbekɚ}-{baker}-{a Greek baker and a Greek fishmonger}-{n. 面包师； 烤炉； 贝克（姓氏）；|,|\
+ˈbælkəni|ˈbælkəni}-{balcony}-{Has your flat got a balcony?}-{n. 阳台； （电影院等的）楼厅，楼座； 包厢；|,|\
+ˈbæləd|ˈbæləd}-{ballad}-{ballet;an eighteenth century ballad}-{n. 民谣，尤指叙事歌谣； 民歌； [音]伤感的情歌；|,|\
+ˈbæləst|ˈbæləst}-{ballast}-{They got the ballast out;ballet}-{n. 压舱物，压载物； 道渣，碎石； 镇流器； <比喻>沉着|vt. 给某物装上压舱物； 给…铺道渣； 使稳定； 使沉着|,|\
+bəˈlu:n|bəˈlun}-{balloon}-{a balloon payment ; a balloon}-{n. 气球； 热气球； [建]球饰；|vt. 膨胀，涨大； 乘热气球飞行； 使激增；|adj. 气球状的； （货物等）分量轻而体积大的； （分期付款）最后一笔大数目的；|vi. 乘气球飞行； 膨胀； 激增；|,|\
+ˈbɔ:ltɪk|'bɔltɪk}-{Baltic}-{the Baltic coast}-{adj. 波罗的海的，波罗的海各国的；|,|\
+bəˈnɑ:l|bəˈnæl, ˈbenəl, bəˈnɑl}-{banal}-{a banal method}-{adj. 陈腐的； 平庸的；|,|\
+bəˈnɑ:nə|bəˈnænə}-{banana}-{a bunch of bananas.}-{n. 香蕉； 芭蕉属植物； 喜剧演员；|,|\
+ˈbænɪʃ|ˈbænɪʃ}-{banish}-{banish all thoughts of}-{vt. 放逐，驱逐； 消除，排除；|,|\
+bɑ:ˈbeəriən|bɑrˈberiən}-{barbarian}-{uncivilised barbarians}-{n. 野蛮人，原始人； 异邦人； 粗野的人； 无教养的人|adj. 野蛮人的，野蛮的； 异邦的； 未开化的；|,|\
+beə(r)|ber}-{bare}-{the bare facts ;The dog bared its teeth}-{adj. 光秃秃的； （房间、柜子等）空的； 赤裸的； 刚好够的|vt. 使赤裸； 使露出； 揭开； 脱（衣服）|,|\
+}-{Barents}-{the Barents Sea}-{释义 Sea 巴伦支海（位于欧洲北岸与苏联的新地岛、法兰士约瑟夫地群岛、挪威的斯匹次卑尔根群岛之间）；|,|\
+bɑ:k|bɑrk}-{bark}-{bark at ;bark up the wrong tree ; a coarse bark}-{vi. 吠叫； 厉声说话；|vt. 大声喊出； 厉声说出；|n. 犬吠声； 似吠声； 树皮；|,|\
+ˈbeɪsmənt|ˈbesmənt}-{basement}-{a workshop in the basement.}-{n. 地下室； [建]基底，底部；|,|\
+ˈbætəd|ˈbætərd}-{battered}-{battered woman/wife/husband/baby etc}-{adj. 破旧的； 磨损的； 受虐待的； 消瘦的|v. 连续猛击； 磨损；|,|\
+ˈbeərɪŋ|ˈberɪŋ}-{bearing}-{have a/some/no etc bearing on something}-{n. [机]轴承，支座； 关系； 方位； 态度，举止|v. 忍受(bear的ing形式)；|,|\
+bi:st|bist}-{beast}-{wild beasts}-{n. 野兽； 人面兽心的人； 讨厌的人（或事物）； 老顽固，坏蛋|,|\
+ˈbi:və(r)|ˈbivɚ}-{beaver}-{a huge beaver collar}-{n. 河狸； 河狸毛皮； [印]海狸绒布； 工作勤恳的人|,|\
+bɪˈdrægld|bɪˈdræɡəld}-{bedraggled}-{bedraggled appearance}-{adj. 被弄得湿淋淋的； 在烂泥中拖脏的； 乱的； 破旧的|v. 弄脏，弄湿，弄皱( bedraggle的过去式和过去分词 )；|,|\
+bi:|bi}-{bee}-{A bee buzzed in the flowers}-{n. 蜜蜂； （集工作、竞赛、娱乐为一体的）聚会；|,|\
+ˈbi:zwæks|ˈbizˌwæks}-{beeswax}-{Beeswax birthday candles}-{n. 蜂蜡；|vt. 给…上蜡；|,|\
+ˈbi:tl|ˈbitl}-{beetle}-{crawl like a beetle}-{n. 甲壳虫； 大槌； 捶布机；|vt.& vi. 快速移动； 用大槌捶打；|,|\
+ˈbegə(r)|ˈbɛɡɚ}-{beggar}-{beggars on the street}-{n. 乞丐； 家伙；|vt. 使贫困； 使无用；|,|\
+bɪˈlɒŋɪŋz|bɪˈlɔŋɪŋz}-{belongings}-{I collected my belongings and left.}-{n. 动产； 财物； 家眷； 亲属|,|\
+ benz}-{Benz}-{a picture of your Benz}-{n. 苯；|,|\
+bɪˈkwi:ð|bɪˈkwið, -ˈkwiθ}-{bequeath}-{bequeath to their children a respect for hard work. Bequeathal adj}-{vt. 将（财物等）遗赠给； 将（知识等）传给（后人）；|,|\
+bɜ:ˈlɪn|bəˈlɪn}-{Berlin}-{the siege of Berlin}-{n. 柏林（前民主德国首都）； （亦作B-）柏林细软毛线； （b-）四轮双座篷盖马车； 附有马车夫站台|,|\
+bɪˈwɪldəmənt|bɪˈwɪldərmənt}-{bewilderment}-{in bewilderment}-{n. 迷惘，困惑，迷乱；|,|\
+ˈbɪljən|ˈbɪljən}-{billion}-{3 billion dollars}-{n. 十亿 ；  数以十亿计； 大量；|,|\
+bɪˈnɒkjələz|bɪˈnɑkjələrz}-{binoculars}-{bring your binoculars}-{n. 双筒望远镜； [光] 双筒镜；|,|\
+ˈbɪtəli|ˈbɪtərli}-{bitterly}-{I was bitterly disappointed .}-{adv. 苦涩地； 痛苦地； 不痛快地； 残酷地|,|\
+ˈblækbəri|ˈblækberi}-{blackberry}-{pick blackberry}-{n. 黑莓；|,|\
+ˈblækbɔ:d|ˈblækbɔrd}-{blackboard}-{on the blackboard of}-{n. 黑板；|,|\
+ˈblækən|ˈblækən}-{blacken}-{blacken sb’s name/character/reputation}-{vt. 使变黑，把…弄黑； 诽谤，诋毁； 中伤（名誉等）；|vi. 变黑；|,|\
+blændɪʃmənt|'blændɪʃmənt}-{blandishment}-{resist his blandishments.;v. blandish}-{n. 奉承，讨好；|,|\
+bleə(r)|bler}-{blare}-{Horns blared in the street outside.}-{vi. 发出响而刺耳的声音；|vt. 嘟嘟地发出； 高声发出； 高声宣布；|n. 嘟嘟声，巨响； （颜色等的）光泽；|,|\
+ˈblesɪŋ|ˈblɛsɪŋ}-{blessing}-{it is a blessing (that)}-{n. （上帝的）祝福； 好事； 福分； 因祸得福|v. 祝圣( bless的现在分词)； 称颂上帝； 求神赐福于； （表示惊奇）|,|\
+ˈblaɪndfəʊld|ˈblaɪndfoʊld}-{blindfold}-{fold;can do something blindfold}-{vt. （尤指用布）挡住（某人）的视线； 蒙住（某人）的眼睛； 使不理解； 蒙骗|n. 蒙眼的绷带[布等]； 障眼物，蒙蔽人的事物；|adj.& adv. 被蒙住眼睛的（地）； 盲目的（地）； 不谨慎的（地）； 鲁莽的（地）|,|\
+ˈblɪzəd|ˈblɪzərd}-{blizzard}-{a blizzard of emails}-{n. 暴风雪； 大量；|,|\
+blɒt|blɑt}-{blot}-{blot something ↔ out}-{n. 污渍； 墨渍； 弱点； （十五子棋中）易被吃掉的孤立棋子|vt. 玷污，弄脏； 涂抹； 吸掉；|vi. （污点或污渍）溅出； 被吸掉；|,|\
+blaʊz|blaʊs}-{blouse}-{a silk blouse}-{n. 宽松的上衣； 女衬衫； 短上衣； 工装|vt. 使…宽松下垂；|,|\
+ˈblu:bɒtl|ˈblubɑtl}-{bluebottle}-{a large blue fly}-{n. 矢车菊； <英口>警察； 反吐丽蝇（腹部蓝色）； <澳> 葡萄牙军舰|,|\
+bəʊst|boʊst}-{boast}-{boast about/of sth;company’s proud boast}-{vt. 自夸，自吹自擂； 夸口说； 以有…而自豪； 自负有|n. 夸口，自负； 自负的事物，引以为傲的东西； 自夸的话； 扬言|,|\
+bɒgd|bɒgd}-{bogged}-{My mind boggles at the amount of work still to do.}-{adj. 陷于泥沼的；|v. （使）陷入泥沼， （使）陷入困境( bog的过去式和过去分词 )； 妨碍，阻碍；|,|\
+bəʊldlɪ|'boʊldlɪ}-{boldly}-{He walked boldly}-{adv. 大胆地，显眼地； 冒；|,|\
+bɔmˈbei|bɑmˈbe}-{Bombay}-{We landed at Bombay}-{n. 孟买（印度西部的一个邦，首府为孟买城）；|,|\
+ˈbɒmə(r)|ˈbɑmə(r)}-{bomber}-{bomber jacket}-{n. 轰炸机； 投弹手；|,|\
+bu:|bu}-{boo}-{Demonstrators booed and jeered him}-{n. 嘘声，喝倒采；|vt.& vi. 发出嘘声；|int. （表示不满、轻蔑等）嘘，呸；|,|\
+ˈbʊkkeɪs|ˈbʊkˌkes}-{bookcase}-{into the small bookcase}-{n. 书橱，书架，书柜；|,|\
+ˈbɔ:dəm|ˈbɔrdəm}-{boredom}-{his boredom with life in a small town}-{n. 讨厌，令人讨厌的事物； 无聊，无趣； 厌倦；|,|\
+ˈbəʊldə(r)|ˈboʊldə(r)}-{boulder}-{under the boulder}-{n. 卵石，圆石； 巨砾，冰砾； 漂砾；|,|\
+bəʊ|boʊ}-{bow}-{bow before/to}-{n. 弓； 鞠躬； 船头； 艏|,|\
+ˈbɒksə(r)|ˈbɑksə(r)}-{boxer}-{The boxer punched his opponent}-{n. （尤指职业）拳击手； 拳师狗； 装箱者，装箱工；|,|\
+ˈbɒksɪŋ|ˈbɑksɪŋ}-{boxing}-{He wants to take on that boxing champion}-{n. 拳击； 装箱； 做箱（或盒）的材料； 箱形的罩（或框）|v. 将…装入盒中(box的ing形式)；|,|\
+brə'zɪl|brə'zɪl}-{Brazil}-{Today's football match is France versus Brazil}-{n. 巴西；|,|\
+ˈbreθteɪkɪŋ|ˈbrɛθˌtekɪŋ}-{breathtaking}-{an act of breathtaking arrogance}-{adj. 非常激动人心的； 惊人的； 惊险的； 使人透不过气来的|,|\
+brɪˈgeɪd|brɪˈɡeɪd}-{brigade}-{the anti-nuclear brigade}-{n. 旅；|vt. 把…编成旅； 把…编成队；|,|\
+ˈbrəʊkə(r)|ˈbroʊkə(r)}-{broker}-{a real estate broker}-{n. （股票、外币等）经纪人； 中间人，代理人； 旧货商人； 〈口〉婚姻介绍人|vt. 作为权力经纪人进行谈判； 作为中间人来安排、设法；|,|\
+ˈbruklin|ˈbrʊklɪn}-{Brooklyn}-{a Brooklyn street}-{n. 布鲁克林（美国纽约市西南部的一区）；|,|\
+ˈbʊlfaɪt|ˈbʊlˌfaɪt}-{bullfight}-{at a bullfight}-{n. 斗牛（流行于西班牙和南美洲）；|,|\
+ˈbʊliən|ˈbʊljən}-{bullion}-{gold bullion}-{n. 金条； （视为原材料的）金； 银； 金（或银）丝饰带|,|\
+ˈbʊlrʌʃ|ˈbʊlˌrʌʃ}-{bulrush}-{like a bulrush in a high wind}-{n. 芦苇，香蒲，纸草； 菖蒲；|,|\
+bɔɪ|ˈbui, bɔɪ}-{buoy}-{Increased demand for computers buoyed their profits.}-{n. 浮标； 救生圈； 航标；|vt. 使浮起； 支持，鼓励；|,|\
+ˈbɜ:glə(r)|ˈbɜrglə(r)}-{burglar}-{burglary v}-{n. 窃贼； 破门盗窃者； 夜盗；|,|\
+ˈbɜ:gl|ˈbɜrgl}-{burgle}-{We’ve been burgled three times.}-{vt.& vi. 破门盗窃；|,|\
+ˈbʌrəʊ|ˈbɜroʊ}-{burrow}-{burrow into/under/through ;in the burrow}-{vt.& vi. 挖掘（洞穴），挖洞；|vi. 翻寻；|n. 地洞；|,|\
+bʊʃ|bʊʃ}-{bush}-{a rose bush}-{n. 灌木（丛）； [机械学]（金属）衬套； [电学]（绝缘）套管； 类似灌木的东西（尤指浓密的毛发或皮毛）|vi. 丛生； 灌木般丛生； 浓密（或茂密）地生长； 生密枝|vt. 加（金属）衬套于； 加套管于； 用耙耙平（耕地）； 以灌木（或灌木丛）装饰（或覆盖、围绕、围住、支撑、标志、保护等）|adj. （豆科植物等）如灌木般长得低矮的； 粗野的； 粗鲁的； 粗糙但实用的|,|\
+bʌsmən|'bʌsmən}-{busman}-{his job as a busman}-{n. 公共汽车司机，售票员；|,|\
+bʌt|bʌt}-{butt}-{buttocks ;butt of a cigarette;butt sb;}-{n. 烟蒂，屁股； 笑柄； （武器或工具的）粗大的一端； 大酒桶|vt.& vi. 用头撞或顶； 碰撞；|,|\
+ˈkæktəs|ˈkæktəs}-{cactus}-{The giant cactus}-{n. 仙人掌；|,|\
+keɪdʒ|kedʒ}-{cage}-{caged birds}-{n. 笼子； 牢房； 升降车； [棒]练球场|vt. 把…关入牢中； 把…关进笼内； 把（冰球等）打入球门；|,|\
+kæleɪ|kæ'leɪˌ 'kæleɪ}-{Calais}-{get from Calais}-{释义 加来（法国北部港市）；|,|\
+kɑ:f|kæf}-{calf}-{kill the fatted calf}-{n. 牛犊； 犊皮； 腓，腿肚子；|,|\
+ˌkælɪ'fɔ:njə, -'fɔ:ni:ə|ˌkælɪ'fɔrnjəˌ -'fɔrniə}-{California}-{go to California}-{n. 美国加州；|,|\
+ˈkɔ:lə(r)|ˈkɔlɚ}-{caller}-{‘Could you hold for one moment?’ he asked the caller.}-{n. 呼叫者； 召集者； 访问者； 打电话者|adj. 新鲜的；|,|\
+ˈkæmpfaɪə(r)|'kæmpfaɪər}-{campfire}-{I sing by the campfire}-{n. 营火，篝火；|,|\
+kænədə|ˈkænədə}-{Canada}-{She was domiciliated in Canada}-{n. 加拿大；|,|\
+kəˈneɪdiən|kəˈnediən}-{Canadian}-{Canadian accents}-{adj. 加拿大人的； 加拿大的； 加拿大语言的； 加拿大文化的|n. 加拿大人；|,|\
+ˈkænjən|ˈkænjən}-{canyon}-{in the canyon}-{n. 峡谷；|,|\
+kəˈpri:s|kəˈpris}-{caprice}-{a caprice of the wind}-{n. 反复无常； 任性的想法； 随想曲； 充满幻想力的作品|,|\
+kæpˈsaɪz|ˈkæpsaɪz}-{capsize}-{The boat capsized. I capsized the canoe.}-{vt.& vi. 使（船或车）翻； 倾覆；|,|\
+ˈkɑ:bəneɪtɪd|ˈkɑrbəneɪtɪd}-{carbonated}-{carbonated spring water}-{adj. 含二氧化碳的；|v. 充二氧化碳于( carbonate的过去分词 )；|,|\
+ˈkɑ:dbɔ:d|ˈkɑrdbɔrd}-{cardboard}-{a sheet of cardboard}-{n. 卡（片）纸板； 纸板箱； 硬纸板；|adj. 硬纸板制的； 虚假的；|,|\
+ˌkærɪˈbi:ən|ˌkærəˈbiən, kəˈrɪbiən}-{Caribbean}-{he Caribbean island}-{n. 加勒比海；|,|\
+ˈkɑ:nɪvɔ:(r)|ˈkɑrnɪvɔ(r)}-{carnivore}-{herbivore , omnivore}-{n. 食肉动物，食虫植物；|,|\
+ˈkæriə(r)|ˈkæriɚ}-{carrier}-{Japan's top wireless carrier}-{n. 搬运人； 运输公司； 搬运器； [医学]带菌者|,|\
+kæˈskeɪd|kæˈsked}-{cascade}-{Her hair fell over her shoulders in a cascade of curls. ; rushing water cascaded past her}-{n. 倾泻； 小瀑布，瀑布状物； 串联；|vi. 流注； 大量落下；|,|\
+ˌkætə'strɒfɪk|ˌkætəˈstrɑfɪk}-{catastrophic}-{a catastrophic fall in the price of rice}-{adj. 灾难的； 惨重的，悲惨结局的；|,|\
+keɪv|kev}-{cave}-{the entrance to a cave}-{n. 洞穴； 〈方〉地窖；|vt.& vi. （使）塌陷，倒塌； 暗中破坏；|vi. 屈服；|,|\
+ˈkeɪvmæn|'keɪvmæn}-{caveman}-{Eating like a caveman}-{n. 史前石器时代的穴居人； 对妇女残酷，粗鲁的粗野人；|,|\
+ˈkævən|ˈkævərn}-{cavern}-{in a dark cavern}-{n. 大山洞； 凹处；|v. 挖空； 置…于山洞中；|,|\
+}-{CD-ROM}-{.}-{n. [计](=Compact disc read-only memory)（信息容量极大的）光盘只读存储器；|,|\
+si:sləslɪ|ˈsislɪslɪ}-{ceaselessly}-{the ceaseless fight against crime}-{adv. 不停地，持续地； 不住；|,|\
+tʃɔ:k|tʃɔk}-{chalk}-{chalk and cheese}-{n. 粉笔，白垩； 用粉笔画的记号； 〈英〉（比赛）得分纪录，记入借方的款项； 〈美俚〉牛奶|v. 用粉笔写（记下）； 用白垩粉擦（桌球杆等）； 使苍白； （英）把（酒钱）记于（某人）账上|,|\
+ˈtʃeɪmbəmeɪd|ˈtʃeɪmbərmeɪd}-{chambermaid}-{an African chambermaid}-{n. （打扫宾馆客房的）女服务员；|,|\
+ˈkæzəm|ˈkæzəm}-{chasm}-{a vast chasm}-{n. 峡谷； 裂缝，断层； 裂口； （感情等的）分歧|,|\
+ˈtʃekə(r)|ˈtʃɛkɚ}-{checker}-{spell/grammar checker}-{n. 方格图案；|vt. 使（某物）呈现方格图案或不同颜色或不同深浅的方格；|,|\
+tʃɪə(r)|tʃɪr}-{cheer}-{give a cheer to}-{vt. 欢呼； 使高兴； 为…喝彩； 为…加油|n. 欢呼，喝彩； 兴致勃勃，愉快； 心情； 令人愉快的事|vi. 欢呼； 感到高兴；|,|\
+ˈtʃerəb|ˈtʃɛrəb}-{cherub}-{a smile of cherubic innocence}-{n. 小天使，胖娃娃；|,|\
+ʃɪ'kɑ:gəʊ, -'kɔ:-|ʃɪ'kɑɡoʊˌ -'kɔ-}-{Chicago}-{locate in Chicago}-{n. 芝加哥（美国城市名）；|,|\
+ʃɪˈkeɪnəri|ʃɪˈkenəri, tʃɪ-}-{chicanery}-{accuse sb of chicanery}-{n. 耍花招哄骗别人（尤指于法律事务中）； 不诚实的行为； 欺骗；|,|\
+ˈtʃɪldrən|ˈtʃɪldrən}-{children}-{.}-{n. 孩子们(child的复数)； 儿童； 膝下； 孥|,|\
+ˈtʃɪmni|ˈtʃɪmni}-{chimney}-{smoke like a chimney}-{n. 烟囱； 玻璃灯罩； 烟囱状东西； 壁炉|,|\
+tʃaɪnə|ˈtʃaɪnə}-{China}-{.}-{n. 中国； [电影]中国1971；|释义 [地名] [墨西哥] 奇纳； [地名] [俄罗斯] 奇纳河； [地名] [美国] 柴纳；|,|\
+ˌtʃaɪˈni:z|tʃaɪˈniz, -ˈnis}-{Chinese}-{.}-{n. 中国人； 华人； 中文； 汉语|adj. 中国的； 中国人的； 中国话的； 中文的|,|\
+ˈkrɪsməs|ˈkrɪsməs}-{Christmas}-{The day after Christmas}-{n. 圣诞节；|,|\
+tʃʌg|tʃʌɡ}-{chug}-{The boat chugged out of the harbour.}-{vi. 发出（持续而单调的）短声，发出突突声； （发动机等）咔嚓咔嚓地响； （火车、汽船等）咔嚓咔嚓地前进；|n. （发动机缓慢运转时发出的）突突声；|,|\
+tʃɜ:n|tʃɜrn}-{churn}-{The lawn had been churned up by the tractor.}-{vt. 搅拌； 制造（奶油等）； 买卖；|vi. 制造（奶油等）； 产生剧烈搅动；|n. 搅乳桶；|,|\
+sɪtɪ'steɪt|'sɪtɪ'steɪt}-{city-state}-{in the city-state}-{n. （古希腊的）城邦；|,|\
+ˈsɪvəlaɪzd|ˈsɪvəˌlaɪzd}-{civilized}-{in a civilized society}-{adj. 文明的； 非野蛮的； 有礼貌的； 有教养的|v. 使文明； 教化； 使开化( civilize的过去式和过去分词)；|,|\
+ˈklætə(r)|ˈklætɚ}-{clatter}-{The tray slipped and clattered to the floor.}-{vt.& vi. 发出咔哒声； 嘁嘁喳喳地说笑； 使卡搭卡搭的响；|n. 哗啦声； 嘁嘁喳喳的谈笑声； 咔哒声；|,|\
+ˈklævɪkɔ:d|ˈklævɪkɔrd}-{clavichord}-{play the clavichord}-{n. 击弦古钢琴；|,|\
+kleft|klɛft}-{cleft}-{be (caught) in a cleft stick ;a cleft in the wall}-{n. 裂缝； 裂口； cleave的过去式和过去分词； 进退维谷|v. 劈开，剁开，割开( cleave的过去式和过去分词 )；|,|\
+ˈklerɪkl|ˈklɛrɪkəl}-{clerical}-{clerical workers}-{adj. 文书或办事员的； 教士的，牧师的； 教权主义的；|n. 牧师，教士； 牧师服，教士服；|,|\
+kli:ʃeɪ|kli'ʃeɪ}-{cliche}-{There is plenty of truth in the cliché that a trouble shared is a trouble halved.}-{n. 陈词滥调；|,|\
+ˈkləʊkru:m|ˈkloʊkrum}-{cloakroom}-{Where’s the ladies’ cloakroom?}-{n. 衣帽间，行李寄存处； <英婉>厕所；|,|\
+klɒg|klɑg}-{clog}-{log;get clogged up with grease; a pair of clogs}-{n. 木底鞋； 障碍；|v. 阻碍； 堵塞；|,|\
+klʌmp|klʌmp}-{clump}-{in a clump}-{n. 丛； 笨重的脚步声； 土块；|vt. 使成一丛； 凝结成块；|,|\
+klʌmzɪlɪ|ˈklʌmzɪlɪ}-{clumsily}-{David made a clumsy attempt to comfort us.}-{adv. 笨拙地； 粗陋地，形状难看地；|,|\
+ˈklʌtə(r)|ˈklʌtɚ}-{clutter}-{be cluttered (up) with something}-{n. 杂乱； 混乱； 喧嚣；|vt. 使凌乱； 乱糟糟地堆满；|vi. 乱哄哄地跑； 发出吵闹声；|,|\
+}-{cm}-{2.5 cm}-{abbr. centimeters 厘米； Cameroon 喀麦隆； Counter-Measures 反措施； Cruise Missile 巡航式导弹|,|\
+ˈkəʊbrə|ˈkoʊbrə}-{cobra}-{cobra venom}-{n. 眼镜蛇；|,|\
+ˈkɒkkrəʊ|ˈkɑkkroʊ}-{cockcrow}-{dawn}-{n. 黎明，破晓；|,|\
+kɒd|kɑd}-{cod}-{cash on delivery [商]货到付款}-{n. 鳕鱼； 鳕鱼肉； 袋，包； 阴囊|v. 哄骗，愚弄；|,|\
+kəˈlɒsl|kəˈlɑsl}-{colossal}-{a colossal building}-{adj. 巨大的； <口语>异常的；|,|\
+kʌlə(r) blaɪnd|'kʌlər blaɪnd}-{colour-blind}-{totally colour-blind}-{adj. 色盲的；|,|\
+ˈkɒmbətɪv|ˈkɑmbətɪv}-{combative}-{Congress is in a combative mood.}-{adj. 好斗的； 斗志旺盛的；|,|\
+kəˈmi:diən|kəˈmidiən}-{comedian}-{tragedian}-{n. 喜剧演员，丑角； 滑稽的人；|,|\
+kəˌmɜ:ʃəlaɪ'zeɪʃn|kəˌmɜʃəlaɪ'zeɪʃn}-{commercialization}-{influence of commercialization}-{释义 商业化，商品化；|,|\
+ˈkɒmɪsəri|ˈkɑmɪseri}-{commissary}-{commissary line}-{n. 代表，物资供应所，委员；|,|\
+ˌkɒmpəˈzɪʃn|ˌkɑmpəˈzɪʃn}-{composition}-{composition of}-{n. 作文，作曲； 创作； 构图，布置； 妥协，和解|,|\
+ˌkɒmprɪˈhend|ˌkɑmprɪˈhend}-{comprehend}-{comprehend what/how/why etc}-{vt. 理解，领会； 包含；|,|\
+kənˈsi:tɪd|kənˈsitɪd}-{conceited}-{be conceited about}-{adj. （人）自负的，自高自大的，骄傲自满的； 矜；|,|\
+kənˈkɒkt|kənˈkɑkt}-{concoct}-{concoct a story concoct a drink}-{vt. 调制； 捏造； 图谋，策划；|,|\
+kənˈkɒkʃn|kənˈkɑkʃn}-{concoction}-{He sipped the concoction cautiously.}-{n. 调合； 混合； 调合物；|,|\
+kɒnfədəntlɪ|ˈkɑnfədəntlɪ}-{confidently}-{confident about}-{adv. 确信地，肯定地； 自信地；|,|\
+kɒŋɡəʊ|'kɑŋɡoʊ}-{Congo}-{the Republic of Congo}-{n. 刚果； [电影]刚果惊魂；|,|\
+ˈkʌndʒərɪŋ|ˈkʌndʒərɪŋ}-{conjuring}-{He did conjuring tricks for the children.}-{n. 魔术，戏法；|v. 用魔术变出( conjure的现在分词 )； 祈求，恳求； 变戏法； （变魔术般地） 使…出现|,|\
+ˈkɒŋkərə(r)|ˈkɑŋkərə(r)}-{conqueror}-{conquer your nerves/fear}-{n. 征服者，占领者；|,|\
+kənˈspaɪə(r)|kənˈspaɪr}-{conspire}-{conspire (with sb) (against sb); conspire (together)}-{vi. 搞阴谋； 协力促成；|vt. 阴谋策划；|,|\
+ˈkʌnstəbl|ˈkɑnstəbl}-{constable}-{Chief Constable}-{n. 警察； 警员； 巡官；|,|\
+kən'strʌktɪvlɪ|kən'strʌktɪvlɪ}-{constructively}-{We welcome any constructive criticism .}-{adv. 建设性地；|,|\
+kənˌtæmɪ'neɪʃən|kənˌtæməˈneʃən}-{contamination}-{radioactive contamination}-{n. 污染； 弄脏； 毒害； 玷污|,|\
+kənˈtentɪd|kənˈtɛntɪd}-{contented}-{They lapsed into a contented silence.}-{adj. 满意的，满足的；|v. 使满足(content的过去式和过去分词)；|,|\
+ˈkɒntɪnənt|ˈkɑntɪnənt}-{continent}-{the continents of Asia and Africa}-{n. 大陆，陆地； 欧洲大陆； <美>北美洲大陆；|adj. 自制的，克制的； 节欲的； 贞洁的； 禁欲的|,|\
+kən'tɪnjʊəlɪ|kənˈtɪnjʊəlɪ}-{continually}-{continual improvement ;constant}-{adv. 不停地； 持续地； 屡屡地； 一再地|,|\
+kənˈtraɪvəns|kənˈtraɪvəns}-{contrivance}-{a steam-driven contrivance used in 19th century factories}-{n. 发明； 发明才能； 想出的办法； 发明物|,|\
+ˈkɒnvɔɪ|ˈkɑnvɔɪ}-{convoy}-{The British left in a convoy of 20 cars. ;We drove in convoy.}-{n. 护航队； 护送； 被护送者；|vt. 护航； 护送；|,|\
+kənˈvʌlsɪv|kənˈvʌlsɪv}-{convulsive}-{a convulsive sob}-{adj. 起痉挛的，痉挛性的；|,|\
+}-{correspondingly}-{As his political power has shrunk, he has grown correspondingly more dependent on the army.}-{adv. 相对地，比照地；|,|\
+kɒzˈmetɪk|kɑzˈmetɪk}-{cosmetic}-{cosmetic surgery 整容手术}-{n. 化妆品； 美发油，发蜡； 装饰品； 美容术|adj. 化妆用的； 美容的； 装点门面的； 表面的|,|\
+ˈkɒzmɪk|ˈkɑzmɪk}-{cosmic}-{extremely large ;cosmic catastrophe}-{adj. 宇宙的； 极广阔的；|,|\
+ˌkɒzməˈpɒlɪtən|ˌkɑzməˈpɑlɪtən}-{cosmopolitan}-{a cosmopolitan city cosmopolis 国际都市}-{adj. 世界性的，全世界的； 四海为家的； 全球的；|n. 世界主义者； 四海为家者；|,|\
+ˌkaʊntərˈækt|ˌkaʊntɚˈækt}-{counteract}-{counteract the effect of}-{vt. 抵消； 阻碍； 中和；|,|\
+kræmpt|kræmpt}-{cramped}-{cramped handwriting}-{adj. 狭窄的； 难懂的；|v. 夹紧(cramp的过去式)； 用夹钳夹； 约束；|,|\
+ˈkredjələs|ˈkredʒələs}-{credulous}-{credulous buyers}-{adj. 轻信的，易受骗的；|,|\
+krest|krɛst}-{crest}-{be on/riding the crest of a wave}-{n. 山顶； 羽毛饰； 鸡冠； （动物的）颈脊|vt. 加上顶饰； 到达…的顶部； 形成冠毛状顶部； 到达顶部|vi. 到达绝顶； 形成浪峰； 达到顶点；|,|\
+krəˈvæs|krɪˈvæs}-{crevasse}-{crevice}-{n. 破口，崩溃处，裂缝；|vt. 使有裂缝；|,|\
+ˈkrɒkəri|ˈkrɑkəri}-{crockery}-{a stack of dirty crockery}-{n. 陶器； 瓦罐；|,|\
+kru:z|kruz}-{cruise}-{cruise around}-{vi. 巡游； 漫游； 巡航；|n. （军舰等）巡逻，巡航； 〈口〉游览，旅行，周游；|vt. 巡航； 巡游； 漫游；|,|\
+ˈkru:zə(r)|ˈkruzɚ}-{cruiser}-{a battle cruiser}-{n. 巡洋舰； [航海]观光游艇； 警察巡逻车；|,|\
+ˈkʌlpəbl|ˈkʌlpəbəl}-{culpable}-{culpable negligence;n. culprit}-{adj. 应受谴责的，应受处罚的，有罪的；|,|\
+ˈkjʊərətɪv|ˈkjʊrətɪv}-{curative}-{the spring’s alleged curative properties}-{adj. 医疗的；|n. 药品；|,|\
+kjʊərɪəslɪ|ˈkjʊrɪəslɪ}-{curiously}-{curious about}-{adv. 好奇地； 奇异地； 奇怪地； 说来古怪|,|\
+kɜ:st|kɜrst}-{cursed}-{be cursed with/by something}-{adj. 被诅咒的，邪恶的； 可恨的； 应受诅咒的；|v. 诅咒（curse的过去分词）；|,|\
+ˈkʌstəmaɪz|ˈkʌstəˌmaɪz}-{customize}-{a customized car}-{vt. 定制，定做； 按规格改制；|,|\
+ˈkʌstəmz|ˈkʌstəmz}-{customs}-{Customs and Excise}-{n. 关税； 海关； 习惯( custom的名词复数)； 海关|adj. 定做的； 专做定货的；|,|\
+ˈsɪnɪk|ˈsɪnɪk}-{cynic}-{hardened cynics;cynical}-{n. 愤世嫉俗者，讽世者； 犬儒学派的人；|adj. 愤世嫉俗的； 犬儒学派的；|,|\
+ˈdægə(r)|ˈdæɡɚ}-{dagger}-{dirk; thrust a dagger into}-{n. 匕首； 短剑；|vt. 用剑刺；|,|\
+deɪn|den}-{Dane}-{the Dane refused}-{n. 丹麦人； 戴恩（男子名）；|,|\
+ˈdæŋgl|ˈdæŋɡəl}-{dangle}-{dangle about (a woman);They dangle hope in front of our eyes}-{vi. 悬荡，垂着摆动； 尾随，追逐；|vt. 使摇晃地挂着或摆荡； 悬而未定；|,|\
+ˈdeɪnɪʃ|ˈdenɪʃ}-{Danish}-{Danish pastry}-{n. 丹麦语；|adj. 丹麦的；|,|\
+ˈdæʃbɔ:d|ˈdæʃbɔrd}-{dashboard}-{The clock on the dashboard}-{n. 仪表板； 仪表的控制盘； 挡泥板； 仪表盘|,|\
+ˈdɔ:dl|ˈdɔdl}-{dawdle}-{I dawdled over a second cup of coffee. dawdle away their time}-{vt.& vi. 混（时间）；|,|\
+ˈdebɪt|ˈdɛbɪt}-{debit}-{on the debit side}-{n. 借方； 借方帐目； 缺点，弊端；|vt. 记入借方；|,|\
+ˈdetə(r)|ˈdɛtɚ}-{debtor}-{creditor}-{n. 债务人； 借方； 受恩人； 罪人|,|\
+dɪˈsembə(r)|dɪˈsɛmbɚ}-{December}-{.}-{n. 12月；|,|\
+dɪˈsepʃn|dɪˈsɛpʃən}-{deception}-{practise deception on the public}-{n. 瞒骗，欺诈； 骗局；|,|\
+ˌdi:kəmˈpəʊz|ˌdikəmˈpoʊz}-{decompose}-{a partially decomposed body}-{vt.& vi. 分解； （使）腐烂；|,|\
+ˈdedɪkeɪtɪd|ˈdɛdɪˌketɪd}-{dedicated}-{dedicated to}-{adj. 专注的，投入的； 献身的； 专用的；|v. 奉献(dedicate的过去式和过去分词)；|,|\
+ˈdelɪkəsi|ˈdɛlɪkəsi}-{delicacy}-{the delicacy of}-{n. 精美； 美味佳肴； 敏锐，敏感； 世故，圆滑|,|\
+dɪˈlaɪtɪd|dɪˈlaɪtɪd}-{delighted}-{delighted with/by/at}-{adj. 高兴的； 欣喜的；|v. 使高兴； 使欣喜( delight的过去式和过去分词)；|,|\
+dɪˈlɪŋkwənsi|dɪˈlɪŋkwənsi, -ˈlɪn-}-{delinquency}-{The captain's delinquency led to the loss of the ship}-{n. 不法行为； 少年罪犯； 过失；  罪过|,|\
+dɪˈlu:ʒn|dɪˈluʒən}-{delusion}-{be under a delusion}-{n. 欺骗； 谬见； 错觉； 妄想|,|\
+ˈdi:mən|ˈdimən}-{demon}-{the demon drink}-{n. 魔鬼； 恶魔； 精力过人的人； 邪念|,|\
+ˈderɪk|ˈdɛrɪk}-{derrick}-{under the derrick}-{n. 起重机； （油井的）井架；|,|\
+ˈdesələt|ˈdɛsəlɪt}-{desolate}-{a desolate landscape}-{adj. 无人的； 荒凉的； 孤独的，凄凉的； 荒废的|vt. 使荒无人烟，使荒芜； 使凄凉，使孤单；|,|\
+despərətlɪ|ˈdɛspərɪtlɪ}-{desperately}-{desperately want/need}-{adv. 绝望地； 不顾一切地； <口>极度地； 猛烈地|,|\
+ˌdevəˈsteɪʃn|ˌdevəˈsteɪʃn}-{devastation}-{The city centre was devastated by the bomb.}-{n. 毁坏； 荒废； 极度震惊或悲伤；|,|\
+dɪˈvaʊə(r)|dɪˈvaʊr}-{devour}-{be devoured by something;devout}-{vt. 狼吞虎咽地吃光； 吞没，毁灭； 全神贯注地看；|,|\
+ˌdaɪəgˈnəʊsɪs|ˌdaɪəgˈnoʊsɪs}-{diagnosis}-{a doctor skills in diagnosis make one's diagnosis}-{n. 诊断； 诊断结论； 判断； 结论|,|\
+ˌdaɪˈæləsɪs|daɪˈælɪsɪs}-{dialysis}-{a dialysis machine ;He has been on dialysis for the past three years.}-{n. 透析，分离； 断离； 渗析；|,|\
+ˈdɪkʃənri|ˈdɪkʃəneri}-{dictionary}-{.}-{n. 词典，字典； [自]代码字典；|,|\
+daɪˈdʒestɪv|daɪˈdʒɛstɪv, dɪ-}-{digestive}-{digestive system/organs/juices etc}-{adj. 消化的； 助消化的；|n. 消化剂；|,|\
+dɪˈlæpɪdeɪtɪd|dɪˈlæpɪˌdetɪd}-{dilapidated}-{a dilapidated chair}-{adj. 残破的，失修的； 荒废的，衰败的； 破旧； 颓|,|\
+ˈdɪŋi|ˈdɪŋi}-{dinghy}-{a sailing dinghy}-{n. 无篷小船，小艇； 救生艇；|,|\
+ˌdɪsədˈvɑ:ntɪdʒ|ˌdɪsədˈvæntɪdʒ}-{disadvantage}-{disadvantage of (to)}-{n. 不利，劣势，短处； 损失；|,|\
+ˌdɪsə'pɪərəns|ˌdɪsə'pɪərəns}-{disappearance}-{the disappearance of ancient forests}-{n. 消失，不见； 消散； 失踪； 出走，一去不返|,|\
+dɪsˈkredɪt|dɪsˈkrɛdɪt}-{discredit}-{discredit what she says;his discredit}-{vt. 使不可置信； 使被怀疑； 败坏…的名声； 拒绝相信|n. 丧失名誉，名声； 不信，怀疑； 败坏名声的人或事； 耻辱|,|\
+dɪ'skri:tlɪ|dɪ'skritlɪ}-{discreetly}-{I stood back at a discreet distance.}-{adv. 谨慎地，小心地；|,|\
+ˌdɪsɪmˈbɑ:k|ˌdɪsɪmˈbɑrk}-{disembark}-{embark}-{vt.& vi. （使）登陆[上岸]； 卸下；|,|\
+dɪsˈgreɪs|dɪsˈɡres}-{disgrace}-{in disgrace}-{n. 丢脸； 耻辱； 不光彩； 丢脸的人（或事）|vt. 使丢脸； 使失宠； 使受耻辱； 贬黜|,|\
+ˌdɪsɪˈlu:ʒn|ˌdɪsɪˈluʒən}-{disillusion}-{I hate to disillusion you}-{vt. 使不再抱幻想，使理想破灭； 给…泼冷水； 使醒悟；|n. 觉醒，幻灭；|,|\
+ˌdɪsɪˈlu:ʒnmənt|ˌdɪsɪˈluʒənmənt}-{disillusionment}-{disillusioned by/with}-{n. 幻灭； 醒悟；|,|\
+ˌdɪsɪnˈfektənt|ˌdɪsɪnˈfɛktənt}-{disinfectant}-{infect vt.[医] 传染, 感染;disinfectant to kill any harmful organisms}-{n. 消毒剂，杀菌剂；|,|\
+ˌdɪsɪnˈherɪt|ˌdɪsɪnˈhɛrɪt}-{disinherit}-{You can disinherit your children}-{v. 剥夺继承权，剥夺特权；|,|\
+ˈdɪsləkeɪt|ˈdɪsloʊkeɪt}-{dislocate}-{locate;dislocate a traditional way of life;dislocate a bone}-{vt. 使关节脱位； 使（交通，事务等）混乱；|,|\
+dɪs'lɔɪəltɪ|dɪsˈlɔɪəlti}-{disloyalty}-{He felt he had been disloyal to his friends.}-{n. 不忠实； 不信； 不义； 背信弃义|,|\
+dɪsˈmæntl|dɪsˈmæntl}-{dismantle}-{dismantle a maching;mantle覆盖}-{vt. 拆开； 拆卸； 废除； 取消|,|\
+dɪˈspel|dɪˈspɛl}-{dispel}-{We want to dispel the myth}-{vt. 消除（疑虑等）； 驱散（云雾等）； 驱逐；|,|\
+dɪsˈteɪstfl|dɪsˈtestfəl}-{distasteful}-{Parts of it may seem distasteful, even shocking.}-{adj. 使人不愉快的； 讨厌的； 不合口味的； 表示厌恶的|,|\
+dɪˈstɪŋgwɪʃt|dɪˈstɪŋɡwɪʃt}-{distinguished}-{a long and distinguished career}-{adj. 卓越的； 著名的； 受人尊敬的； 显得重要的|v. 辨别，区别( distinguish的过去式和过去分词)； 突出； 区别(distinguish的过去式)；|,|\
+ˈdaɪvə(r)|ˈdaɪvɚ}-{diver}-{a diver in the Olympics}-{n. 潜水员； 跳水者，跳水运动员； 潜鸟； 〈俚〉潜水艇|,|\
+ˈdɪvɪdend|ˈdɪvɪˌdɛnd}-{dividend}-{an annual dividend of 8%}-{n. 红利，股息，利息，（破产时清算的）分配金； ； [数]被除数 opp. divisor； （足球彩票的）彩金|,|\
+ˈdɔ:nɒb|ˈdɔrnɑb}-{doorknob}-{one turned the doorknob}-{n. 球形门拉手；|,|\
+dɒs|dɑs}-{DOS}-{.}-{n. 磁盘操作系统；|,|\
+ˈdaʊnfɔ:l|ˈdaʊnˌfɔl}-{downfall}-{be sb’s downfall}-{n. （雨等的）大下特下； （家，国等的）没落； 垮台；|,|\
+ˌdaʊnˈhɪl|ˈdaʊnˈhɪl}-{downhill}-{go downhill}-{adv. 向山下； 如下坡一般； 每况愈下；|adj. 向下的，下降的； 倾斜的； [体]下降滑雪的；|n. 下坡路； 滑降；|,|\
+ˈdrɪəri|ˈdrɪri}-{dreary}-{drear a dreary winter day ;dreary task}-{adj. 沉寂的； 阴沉的； 令人厌烦的； 枯燥的|n. 可怕的人物；|,|\
+dredʒ|drɛdʒ}-{dredge}-{dredge up the silt}-{vt. 清淤，疏浚（河道等）； 挖掘（泥土等），使显露； 捞取； （用面粉、糖等）撒|vi. 疏浚； 挖掘； 采捞；|n. 挖泥机，疏浚机； （采牡蛎，捕鱼等用的）拖网，捞网； 悬浮矿石；|,|\
+drɪftɪŋ|drɪftɪŋ}-{drifting}-{The ship was drifting on the ocean.}-{adj. 漂流的，飘动的；|v. 漂( drift的现在分词 )； 吹积； 漂泊； 浮现|,|\
+ˈdraɪli}-{drily}-{dryly}-{adv. （为达到幽默效果而说话）一本正经地，不形于色地；|,|\
+drəʊv|droʊv}-{drove}-{a drove of small pigs}-{n. 人群 ； 畜群；|v. 驾驶（drive的过去式）；|,|\
+dju:n|dun}-{dune}-{sand dune}-{n. （由风吹积成的）沙丘；|,|\
+ˈdʌstmən|'dʌstmən}-{dustman}-{garbage collector}-{n. 清洁工；|,|\
+dʌtʃ|dʌtʃ}-{Dutch}-{go Dutch 各付各的钱 in Dutch 碰到麻烦; 处境困难}-{adj. 荷兰人的，荷兰的，荷兰语的；|n. 荷兰； 荷兰语； 各付各的账； 酒后之勇 [电影]小鬼精灵；|,|\
+ˈdwelə(r)|ˈdwɛlɚ}-{dweller}-{city/town/cave etc dweller}-{n. 居民，居住者(dwell的派生)；|,|\
+ˈɪəreɪk|ˈɪreɪk}-{earache}-{He had an earache}-{n. 耳朵痛；|,|\
+ˌeksenˈtrɪsəti|ˌɛksɛnˈtrɪsɪti}-{eccentricity}-{I found his eccentricities amusing rather than irritating.}-{n. 古怪； 反常，怪癖； [物]偏心距； [数]离心率|,|\
+ˈedi|ˈɛdi}-{eddy}-{eddy about in the market-place}-{n. （水、烟等的）漩涡，涡流；|vt.& vi. 起漩涡，旋转；|,|\
+ˈedɪfɪs|ˈɛdəfɪs}-{edifice}-{Their head office was an imposing edifice.}-{n. 大建筑物； 知识的结构；|,|\
+ˈɪəri|ˈɪri}-{eerie}-{an eerie scream}-{adj. 可怕的； 怪异的； 怪诞的； 胆小的|,|\
+ɪˌfek'tɪvnɪs|əˈfɛktɪvnɪs}-{effectiveness}-{The cut in interest rates is effective from Monday.}-{n. 有效，有力； 有效性； 效益； 效用|,|\
+i:dʒɪpt|'idʒɪpt}-{Egypt}-{religion of Egypt is Islam}-{n. 埃及；|,|\
+ɪ'dʒɪpʃn|ɪˈdʒɪpʃən}-{Egyptian}-{the Egyptian president}-{adj. 埃及的，埃及人的；|n. 古埃及语； 埃及人；|,|\
+ɪˈlektrəkju:t|ɪˈlɛktrəˌkjut}-{electrocute}-{Last week a housewife was electrocuted by her washing machine.}-{vt. <美>处电刑，触电致死；|,|\
+ɪˈlektrəʊd|ɪˈlektroʊd}-{electrode}-{The monkeys have electrodes implanted into the brain to measure their brain activity.;anode;cathode}-{n. 电极； 电焊条；|,|\
+ɪˌlektrəʊen'sefələˌgræf|ɪˌlektroʊen'sefələˌgræf}-{electroencephalograph}-{referring to the electroencephalograph}-{n. 脑电描记器，脑电图仪； 脑电仪；|,|\
+ɪm'bedɪd|ɪm'bedɪd}-{embedded}-{be deeply embedded in our society.}-{adj. 植入的，深入的，内含的；|v. 把…嵌入，埋入( embed的过去式和过去分词 )；|,|\
+ˈemɪgreɪt|ˈɛmɪˌɡret}-{emigrate}-{emigrate from to}-{vt. 移居国外；|,|\
+ˈemɪnənt|ˈɛmənənt}-{eminent}-{an eminent cream}-{adj. （指人）知名的，杰出的，卓越的； （指品质、特性）明显的，显着的，突出的； 显赫的； 闻达|,|\
+ɪ'məʊʃənəlɪ|ɪˈmoʃənlɪ}-{emotionally}-{emotional support}-{adv. 感情上，情绪上，冲动地；|,|\
+ɪnˈkʌrɪdʒmənt|ɪnˈkɜrɪdʒmənt}-{encouragement}-{encouragement to do something}-{n. 鼓励； 支持（的事物）； 激励； 促进（的事物）|,|\
+ɪnˈdɪərɪŋ|ɪnˈdɪrɪŋ}-{endearing}-{an endearing smile}-{adj. 使人喜欢的，讨人喜欢的；|v. 使某人（自己）受某人喜欢(endear的现在分词)； 令…喜欢某人/自己； “endear”的现在分词；|,|\
+ɪn'devə(r)|ɛnˈdɛvɚ}-{endeavour}-{They are endeavouring to; creative endeavours}-{n. 尽力，竭力；|vi.&vt. 努力，竭力；|,|\
+ˈenədʒaɪz|ˈenərdʒaɪz}-{energize}-{The charity hopes the campaign will energise its volunteers.}-{vt. 加强，给与…以活力； 使活跃； [物]给与…能量，给与…电压；|,|\
+ɪŋɡlənd|ˈɪŋɡlənd}-{England}-{.}-{n. 英格兰； 英国；|,|\
+ˈɪŋglɪʃ|ˈɪŋɡlɪʃ}-{English}-{.}-{n. 英语；|adj. 英格兰的； 英国的； 英语的； 英格兰人的|,|\
+ɪnˈgreɪv|ɛnˈɡrev}-{engrave}-{engrave something on something;该墓碑}-{vt. （使）铭记； 雕刻，镌刻； 深印于（心上）； 印刷|,|\
+ɪnˈlaɪtnd}-{enlightened}-{enlightened attitude/approach etc}-{adj. 开明的； 有知识的； 有见识的； 进步的|v. 启发； 开导；|,|\
+ˈentəpraɪzɪŋ|ˈentərpraɪzɪŋ}-{enterprising}-{an enterprising scheme to provide interest-free loans}-{adj. 有事业心的； 有进取心的； 有魄力的； 大胆的|,|\
+ɪnˈθju:ziæst|ɪnˈθuziæst}-{enthusiast}-{baseball/outdoors/sailing etc enthusiast ;enthusiast for}-{n. 热情者，热心者； 热衷于…的人； 狂热者； 宗教狂|,|\
+ˈenviəs|ˈɛnviəs}-{envious}-{envious looks}-{adj. 嫉妒的； 羡慕的； 热；|,|\
+ɪnˈvɪʒn|ɛnˈvɪʒən}-{envision}-{I envisioned a future of educational excellence.}-{vt. 想像，预见，展望；|,|\
+ˈepɪk|ˈɛpɪk}-{epic}-{his epic journey to South America}-{n. 叙事诗； 史诗； 史诗般的作品；|adj. 史诗般的，叙事诗的； 宏大的，壮丽的，英雄的； 壮丽的；|,|\
+ˌepɪˈdemɪk|ˌɛpɪˈdɛmɪk}-{epidemic}-{epidemic influenza.}-{n. 流行病； 迅速的传播、生长或发展； 风尚等的流行；|adj. 流行性的； 极为盛行的；|,|\
+ˈepɪθet|ˈɛpəˌθɛt}-{epithet}-{He hardly deserves the epithet ‘fascist’.}-{n. （表示性质、特征等的）词语；|,|\
+ˌi:kwɪˈlɪbriəm|ˌikwəˈlɪbriəm, ˌɛkwə-}-{equilibrium}-{She struggled to recover her equilibrium.}-{n. 平衡，均势； 平静；|,|\
+ɪˈreɪz|ɪˈreɪs}-{erase}-{rase v.消除(记忆等), 破坏;erase my name from the list}-{vt. 擦掉； 抹去； 清除；|,|\
+ɪ'skeɪpɪst|ɪ'skeɪpɪst}-{escapist}-{pure escapist entertainment}-{adj. 逃避现实的；|n. 逃避现实者；|,|\
+ˈespiənɑ:ʒ|ˈɛspiəˌnɑʒ, -nɪdʒ}-{espionage}-{spying guilt of espionage espial n.观察, 侦探, 间谍活动}-{n. 侦察； 间谍活动；|,|\
+ˈeθənɒl|ˈeθənoʊl}-{ethanol}-{ethyl alcohol}-{n. 乙醇；|,|\
+ˌjʊərəˈpi:ən|ˌjʊrəˈpiən}-{European}-{.}-{adj. 欧洲的，欧洲人的； 欧盟的；|n. 欧洲人；|,|\
+ɪˈveɪd|ɪˈved}-{evade}-{evade military service}-{vt. 逃避，躲避； 避开； 规避； 逃脱|vi. 逃避； 规避； 逃脱；|,|\
+evərɪst|'evərəst}-{Everest}-{the summit of Everest}-{n. 珠穆朗玛峰（世界最高峰）；|,|\
+ɪgˈzæmɪnə(r)|ɪɡˈzæmɪnər}-{examiner}-{senior fingerprint examiner}-{n. 主考者； 检察官； 检查员，审查人；|,|\
+ɪkˈsaɪtɪd|ɪkˈsaɪtɪd}-{excited}-{excited by/at /about}-{adj. 兴奋的，激动的； 活跃的； 激发的； 受刺激的|v. 使兴奋（ excite的过去式和过去分词）；|,|\
+ɪɡˌzɪlə'reɪʃn|ɪɡˌzɪləˈreʃən}-{exhilaration}-{She enjoyed the exhilaration of jet-skiing.}-{n. 愉快的心情，高兴； 豪兴；|,|\
+ɪkˈstɜ:mɪneɪt|ɪkˈstɜrmɪneɪt}-{exterminate}-{Staff use the poison to exterminate moles and rabbits.}-{vt. 消灭； 根除；|,|\
+ɪkˈstəʊl|ɪkˈstoʊl}-{extol}-{extol sb's virtues;extol the virtues/benefits etc of something}-{vt. 高度赞扬，赞美； 颂扬，赞颂； 吹捧；|,|\
+feɪntlɪ|feɪntlɪ}-{faintly}-{a faint hope/possibility/chance etc}-{adv. 微弱地； 隐约地； 虚弱地； 有点|,|\
+ˈfɔ:ltə(r)|ˈfɔltɚ}-{falter}-{Laurie’s voice faltered as she tried to thank him.}-{vi. （嗓音）颤抖； 支吾其词； 蹒跚； 摇晃|n. 支吾，结巴； 踌躇，不稳； 摇晃； 颤抖|,|\
+fəˌmɪliˈærəti|fəˌmɪlˈjærɪti, -ˌmɪliˈær-}-{familiarity}-{In fact his familiarity with the Bronx was pretty limited}-{n. 熟悉； 通晓； 认识； 友好随便|,|\
+fə'nætɪkl|fəˈnætɪkəl}-{fanatical}-{a fanatical sportsman}-{adj. 狂热的； 入迷的； 狂信的；|n. 狂热宗教徒； 狂信者； 入迷的人；|,|\
+ˈfænsɪfl|ˈfænsɪfəl}-{fanciful}-{Children are very fanciful}-{adj. （指人）富于幻想的； （指物）设计或装饰新颖奇特的； 奇怪的，稀奇的； 不现实|,|\
+ˌfæsɪˈneɪʃn|ˌfæsəˈneʃən}-{fascination}-{fascination for/with ;in fascination}-{n. 魅力； 迷恋；|,|\
+ˈfæðəm|ˈfæðəm}-{fathom}-{fathom how/why/where etc}-{n. 英寻；|vt. 理解…的真意； 推测，领会； 测深；|,|\
+ˈfætʃuəs|ˈfætʃuəs}-{fatuous}-{a fatuous person}-{adj. 愚昧的，昏庸的，蠢的；|adv. 愚昧地，昏庸地，蠢地；|n. 愚昧，昏庸，蠢；|,|\
+fæks|fæks}-{fax}-{I sent him a long fax}-{n. 传真；|vt. 传真； 传真传输；|,|\
+ˈfebruəri|ˈfebrueri}-{February}-{.}-{n. 二月；|,|\
+ˈfi:laɪn|ˈfiˌlaɪn}-{feline}-{She moves with feline grace.}-{adj. 猫（科）的；|n. 猫科动物；|,|\
+fəˈment|fərˈment}-{ferment}-{political/intellectual/cultural etc ferment ; in ferment;foment}-{n. 酶，酵素； 发酵剂； 骚动，动乱；|vt.& vi. 使发酵； 使骚动； 酝酿；|,|\
+fɜ:vəntlɪ|ˈfəvəntlɪ}-{fervently}-{fervent admirer/believer etc}-{adv. 热烈地，热情地，强烈地；|,|\
+feɪt|fet, fɛt}-{fete}-{a farewell fête in honor of the mayor ;sb fete sb;}-{n. 游乐会，游园会； 盛大节日，庆祝； 盛宴；|vt. 宴请（某人），款待； 向…致敬；|,|\
+fiˈɒnseɪ|ˌfiɑnˈseɪ}-{fiance}-{her fiance his fiance 未婚妻}-{n. <法>未婚夫；|,|\
+fɪklnəs|'fɪklnəs}-{fickleness}-{the fickleness of fame}-{n. 易变； 无常； 浮躁； 变化无常|,|\
+ˈfɪŋgəprɪnt|ˈfɪŋgərprɪnt}-{fingerprint}-{leave any fingerprints .}-{n. 指纹，指印；|vt. 采指纹；|,|\
+fɪnlənd|'fɪnlənd}-{Finland}-{.}-{n. 芬兰；|,|\
+fɪnɪʃ|ˈfɪnɪʃ}-{Finnish}-{a Finnish team}-{adj. 芬兰的；|n. 芬兰人，芬兰语；|,|\
+ˈfaɪəpleɪs|ˈfaɪərpleɪs}-{fireplace}-{we gathered around the fireplace}-{n. 壁炉；|,|\
+ˈfɪʃə(r)|ˈfɪʃɚ}-{fissure}-{anal fissure}-{n. 狭长裂缝或裂隙； 裂伤； 分歧；  分裂|vt.& vi. 裂开；|,|\
+faɪv|faɪv}-{five}-{.}-{num. 五，五个； 与某人击掌问候（或庆祝胜利）； 第五；|n. 五，五个； 5美元钞票； [板]得五分；|adj. 五的； 五个的；|,|\
+ˈflægʃɪp|ˈflæɡˌʃɪp}-{flagship}-{The firm has just opened a flagship store in Las Vegas.}-{n. 旗舰； 〈比喻〉最重要的一个； 佼佼者；|,|\
+ˈflɪkə(r)|ˈflɪkɚ}-{flicker}-{flicker in the wind;flicker of flames}-{v. 闪烁； 飘扬，摆动； 昏倒；|n. 闪烁； 闪光； 电影； 假装昏倒的乞丐|,|\
+flɪnt|flɪnt}-{flint}-{a heart of flint}-{n. 燧石，火石； （打火机等的）打火石；|,|\
+flɜ:t|flɜrt}-{flirt}-{flirt with sb}-{vi. 调情，打情骂俏； 玩弄； 轻率地对待； 摆动|vt. 挥动； 忽然弹出；|n. 急投； 摆动； 调情的人，卖弄风情者； 急扔|,|\
+flɔ:rəns, 'flɒr-|'flɔrənsˌ 'flɑr-}-{Florence}-{a while in Florence}-{n. 弗洛伦斯（女子名）； 佛罗伦萨（意大利都市）；|,|\
+flɒrəntaɪn|'flɔrəntin}-{Florentine}-{a Florentine artist}-{n. 佛罗伦萨人，绫的一种；|adj. 意大利佛罗伦萨的，佛罗伦萨画派的；|,|\
+flu:|flu}-{flu}-{a flu virus/bug}-{n. 流行性感冒，流感；|,|\
+fu:l|ful}-{fool}-{fool a lot of people}-{n. 愚人，傻瓜； 受骗者； 有癖好的人； 受愚弄的人|vt. 愚弄，欺骗； 浪费，虚度； 闹笑话； 游手好闲|vi. 开玩笑； 欺骗； 戏弄；|adj. 愚蠢的； 傻的；|,|\
+fəˈbɪdɪŋ|fərˈbɪdɪŋ}-{forbidding}-{forbidding place/land/landscape etc}-{adj. 冷峻的，令人生畏的；|v. 禁止( forbid的现在分词 )； 妨碍； 阻碍； 阻止|,|\
+fɔ:|'fɔ}-{forefathers}-{the land of their forefathers.}-{n. 祖先； 祖宗（ forefather的名词复数 ）；|,|\
+ˈfɒrənə(r)|ˈfɔrənə(r)}-{foreigner}-{.}-{n. 外国人； 外人，陌生人； 外来物，进口货物； （非本土的）外来动植物|,|\
+ˈfɔ:mən|ˈfɔrmən}-{foreman}-{the foreman of the jury}-{n. 工头，领班； 首席陪审员；|,|\
+ˈfɔ:saɪt|ˈfɔrsaɪt}-{foresight}-{foresight to do something}-{n. 先见； 预见； 深谋远虑； 瞄准器|,|\
+fɔ:ˈtel|fɔrˈtel}-{foretell}-{the birth of Christ, foretold by prophets}-{vt. 预言，预示；|,|\
+ˈfɔ:dʒəri|ˈfɔrdʒəri}-{forgery}-{The painting was a very clever forgery.}-{n. 伪造； 伪造罪； 伪造物； 伪造签字|,|\
+ˈfɔ:tʃənˌtelə|ˈfɔrtʃənˌtɛlɚ}-{fortune-teller}-{I am aprophet, not a fortune-teller}-{n. 算命者；|,|\
+frɑ:ns|fræns}-{France}-{.}-{n. [地名]法国，法兰西； [姓氏]法郎士； [人名] 弗朗斯；|,|\
+fræntɪklɪ|ˈfræntɪklɪ}-{frantically}-{He frantically searched for the key.}-{adv. 疯狂地，狂热地；|,|\
+ˈfrekl|ˈfrɛkəl}-{freckle}-{freckle;freckle-faced girls}-{n. 雀斑，斑点；|v. （使）生斑点，（使）生雀斑；|,|\
+frentʃ|frɛntʃ}-{French}-{.}-{adj. 法国的，法国人的； 法语的；|n. 法语； 法国人；|,|\
+ˈfreskəʊ|ˈfreskoʊ}-{fresco}-{the fresco of God and Adam}-{n. 壁画； 温壁画技法，湿壁画；|v. 在…作壁画； 用壁画法画出； 作壁画；|,|\
+ˈfreʃn|ˈfrɛʃən}-{freshen}-{freshen yourself up}-{vt. 使新鲜； 使清爽，使有精神，把（自己）盥洗一番； （使）洁净； 使掺酌于，加浓（饮料）|vi. 使恢复精力； 增强； 淡化； （产后）开始泌乳|,|\
+ˈfraɪdeɪ|ˈfraɪˌdeɪ}-{Friday}-{.}-{n. 星期五，周五，礼拜五； 《鲁滨逊漂流记》中鲁滨逊的仆人； [人名] [英格兰人姓氏] 弗赖迪可能是德意志或犹太人人名的英译；|,|\
+fraɪt|fraɪt}-{fright}-{in fright}-{n. 恐怖； 惊吓； 可怕的东西，难看的人；|v. 使惊恐；|,|\
+ˈfraɪtfl|ˈfraɪtfəl}-{frightful}-{There’s been a frightful accident.}-{adj. 可怕的； 惊人的； 令人毛骨悚然的； 讨厌的，丑恶的|,|\
+ˈfrɪtə(r)|ˈfrɪtɚ}-{fritter}-{fritter something ↔ away on}-{vt. 消耗； 浪费； （在…上）浪费金钱； 浪费时间|n. 油炸果馅[肉馅]饼；|,|\
+fʊl leŋθ|ˈfʊlˈlɛŋkθ, -ˈlɛŋθ}-{full-length}-{full-length skirt/dress/coat etc}-{adj. 全长的； 全身的； 标淮长度的； 未经删节的|,|\
+ˈfʊlˈtaɪm|ˈfʊlˈtaɪm}-{full-time}-{work/study etc full-time}-{adj. 全部时间的； 全日制的； 专职的，专任的；|,|\
+ˈfʌmbl|ˈfʌmbəl}-{fumble}-{grope fumble around in the dark}-{vi. 乱摸，摸索； 笨手笨脚地做； [橄榄球] 失球； [棒球]漏接|vt. 弄乱； 笨拙地做；|n. 摸索； 失球，接漏球；|,|\
+ˈfʌsi|ˈfʌsi}-{fussy}-{fussy about}-{adj. 大惊小怪的； 难取悦的； 易烦恼的； （衣着，字句等上）充分讲究的|,|\
+ˈfju:taɪl|ˈfjutl}-{futile}-{it is futile to do something}-{adj. 无效的，无用的； 没有出息的； 琐碎的，无关紧要的； 一场空|,|\
+ˈgeɪli|ˈɡeli}-{gaily}-{gaily dressed}-{adv. 快乐地，喜气洋洋地；|,|\
+geɪl|ɡeɪl}-{gale}-{gales of laughter}-{n. 大风，暴风； （突发的）一阵； <诗>微风； [植]香杨梅|,|\
+ˈgæliən|ˈɡæliən, ˈɡæljən}-{galleon}-{a sunken galleon}-{n. 大型帆船；|,|\
+ˈgæŋstə(r)|ˈɡæŋstɚ}-{gangster}-{a gangster film}-{n. 匪徒，歹徒； 流氓； 恶棍；|,|\
+dʒeɪlə| ˈdʒelɚ}-{gaoler}-{jailer}-{n. <英>狱卒；|,|\
+ɡɑ:dnɪŋ| ˈɡɑrdnɪŋ}-{gardening}-{I might do a bit of gardening this afternoon.}-{n. 园艺；|,|\
+dʒel|dʒɛl}-{gel}-{shower gel ;shower gel}-{n. 凝胶，冻胶； 定型发胶；|vi. 形成胶体； 胶化；|,|\
+dʒə'ni:və|dʒə'nivə}-{Geneva}-{meeting in Geneva}-{n. 日内瓦城（瑞士西南部城市）；|,|\
+dʒenjʊɪnlɪ|ˈdʒɛnjʊɪnlɪ}-{genuinely}-{The boy seemed genuinely interested.}-{adv. 真地； 真正地； 真诚地； 诚实地|,|\
+dʒiˈɒlədʒɪst|dʒiˈɑlədʒɪst}-{geologist}-{He is also a geologist}-{n. 地质学家，地质学者；|,|\
+ˈdʒɜ:mən|ˈdʒɜrmən}-{German}-{.}-{adj. 德国的； 德国人/语的； 德国文化的；|n. 德国人，德语；|,|\
+dʒɜ:mənɪ|ˈdʒəməni}-{Germany}-{.}-{释义 德国（欧洲国家）；|,|\
+dʒeˈstɪkjuleɪt|dʒɛˈstɪkjəˌlet}-{gesticulate}-{Jane gesticulated wildly and shouted ‘Stop! Stop!’}-{vi. 做手势示意或强调；|n. 做手势，做示意动作，手势；|,|\
+ˈgɪftɪd|ˈɡɪftɪd}-{gifted}-{gifted musician/artist/teacher etc}-{adj. 有天赋的； 有才华的；|,|\
+gɪlt|ɡɪlt}-{gilt}-{a gilt brooch 镀金胸针.}-{n. 小母猪； 镀金材料； 炫目的外表；|adj. 镀金的； 涂金的；|v. 把…镀金( gild的过去式和过去分词)；|,|\
+glɑ:sɪz|'glɑsɪz}-{glasses}-{wear glasses}-{n. 眼镜； 双筒望远镜； 玻璃( glass的名词复数 )； 玻璃杯 玻璃器皿；|,|\
+ˈglaɪdə(r)|ˈɡlaɪdɚ}-{glider}-{ride on a glider}-{n. 滑翔机； 滑行者； 滑翔导弹； 摆动式沙发椅|,|\
+glɪnt|ɡlɪnt}-{glint}-{a humorous glint in her eyes}-{vt.& vi. 闪烁，闪光； 窥视； （箭一样）飞出； 使发光，使闪光|n. 闪光，闪耀； 短暂微弱的显露； （雷达的）回波起伏；|vi. 闪烁； （光线）反射； 闪闪发光；|,|\
+ˈglɪsn|ˈɡlɪsən}-{glisten}-{The boy’s back was glistening with sweat.}-{vi. 闪耀，闪亮；|n. 闪光，闪耀；|,|\
+ˈgɒdes|ˈgɑdəs}-{goddess}-{He adored her as a goddess}-{n. 女神； 被崇拜的女人； 非凡的女子； 绝世美女|,|\
+ˌgʊdˈwɪl|ˈɡʊdˈwɪl}-{goodwill}-{a goodwill gesture}-{n. 友好，亲善； 好感，青睐； （企业的）信誉，声誉； 商誉|,|\
+}-{Gorgon}-{an absolute Gorgon}-{n. <希神> 蛇发女怪，可怕的女人，丑妇；|,|\
+ˈgrænsʌn|ˈɡrændˌsʌn, ˈɡræn-}-{grandson}-{.}-{n. 孙子，外孙；|,|\
+ˈgræpl|ˈɡræpəl}-{grapple}-{She grappled with her assailant but he got away}-{vt. 抓住，捉牢； 搏斗； 与…格斗； 用铁锚（铁钩）钩住|vi. 抓住； 格斗；|n. 扭打，格斗； 紧握； 抓机，抓斗； 与…格斗|,|\
+ˈgrætɪfaɪ|ˈɡrætəˌfaɪ}-{gratify}-{be gratifyied with}-{vt. 使高兴； 使满意；|,|\
+ˌgrævɪˈteɪʃənl|ˌɡrævɪˈteɪʃənl}-{gravitational}-{the Moon’s gravitational field}-{adj. 万有引力的，重力的； 地心吸力的；|,|\
+ɡri:s|ɡris}-{Greece}-{.}-{n. 希腊；|,|\
+gri:dɪlɪ|ˈɡridɪlɪ}-{greedily}-{He grabbed the bottle and drank greedily.}-{adv. 贪心地，贪婪地； 贪吃地；|,|\
+ˈgri:ngrəʊsə(r)|ˈgringroʊsə(r)}-{greengrocer}-{a greengrocer’s shop}-{n. 蔬菜水果商，菜贩；|,|\
+}-{Greenwich}-{greenwich mean time}-{n. 格林威治（位于英国伦敦东南部，为本初子午线所经之地，原设有英国皇家格林威治天文台），格林威治镇（位于美国康涅狄格州）；|,|\
+ɡrəˈnəubl|ɡrəˈnobəl, -ˈnɔbl}-{Grenoble}-{research center in Grenoble}-{释义 格勒诺布尔（法国东南部城市）；|,|\
+ˈgreɪɪʃ|ˈɡreɪɪʃ}-{greyish}-{The stone was a greyish colour.}-{adj. 带灰的，略灰的；|,|\
+grɪd|ɡrɪd}-{grid}-{Its streets were laid out in a grid pattern.}-{n. 格子，非实质的； 地图上的坐标方格； （输电线路、天然气管道等的）系统网络；|,|\
+ˈgri:vəns|ˈɡrivəns}-{grievance}-{the sense of grievance}-{n. 不满； 苦衷； 委屈； 牢骚|,|\
+ɡrɪmlɪ|ˈɡrɪmlɪ}-{grimly}-{Arnold smiled grimly.}-{adv. 可怕地； 严肃地； 坚强地； 讨厌地|,|\
+}-{groceries}-{dumped the groceries}-{n. 食品，杂货； 杂货业( grocery的名词复数 )； 杂货店； 杂品|,|\
+ˈgrəʊə(r)|ˈgroʊə(r)}-{grower}-{fruit/vegetable/tobacco etc grower}-{n. 种植者，栽培者； 以某种方式生长的植物；|,|\
+grʌdʒ|ɡrʌdʒ}-{grudge}-{grudge tuition money}-{n. 不满； 怨恨； 恶意； 妒忌|vt. 怀恨； 妒忌； 吝惜； 不情愿做|,|\
+ɡɪltɪlɪ|'ɡɪltɪlɪ}-{guiltily}-{guilty about/at}-{adv. 罪地，有罪地； 内疚地；|,|\
+ˈgʌʃə(r)|ˈɡʌʃɚ}-{gusher}-{gusher of oil}-{n. 喷油井；|,|\
+gʌst|ɡʌst}-{gust}-{a gust of temper}-{n. 一阵狂风； 风味； 突发的一阵； （感情）迸发|vi. （风）猛刮；|,|\
+hi:məʊ'lɪtɪk|himoʊ'lɪtɪk}-{haemolytic}-{The once prosperous town has hemorrhaged manufacturing jobs over the last 15 years.}-{adj. 溶血的，血球溶解的；|,|\
+ˈheəkʌt|ˈherkʌt}-{haircut}-{Do you like my new haircut?}-{n. 理发； 发型； 发式；|,|\
+ˈheədresə(r)|ˈherdresə(r)}-{hairdresser}-{an appointment at the hairdresser’s}-{n. 理发师； 剪头或做头发的人；|,|\
+ˈhænsəm|ˈhænsəm}-{handsome}-{Sam was tall, dark, and handsome .}-{adj. 英俊的，健美的； 美观的； 大方的； 数量大的 |,|\
+ˈhændimæn|ˈhændiˌmæn}-{handyman}-{a old handyman}-{n. 受雇做杂事的人，做零活的人； 能工巧匠；|,|\
+hɑ:dnd|'hɑdənd}-{hardened}-{become hardened (to something)}-{adj. 变硬的，坚毅的；|v. （使）变硬( harden的过去式和过去分词 )； （使）坚固； （使）硬化； （使）变得坚强|,|\
+hɑ:d 'wɜ:kɪŋ|hɑrd 'wɜrkɪŋ}-{hard-working}-{a hard-working teacher}-{adj. 勤勉的，努力工作的；|,|\
+hɑ:p|hɑrp}-{harp}-{harp on about something}-{n. 竖琴； 竖琴状的东西； [天]天琴座； <美俚>爱尔兰人|vi. 弹竖琴； 唠叨，喋喋不休； 不停地说；|,|\
+ˈhæri|ˈhæri}-{harry}-{harry sb}-{vt. 一再骚扰； 使烦恼； 在战争中攻击，掠夺抢劫；|n. 恶魔，恶鬼； 胡闹的青年人； 伦敦佬； （人名）哈里|,|\
+ˈhɔ:zə(r)|ˈhɔzɚ}-{hawser}-{rope;cable ;cut hawser}-{n. （供系船或下锚用的）缆索，锚链；|,|\
+ˈhedeɪk|ˈhɛdˌek}-{headache}-{Security is a big headache for airline operators.}-{n. 头痛； 令人头痛的事；|,|\
+ˈhedlaɪt|ˈhɛdˌlaɪt}-{headlight}-{like a rabbit/deer caught in headlights}-{n. （汽车等）的前灯； 照明灯；|,|\
+ˌhedˈmɑ:stə(r)|ˌhedˈmæstə(r)}-{headmaster}-{principa}-{n. （私立学校的）校长；|,|\
+ˈhedi|ˈhɛdi}-{heady}-{a heady wine 易使人醉的酒.}-{adj. 顽固的； 任性的； 兴奋的； （酒等）易使人醉的|,|\
+hi:θ|hiθ}-{heath}-{go away over the heath}-{n. 荒地，荒野； [植]石南； 杜鹃花科植物；|,|\
+ˈhelpə(r)|ˈhɛlpɚ}-{helper}-{I was a classroom helper at the local primary school.}-{n. 助手，帮手； 起救助作用的东西；|,|\
+ˈherətɪk|ˈhɛrɪtɪk}-{heretic}-{Cranmer was put to death as a heretic.}-{n. 异教徒； 异端分子；|,|\
+ˈherɪŋ|ˈhɛrɪŋ}-{herring}-{a shoal of herring}-{n. 鲱鱼；|,|\
+haɪ 'hændɪd|ˈhaɪˈhændɪd}-{high-handed}-{She resented his high-handed manner.}-{adj. 高压的，横暴的，不容分说的； 狂三诈四；|,|\
+haɪ raɪz|ˈhaɪˈraɪz}-{high-rise}-{They live in a high rise on the East Side.}-{adj. （建筑物）有多层的，高楼的； 超高层的；|n. 高楼，大厦，多层建筑物；|,|\
+ˈhɪtʃhaɪk|ˈhɪtʃˌhaɪk}-{hitchhike}-{hitchhike around/to/across etc}-{n. 搭便车（旅行）；|vi. <美><口>作搭便车式的旅行；|,|\
+haɪv|haɪv}-{hive}-{a hive of industry/activity etc ;hive something ↔ off}-{n. 蜂箱； 蜂巢； 蜂群； 喧闹地区|vt. 使（蜂）入蜂箱； 贮（蜜）于蜂箱中； 储备，积累；|vi. （蜂）进入蜂箱； 聚居；|,|\
+həʊks|hoʊks}-{hoax}-{hoax into doing sth}-{v. 欺骗； 戏弄；|n. 骗局； 戏弄； 恶作剧；|,|\
+ˈhɒbl|ˈhɑbl}-{hobble}-{limp ;hobble over to the coffee table}-{vi. 跛行； 蹒跚；|vt. 使跛行； 阻碍； 捆缚（马等）之两腿（以防走失）；|n. 跛行； 蹒跚； <口，方〉困境；|,|\
+hɒlənd|'hɑlənd}-{Holland}-{Have you ever been to Holland}-{n. 荷兰； (h-)（做童装或窗帘等的）荷兰麻布；|,|\
+ˈhɒli|ˈhɑli}-{holly}-{decked with holly}-{n. 冬青（常绿灌木，叶尖而硬，有光泽，冬季结红色浆果）； （用作圣诞节饰物的）冬青树枝； [名]霍莉，女子名；|,|\
+ˈɒnəsti|ˈɑnəsti}-{honesty}-{in all honesty}-{n. 诚实，真诚； 正直； 〈古〉贞洁； [植]一年生缎花|,|\
+hɔ:d|hɔrd}-{horde}-{a horde of people}-{n. 一大群； 游牧部落；|,|\
+hɒˈspɪtəbl|hɑˈspɪtəbl}-{hospitable}-{The local people were very kind and hospitable.}-{adj. 好客的； 热情友好的； （气候，环境）宜人的；|,|\
+ˈhɒstl|ˈhɑstl}-{hostel}-{the door of the hostel}-{n. 旅社，招待所； 〈英古〉旅馆； 〈英〉大学宿舍；|vi. 留宿于招待所；|,|\
+ˈhaʊswaɪf|ˈhaʊsˌwaɪf}-{housewife}-{homemaker}-{n. 家庭主妇； 家庭妇女；|,|\
+ˈhaʊswɜ:k|ˈhaʊswɜrk}-{housework}-{chore}-{n. 家务劳动；|,|\
+ˈhɒvəkrɑ:ft|ˈhʌvərkræft}-{hovercraft}-{various types of hovercraft}-{n. 气垫船；|,|\
+hʌb|hʌb}-{hub}-{a hub of industry}-{n. 轮轴； 中心，焦点； （电器面板上的）电线插孔； [计]集线器|,|\
+hʌbl|'hʌbəl}-{Hubble}-{the Hubble Space Telescope}-{释义 哈勃（姓氏）；|,|\
+hʌl|hʌl}-{hull}-{wooden-hulled/steel-hulled etc}-{n. 果皮，外皮； [航海]船壳，船体； 外壳；|vt. 去（谷物、豆等的）壳；|,|\
+ˈhʌndrəd|ˈhʌndrɪd}-{hundred}-{.}-{num. 一百； 许多； 100 到 999 间的数目； 某个世纪的年代|n. 一百； 许多；|adj. 一百的； 许多的；|,|\
+hʌrɪdlɪ|ˈhəɪdlɪ}-{hurriedly}-{a hurried meal}-{adv. 仓促地，匆忙地，草率地； 七手八脚； 匆猝； 遽|,|\
+ˈhɪpnətaɪz|ˈhɪpnəˌtaɪz}-{hypnotize}-{mesmerized ;We were completely hypnotized by her performance of the Haydn.}-{vt. 对…施催眠术； 使着迷，使精神恍惚；|,|\
+hɪˈpɒkrəsi|hɪˈpɑkrəsi}-{hypocrisy}-{It would be sheer hypocrisy to pray for success, since I’ve never believed in God.}-{n. 伪善，虚伪；|,|\
+ˈaɪsbɜ:g|ˈaɪsbɜrg}-{iceberg}-{the tip of the iceberg}-{n. 冰山； （事物全貌的）一小部分； 冷若冰霜的人；|,|\
+ɪˈdɪlɪk|aɪˈdɪlɪk}-{idyllic}-{an idyllic vacation in a seashore cottage.}-{adj. 田园诗般的； 牧歌的； 质朴宜人的； 平和欢畅的|,|\
+ɪgˈnəʊbl|ɪgˈnoʊbl}-{ignoble}-{an ignoble person, action}-{adj. 卑鄙的；  可耻的； 出身低微的；  地位低下的|,|\
+ɪˈlɪtərət|ɪˈlɪtərɪt}-{illiterate}-{It was an illiterate letter, full of mistakes.;literate 学者}-{adj. 目不识丁的，文盲的；|n. 目不识丁者； 文盲； 无知；|,|\
+ɪˌlu:mɪˈneɪʃn|ɪˌluməˈneʃən}-{illumination}-{White candles, the only illumination, burned on the table.}-{n. 照明； 阐明，解释清楚； <物>照度； 彩饰，图案花饰|,|\
+ɪˈmækjələt|ɪˈmækjəlɪt}-{immaculate}-{immaculate performance;maculate vt& adj.}-{adj. 洁净的； 无瑕疵的； 精确的； 完美的|,|\
+ɪˈmensəti|ɪˈmɛnsɪti}-{immensity}-{the immensity of outer space;immense adj.}-{n. 无限，广大，巨大；|,|\
+ˌɪmə'leɪʃn|ˌɪmə'leɪʃn}-{immolation}-{immolate}-{n. 供奉牲礼，牺牲，祭品；|,|\
+ɪˈmɔ:tl|ɪˈmɔrtl}-{immortal}-{The soul is immortal 灵魂不灭.}-{adj. 不死的； 永恒的，不朽的； 神的； 流芳百世的|n. 神仙； 流芳百世的人； 不朽的作家；|,|\
+ɪm'peɪʃntlɪ|ɪmˈpeʃəntlɪ}-{impatiently}-{become/grow impatient (with somebody/something)}-{adv. 不耐烦地； 性急地； 焦急地； 焦躁地|,|\
+ɪmˈpendɪŋ}-{impending;pending}-{impending danger/doom/death/disaster}-{adj. 即将发生的，迫在眉睫的； 迫切的； 悬挂的；|v. 迫近(impend的现在分词)； 悬空；|,|\
+ˌɪmpəˈseptəbl|ˌɪmpərˈseptəbl}-{imperceptible}-{perceptible;Such changes are imperceptible to even the best-trained eye.}-{adj. 感觉不到的； 细微的，逐步的；|,|\
+ɪmˈpɜ:sənl|ɪmˈpɜrsənl}-{impersonal}-{Business letters do not have to be impersonal and formal.}-{adj. 没有人情味的； 非个人的，和个人无关的； 不具人格的，一般性的； [语]非人称的|n. [语]非人称动词； 非人称代名词； 不具人格的事物；|,|\
+ɪmˈpɒvərɪʃ|ɪmˈpɑvərɪʃ}-{impoverish}-{poverty;families impoverished by debt}-{vt. 使贫穷； 使贫瘠或恶化； 耗尽…的力气；|,|\
+ɪmˈprɪzn|ɪmˈprɪzən}-{imprison}-{imprison sb}-{vt. 关押，监禁； 束缚，禁锢； 使…不自由；|,|\
+ɪmˈprɒbəbl|ɪmˈprɑbəbl}-{improbable}-{It seems highly improbable that}-{adj. 不大可能是真实的，不大可能的； 未必确实的； 未必会发生的； 非概然|,|\
+ˈɪmprəvaɪz|ˈɪmprəˌvaɪz}-{improvise}-{an improvised speech; improvise a tune}-{vt.& vi. 即兴创作； 临时提供，临时凑成；|,|\
+ɪn'sesntlɪ|ɪnˈsɛsntlɪ}-{incessantly}-{They quarreled incessantly.}-{adv. 不断地，不停地； 接连不断； 连绵不断； 不已|,|\
+ɪnˈklemənt|ɪnˈklɛmənt}-{inclement}-{clement;Inclement weather}-{adj. <正>（天气）恶劣的（指寒冷的、潮湿的等）；|,|\
+ɪnˈkɒmpɪtənt|ɪnˈkɑmpɪtənt}-{incompetent}-{competent; be dismissed as incompetent;incompetent employees}-{adj. 无能力的； 不胜任的； 不适当的；|n. 无能者； 不胜任者；|,|\
+ˌɪnkənˈvi:niəns|ˌɪnkənˈvinjəns}-{inconvenience}-{the inconvenience of (doing) something}-{n. 不方便； 麻烦； 为难之处； 麻烦事|vt. 给…带来不便； 给…添麻烦； 打扰； 使为难|,|\
+ɪnˈkʌmbənt|ɪnˈkʌmbənt}-{incumbent}-{be incumbent on sb cumbent v 阻碍; the incumbent president}-{adj. 在职的； 义不容辞的； 靠在[压在]上面的； 弯垂下来的|n. 在职者； 教会中的任职者； 〈英〉教区牧师；|,|\
+ˌɪndɪˈfaɪnəbl|ˌɪndɪˈfaɪnəbəl}-{indefinable}-{She felt an indefinable sadness.}-{adj. 难下定义的； 难确切表达的； 神秘的； 不可思议的|,|\
+ˌɪndɪˈskraɪbəbl|ˌɪndɪˈskraɪbəbəl}-{indescribable}-{describable}-{adj. 不明确的； 模糊的； 难以描述的； 描写不出的|,|\
+ɪndɪə|ˈɪndɪə}-{India}-{.}-{n. 印度（亚洲）；|,|\
+ˈɪndiən|ˈɪndiən}-{Indian}-{the Indian government.}-{adj. 印度的； 印第安人的；|n. 印度人； 印第安人；|,|\
+ɪn'dɪfrəntlɪ|ɪnˈdɪfərəntlɪ}-{indifferently}-{Sarah was absolutely indifferent to him, and it hurt.}-{adv. 漠不关心地； 冷淡地； 淡漠地； 一般性地|,|\
+ɪnˈdɪgnəti|ɪnˈdɪɡnɪti}-{indignity}-{Two of the diplomats suffered the indignity of being arrested.}-{n. 侮辱； 轻蔑； 侮辱的言行； 无礼举动|,|\
+ˌɪndɪsˈkrɪmɪnət|ˌɪndɪˈskrɪmənət}-{indiscriminate}-{discriminate;indiscriminate attacks/killing/violence/bombing}-{adj. 不加选择的，不分青红皂白的； 随意的，任性的，任意的； 眼内无珠； 汗漫不可收拾|,|\
+ˌɪndɪspəˈzɪʃn|ɪnˌdɪspəˈzɪʃən}-{indisposition}-{her sister had a mild indisposition}-{n. 小病；  不舒服； 无意；  不情愿|,|\
+ˌɪndəʊ'ni:zjə|ˌɪndə'niʒəˌ -ʃəˌ -doʊ-}-{Indonesia}-{.}-{n. 印尼（东南亚岛国）；|,|\
+ɪnˌfælə'bɪlətɪ|ɪnˌfæləˈbɪləlɪ}-{infallibility}-{an infallible memory}-{n. 无错误，无过失（性）；|,|\
+ɪnˈfɪnəti|ɪnˈfɪnəti}-{infinity}-{There is an infinity of possible solutions.}-{n. 无限； 无穷； 无穷远； 无穷大|,|\
+ɪnˈfleɪtəbl|ɪnˈfletəbəl}-{inflatable}-{an inflatable mattress}-{adj. 可膨胀的，可充气的；|n. 可充气物品；|,|\
+ˌɪndʒəˈnju:əti|ˌɪndʒəˈnuəti}-{ingenuity}-{show ingenuity in doing sth}-{n. 足智多谋，心灵手巧； 独创性； 独出心裁，设计新颖； 巧妙，精巧|,|\
+ˈɪnməʊst|ˈɪnmoʊst}-{inmost}-{In his inmost heart}-{adj. 最内的； 最深的； 纯粹私人的； 最秘密的|,|\
+ˈɪnəsns|ˈɪnəsəns}-{innocence}-{protest/maintain your innocence ; in all innocence;innocent adj.}-{n. 清白； 天真无邪； 无罪的人；|,|\
+ˈɪnrʌʃ|ˈɪnˌrʌʃ}-{inrush}-{The inrush of fresh air filled the room.}-{n. 涌入； 溃堤；|,|\
+ɪnˈskraɪb|ɪnˈskraɪb}-{inscribe}-{inscribe one's name in a book}-{vt. 雕，刻； 题写，题献；|,|\
+ɪnˈsɪdiəs|ɪnˈsɪdiəs}-{insidious}-{insidious rumors; an insidious disease.}-{adj. 隐伏的，潜在的； 暗中为害的； 阴险的； 狡猾的|,|\
+ɪnˈsɪnjueɪt|ɪnˈsɪnjuˌet}-{insinuate}-{sinuate 弯弯曲曲的, 波状的;insinuate that ;insinuate yourself into something}-{v. 暗示； 巧妙或迂回地潜入； （使）缓慢进入； 慢慢伸入|,|\
+ɪnˈsɪstənt|ɪnˈsɪstənt}-{insistent}-{They were insistent on good manners.}-{adj. 坚持的； 引人注意的； 显眼的； 紧急的|,|\
+ɪnˈsɒljəbl|ɪnˈsɑljəbl}-{insoluble}-{insoluble conflicts within the department}-{adj. 不能解决的，不溶的；|,|\
+ɪnˈstɔ:lmənt|ɪnˈstɔːlmənt}-{instalment}-{the second instalment of a loan ;by monthly instalments}-{n. 分期付款； 装设； 就职； （小说等）分期连载的一部分|,|\
+ˌɪnsjʊ'lærətɪ|ˌɪnsəˈlærətɪ}-{insularity}-{a product of poverty and insularity}-{n. 岛国； 孤立； 偏狭； 岛国根性|,|\
+ˌɪnsəˈmaʊntəbl|ˌɪnsərˈmaʊntəbl}-{insurmountable}-{insurmountable barrier}-{adj. 不可逾越的； 不能克服的；|,|\
+ɪn'tenslɪ|ɪnˈtɛnslɪ}-{intensely}-{He disliked Kate intensely.}-{adv. 强烈地； 极度； 剧烈地；|,|\
+ɪn'tɜ:mɪnəblɪ|ɪn'tɜmɪnəblɪ}-{interminably}-{an interminably long speech}-{adv. 漫无止境地； 没完没了地； 无限地； 冗长地|,|\
+ˌɪntəˈstelə(r)|ˌɪntərˈstelə(r)}-{interstellar}-{interstellar travel ;interstellar dust}-{adj. 星际的； 恒星际；|,|\
+ˌɪntəˈwi:v|ˌɪntərˈwiv}-{interweave}-{weave;be interwoven with something}-{vt. 使交织； 使混杂； 织进；|,|\
+ˌɪntɪˈmeɪʃn|ˌɪntɪˈmeɪʃn}-{intimation}-{the first intimations of the approaching conflict}-{n. 暗示，正式宣告；|,|\
+ɪn'tɒksɪkeɪt|ɪnˈtɑksɪˌket}-{intoxicate}-{be intoxicated by success}-{vt. 使喝醉； 使陶醉；  使激动不已；  使欣喜若狂|,|\
+ɪnˈvetərət|ɪnˈvɛtərɪt}-{inveterate}-{inveterate hatred}-{adj. （指人）有恶习的，成瘾的； （指习惯等）根深蒂固的； 痼；|,|\
+aɪ'rɒnɪklɪ|aɪ'rɒnɪklɪ}-{ironically}-{‘Oh, no problem!’ said Terry, ironically.}-{adv. 嘲讽地，挖苦地； 具有讽刺意味地；|,|\
+ˌɪrɪ'teɪʃn|ˌɪrɪˈteʃən}-{irritation}-{The doctor’s irritation at being interrupted showed.}-{n. 刺激； 激怒，恼怒，生气； 兴奋； 令人恼火的事|,|\
+ɪz|ɪz}-{is}-{.}-{vt.& vi. 是（be的三单形式；|n. 存在；|,|\
+ɪ'tælɪən|ɪˈtæljən}-{Italian}-{.}-{n. 意大利人； 意大利语； 意大利国民；|adj. 意大利的； 意大利人的； 意大利语的； 意大利文化的|,|\
+ɪtəlɪ|'ɪtəlɪ}-{Italy}-{.}-{n. 意大利（欧洲）；|,|\
+aɪˈtɪnərənt|aɪˈtɪnərənt, ɪˈtɪn-}-{itinerant}-{itinerant musicians;an itinerant merchant}-{adj. 巡回的，流动的；|n. 巡回者（如传教士、行商等）；|,|\
+ˈdʒænjuəri|ˈdʒænjueri}-{January}-{.}-{n. 一月； [人名] 贾纽厄里；|,|\
+dʒə'pæn|dʒəˈpæn}-{Japan}-{.}-{n. 日本；|,|\
+ˌdʒæpə'ni:z|ˌdʒæpəˈniz, -ˈnis}-{Japanese}-{.}-{n. 日本人，日本国民； 日语；|adj. 日本的，日本人的； 日语的；|,|\
+dʒɑ:və|ˈdʒævə, ˈdʒɑvə}-{Java}-{.}-{n. 爪哇； 爪哇产的咖啡； <电脑>在网际网络上的应用程序开发语言；|,|\
+ˈdʒɜ:ki|ˈdʒɜrki}-{jerky}-{The bus came to a jerky halt.}-{adj. 急拉的； 忽动忽停的； 愚蠢的； 呆笨的|n. 肉干，牛肉干；|,|\
+ˈdʒu:əlri|ˈdʒuːəlri}-{jewellery}-{gold jewelry.}-{n. 首饰，饰物； 等于jewelry； 珍宝；|,|\
+}-{jibe}-{jibe with;His report did not jibe with the facts.;=gibe}-{n. 嘲讽； 讥讽；|v. 嘲讽； （与…）一致；|,|\
+ˈdʒɪgsɔ:|ˈdʒɪɡˌsɔ}-{jigsaw}-{jigsaw puzzle n.七巧板, 智力拼图玩具}-{n. 竖锯，钢丝锯； 拼板玩具； 锯曲线机；|v. 用锯曲线机锯； 使互相交错；|,|\
+dʒuˈlaɪ|dʒʊˈlaɪ}-{July}-{.}-{n. 七月；|,|\
+ˈdʒʌŋktʃə(r)|ˈdʒʌŋktʃɚ}-{juncture}-{At this juncture , I suggest we take a short break.}-{n. 时刻，关键时刻； 接合点；|,|\
+dʒu:n|dʒun}-{June}-{.}-{n. 六月； [女子名]琼，来源于拉丁语，含义是“年轻气盛的六月”（youthful from the name of the month）；|,|\
+ˈdʒu:pɪtə(r)|ˈdʒupɪtɚ}-{Jupiter}-{a space probe on its way to Jupiter}-{n. 木星；|,|\
+kænsəz|'kænsəz}-{Kansas}-{people in Kansas}-{n. 美国堪萨斯州；|,|\
+kæʃmɪə|'kæʃˌmɪrˌ kæʃ'mɪr}-{Kashmir}-{the Kashmir valley}-{n. 克什米尔（南亚一地区，约2/5弱为巴基斯坦控制，其余为印度控制）；|,|\
+kɪdnæpə(r)|'kɪdnæpə(r)}-{kidnapper}-{the hunt for the kidnapper}-{n. 拐子，绑匪；|,|\
+ˈkaɪndli|ˈkaɪndli}-{kindly}-{She kindly offered to go; an extremely kindly man}-{adv. 亲切地； 友好地； 诚恳地，衷心地； （用作请求时的礼貌用语或把命令说成请求的反语）请|adj. 厚道的，亲切的； 温和的，宜人的； 〈古〉自然的；|,|\
+ˈkɪtn|ˈkɪtn}-{kitten}-{cute puppy or kitten}-{n. 小猫； 小动物；|vi. 产小猫；|,|\
+kə'rɪə|kə'rɪr}-{Korea}-{.}-{n. 朝鲜； 韩国；|,|\
+kə'rɪən|kəˈriən, kɔ-, ko-}-{Korean}-{.}-{n. 朝鲜人，朝鲜国民； 朝鲜语；|adj. 朝鲜的； 朝鲜人的； 韩国（人）的； 韩国（语）的|,|\
+ˈleɪbərə(r)|ˈlebrɚ}-{labourer}-{a farm labourer}-{n. （尤指户外的）体力劳动者，劳工，工人；|,|\
+ˈlæbərɪnθ|ˈlæbəˌrɪnθ}-{labyrinth}-{a labyrinth of underground tunnels}-{n. 迷宫； （文字，建筑，事件）错综复杂； 难解的事件；|,|\
+ˈleɪdibɜ:d|ˈleɪdibɜrd}-{ladybird}-{.}-{n. 瓢虫；|,|\
+}-{Lancaster}-{Lancaster City Council}-{释义 兰喀斯特式（飞）机，兰开斯特（美国 Pennsylvania 东南部一城市，英格兰 Lancashire 的首府 =Lancashire 兰开夏郡）；|,|\
+lɑ:k|lɑrk}-{lark}-{as happy as a lark;sport}-{n. 云雀，百灵鸟； <口>玩笑，嬉戏；|vi. 捉云雀； 嬉戏；|,|\
+lætʃ|lætʃ}-{latch}-{Don’t just latch on to the latest management fads. ;latch off the gate; the latch of the door}-{n. 门闩； 弹簧锁；|vt.& vi. 闩上； 用碰锁锁上（门等）； 抓住，占有；|,|\
+ˈleɪtɪst|ˈletɪst}-{latest}-{her latest book}-{n. 最新事物； 最新消息；|adj. 最近的； 最新的； 最现代的；|,|\
+lævɪʃlɪ|ˈlævɪʃlɪ}-{lavishly}-{We were always lavish with financial aid in times of crisis.}-{adv. 非常大方地，浪费地，极其丰富地；|,|\
+ˈli:kɪdʒ|ˈlikɪdʒ}-{leakage}-{leakages of confidential information;leak v.}-{n. 漏，漏出； 泄露； [商]漏损率，漏损量； 渗漏物，漏出量|,|\
+ˈlɜ:nə(r)|ˈlɜrnə(r)}-{learner}-{adult learners}-{n. 学习者，初学者；|,|\
+ˈledʒəndri|ˈledʒənderi}-{legendary}-{The cave is the home of a legendary giant}-{adj. 传说的； 传奇的； 极其著名的；|n. 传说集； [宗]圣徒传；|,|\
+ledʒəblɪ|'ledʒəblɪ}-{legibly}-{Her handwriting was so tiny it was barely legible.}-{adv. 易读地； 易辨认地；|,|\
+ˌleməˈneɪd|ˌlɛməˈned}-{lemonade}-{ice and lemonade}-{n. 柠檬汽水； 一杯（或一瓶）柠檬饮料；|,|\
+ˈletɪs|ˈlɛtəs}-{lettuce}-{a salad of lettuce}-{n. 莴苣，生菜； <俚>纸币；|,|\
+ˈlaɪfbəʊt|ˈlaɪfboʊt}-{lifeboat}-{The sailors lowered a lifeboat}-{n. 救生艇，救生船；|,|\
+ˈlaɪthaʊs|ˈlaɪtˌhaʊs}-{lighthouse}-{the lighthouse windows}-{n. 灯塔；|,|\
+laɪk 'maɪndɪd|laɪk 'maɪndɪd}-{like-minded}-{a chance to meet like-minded people}-{adj. 具有相似意向或目的的； 志趣相投的；|,|\
+ˈlaɪmlaɪt|ˈlaɪmˌlaɪt}-{limelight}-{Tad loves being in the limelight.;cynosure}-{n. 众人注意的中心； （不）是公众关注的中心，（不）引人注目； 石灰光，石灰光灯； 白炽灯|vt. 使显露头角，使受到注目；|,|\
+ˈlaɪmstəʊn|ˈlaɪmstoʊn}-{limestone}-{There is little limestone left in the cave}-{n. 石灰岩，石灰石；|,|\
+ˈlɪzəd|ˈlɪzərd}-{lizard}-{A lizard will regenerate its tail if it's cut off}-{n. 蜥蜴；|,|\
+ˈlɒbstə(r)|ˈlɑbstə(r)}-{lobster}-{live lobsters}-{n. 龙虾； 龙虾肉；|,|\
+lʌndən|'lʌndən}-{London}-{.}-{n. 伦敦（英国首都）；|,|\
+ˌlɒŋgɪˈtju:dɪnl|ˌlɑndʒəˈtudnl}-{longitudinal}-{a longitudinal study of unemployed workers}-{adj. 经度的； 纵向的； 纵的； 纵观的|,|\
+ˈlʊkaʊt|ˈlʊkˌaʊt}-{lookout}-{We’re always on the lookout for new business opportunities.}-{n. 守望； 远景，前途； 瞭望台； 警戒|,|\
+ˈlɒtəʊ|ˈlɑtoʊ}-{lotto}-{I just won the lotto}-{n. 落托数卡牌戏（一种对号码的牌戏）；|,|\
+laʊdlɪ|ˈlaʊdlɪ}-{loudly}-{laugh loudly}-{adv. 高声地； 吵闹地； 响亮地； 花哨地|,|\
+ˈlʌvəbl|ˈlʌvəbəl}-{lovable}-{make him even more lovable}-{adj. 可爱的； 惹人爱的；|,|\
+lʌl|lʌl}-{lull}-{lull the baby to sleep;There was a lull in political violence}-{vt. 使镇静，使安静； 哄，哄骗； 使入睡；|vi. 平静，安静； 平息； 减弱； 停止|n. 暂停； 间歇； 暂时平静； 催眠的东西|,|\
+lɜ:k|lɜrk}-{lurk}-{lurk in trees lurk behind sth}-{vi. 潜伏，埋伏； 潜藏，潜在； 偷偷地行动；|n. 潜在，潜伏； <俚>欺骗，欺诈；|,|\
+ˈlʌʃəs|ˈlʌʃəs}-{luscious}-{her luscious body ;a luscious and fragrant dessert wine}-{adj. 美味的； 满足感官的； 过分甜美的，腻人的； 十分性感的|,|\
+ˌmækəˈrəʊni|ˌmækəˈroʊni}-{macaroni}-{macaroni and cheese}-{n. 意大利粉，通心面；|,|\
+mækɪntɒʃ|'mækɪntɒʃ}-{Macintosh}-{Macintosh computers}-{n. Apple公司于1984年推出的一种系列微机苹果公司生产的一种型号的计算机 (Mac)麦金托什机；|,|\
+}-{Madrid}-{I travelled by plane to Madrid}-{n. 马德里（西班牙首都）；|,|\
+ˈmægnətaɪz|ˈmæɡnɪˌtaɪz}-{magnetize}-{His dark flashing eyes seemed to magnetize her.}-{vt. 使有磁性； 使磁化； 紧紧吸引； 迷住|,|\
+ˈmægpaɪ|ˈmæɡˌpaɪ}-{magpie}-{chatter like a magpie}-{n. 喜鹊； 饶舌者； 有收集零碎东西癖好的人； 爱说话的人|adj. 鹊的； 有收集癖的； 混杂的； 斑驳的|,|\
+məˈhaʊt|məˈhaʊt}-{mahout}-{being a mahout was an incredibly noble profession}-{n. （印度及东印度群岛的）看象人；|,|\
+ˈmeɪdsɜ:vənt|ˈmeɪdsɜrvənt}-{maidservant}-{This story of a maidservant}-{n. （古时用语）女佣，女仆，侍女； 婢； 老妈子；|,|\
+məˈdʒestɪk|məˈdʒɛstɪk}-{majestic}-{majestic mountain scenery.;majesty n. 威严；最高权威，王权；雄伟；权威}-{adj. 宏伟的； 壮丽的； 庄重的； 磅礴|,|\
+ˈmæmbə|'mæmbə}-{mamba}-{The black mamba}-{n. 树眼睛蛇，曼巴（非洲有毒树蛇）；|,|\
+ˈmæməθ|ˈmæməθ}-{mammoth}-{have mammoth impacts on;behemoth}-{n. [动]猛玛（象）； 庞然大物；|adj. 庞大的，巨大的；|,|\
+ˈmeɪniə|ˈmeniə,ˈmenjə}-{mania}-{a mania for neatness}-{n. <医>狂躁； 狂热； 热衷； 狂爱|,|\
+məˈnu:və(r)|məˈnuvɚ, -ˈnju-}-{manoeuvre}-{manoeuvre somebody into/out of something}-{n. 调遣，换防，对抗演习，操纵； 技术动作； 策略，巧计； 花招，伎俩|vt. 调遣； 操纵，控制； 诱使，策划；|,|\
+ˈmærɪnə(r)|'mærɪnər}-{mariner}-{professional mariner}-{n. 海员，水手；|,|\
+ˈmɑ:kwɪs|ˈmɑrkwɪs}-{marquis}-{the poor marquis}-{n. 侯爵； 世袭贵族；|,|\
+mɑ:z|mɑrz}-{Mars}-{as if you came from Mars}-{n. <天>火星； <罗神>战神；|,|\
+ˈmætədɔ:(r)|ˈmætəˌdɔr}-{matador}-{the brave matador}-{n. 斗牛士；|,|\
+ˈmætrəs|ˈmætrɪs}-{mattress}-{a mattress on the floor;cushion}-{n. 床垫； 褥垫； 空气垫； [建]沉排|,|\
+ˈmi:zlz|ˈmizəlz}-{measles}-{Measles ails the little girl}-{n. <医>麻疹； [兽]（牛，猪的）囊虫病； [摄]斑点； <美俚>梅毒，麻疹的红斑点|,|\
+ˌmedɪtəˈreɪniən|ˌmɛdɪtəˈreniən, -ˈrenjən}-{Mediterranean}-{in the Mediterranean}-{adj. 地中海的； 地中海地区的； 地中海居民的；|,|\
+}-{Medusa}-{Medusa can turn men into stone}-{释义 （希腊神话中）长有蛇发令人恐怖的女妖；|,|\
+megəˌsaɪkl|'megəˌsaɪkəl}-{megacycle}-{.}-{n. 兆周； 巨旋回； 兆赫；|,|\
+mend|mɛnd}-{mend}-{be on the mend ;mend your ways;=amend;emend}-{vt. 修理，修补； 改正，纠正； 加强； 使恢复健康|vi. 康复，痊愈； 修理，矫正；|n. 修补； 补丁； 痊愈；|,|\
+ˈmentəli|ˈmɛntlɪ}-{mentally}-{mental health.}-{adv. 心理上，精神上； 智力上；|,|\
+}-{Mercedes}-{.}-{释义 默西迪丝（女子名）； 梅塞德斯（奔驰）；|,|\
+ˈmɜ:meɪd|ˈmɜrmeɪd}-{mermaid}-{a little Mermaid lying fast asleep}-{n. 美人鱼； 女子游泳健将；|,|\
+mi:t|mit}-{mete}-{He felt he had a right to mete out physical punishment to the children.}-{vt. 分配； 给予（处罚等）； 测量； <正，文>（对某人）施以|n. 边界； 测量；|,|\
+ˌmi:tiəˈrɒlədʒɪst|ˌmitiəˈrɑlədʒɪst}-{meteorologist}-{chief meteorologist}-{n. 气象学者；|,|\
+meθɪleɪtɪd|'meθɪleɪtɪd}-{methylated}-{methylated spirits}-{adj. 甲基化的；|v. 使甲基化( methylate的过去式和过去分词 )；|,|\
+maɪ'æmɪ|maɪ'æmɪ}-{Miami}-{.}-{n. 迈阿密（美国佛罗里州达东南部港市）；|,|\
+ˌmaɪkrəˈskɒpɪk|ˌmaɪkrəˈskɑpɪk}-{microscopic}-{a microscopic speck of dust}-{adj. 显微镜的； 用显微镜可看见的； 微小的； 细微的|,|\
+}-{Microsoft}-{.}-{n. 美国微软公司；|,|\
+ˈmaɪkrəweɪv|ˈmaɪkrəˌwev}-{microwave}-{microwave radiation}-{n. 微波； 微波炉；|vt. 用微波炉加热（或烹饪）；|,|\
+mɪdl eɪdʒd|'mɪdl eɪdʒd}-{middle-aged}-{middle-aged businessmen}-{adj. 中年的； 适合于中年人的； 具有中年人特点的；|,|\
+ˈmaɪti|ˈmaɪti}-{mighty}-{a mighty person}-{adj. 趾高气扬； 巨大的； 强有力的； 浩瀚的|adv. 非常，很；|,|\
+ˈmaɪlstəʊn|ˈmaɪlstoʊn}-{milestone}-{an important milestone in South African history}-{n. 里程碑； 划时代事件；|,|\
+ˈmɪlkmən|'mɪlkmən}-{milkman}-{.}-{n. 送牛奶的人；|,|\
+maɪˈlɒmɪtə(r)}-{milometer}-{read a milometer}-{n. 里程表；|,|\
+mɪns|mɪns}-{mince}-{don't mince matters; he minces a lot of meat}-{vt. 切碎，剁碎； 委婉的说；|vi. 碎步走； 装腔作势地说；|n. 绞碎的肉，肉末；|,|\
+ˈmɪnstrəl|ˈmɪnstrəl}-{minstrel}-{disguise as a minstrel}-{n. 歌手，艺人； 旅行音乐师； 吟游诗人；|,|\
+mɜ:θ|mɜrθ}-{mirth}-{cause much mirth}-{n. <书>欢乐，欢笑；|,|\
+mɪ'zʊərɪ|mɪ'zʊrɪ}-{Missouri}-{.}-{n. 密苏里州（美国州名）；|,|\
+mɪˈsteɪkən|mɪˈstekən}-{mistaken}-{mistaken belief/idea/impression/view}-{adj. （人）弄错的，理解错误的； （行动、想法、判断等）错误的； 被误解的；|v. 弄错，误解(mistake的过去分词)； 认不出； 误会； 误解|,|\
+ˈmɒnəstri|ˈmɑnəsteri}-{monastery}-{cloister himself in a monastery}-{n. 修道院，寺院； [复数]全体僧侣；|,|\
+ˈmʌndeɪ|ˈmʌndeɪ}-{Monday}-{.}-{n. 星期一； 周一；|,|\
+mʌŋk|mʌŋk}-{monk}-{The young monk}-{n. 修道士，僧侣；|,|\
+məˈnɒtənəs|məˈnɑtənəs}-{monotonous}-{with monotonous regularity}-{adj. （声音，话语）单调的，无抑扬顿挫的； 枯燥无味的；|,|\
+ˈmɒnstrəs|ˈmɑnstrəs}-{monstrous}-{a monstrous nose ;It was monstrously unfair.}-{adj. 丑陋的； 巨大的； 畸形的； 与传说中怪物相象的|,|\
+ˈmu:nlaɪt|ˈmunˌlaɪt}-{moonlight}-{in the moonlight}-{n. 月光；|vi. 兼职；|,|\
+mɔ:(r)|mʊr}-{moor}-{on the moors ;Two or three fishing boats were moored alongside the pier.}-{n. 荒野，旷野； 沼泽； 摩尔人； 停泊，抛锚|vt.& vi. 使停泊； 系住； （把飞船）拴在系留塔上； 固定|,|\
+mu:t|mut}-{moot}-{a moot point/question}-{n. 大会； 辩论会； 假设案件；|adj. 未决议的； 无实际意义的； 有讨论余地的；|vt. 提出…供讨论； 提出（问题）； （在假设法庭上）实习辩论；|,|\
+mə'rɒkəʊ|mə'rɑkoʊ}-{Morocco}-{.}-{n. 摩洛哥，摩洛哥皮；|,|\
+ˈmɔ:təli|ˈmɔrtəli}-{mortally}-{mortally wounded}-{adv. 致命地； 非常，很；|,|\
+mɒskəʊ|'mɑskaʊ}-{Moscow}-{.}-{n. 莫斯科（俄罗斯首都）；|,|\
+mɒθ|mɔθ}-{moth}-{like a moth}-{n. 飞蛾，蛾子；|,|\
+ˈməʊʃnləs|ˈmoʊʃnləs}-{motionless}-{stand/sit/lie motionless}-{adj. 不动的，静止的； 呆若木鸡的； 不运动的； 靓|,|\
+ˈmɔ:nfl|ˈmɔrnfl}-{mournful}-{a mournful sound;Durant was thin, mournful and silent.}-{adj. 哀痛的，令人伤心的； 悲伤的； 使人伤心（沮丧）的； 凄凄切切|,|\
+ˈmʌfl|ˈmʌfəl}-{muffle}-{muffle face;be muffled (up) in something}-{vt. 裹住，围住； 捂住； 压抑，阻止； 消音|vi. 用厚厚的衣帽包着（自己）；|n. 低沉的声音； 消声器； 包裹物； 隔焰窑|,|\
+ˌmʌltiˈmi:diə|ˌmʌltiˈmidiə, -taɪ-}-{multimedia}-{I am making a multimedia presentation}-{n. 多媒体；|adj. 多媒体的；|,|\
+ˈmʌmbl|ˈmʌmbəl}-{mumble}-{mumble to yourself}-{vt.& vi. 咕哝； 抿着嘴嚼；|n. 含糊的话； 咕哝；|,|\
+mʌmps|mʌmps}-{mumps}-{Mumps is a children's disease}-{n. 腮腺炎；|,|\
+mju:ˌnɪsɪˈpæləti|mjuˌnɪsəˈpælɪti}-{municipality}-{an elected municipality ;ecology officer for the municipality}-{n. 自治市； 市政当局；|,|\
+ˈmʌstə(r)|ˈmʌstɚ}-{muster}-{muster (up) the courage/confidence/energy etc to do something ;pass muster (as something) to be accepted as good enough for something}-{n. 集合； 集合的人群； 检阅； 花名册|vt.& vi. 集合； 召集； 集结（尤指部队）；|vt. （自他人处）搜集某事物； 聚集； 激发； 激起（支持、勇气等）|,|\
+ˈmʌsti|ˈmʌsti}-{musty}-{a musty room full of damp 弥漫着潮湿气味的房间}-{adj. 发霉的； 陈腐的； 乏味的； 陈旧的|,|\
+ˈmju:tɪleɪt|ˈmjutlˌet}-{mutilate}-{badly mutilated ;he mutilated six young men}-{vt. 切断（手足等）； 毁坏，毁伤； 使…残缺不全； 使…支离破碎|,|\
+ˈmʌzl|ˈmʌzəl}-{muzzle}-{a muzzle cover}-{n. 枪口，炮口； （防止动物咬人的）口套； （四足动物的）鼻口部； （狗）等凸出的鼻子和口|vt. 给（狗等）戴口套； 使缄默，钳制…言论； 封锁…的言论； 〈美俚〉亲嘴|,|\
+ˈmɪriəd|ˈmɪriəd}-{myriad}-{the myriads of bees}-{adj. 无数的； 多种的，各式各样的；|n. 无数，极大数量； [古语] 一万；|,|\
+mɪˈθɒlədʒi|mɪˈθɑlədʒi}-{mythology}-{Greek mythology}-{n. 神话学； 神话（总称）； 虚构的事实； 错误的观点|,|\
+ˌmɪksəməˈtəʊsɪs|ˌmɪksəməˈtoʊsɪs}-{myxomatosis}-{The effect of myxomatosis spread far beyond the rabbit}-{n. 黏液瘤病变性，多发黏液瘤病；|,|\
+næg|næɡ}-{nag}-{nag somebody about something}-{vt. 不断找岔，抱怨； 困扰，折磨；|vi. 叱责，抱怨； 困扰，焦虑；|n. 挑剔的人； 马，老马；|,|\
+ˈnærəʊli|ˈnæroʊli}-{narrowly}-{He was narrowly defeated in the election.}-{adv. 狭窄地； 勉强地； 严密地； 仔细地|,|\
+ˈnæsə|'næsə}-{NASA}-{.}-{abbr. National Aeronautics and Space Administration 美国国家航空和宇宙航行局；|,|\
+ˈnebjələ|ˈnɛbjələ}-{nebula}-{stellar nebula}-{n. 星云； 星云状的星系；|,|\
+ˈnekləs|ˈnɛklɪs}-{necklace}-{a diamond necklace}-{n. 项链；|,|\
+ˌnjʊərəʊ'tɒksɪk|ˌnjʊroʊ'tɒksɪk}-{neurotoxic}-{have neurotoxic effects on the nervous systems}-{adj. 毒害神经的；|,|\
+ˈnju:kɑ:sl|ˈnukæsl}-{Newcastle}-{.}-{释义 纽卡斯尔（澳大利亚港市； 英国Nothumberland郡的首府； 美国Pennsylvania州西部的一城市）；|,|\
+ˈnju:zeɪdʒənt|ˈnuzeɪdʒənt}-{newsagent}-{chat with the newsagent}-{n. 报刊经销人；|,|\
+ˈnju:zletə(r)|ˈnuzletə(r)}-{newsletter}-{a quarterly newsletter}-{n. （给特定读者定期寄发的）通讯； 时事通讯； 业务通讯；|,|\
+naɪ'dʒɪərɪə|naɪ'dʒɪərɪr}-{Nigeria}-{.}-{n. 尼日利亚（非洲中西部国家）；|,|\
+naɪ'dʒɪərɪən|naɪ'dʒɪrɪrn}-{Nigerian}-{.}-{n. 尼日利亚人；|,|\
+ˈnəʊbl|ˈnoʊbl}-{noble}-{an upright and noble man;}-{adj. 高尚的； 贵族的； 外表庄严和庄重的； 表现出崇高的|n. 尊贵的人； 旧时在英国使用的金币；|,|\
+ˈnəʊmæd|ˈnoʊmæd}-{nomad}-{mad nomad society;best things for a nomad}-{n. 游牧民； 流浪者； 游牧生活； 流浪生活|,|\
+nɔ:weɪ|'nɔrweɪ}-{Norway}-{.}-{n. 挪威（欧洲国家）；|,|\
+nɔ:'wi:dʒən|nɔrˈwidʒən}-{Norwegian}-{the Norwegian countryside.}-{n. 挪威人； 挪威语；|adj. 挪威人的； 挪威的，挪威语的；|,|\
+ˈnɒstrəl|ˈnɑstrəl}-{nostril}-{breathe in through your nostrils}-{n. 鼻孔； 鼻孔内壁；|,|\
+nəʊˈvembə(r)|noʊˈvembə(r)}-{November}-{.}-{n. 十一月； 通讯中用以代替字母 n 的词；|,|\
+ˈnɒvɪs|ˈnɑvɪs}-{novice}-{a complete novice as a reporter;neophyte}-{n. 初学者，新手； 新信徒； 尚未赢过大赛的赛马；|,|\
+ɔ:fɪʃ|'oʊr'ɔˌfɪʃ}-{oarfish}-{Giant Oarfish}-{n. 皇带鱼；|,|\
+əbˈskjʊərəti|əbˈskjʊrəti}-{obscurity}-{live/work/remain etc in obscurity}-{n. 朦胧； 晦涩； 默默无闻； 费解|,|\
+əbˈzɜ:vənt|əbˈzɜrvənt}-{observant}-{the writer’s observant eye for detail}-{adj. 善于观察的，观察力敏锐的； 严守教规的；|,|\
+əbˈzɜ:vətri|əbˈzɜrvətɔri}-{observatory}-{With a full-power observatory in place}-{n. 天文台； 气象台； 瞭望台；|,|\
+əbˈstrʌkʃn|əbˈstrʌkʃən, ɑb-}-{obstruction}-{an unlawful obstruction of the highway}-{n. 障碍物； 阻碍的行为或例子； 阻碍，受阻； 妨碍议事|,|\
+ˌəʊʃəˈneəriəm|ˌoʊʃəˈneriəm}-{oceanarium}-{swims across the oceanarium}-{n. 大型海洋水族馆；|,|\
+ɒkˈtəʊbə(r)|ɑkˈtoʊbə(r)}-{October}-{.}-{n. 十月；|,|\
+ˈɒktəpəs|ˈɑktəpəs}-{octopus}-{plates of octopus}-{n. 章鱼；|,|\
+ˈɒdli|ˈɑdli}-{oddly}-{Oddly enough , someone asked me the same question only yesterday.}-{adv. 奇怪地，古怪地； 奇妙地； 额外地，附加地； 零碎地，单数地|释义 oddly enough的变体；|,|\
+əˈfendə(r)|əˈfɛndɚ}-{offender}-{the worst offender .}-{n. 罪犯； 得罪人的人； 犯规者； 妨害…的人（或事物）|,|\
+əˈfɪʃəli|əˈfɪʃəlɪ}-{officially}-{Nothing has yet been officially announced}-{adv. 官方地； 正式地； 公务上；|,|\
+əˈfɪʃəs|əˈfɪʃəs}-{officious}-{an officious traffic warden}-{adj. 过分殷勤的，爱管闲事的，爱显示权力的；|adv. 过分殷勤地；|n. 过分殷勤，爱管闲事；|,|\
+ˈɔɪntmənt|ˈɔɪntmənt}-{ointment}-{She dabbed the ointment on the rash}-{n. 软膏，药膏，油膏；|,|\
+əˈlɪmpɪk|oˈlɪmpɪk}-{Olympic}-{the reigning Olympic champion}-{adj. 奥林匹斯山的，奥林匹亚的；奥林匹克的；|n. 奥林匹克运动会比赛项目； [用复数][the Olympic] = Olympic Games；|,|\
+ˈɒmbʊdzmən|ˈɑmbʊdzmən}-{ombudsman}-{.}-{n. 调查官员舞弊情况的政府官员； 巡视官；|,|\
+ˈəʊmən|ˈoʊmən}-{omen}-{a bird of ill omen}-{n. 前兆； 征兆； 预兆； 兆头|vt. 预示； 预告； 有…的前兆；|,|\
+ɒmɪnəslɪ|ˈɑmənəslɪ}-{ominously}-{The sky looked ominously dark.}-{adv. 恶兆地，不吉利地； 预示地；|,|\
+ˈɔ:dnəns|ˈɔrdnəns}-{ordnance}-{ordnance officer;artillery}-{n. 大炮； 军械（如弹药、军车等）； 军用品，军需品； 军械署|,|\
+ˈɔ:dʒi|ˈɔrdʒi}-{orgy}-{an orgy of anti-foreign violence}-{n. 狂欢； 放荡； （秘密举行的）酒神节；|,|\
+ˈɔ:fənɪdʒ|ˈɔrfənɪdʒ}-{orphanage}-{children in the orphanage}-{n. 孤儿院； 孤儿身份；|,|\
+aʊtˈlændɪʃ|aʊtˈlændɪʃ}-{outlandish}-{outland outlandish clothes}-{adj. 古怪的，奇异的； 异国风味的； 粗鲁笨拙；|,|\
+ˈaʊtlɔ:|ˈaʊtˌlɔ}-{outlaw}-{Jesse was an outlaw}-{n. 歹徒，亡命之徒； 逃犯； 被剥夺法律保护者，丧失公权者； 烈马|vt. 宣布…为不合法； 将…放逐； 剥夺…的法律保护；|,|\
+aʊtˈreɪdʒəs|aʊtˈredʒəs}-{outrageous}-{outrageous remarks}-{adj. 粗暴的； 无法容忍的； 反常的； 令人惊讶的|,|\
+ˌəʊvəˈbæləns|ˌoʊvərˈbæləns}-{overbalance}-{He overbalanced and fell head first.}-{vt.& vi. （使）失去平衡而歪倒；|,|\
+əʊvə'fɪʃ|ˌoʊvə'fɪʃ}-{overfish}-{overfish the lake}-{vt. 对（鱼、渔场）捕捞过度；|,|\
+ˈəʊvəlænd|ˈoʊvərlænd}-{overland}-{an overland route}-{adj. 陆上的； 经由陆路的； 横跨大陆的；|adv. 经由陆路；|vt. 转地放牧；|vi. 由陆路长途跋涉；|,|\
+ˌəʊvəˈpɒpjuleɪtɪd|ˌoʊvərˈpɑpjuleɪtɪd}-{overpopulated}-{overpopulated area}-{adj. （城市等）人口过密[过多]的；|,|\
+ˌəʊvəˈrʌn|ˌoʊvəˈrʌn}-{overrun}-{overrun by enemy troops}-{vt. 超过（范围）； （尤指坏事或不欲之事）泛滥； 蹂躏； 蔓延|n. 泛滥成灾； 超过限度；|vi. 泛滥； 超过限度；|,|\
+ˌəʊvə'welmɪŋlɪ|ˌovɚˈhwɛlmɪŋlɪ}-{overwhelmingly}-{Congress voted overwhelmingly in favor of the bill.}-{adv. 压倒地，无法抵抗地；|,|\
+aʊ|aʊ}-{ow}-{.}-{int. 表示突然疼痛所发出的声音；|,|\
+ˈpækɪŋ|ˈpækɪŋ}-{packing}-{I pulled the packing from the box}-{n. 包装，打包； 包装材料； （缝隙）填料；|v. 压紧(pack的ing形式)； 装满；|,|\
+ˈpeɪgən|ˈpeɡən}-{pagan}-{ancient pagan temples;heathen;infidel}-{n. 异教徒，非基督教徒； 没有宗教信仰的人；|adj. 异教徒的； 非基督教的； 无宗教信仰的；|,|\
+ˈpærətru:pə(r)|ˈpærəˌtrupɚ}-{paratrooper}-{a terrifying Israeli paratrooper}-{n. 伞兵；|,|\
+pærɪs|ˈpærɪs}-{Paris}-{.}-{n. 巴黎；|,|\
+pəˈrɪʃənə(r)|pəˈrɪʃənɚ}-{parishioner}-{a lucky parishioner}-{n. 教区居民；|,|\
+ˌpɑ:ləˈmentri|ˌpɑrləˈmentri}-{parliamentary}-{the world’s oldest parliamentary democracy}-{adj. 议会的，国会的； 议会制度的； 根据议会的；|,|\
+ˈpɑ:keɪ|pɑrˈkeɪ}-{parquet}-{a parquet floor}-{n. 镶木地板； <美>（剧场的）正厅后排； （法）检查机关；|vt. 铺镶木地板于； 用镶木制； 铺；|,|\
+ˈpærət|ˈperət}-{parrot}-{He just parroted his father’s opinions.}-{n. 鹦鹉； 应声虫，学舌者； 机械模仿别人的人；|vt. 机械地重复； 随声附和； 死背； 做…的应声虫|,|\
+ˈpɑ:trɪdʒ|ˈpɑrtrɪdʒ}-{partridge}-{a main course of partridge}-{n. 山鹑；|,|\
+ˈpɑ:stərəl|ˈpæstərəl}-{pastoral}-{a pastoral painting}-{adj. 牧师的，主教的； 牧人的； 有关田园生活的； 乡村的|n. 牧歌； 田园诗； 田园景色； 牧师写给教区居民的公开信|,|\
+ˈpeɪtriətɪzəm|ˈpetriəˌtɪzəm}-{patriotism}-{patriotism education}-{n. 爱国主义； 爱国心，爱国精神；|,|\
+ˈpætrənɪdʒ|ˈpetrənɪdʒ,ˈpætrə-}-{patronage}-{Without the patronage of several large firms, the festival could not take place.;patron n. 赞助人；保护人；主顾}-{n. 资助，赞助； 光顾，惠顾； 任免权； 支援，保护|,|\
+ˈpeɪvmənt|ˈpevmənt}-{pavement}-{pound/hit the pavement to work very hard to get something, especially a job, by going to a lot of different places}-{n. 人行道； 硬路面； 铺过的路面； [动]铺石状构造[密生的齿列等]|,|\
+ˈpedɪstl|ˈpɛdɪstəl}-{pedestal}-{Women are both put on a pedestal and treated like second-class citizens.;biped;-ped脚}-{n. 底座，基座； 根底，基础； [机]托轴架； 受人尊敬的地位|v. 搁在架上； 支持； 给…加台脚；|,|\
+ˈpi:nəlaɪz|'pinəlaɪz}-{penalize}-{penalize somebody for (doing) something}-{vt. 对…予以惩罚； 使处于不利地位；|,|\
+pens|pens}-{pence}-{cost only a few pence}-{n. penny的复数；|,|\
+penˌhəʊldə|'penˌhoʊldə}-{penholder}-{table, penholder and paper}-{n. 笔插，笔架；|,|\
+ˈpenənt|ˈpɛnənt}-{pennant}-{red pennant}-{n. 校旗； 锦标旗； 长三角旗； （船上用的）信号旗|,|\
+pɜ:tʃ|pɜrtʃ}-{perch}-{perch (yourself) on something}-{n. 栖息处； 栖枝； 高处； 鲈鱼|vi. （鸟）飞落，暂栖，停留；|vt.& vi. 栖息； 停留； （使）坐； （使）坐在…边沿|,|\
+ˈperələs|ˈpɛrələs}-{perilous}-{a perilous journey across the mountains}-{adj. 危险的，冒险的；|,|\
+pɜ:mənəntlɪ|ˈpəmənəntlɪ}-{permanently}-{she permanently moved away}-{adv. 永久地，长期不变地；|,|\
+ˈpɜ:sɪkju:t|ˈpɜrsɪkjut}-{persecute}-{persecute sb with sth}-{vt. （尤指宗教或政治信仰的）迫害； 烦扰，困扰； 强求，死缠着要；|,|\
+ˈpɜ:tɪnənt|ˈpɜrtnənt}-{pertinent}-{pertinent comments;be not pertinent to sth}-{adj. 有关的，相干的； 恰当的，中肯的； 关于…的； 切题的|,|\
+pəˈtɜ:b|pərˈtɜrb}-{perturb}-{be perturbed to do sth}-{vt. 使（某人）烦恼，不安；|,|\
+ˈpestə(r)|ˈpɛstɚ}-{pester}-{pester sb with frequent request}-{vt. 使烦恼； 使为难； 纠缠；|,|\
+ˈpestɪsaɪd|ˈpɛstɪˌsaɪd}-{pesticide}-{persistent pesticide}-{n. 杀虫剂，农药；|,|\
+ˈpestɪləns|ˈpɛstələns}-{pestilence}-{zone of pestilence}-{n. 瘟疫， （尤指）腺鼠疫；|,|\
+ˈpetrɪfaɪ|ˈpɛtrəˌfaɪ}-{petrify}-{petrify sb with sth;petra 石头}-{vt.& vi. 吓呆，使麻木；|vt. 使吓呆，使惊呆；|,|\
+fə'nɒmɪnə|fɪˈnɑmənə}-{phenomena}-{Science rests on phenomena}-{n. 现象；|,|\
+ˌpɪkə'dɪlɪ|'pɪkəˌdɪlɪ}-{Piccadilly}-{He drove down an empty Piccadilly}-{n. 伦敦繁华的大街之一； [电影]唐人街繁华梦；|,|\
+ˈpɪknɪk|ˈpɪknɪk}-{picnic}-{go for a picnic}-{n. 野餐郊游； 供野餐吃的食品； 猪的肩肉； 轻松的工作|vi. 去野餐，参加野餐； 野餐式地用餐； 在户外用餐；|vt. 用野餐招待；|,|\
+ˌpaɪəˈnɪə(r)|ˌpaɪəˈnɪr}-{pioneer}-{He was a pioneer in the field of biotechnology.}-{n. 拓荒者； 开发者； 先驱者； 创始者|vt. 开拓，开发； 做（…的）先锋； 提倡；|,|\
+ˈpɪtfɔ:l|ˈpɪtˌfɔl}-{pitfall}-{avoid the pitfalls of the legal process}-{n. 陷阱； 圈套； 诱惑；|,|\
+plæŋk|plæŋk}-{plank}-{a central plank of our policy ;planks of wood;}-{n. （厚）木板； 支持物； 政纲条目；|vt. 在…上铺板； 重重放下； 立即付款；|,|\
+ˈpli:dɪŋ|ˈplidɪŋ}-{pleading}-{Kathleen looked at him pleadingly.}-{n. 恳求，请求； 辩论，辩护； [法]诉状； 诉讼程序|adj. 恳求的，请求的；|v. 恳求，请求(plead的现在分词)； 抗辩，答辩； 恳求，请求；|,|\
+plaʊ|plaʊ}-{plough}-{plough ahead}-{n. 耕作，耕地； 犁； [天]北斗七星； 〈英俚〉（主考人评定）不及格|vt.& vi. 用犁耕田； 开路； 破浪前进； 投（资）|,|\
+plaɪ|plaɪ}-{ply}-{three-ply wood sly 狡猾的;ply between/across; ply the short wings with such irresistible power that}-{vt.& vi. 使用（工具）； 经常供应（食物、饮料）； 固定往来； 经营生意|n. （毛线、绳等的）股； 层； 厚； （夹板的）层片|vt. （娴熟地）使用；|,|\
+nju:ˈmætɪk|nuˈmætɪk}-{pneumatic}-{pneumatic tyres}-{adj. 充气的； 气动的； 装满空气的； 有气胎的|n. 气胎； 有气胎的自行车； （风琴的）管；|,|\
+pəʊlənd|'poʊlənd}-{Poland}-{.}-{n. 波兰（欧洲国家）；|,|\
+pəˈli:swʊmən|pəˈlisˌwʊmən}-{policewoman}-{.}-{n. 女警察； 女警官；|,|\
+ˈpəʊləʊ|ˈpoʊloʊ}-{polo}-{water polo}-{n. 马球； 水球；|,|\
+.pɒlɪ'ni:zɪən|.pɒlɪ'nɪʒɪrn}-{Polynesian}-{Polynesian culture}-{adj. （包括新西兰、夏威夷、萨摩亚等中太平洋群岛的）波利尼西亚的，与波利尼西亚相关的；|n. 波利尼西亚人； 波利尼西亚人后裔； 波利尼西亚语；|,|\
+ˌpɒpjuˈlærəti|ˌpɑpjuˈlærəti}-{popularity}-{gain/grow/increase in popularity}-{n. 普及； 流行； 名气，名望，通俗性，大众性； 人望|,|\
+ˈpɔ:kjupaɪn|ˈpɔrkjupaɪn}-{porcupine}-{North American porcupine}-{n. 豪猪，箭猪；|,|\
+ˈpɔ:pəs|ˈpɔrpəs}-{porpoise}-{Yangtze finless porpoise;dolphin}-{n. <动>鼠海豚；|,|\
+pɔ:tˈfəʊliəʊ|pɔrtˈfoʊlioʊ}-{portfolio}-{an investment portfolio ;}-{n. 公文包； 代表作品集； 证券投资组合； 部长[大臣]的职位|,|\
+ˈpəʊstkɑ:d|ˈpoʊstkɑrd}-{postcard}-{I got your postcard from the school}-{n. 明信片；|,|\
+ˈpəʊstmən|ˈpoʊstmən}-{postman}-{That postman is in charge of this route}-{n. 邮递员，邮差；|,|\
+ˈpəʊtnsi|ˈpoʊtnsi}-{potency}-{the potency of the drug}-{n. 效力； 潜能； 权势； （男人的）性交能力|,|\
+pəˌtenʃiˈæləti|pəˌtɛnʃiˈælɪti}-{potentiality}-{with potentiality}-{n. 可能力，（用复数）潜能，潜力。可能性；|,|\
+paʊns|paʊns}-{pounce}-{pounce on sb/sth}-{vi. 突袭，猛扑； 掌握，抓住；|vt. 扑过去抓住；|n. 猛扑； 爪；|,|\
+ˈpri:tʃə(r)|ˈpritʃər}-{preacher}-{he spoke like a preacher}-{n. 传道者； 牧师；|,|\
+ˌprefəˈrenʃl|ˌprɛfəˈrɛnʃəl}-{preferential}-{preferential credit terms for reliable borrowers}-{adj. 优先的； 优先选择的； 特惠的；|,|\
+ˌpri:hɪˈstɒrɪk|ˌprihɪˈstɔrɪk}-{prehistoric}-{prehistoric animals}-{adj. 史前的； 陈旧的；|,|\
+ˈpredʒədɪst| ˈprɛdʒədɪst}-{prejudiced}-{The early Christian church was prejudiced against the Jews.}-{adj. 怀偏见的； 有成见的； 偏颇的；|v. 损害(prejudice的过去分词)； 使抱偏见；|,|\
+ˈprelju:d|ˈprɛlˌjud, ˈpreˌlud, ˈpri-}-{prelude}-{prelude to sth;overture;preface}-{n. 序曲，前奏曲； 开场戏，序幕； 前兆，预兆；|v. 为…作序，开头； 成为…的序曲； 演奏序曲，唱开场戏；|,|\
+ˈpremɪsɪz|ˈprɛmɪsɪz}-{premises}-{There is a kitchen on the premises;The premise is that}-{n. （包括附属建筑、土地等在内的）房屋或其他建筑物； <律>（契约）前言； 契据的缘起部分（记述财产的详情、当事人姓名等）； （企业的）房屋建筑及附属场地 前提( premise的名词复数 )；|,|\
+prɪˈpɒndərəns|prɪˈpɑndərəns}-{preponderance}-{There is a preponderance of female students in the music department.}-{n. 数量上的优势；|,|\
+ˌprezəˈveɪʃn|ˌprezərˈveɪʃn}-{preservation}-{the preservation of peace in the region}-{n. 保存，保留； 保护； 防腐； 维护，保持|,|\
+prɪˈzʌmptʃuəs|prɪˈzʌmptʃuəs}-{presumptuous}-{be presumptuous in doing sth;He may be conceited, ill-mannered, presumptuous or fatuous}-{adj. 自以为是的，专横的，冒失的；|adv. 自以为是地，专横地，冒失地；|n. 自以为是，专横，冒失；|,|\
+prɪˈtenʃəs|prɪˈtɛnʃəs}-{pretentious}-{a pretentious film}-{adj. 狂妄的，自命不凡的，自负的； 虚伪的，矫饰的，做作的；|,|\
+prɪˈveɪlɪŋ|prɪˈvelɪŋ}-{prevailing}-{The prevailing mood of public opinion remained hostile.}-{adj. 占优势的； 主要的； 普遍的； 盛行的|v. 获胜( prevail的现在分词 )； 盛行； 说服； （ 思想、观点等）被接受|,|\
+prɪnstən|'prɪnstən}-{Princeton}-{.}-{n. 普林斯顿；|,|\
+ˈprɪsti:n|prɪˈstiːn}-{pristine}-{pristine peasants}-{adj. 太古的，原始状态的； 纯朴的，纯洁的； 未受腐蚀的，新鲜的；|,|\
+praɪzfaɪtə(r)|'praɪzfaɪtə(r)}-{prizefighter}-{a heavyweight prizefighter}-{n. 职业拳击手；|,|\
+prəˈlɒŋd|prəˈlɔŋd}-{prolonged}-{a prolonged period of time}-{adj. 持续很久的； 延长的； 拖延的； 曼|,|\
+prəˈmɪskjuəs|prəˈmɪskjuəs}-{promiscuous}-{the risks of promiscuous sexual behaviour}-{adj. （尤指）性关系随便的； 混杂的； 随便的； 淫乱|,|\
+ˈprɒməntri|ˈprɑməntɔri}-{promontory}-{a rocky promontory}-{n. 岬，隆起，海角；|,|\
+ˈprɒmptli|ˈprɑmptli}-{promptly}-{She arrived promptly.}-{adv. 敏捷地； 迅速地； 立即地； 毫不迟疑|,|\
+prəˈpʌlʃn|prəˈpʌlʃən}-{propulsion}-{used for propulsion}-{n. 推进； 推进力；|,|\
+prəˈtægənɪst|proˈtæɡənɪst}-{protagonist}-{antagonist}-{n. （戏剧的）主角； （故事的）主人公； 现实事件（尤指冲突和争端的）主要参与者； 领导者|,|\
+ˌprɒvəˈkeɪʃn|ˌprɑvəˈkeɪʃn}-{provocation}-{He hit her after repeated provocations}-{n. 挑衅，挑拨； 激怒，刺激； 愤怒； 愤怒的原因|,|\
+ˌsaɪkiˈætrɪk}-{psychiatric}-{psychiatric disorder}-{adj. 精神病学的； 精神病治疗的；|,|\
+tɒlɪmɪ|'tɑləmɪ}-{Ptolemy}-{.}-{n. 托勒密（公元2世纪的古希腊天文学家、地理学家、数学家，地心说的创立者）；|,|\
+ˈpju:mə|ˈpumə}-{puma}-{a puma at large}-{n. 美洲狮； 彪马； 于1948年成立于德国荷索金劳勒(Herzogenaurach)的国际运动品牌； 创始人：鲁道夫及达斯勒。|,|\
+ˌpʌŋktʃʊ'ælətɪ|ˌpʌŋktʃʊˈælətɪ}-{punctuality}-{She’s always very punctual for appointments.}-{n. 严守时间； 正确，规矩；|,|\
+pʌŋktʃʊəlɪ|ˈpʌŋktʃʊəlɪ}-{punctually}-{work punctually}-{adv. 如期地，准时地； 正点；|,|\
+ˈpʌŋktʃueɪt|ˈpʌŋktʃuˌet}-{punctuate}-{The silence was occasionally punctuated by laughter.}-{vt. 加标点符号； 不时打断； 加强，强调；|vt. 不时打断某事物； 使用标点符号；|,|\
+ˈpʌŋktʃə(r)|ˈpʌŋktʃɚ}-{puncture}-{One bullet punctured his lung.}-{vt. 刺，戳； 贬低，削弱； 揭穿；|vi. （指轮胎等）被刺穿；|n. 刺痕； （车胎等的）刺孔；|,|\
+ˈpʌnɪʃ|ˈpʌnɪʃ}-{punish}-{punish crimes}-{v. 处罚； 严厉对付； 贪婪地吃喝；|,|\
+pɜ:tʃəsəbl|'pɜtʃəsəbl}-{purchasable}-{goods that are readily purchasable nationally}-{adj. 可买的，可收买的；|,|\
+ˈkwɒlɪfaɪd|ˈkwɑlɪfaɪd}-{qualified}-{qualified to do something}-{adj. 有资格的，胜任的，适当的，合格的； 过检定的，得到许可的； 有限制的，有条件的； （俚）十足的，无比的|vt. 描述，形容； 使合适； 授权予； 有权，达标|vi. 合格，成为合格； 取得…的资格；|,|\
+ˈkwɪkən|ˈkwɪkən}-{quicken}-{your heart/pulse/breathing quickens}-{vt.& vi. （使）变快； 增速； 鼓舞； 使复活|vt. 苏醒； 使有生机；|,|\
+ˈkwɪntʊplət}-{quintuplet}-{she gave birth to quintuplets}-{n. 五个一组，五件一套；|,|\
+ˈreɪdiəns|ˈrediəns}-{radiance}-{a young face full of radiance}-{n. 发光； 光辉； 辐射； 欣喜的神色|,|\
+rædɪklɪ|ˈrædɪklɪ}-{radically}-{a radically new approach to the problem}-{adv. 根本地； 彻底地； 完全地； 激进地|,|\
+rɑ:ft|ræft}-{raft}-{bamboo rafts ;a raft of old notebooks}-{n. 木筏； 橡皮艇； [动]（昆虫的）卵筏； 〈美口〉大量|vt. 筏运； 制成筏； 使用筏子；|vi. 乘筏；|,|\
+ˈræmblə(r)|ˈræmblɚ}-{rambler}-{A German rambler}-{n. 漫步者，漫谈者； 攀缘蔷薇； 《漫步者》（双周刊）；|,|\
+ˈræmblɪŋ|ˈræmblɪŋ}-{rambling}-{a long rambling letter}-{adj. 闲逛的，漫步的； 闲聊的； （思想）散漫的； 布局凌乱的，杂乱无章的|v. （无目的地）漫游( ramble的现在分词)； （喻）漫谈； 扯淡； 长篇大论|,|\
+ˈrænsæk|ˈrænˌsæk}-{ransack}-{sack;ransack something for something}-{vt. 彻底搜查； 抢劫，掠夺； 仔细思索；|,|\
+ˈrænsəm|ˈrænsəm}-{ransom}-{pay ransom to the kidnappers}-{n. 付赎金救人，赎金； [神]赎罪；|vt. 赎回； [神]赎救；|,|\
+ˈræptʃə(r)|ˈræptʃɚ}-{rapture}-{listen with rapture}-{n. 极度欢喜；|vt. 使…狂喜；|,|\
+ˈreərəti|ˈrerəti}-{rarity}-{Visitors were a rarity in the village.}-{n. 稀有，罕见； 稀薄，稀少； 珍品，罕见的东西；|,|\
+ræʃlɪ|ˈræʃlɪ}-{rashly}-{I rashly agreed to look after the children.}-{adv. 鲁莽地，轻率地，仓促地； 冒； 愣； 贸然|,|\
+ˈrætl|ˈrætl}-{rattle}-{rattle along/past/over the road}-{vt.& vi. （使）发出格格的响声，（使）作嘎嘎声； 喋喋不休地说话；|vi. 迅速而嘎嘎作响地移动，堕下或走动；|vt. 使紧张，使恐惧； 给（桅索）扎梯绳；|n. 嘎嘎声； 发出嘎嘎声的儿童玩具； 呼噜声； 音响构造|,|\
+ˈrætlsneɪk|ˈrætlˌsnek}-{rattlesnake}-{rattlesnake venom}-{n. 响尾蛇；|,|\
+reɪ|re}-{ray}-{a ray of hope/light etc}-{n. （热或其他能量的）射线； 光束，光线； 微量； 伞形花序柄|vt. 放射； 照射； （思想，希望等）闪现； 发光|,|\
+rɪˈbaʊnd|ˈriˈbaʊnd, rɪ-}-{rebound}-{Share prices rebounded today after last week’s losses.}-{vi. 弹回； 从诸如衰败或失望中恢复过来； 回荡，回响； 抢得篮板球|vt. 使弹回； 使回升； 使回响；|n. 弹回，跳回； 反弹球； 篮板球； 振作，反应|,|\
+rɪˈklu:s|ˈreklus}-{recluse}-{a recluse ; secluded}-{n. 隐居者，遁世者，隐士；|,|\
+rekɔ:dˌhəʊldə|'rekədˌhoʊldə}-{record-holder}-{The previous record-holder}-{n. 记录保持者，保持最高记录者；|,|\
+rɪ'kaʊnt|rɪˈkaʊnt}-{recount}-{recount how/what}-{vt. 详细叙述； 重新计算；|,|\
+rɪˌku:pə'reɪʃn|rɪˌkupə'reɪʃn}-{recuperation}-{Coles is recuperating from a sprained ankle.}-{n. 复原； 恢复； 挽回； 弥补|,|\
+ˌri:dɪˈskʌvə(r)|ˌriːdɪˈskʌvər}-{rediscover}-{rediscover their love for each other}-{vt. 再次（重新）发现；|,|\
+ˌregjuˈlærəti|ˌrɛɡjəˈlærətɪ}-{regularity}-{Climate change is disrupting the regularity of the seasons.}-{n. 规则性，规律性； 整齐； 正规； 匀称|,|\
+rɪˈmaɪndə(r)|rɪˈmaɪndər}-{reminder}-{constant/painful/vivid etc reminder}-{n. 令人回忆起…的东西； 提醒…的东西； （告知该做某事的）通知单； 提示信|,|\
+ˌremɪˈnɪsns|ˌrɛməˈnɪsəns}-{reminiscence}-{reminiscence of my youth}-{n. 旧事，回忆； 回忆录；|,|\
+ˈremənstreɪt|rɪˈmɑnstreɪt}-{remonstrate}-{remonstrate against sth}-{vi. 抗议；|vt. 告诫；|,|\
+ˈrɒndɪvu:|ˈrɑndɪvu}-{rendezvous}-{rendezvous with sb}-{n. 约会； 约会的地点； 集结地；|vi. 约会； 会合；|vt. 在指定地点与…相会；|,|\
+rɪˈpetətɪv|rɪˈpɛtɪtɪv}-{repetitive}-{repetitive work/tasks/jobs}-{adj. 重复的，啰嗦的； 复唱的；|,|\
+ˈreprɪmɑ:nd|ˈreprɪmænd}-{reprimand}-{reprimand somebody for (doing) something;reprehend;reprobate}-{n. 训斥； 惩戒； 谴责；|vt. 谴责； 惩戒； 责难；|,|\
+rɪˈpʌlsɪv|rɪˈpʌlsɪv}-{repulsive}-{a repulsive force.;Many people find slugs repulsive.}-{adj. 令人厌恶的，可憎的； 丑恶；|,|\
+ˈrepjətəbl|ˈrɛpjətəbəl}-{reputable}-{reputable firm/company}-{adj. 值得尊敬的，声誉好的；|,|\
+ˈrekwɪzɪt|ˈrɛkwɪzɪt}-{requisite}-{He lacks the requisite qualifications.}-{n. 必需品； 要素，要件；|adj. 需要的，必要的；|,|\
+rɪˈzentfl|rɪˈzɛntfəl}-{resentful}-{She felt resentful at not being promoted.}-{adj. 感到愤恨的，表示愤恨的； 厌恶的； 易发脾气的，易怒的；|,|\
+ˈrezɪn|ˈrezn}-{resin}-{sap;acetal resin;raisin 葡萄干}-{n. 树脂； 合成树脂； 松香；|vt. 用树脂处理； 涂擦树脂于；|,|\
+rɪˈspektəbl|rɪˈspɛktəbəl}-{respectable}-{hard-working, respectable people}-{adj. 可敬的； 品行端正的； 可观的，相当大的； 体面的|,|\
+rɪˈtreɪs|riˈtres}-{retrace}-{retrace one's steps}-{vt. 折回，折返； 回忆，回想； 追溯，探源； 重描|,|\
+ˌri:ju:ˈnaɪt|ˌrijuˈnaɪt}-{reunite}-{be reunited with somebody}-{vt.& vi. 再次联合； 使重聚； 使再结合；|vi. 重聚； 再结合； 再联合；|,|\
+rɪ'vi:lə|rɪ'vilə}-{revealer}-{advanced revealer}-{n. 启示者；|,|\
+rɪˈvʌlʃn|rɪˈvʌlʃən}-{revulsion}-{News of the atrocities produced a wave of anger and revulsion.}-{n. 剧变； 抽回； 厌恶，强烈的反感； [医] 诱导法|,|\
+ˈrɪkəti|ˈrɪkɪti}-{rickety}-{rickety patient;a rickety old wooden chair}-{adj. 连接处不牢固的，快要散架的；|,|\
+ˌrəʊlz ˈrɔɪs|ˌroʊlz}-{Rolls-Royce}-{.}-{n. 劳斯莱斯（罗尔斯-罗伊斯）；|adj. 最佳的；|,|\
+rəʊm|roʊm}-{Rome}-{.}-{n. 罗马（意大利首都）； 罗马不是一天建成的； 伟业非一日之功； 入乡随俗|,|\
+ˈrʌbl|ˈrʌbəl}-{rubble}-{a road built on a foundation of rubble}-{n. 碎石，瓦砾； 碎砖，瓦砾； 碎岩； 残壁|,|\
+ˈrʌdə(r)|ˈrʌdɚ}-{rudder}-{helm}-{n. 船舵； [航]方向舵； [动]尾羽； 指导人|,|\
+ˈru:dli|ˈrudlɪ}-{rudely}-{We were rudely awakened by the storm.}-{adv. 粗鲁地； 不礼貌地； 猛烈地； 突然地|,|\
+ˈrʌgɪd|ˈrʌɡɪd}-{rugged}-{a rugged coastline}-{adj. 崎岖的； 凹凸不平的； 结实的； 崴|,|\
+rʌn daʊn|ˈrʌnˌdaʊn}-{run-down}-{You look a bit run-down. ;a run-down inner-city area}-{adj. 破旧的； （电池）耗尽的； 精疲力竭的； 衰弱的|n. 裁员； 刺杀出局； 纲要，总结；|,|\
+rʌʃə|ˈrʌʃə}-{Russia}-{.}-{n. (1917年以前的)俄罗斯帝国； 现俄罗斯； 俄罗斯皮革；|,|\
+ˈrʌʃn|ˈrʌʃən}-{Russian}-{.}-{adj. 俄国的，俄罗斯的； 俄语的；|n. 俄国人，俄罗斯人； 俄语；|,|\
+ˈrʌsti|ˈrʌsti}-{rusty}-{a new metal that will never go rusty}-{adj. 生锈的，腐蚀的； 铁锈色的，锈色的； 变钝的； 褪了色的|,|\
+ˈsædli|ˈsædli}-{sadly}-{Peter shook his head sadly.}-{adv. 悲哀地； 忧愁地； 令人遗憾地； 不幸地|,|\
+seɪf'ki:pɪŋ|ˈsefˈkipɪŋ}-{safekeeping}-{for safekeeping}-{n. （对贵重物品的）保护，保管；|,|\
+ˈsɑ:gə|ˈsɑɡə}-{saga}-{recounted the saga of their family problems.}-{n. 萨迦（尤指古代挪威或冰岛讲述冒险经历和英雄业绩的长篇故事）； （讲述许多年间发生的事情的）长篇故事； 传说，冒险故事，英雄事迹；|,|\
+səˈlaɪvə|səˈlaɪvə}-{saliva}-{eject saliva吐唾沫}-{n. 唾液，口水； 津； 吐沫； 涎|,|\
+ˌsælməˈnelə|ˌsælməˈnɛlə}-{salmonella}-{He was suffering from salmonella poisoning}-{n. 沙门氏菌；|,|\
+ˈsælvɪdʒ|ˈsælvɪdʒ}-{salvage}-{salvage something from something}-{n. 海上营救； 抢救出的财产； 救援费； 经加工后重新利用的废物|vt. （从火灾、海难等中）抢救（某物）； 回收利用（某物）；|,|\
+ˈsæŋgwɪn|ˈsæŋɡwɪn}-{sanguine}-{be sanguine about sth/that}-{adj. 乐观的，充满希望的； 面色红润的； 血红色的；|n. 血红色； 自信，乐观；|,|\
+ˌsænɪˈteɪʃn|ˌsænɪˈteʃən}-{sanitation}-{poor sanitation}-{n. 卫生系统或设备；|,|\
+sɑ:ˈkæstɪk|sɑrˈkæstɪk}-{sarcastic}-{sarcastic remark/comment/question}-{adj. 讥讽的，讽刺的，挖苦的；|,|\
+sɑ:'kæstɪklɪ|sɑrˈkæstɪkəlɪ}-{sarcastically}-{She smiled sarcastically}-{adv. 讽刺地，挖苦地；|,|\
+ˌsɑ:ˈdi:n|ˌsɑrˈdin}-{sardine}-{They opened a can of sardines}-{n. 沙丁鱼； 庸碌无能的人；|vt. 紧紧地裹起来，塞满；|,|\
+ˌseɪʃɪ'eɪʃn|ˌseɪʃɪ'eɪʃn}-{satiation}-{satiate}-{n. 饱食； 饱满； 饱享； 厌腻|,|\
+ˈsætədeɪ|ˈsætərdeɪ}-{Saturday}-{.}-{n. 星期六，周六；|,|\
+ˈsaʊəkraʊt|ˈsaʊərkraʊt}-{sauerkraut}-{a dish of sauerkraut}-{n. <美>德国泡菜的一种； 酸泡菜； 腌菜； 酸菜|,|\
+sə'vænə|sə'vænə}-{savannah}-{a journey from Savannah}-{n. （热带和亚热带）无树大草原；|,|\
+seɪvɪŋz|ˈsevɪŋz}-{savings}-{Her savings were in the First National Bank}-{n. 储蓄； 节约( saving的名词复数 )； 节俭； 储蓄金 挽救；|,|\
+ˈskeɪli|ˈskeli}-{scaly}-{scaly tail}-{adj. （动物）多鳞的； （皮肤）干燥粗糙的； 鳞片状；|,|\
+ˈskænti|ˈskænti}-{scanty}-{scanty knowledge}-{adj. （大小或数量）不足的，勉强够的；|,|\
+ˈskævɪndʒə(r)|ˈskævəndʒɚ}-{scavenger}-{Women were scavenging for old furniture.}-{n. 捡破烂的人，清扫工； 食腐动物；|,|\
+ˈskeptɪkl|ˈskɛptɪkəl}-{sceptical}-{sceptical about/of}-{adj. 怀疑的； 怀疑论者的；|,|\
+sku:p|skup}-{scoop}-{a flour scoop . 面勺}-{n. 铲，勺，水舀，铲斗； 一勺[铲]之量； 穴，凹处； 通气（或通水）口|vt. 舀； 挖空； 掏，抓取； [非正式用语]抢先获得、发布|,|\
+skɔ:nfəlɪ|'skɔnfəlɪ}-{scornfully}-{He was scornful of the women’s movement.}-{adv. 鄙视地，轻蔑地；|,|\
+skɒtlənd|'skɑtlənd}-{Scotland}-{.}-{n. 苏格兰（英国的一部分，在大不列颠岛北部）；|,|\
+ˈskaʊə(r)|skaʊr}-{scour}-{scour sth away;scour rust spots from the knife}-{v. 冲刷； 擦亮； 四处搜索； （用泻药）泻|n. 擦； 冲刷； 洗涤剂；|,|\
+ˈskʌlptə(r)|ˈskʌlptɚ}-{sculptor}-{a sculptor carves a statue}-{n. 雕刻家，雕塑家； [天]玉夫座； 雕刻（塑）工人；|,|\
+ˈskʌri|ˈskɜri}-{scurry}-{they scurry off again}-{vi. 急匆匆地走； 使急赶； 催促；|n. 快步急跑，疾走； 仓皇奔跑声； 骤雨，骤雪； 短距离赛马|,|\
+ˈsi:ʃɔ:(r)|ˈsiˌʃɔr, -ˌʃor}-{seashore}-{on the seashore}-{n. 海岸，海滨；|,|\
+ˈsi:sɪk|ˈsiːsɪk}-{seasick}-{she was seasick}-{adj. 晕船的；|,|\
+ˈsi:krəsi|ˈsikrɪsi}-{secrecy}-{secrecy over the details.}-{n. 保密； 保密能力； 秘密（状态）； 守秘密|,|\
+ˈsi:krətɪv|ˈsikrɪtɪv, sɪˈkritɪv}-{secretive}-{Carla was always very secretive about her work.}-{adj. 遮遮掩掩的，守口如瓶的，秘密的，偷偷摸摸的； [生]（促进）分泌的； 嘴紧； 鬼头鬼脑|,|\
+ˈsedɪmənt|ˈsɛdəmənt}-{sediment}-{a wine with a gritty sediment}-{n. [地]沉淀物； 沉积物，沉渣；|,|\
+saɪz'mɒmɪtə|saɪz'mɒmətə}-{seismometer}-{a conventional seismometer}-{n. 地震检波器； 测震仪；|,|\
+self 'dɪsəplɪn|ˈsɛlfˈdɪsəplɪn}-{self-discipline}-{build self-discipline}-{n. 自我训练，自我修养； 自律；|,|\
+self ɪm'pru:vmənt|self ɪm'pruvmənt}-{self-improvement}-{fail in our efforts at self-improvement}-{n. 自我改善，自我修养； 自强；|,|\
+self rɪ'spektɪŋ|self rɪ'spektɪŋ}-{self-respecting}-{self-respecting boss}-{adj. 有自尊心的，自重的；|,|\
+senˈseɪʃənl|sɛnˈseʃənəl}-{sensational}-{sensational newspaper stories}-{adj. 轰动的； 耸人听闻的； 极好的； 绝妙的|,|\
+ˈsensə(r)|ˈsɛnsɚ, -ˌsɔr}-{sensor}-{a motion sensor}-{n. 传感器，灵敏元件；|,|\
+ˌsentɪ'mentəlɪ|ˌsentɪ'mentəlɪ}-{sentimentally}-{People can be very sentimental about animals.}-{adv. 富情感地；|,|\
+səʊl|sol}-{Seoul}-{a hotel in Seoul,}-{n. 首尔（韩国首都）；|,|\
+sepˈtembə(r)|sɛpˈtɛmbɚ}-{September}-{.}-{n. 九月； [电影]情怀九月天；|,|\
+sə'renətɪ|səˈrɛnɪti}-{serenity}-{serene}-{n. 安详； 宁静； 尊贵的阁下； 平静|,|\
+ˈsetlə(r)|ˈsɛtlɚ}-{settler}-{the first white settler}-{n. 移民，侨民； 殖民者； 决定者；|,|\
+ˈsu:ɪdʒ|ˈsuɪdʒ}-{sewage}-{sewage purification}-{n. （下水道里的）污物； 下水道； 污水；|,|\
+ʃeɪd|ʃed}-{shade}-{in the shade (of something)}-{n. 遮阳，遮棚； 挡风物； 玻璃罩； （画的）阴暗部分|vt. 遮蔽； 险胜； 加灯罩； 画阴影于…之上|vi. 逐渐变化；|,|\
+ˈʃeɪdi|ˈʃedi}-{shady}-{a shady character}-{adj. 背阴的； 隐蔽的； 名声不好的； 可疑的|,|\
+ˈʃɑ:pən|ˈʃɑrpən}-{sharpen}-{The course will help students sharpen their writing skills.}-{vt.& vi. 使锐利； 使敏捷； 加重； 削尖|vi. 尖锐； 变锋利；|,|\
+ʃɔ:l|ʃɔl}-{shawl}-{in her shawl}-{n. 围巾，披肩；|,|\
+ˈʃeltəd|ˈʃeltərd}-{sheltered}-{sheltered accommodation/housing}-{adj. 受庇护的； 免税的； （尤指为病弱者）提供食宿的； 提供抚养方便的|v. 庇护( shelter的过去式和过去分词)；|,|\
+ˈʃerɪf|ˈʃɛrɪf}-{sheriff}-{the local sheriff.}-{n. 州长； 执行吏； 治安官；|,|\
+ʃaɪnɪŋ|'ʃaɪnɪŋ}-{shining}-{a shining example to us all.}-{adj. 光亮的； 华丽的；|v. 发光( shine的现在分词)；|,|\
+ʃəʊl|ʃoʊl}-{shoal}-{swim in shoals}-{n. 浅滩，沙洲； 潜在的危险； 鱼群； 大量|vi. 变浅；|vt. 变浅； 驶入；|adj. 浅的；|,|\
+ʃɔ:(r)|ʃɔr, ʃor}-{shore}-{The roof had been shored up with old timbers.}-{n. 岸； 滨； 国家（尤指濒海国家）； 支柱|vt. 支撑； 支持；|,|\
+ˈʃʌdə(r)|ˈʃʌdɚ}-{shudder}-{shudder with}-{vt.& vi. 战栗； 发抖； 震动； 颤动|n. 颤动，打颤； 战栗；|,|\
+ʃʌn|ʃʌn}-{shun}-{shun off shun temptation}-{vt. 避开，回避； 避免；|,|\
+}-{Siberian}-{the Siberian continental}-{adj. 西伯利亚的，来自西伯利亚的；|,|\
+ˈsi:njɔ:|sinˈjɔr, -ˈjor}-{Signor}-{.}-{n. Signori 或Signors 先生；|,|\
+sɪlt|sɪlt}-{silt}-{silt soil;slit}-{n. 淤泥，泥沙；|vi. 被淤塞； 淤积；|vt. 使淤积； 充塞；|,|\
+ˈsɪlvəweə(r)|ˈsɪlvərwer}-{silverware}-{He rubbed up the silverware with a clean dry cloth}-{n. 银器，镀银器皿（尤指餐具）； （体育比赛中的）银杯； 银餐具；|,|\
+sɪn'serətɪ|sɪnˈsɛrɪti}-{sincerity}-{in all sincerity}-{n. 真挚，诚心诚意，诚意； 笃实； 襟怀坦白； 愫|,|\
+ˈsaɪə(r)|saɪr}-{sire}-{sir}-{n. 陛下，大人； 男性祖先； 雄性牲畜；|vt. 做…的父亲，生产；|,|\
+skeɪt|sket}-{skate}-{be skating on thin ice}-{vt.& vi. 溜冰，滑冰；|n. 溜冰鞋；|,|\
+ˈski:ə(r)|ˈskiːər}-{skier}-{an Alpine skier}-{n. 滑雪的人；|,|\
+ˈskɜ:mɪʃ|ˈskɜrmɪʃ}-{skirmish}-{a skirmish on the frontier 国境, 边疆, 边境}-{n. 小规模战斗； 小争论； 小冲突； [体]〈美〉比赛|v. 参与小争斗； 进行小争论； 搜索； 侦察|vi. 进行小规模战斗； 发生小争论；|,|\
+ˈskaɪskreɪpə(r)|ˈskaɪˌskrepɚ}-{skyscraper}-{a top needle of a skyscraper}-{n. 摩天大楼，超高层大楼； 特别高的东西；|,|\
+ˈslɑ:ndə(r)|ˈslændə(r)}-{slander}-{slander sb in front of my friend}-{n. 口头诽谤； 口头诽谤罪；|v. 口头诽谤； 诋毁； 中伤；|,|\
+ˈsli:pə(r)|ˈslipɚ}-{sleeper}-{in the sleeper compartment,}-{n. 卧车； 轨枕； 睡觉（呈某种状态）的人； 冬眠动物|,|\
+ˈslɪpə(r)|ˈslɪpɚ}-{slipper}-{a pair of old slippers}-{n. 拖鞋，（室内）便鞋； （马车的）煞车，[机]滑动部分，滑屐； （小孩的）围兜，放猎狗的猎人；|v. （用拖鞋）打（孩子等）； 穿着拖鞋走；|,|\
+ˈslʌmbə(r)|ˈslʌmbɚ}-{slumber}-{disturb sb's slumber}-{v. 微睡，睡眠； 蛰伏，处于静止状态； （用睡眠）消磨（时间）；|n. 微睡，安眠，熟睡； 蛰伏；|,|\
+slɜ:(r)|slɚ}-{slur}-{She was slurring her words as if she was drunk.}-{vt. 诽谤； 含糊地说； 连唱；|n. 诋毁； 含糊发音； 连唱线；|,|\
+ˈsmu:ðli|smuðlɪ}-{smoothly}-{Traffic flowed smoothly.}-{adv. 平滑地； 流畅地； 平稳地； 顺利地|,|\
+ˈsmʌglə(r)|ˈsmʌɡ(ə)lər}-{smuggler}-{a drug smuggler}-{n. 走私者； 走私船；|,|\
+snæg|snæɡ}-{snag}-{there must be a snag in it;Brambles snagged his suit}-{n. 小困难或障碍； 突出物； 钩丝；|vt. 戳坏； 抓住； 清除暗桩；|vi. 妨碍； 被戳坏；|,|\
+sneɪl|snel}-{snail}-{Traffic was moving at a snail’s pace.}-{n. 蜗牛； 慢性子；|,|\
+sneɪk|snek}-{snake}-{snake along/past/down etc}-{n. 蛇； 奸险的人； 卑劣的人； 蛇形浮动汇率制|vt. 沿…曲折前进（或延伸）； <美>/<口>拖，拉（木材等）；|vi. 曲折前进（或延伸）； 蛇行，悄悄地爬行；|,|\
+snɪə(r)|snɪr}-{sneer}-{sneer at sb/sth}-{vi. 讥笑，冷笑；|n. 嘲笑，冷笑； 讥笑的表情（言语）；|,|\
+snɒb|snɑb}-{snob}-{a musical snob}-{n. 势利小人，势利眼； 附庸风雅之徒，假内行；|,|\
+ˈsnɒbəri|ˈsnɑbəri}-{snobbery}-{intellectual snobbery}-{n. 势利，谄上欺下； 摆绅士架子； 势利的行为或语言；|,|\
+snɔ:(r)|snɔr, snor}-{snore}-{He could hear the old man snoring.}-{vi. 打呼噜，打鼾；|n. 呼噜，鼾声；|,|\
+snaʊt|snaʊt}-{snout}-{a criminal who gives information about other criminals to the police}-{n. （猪等动物的）长鼻子，口鼻部；|,|\
+ˌsəʊsiˈɒlədʒɪst|ˌsoʊsiˈɑlədʒɪst}-{sociologist}-{an Arab sociologist}-{n. 社会学家；|,|\
+ˈsɒlɪtju:d|ˈsɑlətud}-{solitude}-{fond of solitude}-{n. 单独，孤独； 偏僻处，隐居处； 幽静（的地方），荒野；|,|\
+su:ð|suð}-{soothe}-{soothe a crying baby soothe one's toothache}-{vt. 安慰； 缓和； 使平静； 减轻痛苦|,|\
+səˌfɪstɪˈkeɪʃn|səˌfɪstɪˈkeɪʃn}-{sophistication}-{sophisticate v}-{n. 老练，精明； 强词夺理，诡辩； 伪品，掺杂品； 有教养|,|\
+ˈsaʊndɪŋ|ˈsaʊndɪŋ}-{sounding}-{ohn always used her as a sounding board for new ideas.}-{n. 探通术；|v. （使）发出声音，响( sound的现在分词 )； 发（音）； 试探； 探测|,|\
+ˈsaʊndli|ˈsaʊndlɪ}-{soundly}-{soundly defeated/beaten/thrashed}-{adv. 完好地，健全地； 正确地； 严厉地； 酣畅地|,|\
+saʊθ'æmptən|saʊθ'hæmptənˌ saʊ'θæmp-}-{Southampton}-{.}-{释义 南安普敦（英国英格兰南部港市）；|,|\
+speɪn|speɪn}-{Spain}-{.}-{n. 西班牙（欧洲国家）；|,|\
+ˈspæzəm|ˈspæzəm}-{spasm}-{an asthma spasm 气喘发作}-{n. 痉挛； 抽搐； （能量、行为等的）突发； 发作|,|\
+ˈspeɪʃl|ˈspeʃəl}-{spatial}-{spatial tasks}-{adj. 空间的； 存在于空间的； 受空间条件限制的； 占大篇幅的|,|\
+spɔ:n|spɔn}-{spawn}-{Have the frogs spawned yet? 那些蛙产卵了吗?}-{vt.& vi. （鱼、蛙等）大量产（卵）； 引起，酿成；|vt. 大量生产；|n. （鱼、蛙等的）子，卵； （裂殖菌类植物的）丝，菌； 产物，结果；|,|\
+spɪə(r)|spɪr}-{spear}-{He transfixed the enemy's heart with a spear}-{n. 矛； 枪； （某些植物的）嫩枝； 貌，标枪|vt. 用矛刺； 用鱼叉捉； 〈美俚〉得到，捕到； 刺，戳|adj. 父系的，右边的；|,|\
+ˌspekjuˈleɪʃn|ˌspɛkjəˈleʃən}-{speculation}-{speculation about/on}-{n. 投机买卖； 思考； 投机活动； 推断|,|\
+ˈspekjələtɪv|ˈspɛkjulətɪv, -ˌle-}-{speculative}-{a speculative trade}-{adj. 投机的； 思考的； 推理的，揣摩的；|,|\
+ˈspi:dbəʊt|ˈspidboʊt}-{speedboat}-{a motor speedboat}-{n. 高速游艇；|,|\
+ˈspaɪə(r)|spaɪr}-{spire}-{the spire of a steeple}-{n. 螺旋； 塔尖； 尖塔； [动]螺旋部，（软体动物的）螺塔|vt. 给…装尖塔；|vi. 塔状矗立； 螺旋形上升；|,|\
+ˈspaɪtfl|ˈspaɪtfəl}-{spiteful}-{a spiteful remark}-{adj. 恶意的，居心不良的，故意使人苦恼的； 刻毒；|,|\
+ˈspəʊksmən|ˈspoksˌwʊmən}-{spokeswoman}-{A United Nations spokeswoman}-{n. 女发言人； 女代言人；|,|\
+ˈskwɒdrən|ˈskwɑdrən}-{squadron}-{a squadron of nine warships}-{n. 中队； 骑兵中队； 飞行中队； 有组织的一个群体|vt. 把…编成中队；|,|\
+skwɔ:l|skwɔl}-{squall}-{snow squalls ;bawl}-{n. 飑； 号啕，高声喊叫；|vt. 号啕，尖叫；|,|\
+skwi:k|skwik}-{squeak}-{She just squeaked through her math test. ;The door squeaked open}-{n. 短促的尖叫声，，吱吱的叫声； 尖厉刺耳的噪音； 机会；|vi. 短促地尖叫，吱吱叫； 发出尖厉刺耳的噪音； 告密；|vt. 以尖厉的声音说话； 使发出吱吱声；|,|\
+skwɪnt|skwɪnt}-{squint}-{squint at sth}-{v. 斜视； 斜着眼睛看； 倾向；|n. 斜视； 一瞥；|adj. 斜视的； 细眯着眼看的；|,|\
+ˈskwɪrəl|ˈskwɜrəl}-{squirrel}-{By December I had $300 squirreled away. stash}-{n. 松鼠，松鼠科动物； 松鼠毛皮；|vt. 储藏； 贮存；|,|\
+ˈstægərɪŋ|ˈstæɡərɪŋ}-{staggering}-{The cost was a staggering $10 million.}-{adj. 难以置信的，令人震惊的； 蹒跚的； 犹豫的；|adv. 难以置信地，令人震惊地；|v. 蹒跚(stagger的现在分词)； 使…感到震惊[担心]； 错开；|,|\
+ˈstæləktaɪt|stəˈlæktaɪt}-{stalactite}-{.}-{n. 钟乳石；|,|\
+ˈstæləgmaɪt|stəˈlægmaɪt}-{stalagmite}-{.}-{n. 石笋；|,|\
+ˈstɑ:bəd|ˈstɑrbərd}-{starboard}-{all the port cannon to be heaved to starboard}-{n. （船舶、飞机的）右舷，右侧；|v. 向右转舵；|adj. 右舷的；|,|\
+ˈsteɪʃənri|ˈsteɪʃəneri}-{stationery}-{a letter on hotel stationery}-{n. 文具； 办公用品； 信纸，信封； 文房四宝|,|\
+stedɪlɪ|ˈstɛdəlɪ}-{steadily}-{hold/remain steady}-{adv. 稳定地； 持续地； 稳固地；|,|\
+ˈsti:mʃɪp|ˈstimˌʃɪp}-{steamship}-{the first steamship crossed the Atlantic Ocean}-{n. 汽船，大轮船；|,|\
+ˈsti:pən|ˈstipən}-{steepen}-{The road steepened}-{vt.& vi. （使）变得陡峭；|,|\
+ˈsterəlaɪz|ˈstɛrəlaɪz}-{sterilize}-{sterilized milk}-{vt. 消毒； 使无菌； 使失去生育能力； 使不起作用|,|\
+stɒkhəʊm|'stɑkˌholm}-{Stockholm}-{He is from Stockholm}-{n. 斯德哥尔摩（瑞典首都）；|,|\
+ˈstɔ:ru:m|ˈstɔrˌrum, -ˌrʊm, ˈstor-}-{storeroom}-{a storeroom filled with}-{n. 贮藏室，商品陈列室；|,|\
+stɔ:rɪ|ˈstɔri, ˈstori}-{storey}-{two-storey/five-storey etc}-{n. <英>楼层； 叠架的一层； “story”的变体；|,|\
+staʊtlɪ|staʊtlɪ}-{stoutly}-{She stoutly denied the rumours}-{adv. 刚强地，坚决地；|,|\
+ˈstrægl|ˈstræɡəl}-{straggle}-{Vines straggled over the yard.;Cows straggled along the lane.}-{vi. 蔓延； 散漫； 落伍； 落后|,|\
+ˈstrɑ:tə|ˈstretə, ˈstrætə}-{strata}-{social strata}-{n. 地层； 岩层( stratum的名词复数 )； 地层； 社会阶层|,|\
+ˈstrɪktli|ˈstrɪktli}-{strictly}-{strictly forbidden}-{adv. 严格地； 完全地；|,|\
+strɒŋ 'maɪndɪd|ˈstrɔŋˈmaɪndɪd}-{strong-minded}-{They were both strong-minded women.}-{adj. 意志坚强的，有主见的；|,|\
+ˈstrɪkni:n|ˈstrɪkˌnaɪn, -nɪn, -ˌnin}-{strychnine}-{Most toxic plant compounds, such as strychnine}-{n. 士的宁，番木鳖碱；|,|\
+ˈstʌfi|ˈstʌfi}-{stuffy}-{a stuffy nose. 堵住的鼻子}-{adj. 闷热的，不通气的； 古板的，保守的； 枯燥无味的； 一本正经的|,|\
+səbˈdju:|səbˈdu}-{subdue}-{subdue the rebels conquer subjugate vanquish}-{vt. 征服； 克制； 制服；|,|\
+səbˈmɪsɪv|səbˈmɪsɪv}-{submissive}-{missive 信件;to be quiet and submissive}-{adj. 顺从的，唯命是从的； 柔顺； 帖； 贴|,|\
+səbˈsɜ:viənt|səbˈsɜrviənt}-{subservient}-{subservient attitude servient 从属的}-{adj. 卑躬屈节的； 有帮助的； 充当下手的； 马屁精|,|\
+səˈbɜ:bən|səˈbɜrbən}-{suburban}-{urban 城市的, 市内的}-{adj. 城郊的，在郊区的，城郊住宅区的； 土气的； 见闻不广的；|n. 郊区居民；|,|\
+ˈsu:tkeɪs|ˈsutˌkes}-{suitcase}-{pack a suitcase}-{n. 手提箱； 衣箱；|,|\
+ˈsʌndeɪ|ˈsʌnˌdeɪ}-{Sunday}-{.}-{n. 星期日，星期天； 每逢星期日出版的报纸； 星期日报； [人名] 森迪|,|\
+ˈsʌŋkən|ˈsʌŋkən}-{sunken}-{sunken cheeks/eyes etc}-{adj. 沉没的； 凹陷的，下陷的； 低于周围平面的； 水底的，埋着的|v. 陷入，下沉； 沉没；|,|\
+ˌsu:pəˈnætʃrəl|ˌsupərˈnætʃrəl}-{supernatural}-{supernatural powers}-{adj. 超自然的； 神的，与神有关的； 神奇的，运用神力的；|n. 超自然的事物，超自然现象； [美剧]邪恶力量；|,|\
+ˈsu:pəstrʌktʃə(r)|ˈsupərstrʌktʃə(r)}-{superstructure}-{the whole superstructure of capitalism}-{n. 上部结构，上层建筑； （建筑物、船等的）上面部分；|,|\
+səˈraʊndɪŋ|səˈraʊndɪŋ}-{surrounding}-{Troops sealed off the surrounding area .}-{n. 环境，周围的事物；|adj. 周围的，附近的；|v. 包围( surround的现在分词 )； 与…紧密相关； 围绕； 喜欢结交（某类人）|,|\
+swɔ:m|swɔrm}-{swarm}-{The museum was swarming with tourists. ;a swarm of locusts}-{n. 蜂群，一大群；|vi. 泛滥，挤满； 云集，涌往； 成群地移动或出现； 成群飞离蜂巢，用于蜜蜂|,|\
+swi:dn|'swidn}-{Sweden}-{.}-{n. 瑞典；|,|\
+swi:dɪʃ|ˈswidɪʃ}-{Swedish}-{.}-{adj. 瑞典的；|n. 瑞典语； （总称）瑞典人；|,|\
+ˈswi:pɪŋ|ˈswipɪŋ}-{sweeping}-{sweeping changes/cuts/reforms etc}-{adj. 彻底的； 影响广泛的，全面的； 扫荡的，一网打尽的；|v. 扫( sweep的现在分词)；|n. 扫除； (pl.)垃圾；|,|\
+swɜ:v|swɜrv}-{swerve}-{the ball swerve to the left swerve sharply to}-{vt.& vi. 使突然转向； 使转弯；|n. 改变方向；|,|\
+ˈswɪmə(r)|ˈswɪmər}-{swimmer}-{I'm a good swimmer}-{n. 游泳者；|,|\
+swu:p|swup}-{swoop}-{The eagle swooped down on a chicken.}-{vi. （鹰）俯冲，猛冲； 突然扑向；|vt. 出其不意的抓起；|n. 飞扑，攫取； [航]下扑；|,|\
+sɪdnɪ|'sɪdnɪ}-{Sydney}-{.}-{n. 悉尼（澳大利亚一城市）；|,|\
+ˈsɪləbl|ˈsɪləbəl}-{syllable}-{not a syllable 半个字也不说}-{n. 音节；|,|\
+ˌsɪmpə'θetɪklɪ|ˌsɪmpəˈθɛtɪklɪ}-{sympathetically}-{Jill smiled sympathetically.}-{adv. 悲怜地，富有同情心地；|,|\
+ˈteɪbllænd|ˈtebəlˌlænd}-{tableland}-{plateau tableland}-{n. 高原，台地； 海台；|,|\
+təˈbu:|təˈbu, tæ-}-{taboo}-{Rape is a taboo subject .}-{n. 禁忌； 忌讳； 戒律； 禁忌的事物（或行为）|adj. 禁忌的，忌讳的；|vt. 把…列为禁忌，禁止；|,|\
+ˈtædpəʊl|ˈtædpoʊl}-{tadpole}-{tad 小孩子(尤指男孩),微量,少量}-{n. 蝌蚪；|,|\
+ˈtændʒəbl|ˈtændʒəbəl}-{tangible}-{tangible proof}-{adj. 可触知的； 确实的，真实的； 实际的； [法]有形的|n. 有形资产； 可触知的或具体的某事物；|,|\
+tɔ:nt|tɔnt}-{taunt}-{taunt sb with cowardice}-{vt. 嘲笑，奚落； 用嘲笑刺激；|n. 嘲弄，奚落； 讥讽； 嘲弄的对象，笑柄；|adj. [航]（桅杆）很高的；|,|\
+ˈti:pɒt|ˈtipɑt}-{teapot}-{a tempest in a teapot}-{n. 茶壶；|,|\
+ti:spu:nfʊl|'tispunfʊl}-{teaspoonful}-{a heaped teaspoonful of salt.}-{n. 一茶匙的量； 一茶匙容量；|,|\
+tempəˈrerɪlɪ|tempəˈrerɪlɪ}-{temporarily}-{Reparations were temporarily pretermitted}-{adv. 暂时地； 临时地；|,|\
+ˈtɜ:maɪt|ˈtɜrmaɪt}-{termite}-{mite 小东西}-{n. 白蚁；|,|\
+təˈrestriəl|təˈrɛstriəl}-{terrestrial}-{the terrestrial parts of the world}-{adj. 陆地的； 地球的； 人间的； <天>类地行星的|n. 地球人，陆地生物；|,|\
+ˈteðə(r)|ˈtɛðɚ}-{tether}-{at the end of one's tether}-{n. （拴牲畜用的）系绳； 限度，极限；|vt. 用绳拴住； 拘束，束缚；|,|\
+taɪ|taɪ}-{Thai}-{.}-{n. 泰国人，泰国语；|,|\
+taɪlænd|'taɪlænd}-{Thailand}-{.}-{n. 泰国；|,|\
+ˌθɜ:məʊdaɪˈnæmɪks|ˌθɜrmoʊdaɪˈnæmɪks}-{thermodynamics}-{the first law of thermodynamics}-{n. 热力学；|,|\
+ði:z|ðiz}-{these}-{.}-{adj. 这些的；|pron. 这些；|,|\
+θi:f|θif}-{thief}-{The thieves snatched the camera.}-{n. 小偷，盗贼； <口>（使蜡外流的）蜡烛心结的烛花；|,|\
+θɜ:stɪlɪ|'θɜstɪlɪ}-{thirstily}-{he drank it thirstily}-{adv. 如饥似渴地；|,|\
+ˈθɜ:sti|ˈθɜrsti}-{thirsty}-{a generation thirsty for change}-{adj. 口渴的； 渴望（求）…的； 干旱的，缺水的； 耗油的|,|\
+ˈðɪðə(r)|ˈθɪðɚ, ˈðɪð-}-{thither}-{there}-{adv. 到那边，向那方；|adj. 在那边的，对岸的，那边的；|,|\
+ˈθʌrəli|ˈθɜrəli}-{thoroughly}-{thoroughly cooked meat}-{adv. 彻底地； 认真仔细地； 完全地； 非常|,|\
+θreʃ|θrɛʃ}-{thresh}-{thresh violently ;He threshed his son with a stick}-{vt.& vi. 打（麦等）； 脱粒； 反复地做； 推敲|n. 打谷；|,|\
+ˈθrɪfti|ˈθrɪfti}-{thrifty}-{a thrifty housewife}-{adj. 节俭的； 节约的；|,|\
+θrɒŋ|θrɔŋ}-{throng}-{consumers thronging the platform a throng of}-{n. 人群，大群人； 众多；|vt.& vi. 群集； 蜂拥而至； 挤满；|,|\
+ˈθɜ:zdeɪ|ˈθɜrzdeɪ}-{Thursday}-{.}-{n. 星期四，礼拜四，周四； [电影]惊爆星期四；|,|\
+ˈtɪklɪʃ|ˈtɪklɪʃ}-{ticklish}-{tickle n.搔, 胳肢, 发痒vt.胳肢, be a ticklish business .}-{adj. （指人）怕痒的； 需要小心处理的； 难对付的； 棘手的|adv. 怕痒地；|n. 怕痒，小心处理；|,|\
+tɪnt|tɪnt}-{tint}-{tints of green}-{n. 色彩，色泽； 浅色； 气息，迹象，痕迹；|vt. 染色； 着色于…； 染（发）；|,|\
+ˈtɪpstə(r)|ˈtɪpstɚ}-{tipster}-{dealt with the tipster}-{n. 提供（赛马等）内幕消息的人；|,|\
+təˈbækəʊ|təˈbækoʊ}-{tobacco}-{Try to do without tobacco}-{n. 烟草，烟叶； 烟草制品； 卷烟； 纸烟|,|\
+təʊkjəʊ|'tokjo}-{Tokyo}-{.}-{n. 东京（日本首都）；|,|\
+ˈtu:θeɪk|ˈtuθˌek}-{toothache}-{cheek swelled by toothache}-{n. 牙痛，牙疼；|,|\
+təˈpɒgrəfi|təˈpɑgrəfi}-{topography}-{The topography of the river's basin has changed significantly}-{n. 地形学； 地形测量学； 地貌；|,|\
+ˈtɔ:tʃlaɪt|ˈtɔrtʃlaɪt}-{torchlight}-{do sth by torchlight;in the dim torchlight}-{n. 火炬之光； 电筒光；|,|\
+tɔ:ˈpi:dəʊ|tɔrˈpidoʊ}-{torpedo}-{New threats of violence have effectively torpedoed the peace talks. ;attack by a torpedo}-{n. 鱼雷； 油井爆破筒； [鱼]电鯆； 职业杀手|vt. 用鱼雷袭击； 破坏； （在油井内）装置爆破筒； 使失去（活动能力等）|,|\
+ˈtɒrənt|ˈtɔrənt}-{torrent}-{a torrent of something}-{n. 奔流，急流； 爆发，迸发； 连续不断； （质问等的）连发|,|\
+tɔɪ'əʊtə, tɔ:'jɔ:tɑ:|tɔɪ'oʊtəˌ tɔ'jɔtɑ}-{Toyota}-{.}-{释义 丰田汽车；|,|\
+træmp|træmp}-{tramp}-{tramp the fields}-{vi. 步行； 踩； 踏； 漂泊|vt. 践踏； 踏实； 步行穿过…；|n. 流浪汉； 妓女； 游民，流浪汉； 徒步旅行，远足|,|\
+ˈtrænzvɜ:s|ˈtrænzvɜrs}-{transverse}-{a transverse beam}-{adj. 横向的； 横断的； 横切的； 向横活动的|n. 横向物； 横轴； 横断面； [解]横肌|,|\
+ˈtreʒə(r)|ˈtrɛʒɚ}-{treasure}-{buried/hidden/sunken treasure}-{n. 金银财宝； 宝藏； 珍宝； 不可多得的人才|vt. 重视； 珍惜； 珍视； 储存|,|\
+ˈtremə(r)|ˈtrɛmɚ}-{tremor}-{a tremor of joy}-{n. 震颤； 战栗； 震颤声； 大地的轻微震动|,|\
+ˈtraɪbl|ˈtraɪbəl}-{tribal}-{tribal cultures}-{adj. 部落的，部族的； 种族的；|,|\
+ˈtrɪkl|ˈtrɪkəl}-{trickle}-{blood trickled from the wound}-{v. 滴； 细细地流； 使淌下； 慢慢地移动|n. 滴； 涓流； 细流； 稀稀疏疏缓慢来往的东西|,|\
+ˈtraɪsɪkl|ˈtraɪˌsɪkəl, -sɪkəl}-{tricycle}-{by tricycle}-{n. 三轮车；|,|\
+ˈtraɪflɪŋ|ˈtraɪflɪŋ}-{trifling}-{a trifling sum}-{adj. 微不足道的； 轻浮的； 无聊的； 懒散的|v. 轻视，小看( trifle的现在分词 )；|,|\
+trɒf|trɔf}-{trough}-{The graph showed peaks and troughs of activity. ;a horse trough ;}-{n. 水槽，食槽； 低谷期； [航]深海漕； [气]低气压槽|,|\
+ˈtru:ənt|ˈtruənt}-{truant}-{play truant 逃学}-{n. 旷课的小学生；  逃学生； 逃避责任者； <旧>懒散的人|adj. 逃学的，玩忽职守的，懒散的；|vi. 逃学，逃避责任，偷懒；|,|\
+ˈtju:zdeɪ|ˈtuzdeɪ}-{Tuesday}-{.}-{n. 星期二；|,|\
+ˈtə:ki|ˈtɚki}-{Turkey}-{.}-{n. 土耳其；|,|\
+ˈtɜ:kɪʃ|ˈtɜrkɪʃ}-{Turkish}-{.}-{adj. 土耳其的，土耳其人的，土耳其语的；|n. 土耳其语；|,|\
+tʌsk|tʌsk}-{tusk}-{the mammoth tusk}-{n. （象等动物的）长牙； 獠牙； 尖形物； 尖头|vt. 用牙抵（或刺），用牙掘（或撕）；|adj. 有獠牙的，有长牙的；|,|\
+ˈtʌsl|ˈtʌsəl}-{tussle}-{have a tussle to do sth}-{vi. <口>扭打； 激烈的争斗；|n. <口>扭打，争斗；|,|\
+ˈtwɪtə(r)|ˈtwɪtɚ}-{twitter}-{She’s been all of a twitter since her daughter’s engagement.}-{vi. （人因兴奋）嘁嘁喳喳地讲； （鸟）叽叽喳喳地叫； 格格地笑； （激动得）抖颤|vt. （鸟等）吱吱叫； 唧唧喳喳地讲述； 颤动； 抖动|n. （鸟）叽叽喳喳的叫声； 格格的笑声； 一个网站名称；|vt.& vi. 在Twitter网站上写信息；|,|\
+ˈtu:fəʊld|ˈtufoʊld}-{twofold}-{a twofold increase}-{adj. <书>由两部分组成的，有两部分的； 两倍的；|adv. 两倍地；|,|\
+u:ˈljɑ:nɔfsk|ulˈjɑnəfsk}-{Ulyanovsk}-{.}-{释义 乌里扬诺夫斯克（伏尔加河中游城市）（旧称辛比尔斯克）；|,|\
+ˌʌnəkˈseptəbl|ˌʌnɪkˈsɛptəbəl, -æk-}-{unacceptable}-{unacceptable to do something}-{adj. 不能接受的； 不受欢迎的； 难答应的； 不中意的|,|\
+ʌnˈkæni|ʌnˈkæni}-{uncanny}-{a uncanny coincidece canny adj.谨慎的, 精明的, 节约的}-{adj. 神秘的； 可怕的； 怪异的； 危险的|,|\
+ʌnˈkʌmftəbl|ʌnˈkʌmfətəbəl, -ˈkʌmftə-}-{uncomfortable}-{an uncomfortable silence}-{adj. 不舒服的； 令人不舒服的； 不自在的； 不安的|,|\
+ʌnˈkɒnʃəs|ʌnˈkɑnʃəs}-{unconscious}-{knock/beat somebody unconscious}-{adj. 失去知觉的，无意识的； 无意的，不自觉的； 不知道的； 不受意识控制的|n. [心]无意识；|,|\
+ˌʌndɪˈkleəd|ˌʌndɪˈklerd}-{undeclared}-{an undeclared civil war}-{adj. 未申报的，未经宣战的；|,|\
+ˈʌndəkləʊðz|ˈʌndərkloʊðz}-{underclothes}-{attractive underclothes}-{n. 内衣； 衬衣； 内衣裤；|,|\
+ˈʌndəkʌrənt|ˈʌndərkɜrənt}-{undercurrent}-{He sensed an undercurrent of resentment among the crowd.}-{n. 潜流，暗流； 潜在的感情、影响或倾向（尤指与表面相反的）； [电]电流不足； [矿]分支洗金槽|,|\
+ˈʌndəsaɪd|ˈʌndərsaɪd}-{underside}-{The leaves are green on top and silvery on the underside.}-{n. 下侧； 下部表面； 底面； 阴暗面|,|\
+ˌʌndəˈwɔ:tə(r)|ˌʌndərˈwɔtə(r)}-{underwater}-{an underwater camera}-{adj. 在水中的； 水面下的；|adv. 在水下，在水中；|,|\
+ʌnˈdu:ɪŋ|ʌnˈduɪŋ}-{undoing}-{In the end, drink was his undoing.}-{n. 毁灭； 取消； 解开； 毁灭或失败的原因|v. 松开( undo的现在分词 )； 解开； 毁灭； 败坏|,|\
+ˌʌnˈdju:|ˌʌnˈdu}-{undue}-{undue pressure/stress/strain etc ;undue delay}-{adj. 过度的，过分的； 不适当的； 未到期的； 逾分|,|\
+ˈʌndjuleɪt|ˈʌndʒəleɪt}-{undulate}-{undulate margins ;undulating hills ;undulate frequently}-{vi. 起伏； 波动； 呈波浪形； 震动|vt. 波动； 使波动； 使起伏； 使成波浪形|adj. 波状的； 波动起伏的； 波浪形的；|,|\
+ˌʌnˈdju:li|ˌʌnˈduli}-{unduly}-{unduly suspicious duly adv.适时地}-{adv. 不适当地； 过分地； 过度地； 不相称地|,|\
+ˌʌnfɔ:ˈsi:n|ˌʌnfɔrˈsin}-{unforeseen}-{unforeseen circumstances/events/changes etc}-{adj. 未预见到的，无法预料的； 意外的，偶然的；|,|\
+ʌnˈhɜ:t|ʌnˈhɜrt}-{unhurt}-{escaped unhurt from the accident}-{adj. 没有受伤的； 未受损害的；|,|\
+ˌʌnɪˈmædʒɪnətɪv|ˌʌnɪˈmædʒɪnətɪv}-{unimaginative}-{unimaginative housing policies}-{adj. 缺乏创造力的； 缺乏想象力的； 乏味的； 无趣的|,|\
+jʊ'ni:klɪ|jʊ'niklɪ}-{uniquely}-{an actor uniquely suited to the part}-{adv. 独特地，唯一地，珍奇地；|,|\
+ˌʌnˈpæk|ʌnˈpæk}-{unpack}-{She unpacked her suitcase}-{vt.& vi. 从（包裹等）中取出（所装的东西），打开行李取出；|vt. 拆包； 解除…的负担； 吐露（心事等）； 卸下（车、马等）的负荷物|,|\
+ˌʌnrɪəˈlɪstɪk|ˌʌnriəˈlɪstɪk}-{unrealistic}-{it is unrealistic to do something}-{adj. 不切实际的； 不现实的； 空想的； 不实在的|,|\
+ʌnˈri:zənɪŋ|ʌnˈrizənɪŋ}-{unreasoning}-{unreasoning assault}-{adj. （指人或态度、信仰等）不理智的，无理性的；|,|\
+ˌʌnrɪˈlentɪŋ|ˌʌnrɪˈlɛntɪŋ}-{unrelenting}-{the unrelenting pressures of the job}-{adj. 无情的； 不松懈的； 不屈不挠的；|,|\
+ˌʌnˈskru:|ʌnˈskru}-{unscrew}-{He unscrewed the back of the telephone}-{vt.& vi. 从…旋出螺丝，旋开，松开；|,|\
+ˌʌnˈsetl|ʌnˈsɛtl}-{unsettle}-{The sudden changes unsettled Judy.}-{vt. 扰乱； 使不安定；|vi. 被扰乱；|,|\
+ʌnˈʃeɪkəbl|ʌnˈʃekəbəl}-{unshakable}-{She had an unshakable faith in}-{adj. 不可动摇的，坚定不移的； 雷打不动； 铁；|,|\
+ʌnˈsmaɪlɪŋ|ʌnˈsmaɪlɪŋ}-{unsmiling}-{an unsmiling face}-{adj. 不笑的，面无笑容的，严肃的；|,|\
+ˌʌnˌsɪmpəˈθetɪk|ˌʌnˌsɪmpəˈθetɪk}-{unsympathetic}-{unsympathetic to/towards}-{adj. 不同情的，冷漠无情的；|adv. 不同情地，冷漠无情地；|,|\
+ʌnˈtaɪdi|ʌnˈtaɪdi}-{untidy}-{untidy hair}-{adj. 不整洁的，凌乱的； 懒散的； 不干净利落的，不简练的； 不适宜的|v. 使不整洁； 使杂乱无章；|,|\
+ˌʌnˈtəʊld|ˌʌnˈtoʊld}-{untold}-{remain untold}-{adj. 未说过的； 未透露的； 说不尽的； 未叙述的，没有说到的|,|\
+ʌnˈʌtərəbl|ʌnˈʌtərəbəl}-{unutterable}-{unutterable excitement}-{adj. 说不出的； 难以形容的； 说不出口；|,|\
+ˈʌpsaɪd|ˈʌpˌsaɪd}-{upside}-{Why not turn it upside down}-{n. 好处； 上边； （糟糕局面的）好的一面； 颠倒着|,|\
+ju:zə 'frendlɪ|'juzər 'frendlɪ}-{user-friendly}-{a user-friendly guide to computing}-{adj. 用户界面友好的，用户容易掌握使用的；|,|\
+ju:tɑ:|'juˌtɑ}-{Utah}-{.}-{n. 犹他州；|,|\
+ˌju:tɪlɪˈteəriən|ˌjutɪlɪˈteriən}-{utilitarian}-{utilitarian considerations in industrial design.}-{adj. 功利的； 功利主义的，实利主义的； 有效用的； 实用的|n. 功利主义者； 实用主义者；|,|\
+ˈvæliənt|ˈvæljənt}-{valiant}-{valiant soldier valiant resistance}-{adj. 勇敢的，英勇的； 坚定的；|n. 勇敢的人，勇士；|,|\
+vɑ:z|veɪs}-{vase}-{a vase of red roses}-{n. 装饰瓶，花瓶；|,|\
+ˌvedʒəˈteəriən|ˌvedʒəˈteriən}-{vegetarian}-{a vegetarian restaurant}-{n. 素食者； 食草动物；|adj. 素食者的； 素菜的；|,|\
+ˈvenəm|ˈvɛnəm}-{venom}-{a look of pure venom}-{n. （某些蛇、蝎子等分泌的）毒液； 恶意； <古>毒物；|v. 放毒；|,|\
+ˌventɪ'leɪʃn|ˌvɛntlˈeʃən}-{ventilation}-{a ventilation system}-{n. 空气流通； 通风设备； 通风方法； 公开讨论|,|\
+ 'viːnəs}-{Venus}-{the high surface temperatures of Venus}-{释义 维纳斯； 金星；|,|\
+ˈverɪtəbl|ˈvɛrɪtəbəl}-{veritable}-{a veritable vilain}-{adj. 名副其实的； 真正的；|,|\
+vəˈnækjələ(r)|vərˈnækjələ(r)}-{vernacular}-{a vernacular disease vernacular literature domestic}-{n. 白话； 行话； 本国语； 动植物的俗名|adj. 本国语的； 白话的； 方言的； 本国的|,|\
+ˈvɜ:tɪbrət|ˈvɜrtbrət}-{vertebrate}-{Mosquitoes will feed on any vertebrate blood}-{n. 脊椎动物；|adj. 有脊椎的，脊椎动物的；|,|\
+vɜ:tɪklɪ|ˈvətɪklɪ}-{vertically}-{we cut it into vertically}-{adv. 垂直地； 直立地； 陡峭地； 在顶点|,|\
+vaɪˈbreɪʃn|vaɪˈbreʃən}-{vibration}-{the vibrations from the earthquake}-{n. 摆动； 震动； 感受； （偏离平衡位置的）一次性往复振动|,|\
+ˈvɪkə(r)|ˈvɪkər}-{vicar}-{The local vicar}-{n. （英国国教的）教区牧师； （天主教的）主教代理； 教皇； 代理人|,|\
+vaɪ|vaɪ}-{vie}-{Businesses vied with each other to attract customers}-{vi. 竞争；|vt. 使竞争； 作较量； 下赌注；|,|\
+ˈvɪlɪdʒə(r)|ˈvɪlədʒɚ}-{villager}-{get from a villager}-{n. 村民； 乡村居民；|,|\
+ˈvaɪələntli|ˈvaɪələntlɪ}-{violently}-{tremble/shiver/shake etc violently}-{adv. 激烈地； 暴力地； 狂暴地； 极度地|,|\
+ˈvaɪpə(r)|ˈvaɪpɚ}-{viper}-{cherish [nourish] a viper in one's bosom 厚待忘恩负义的人, 姑息养奸}-{n. 蝰蛇； 毒蛇； 阴险恶毒的人； 奸诈者|,|\
+vaɪpərɪn|'vaɪpərɪn}-{viperine}-{viperine bite /poison}-{adj. 毒蛇的，似毒蛇的；|,|\
+vaɪˈtæləti|vaɪˈtælɪti}-{vitality}-{the economic vitality of the region.}-{n. 活力； 生气； 生命力； 持久性|,|\
+vɪvəˌfaɪ|'vɪvəˌfaɪ}-{vivify}-{vivifying the brown grasslands.}-{vt. 使具有生气，使生动；|,|\
+vəʊl|voʊl}-{vole}-{a cat grabs a vole}-{n. 野鼠类； 全胜； 大满贯； 孤注一掷|,|\
+}-{Volvo}-{the Swedish car manufacturer Volvo}-{释义 沃尔沃（富豪）汽车；|,|\
+ˈvɔɪɪdʒ|ˈvɔɪɪdʒ}-{voyage}-{make a voyage across the Atlantic}-{n. 旅行，航海，航空； 远行； 旅程；|vi. 航行，旅行；|vt. 驶过，横越；|,|\
+weɪd|wed}-{wade}-{wade in ( also wade into something )}-{vt.& vi. （从水、泥等）蹚，走过； 跋涉；|n. 跋涉；|,|\
+ˈweɪtə(r)|ˈwetɚ}-{waiter}-{Your waiter is impolite}-{n. 侍者； 服务员； 托盘；|,|\
+wɒndərɪŋ|'wɒndərɪŋ}-{wandering}-{his wanderings through the Australian outback}-{adj. 漫游的； 闲逛的； （精神）恍惚的； 错乱的|n. 流浪； 神志恍惚； 精神错乱；|v. 漫游( wander的现在分词 )； 走神； 神志恍惚； （思想）开小差|,|\
+weɪn|wen}-{wane}-{wane rapidly wax}-{vi. 衰落； （月）亏，缺； 结束； 变暗淡|n. 衰退； 衰退期； 月亏期； 缺角方木|,|\
+wɒsp|wɑsp}-{wasp}-{He was stung by a wasp}-{n. 黄蜂； [昆]胡蜂； 易动怒的人；|,|\
+ˈwɒtʃdɒg|ˈwɑtʃdɔg}-{watchdog}-{a consumer watchdog}-{n. 看门狗，看家狗； 监视者；|,|\
+ˈwɔ:təfɔ:l|ˈwɔtərfɔl}-{waterfall}-{at the bottom of the waterfall}-{n. 瀑布； 瀑布似的东西； <美俚>（披垂的）波型长发；|,|\
+ˈwɔ:təlɒgd|ˈwɔtərlɔgd}-{waterlogged}-{waterlogged ground/soil}-{adj. （土壤、田地等）水浸的； 水涝的； 水淹的； （船等）进水满舱的|,|\
+ˈwɔ:təspaʊt|ˈwɔtərspaʊt}-{waterspout}-{tornado}-{n. 海上龙卷风； 排水管； 排水槽； 排水口|,|\
+wɪərɪnəs| ˈwɪrɪnɪs}-{weariness}-{weary of (doing) something}-{n. 疲倦； 困乏； 消沉； 厌倦|,|\
+ˈwenzdeɪ|ˈwɛnzdi, -ˌde}-{Wednesday}-{.}-{n. 星期三；|,|\
+ˈwi:lbærəʊ|ˈwilbæroʊ}-{wheelbarrow}-{piled cut grass into the wheelbarrow}-{n. 独轮手推车；|,|\
+ˈwɪmzɪkl|ˈhwɪmzɪkəl, ˈwɪm-}-{whimsical}-{a whimsical personality whim 一时的兴致, 幻想, 反复无常, 怪念头, 奇想}-{adj. 异想天开的； 反复无常的； 古怪的，奇形怪状的；|,|\
+waɪn|hwaɪn, waɪn}-{whine}-{whine about sth}-{vi. 发出哀叫声； 哼哼唧唧地说； 发呜呜声；|vt. 哀诉，诉怨；|n. 哀鸣； 悲嗥声； 牢骚，抱怨；|,|\
+wɪkɪdlɪ|'wɪkɪdlɪ}-{wickedly}-{wicked sense of humour}-{adv. 坏透地，不愉快地，顽皮地；|,|\
+wɪntʃ|wɪntʃ}-{winch}-{to lift something or someone up using a winch :}-{n. 绞车； 摇柄，曲柄；|vt. 用绞车拉；|,|\
+ˈwɪndəʊsɪl|ˈwɪndoʊsɪl}-{windowsill}-{rest on a windowsill}-{n. 窗沿，窗台；|,|\
+ˈwɪndskri:n|ˈwɪndˌskrin}-{windscreen}-{windshield}-{n. （汽车的）挡风玻璃；|,|\
+ˈwɪŋkl|ˈwɪŋkəl}-{winkle}-{winkle somebody/something ↔ out}-{n. 食用螺；|v. 挑出，剔出，闪耀；|,|\
+wʊlən|ˈwʊlən}-{woollen}-{a woollen scarf}-{adj. 羊毛制的； 毛织的； 呢绒的；|n. 毛线，绒线； 毛织品； 呢绒； 呢绒衣服|,|\
+ˈwɜ:ksteɪʃn|ˈwɜrksteɪʃn}-{workstation}-{go back to her workstation}-{n. 工作站；|,|\
+wɜ:st|wɜrst}-{worst}-{worst of all}-{adj. 最差的； 最严重的； 最令人不满的； 最糟的|n. 最坏的事情； 最严重的事；|adv. 最坏； 最糟； 最严重；|vt. 胜过，击败；|,|\
+ri:θ|riθ}-{wreath}-{to lay wreaths at the war memorial}-{n. 花环； 花圈； （烟、云等的）圈状物； 环状物|v. 环绕；|,|\
+ˈrɪgl|ˈrɪɡəl}-{wriggle}-{wriggle under/through/into}-{vi. 扭动，蠕动，蜿蜒行进； 摆脱，用计逃脱；|vt. （使身体某一部位）扭动； 耍滑不做，逃避（应做的事等）；|n. 蠕动，扭动；|,|\
+ji:st|jist}-{yeast}-{yeast cake;leaven;enzyme酶}-{n. 酵母（菌）； 酵母粉，酵母饼，酵母片； 泡，泡沫； 动乱，激动|vi. 发酵； 起泡沫；|,|\
+ˈzɪgzæg|ˈzɪɡˌzæɡ}-{zigzag}-{a zigzag path along the cliff}-{adj. （指线条、小径等）锯齿形的，之字形的， Z字形的；|n. 锯齿形的线条、小径等；|vi. 弯弯曲曲地走路，曲折地前进；|,|\
+ zɪp| zɪp}-{zip}-{zero ;The zip on my skirt had broken.}-{释义 自制小手枪；|,|\
+ˌzəʊə'mɔ:fɪk|ˌzoʊr'mɔfɪk}-{zoomorphic}-{zoomorphic ornament}-{adj. 动物形像的，表现动物形像的； 兽形；|,|\
+phonetic}-{word}-{definitions_d}-{definitions_e}-{definitions_c}-{|,|";
+
+var wordCount = 1132;

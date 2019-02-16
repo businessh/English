@@ -1,0 +1,225 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> --><!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Pragma" content="no-cache" /> 
+  <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" /> 
+  <link rel="stylesheet" href="W.css" type="text/css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+  <meta http-equiv="Content-Type" content="text/html; charset=HZ" />
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+  <title>Dict</title>
+  <meta http-equiv="Pragma" content="no-cache" />
+  <base target="_self" />
+ </head>
+ <body onload="frmLoad()"> 
+  <script language="javascript" src="W.js.txt"></script> 
+  <script language="javascript"> 
+		var wordlist = getRequestParameter("wl");
+
+		if (wordlist ==""){
+			wordlist ="W"
+		}
+		document.write("<script src='"); 
+		document.write(wordlist); 
+		document.write(".txt'><\/script>"); 
+		document.title = document.title + "-" +wordlist;
+		
+		var beginat = getRequestParameter("b");
+		beginat  =  parseInt(beginat);
+		if (isNaN(beginat))
+		{	
+			beginat =0;
+		}else
+		    ;//beginat --;
+			
+		var GROUP_SIZE = 160;
+	    var gsize = getRequestParameter("gs");//start at
+		gsize  =  parseInt(gsize);
+		if (isNaN(gsize))
+		{	
+			gsize =GROUP_SIZE;
+		}			
+			
+	</script> 
+  <script language="javascript" src="WR.txt"></script> 
+  <script language="javascript" src="WForm.js.txt"></script> 
+  <!--<audio src="test.mp3" id="myplayer"> 
+   <source src="vincent.mp3" type="audio/mpeg"></source> 
+   <source src="vincent.ogg" type="audio/ogg"></source> 
+   <object type="application/x-shockwave-flash" data="voiceW/T/test.mp3" width="225" height="86"> <param name="movie" value="voiceW/T/test.mp3"></param> <param name="FlashVars" value=" mediaPath=test.mp3"></param> </object> 
+   <a href="test.mp3">Download this lovely song and wish you all the best!</a> 
+  </audio> -->
+  <form> 
+   <bgsound loop="false" autostart="false" id="bgss"></bgsound> 
+   <!-- Dictionary  --> 
+  <script language="javascript">   
+   document.write("<a href=\"words.html\">");
+   document.write(document.title);
+   document.write("</a>");
+   </script>
+   <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="stbU" width="100%"> 
+    <tbody> 
+     <tr style="display: none;"> 
+      <th style="vertical-align: top; text-align: left; width: 100%;"> </th> 
+     </tr> 
+    </tbody> 
+   </table> 
+   <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="postable" width="100%"> 
+    <tbody> 
+     <tr class="wlist"> 
+      <!-- onkeypress onKeyDown onChange --> 
+      <td style="vertical-align: top; width: 20%;"><input id="inputp" class="cur_row" tabindex="5" style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: left;" value="0" name="possition" type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" /></td> 
+      <td style="vertical-align: top; width: 20%;"><input style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: left;" name="levelvisible" type="text" value="0" /></td> 
+      <td style="vertical-align: top; width: 20%;"><input type="button" value="&lt;" name="fd" onclick="failDec()" style="width: 100%;border-style:hidden;background:#FFFFFF;text-align: center;" /></td> 
+      <td style="vertical-align: top; width: 20%;"><input style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: left;" name="failcount" type="text" value="" /></td> 
+      <td style="vertical-align: top; width: 20%;"><input type="button" value="&gt;" name="fi" onclick="failInc()" style="width: 100%;border-style:hidden;background:#FFFFFF;text-align: center;" /></td> 
+     </tr> 
+    </tbody> 
+   </table> 
+   <div id="view_pane1"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="stbU" width="100%"> 
+     <tbody> 
+      <tr class="wlist"> 
+       <td class="cellw" style="vertical-align: top;"><input id="wm2" class="word" name="m2" readonly="readonly" wrap="soft" cols="32" rows="1" type="text" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="stbU" width="100%"> 
+     <tbody> 
+      <tr class="wlist"> 
+       <td class="cellw" style="vertical-align: top;"><input id="wm1" class="word" name="m1" readonly="readonly" wrap="soft" cols="32" rows="1" type="text" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="stb" width="100%"> 
+     <tbody> 
+      <tr class="w8rows"> 
+       <td class="cellp" colspan="1" rowspan="1" style="vertical-align: top;"><input id="pp0" class="phonetic" name="pp0" readonly="readonly" wrap="soft" cols="32" rows="1" type="text" /></td> 
+      </tr> 
+      <tr class="w8rows"> 
+       <td class="cellw" colspan="1" rowspan="1" style="vertical-align: top;" align="left"><input id="wp0" class="currentword" wrap="soft" cols="32" rows="1" name="w1" /></td> 
+      </tr> 
+      <tr class="d8rows"> 
+       <td class="cellde" colspan="4" rowspan="1" style="vertical-align: top;"><textarea id="dep0" class="definition" readonly="readonly" wrap="soft" cols="32" rows="3" name="d11"></textarea></td> 
+      </tr> 
+      <tr class="d8rows"> 
+       <td class="celldc" colspan="4" rowspan="1" style="vertical-align: top;"><textarea id="dcp0" class="definition" readonly="readonly" wrap="soft" cols="32" rows="3" name="d12"></textarea></td> 
+      </tr> 
+      <tr class="d8rows"> 
+       <td class="celldc" colspan="4" rowspan="1" style="vertical-align: top;"><textarea id="ddp0" class="definition" readonly="readonly" wrap="soft" cols="32" rows="3" name="d12"></textarea></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="stbD" width="100%"> 
+     <tbody> 
+      <tr class="wlist"> 
+       <td class="cellw" style="vertical-align: top;"><input id="wp1" class="word" name="p1" readonly="readonly" wrap="soft" cols="32" rows="1" type="text" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="stbD" width="100%"> 
+     <tbody> 
+      <tr class="wlist"> 
+       <td class="cellw" style="vertical-align: top;"><input id="wp2" class="word" name="p2" readonly="readonly" wrap="soft" cols="32" rows="1" type="text" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div id="view_pane2" style="display: none;"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="1" id="stb2" width="100%"> 
+     <tbody> 
+      <tr> 
+       <td colspan="1" rowspan="1" style="vertical-align: top;"><input id="pp0_1" class="phonetic_1" readonly="readonly" wrap="soft" type="text" /></td> 
+       <td colspan="1" rowspan="1" style="vertical-align: top;"><input id="wp0_1" class="currentword_1" wrap="soft" /></td> 
+       <td></td> 
+       <td style="vertical-align: top; width: 60%;"></td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" rowspan="1" style="vertical-align: top;"><input id="dep0_1" class="definition_1" readonly="readonly" wrap="soft" /></td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" rowspan="1" style="vertical-align: top;"><input id="dcp0_1" class="definition_1" readonly="readonly" wrap="soft" /></td> 
+      </tr> 
+      <tr> 
+       <td colspan="4" rowspan="1" style="vertical-align: top;"><input id="ddp0_1" class="definition_1" readonly="readonly" wrap="soft" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div id="setting_pane" style="display: none;"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" border="0" cellpadding="0" cellspacing="0" id="stbc" width="100%"> 
+     <tbody> 
+      <tr> 
+       <td style="vertical-align: top; width: 10%;"> <input id="ShiftV" tabindex="6" style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: left;" value="0" onclick="OKCheck()" text="V" type="checkbox" /> </td>
+       <td style="vertical-align: top; width: 10%;text-align: left;">V</td> 
+       <td style="vertical-align: top; width: 10%;"> <input id="ShiftD" tabindex="7" style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: left;" value="0" onclick="OKCheck()" text="D" type="checkbox" /> </td> 
+       <td style="vertical-align: top; width: 10%;text-align: left;">D</td> 
+       <td style="vertical-align: top; "> <select name="Mode" size="1" id="idmode" tabindex="5" style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: center;" onchange="modeChange(this)"> <option value="P" selected="selected">DictPlayer</option> <option value="V">Volume</option> <option value="D">Lookup</option> <option value="T">SoundTest</option> </select> </td> 
+       <td style="vertical-align: top; width: 10%;"> 
+        <!--
+		  <button  onclick="modeChange(this)" style="width: 100%;border-style: hidden;background:#FFFFFF;text-align: left;">OK</button>
+		  --> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <table> 
+     <tbody>
+      <tr> 
+       <td> 
+        <div id="volume_btn"> 
+         <button style="background:#FFFFFF;border-style: hidden;" onclick="document.getElementById('myplayer').play()">Play</button> 
+         <button style="background:#FFFFFF;border-style: hidden;" onclick="document.getElementById('myplayer').pause()">Pause</button> 
+         <button style="background:#FFFFFF;border-style: hidden;" onclick="document.getElementById('myplayer').volume += 0.1">Vol+ </button> 
+         <button style="background:#FFFFFF;border-style: hidden;" onclick="document.getElementById('myplayer').volume -= 0.1">Vol- </button> 
+        </div> </td> 
+      </tr> 
+      <tr> 
+       <td> <button style="background:#FFFFFF;border-style: hidden;" onclick="window.open(&quot;WS.html&quot;)">WS</button> <button style="background:#FFFFFF;border-style: hidden;" onclick="window.open(&quot;words.html&quot;)">words</button> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div id="nav_pane"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="0" id="stbc" width="100%"> 
+     <tbody> 
+      <tr height="50"> 
+       <td style="vertical-align: top; width: 20%;"><input id="buttonp" tabindex="1" style="height:100%;width: 100%;border-style:hidden;background:#FFFFFF;text-align: center;" value="P" name="b1" onclick="PreviousClick()" type="button" /> </td> 
+       <td style="vertical-align: top; width: 20%;"><input id="buttonn" tabindex="2" style="height:100%;width: 100%;border-style: hidden;background:#FFFFFF;text-align: center;" value="N" name="b2" onclick="nextClick()" type="button" /></td> 
+       <td style="vertical-align: top; width: 20%;"><input id="buttono" tabindex="3" style="height:100%;width: 100%;border-style: hidden;background:#FFFFFF;text-align: center;" value="O" name="b3" onclick="OKClick()" type="button" /></td> 
+      </tr> 
+      <tr height="50"> 
+       <td style="vertical-align: top; width: 20%;"><input id="buttons" tabindex="4" style="height:100%;width: 100%;border-style: hidden;background:#FFFFFF;text-align: center;" value="S" name="b4" onclick="Store()" type="button" /></td> 
+       <td> </td> 
+       <td style="vertical-align: top; width: 20%;"><input id="buttont" tabindex="4" style="height:100%;width: 100%;border-style: hidden;background:#FFFFFF;text-align: center;" value="T" name="b5" onclick="toggle_pane()" type="button" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div id="reversed_pane"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="0" id="stbcr" width="100%"> 
+     <tbody> 
+      <tr> 
+       <td colspan="1" rowspan="1" style="vertical-align: top;"><input id="wm2_R" readonly="readonly" class="currentword_1" wrap="soft" /></td> 
+       <td colspan="1" rowspan="1" style="vertical-align: top;"><input id="wm1_R" readonly="readonly" class="currentword_1" wrap="soft" /></td> 
+      </tr> 
+      <tr> 
+       <td colspan="1" rowspan="1" style="vertical-align: top;"><input id="wp1_R" readonly="readonly" class="currentword_1" wrap="soft" /></td> 
+       <td colspan="1" rowspan="1" style="vertical-align: top;"><input id="wp2_R" readonly="readonly" class="currentword_1" wrap="soft" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div id="spell_pane"> 
+    <table style="text-align: left;border:0px solid black; border-collapse:collapse;" cellpadding="0" cellspacing="0" id="stbcr" width="100%"> 
+     <tbody> 
+      <tr> 
+       <td colspan="1" rowspan="1" style="vertical-align: top;">Spell<input id="SpellEnable" wrap="soft" type="checkbox" value="0" /></td> 
+       <td colspan="1" rowspan="1" style="vertical-align: top;"><input type="text" id="SpellInput" onkeyup="spell_check(this.id)" /></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+  </form> 
+ </body>
+</html>

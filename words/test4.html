@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>qrcode</title>
+    <script type="text/javascript" src="canvas-svg-read-only/canvas-getsvg.js"></script>
+	<script type="text/javascript" src="qrcode.js"></script>
+    <script type="text/javascript" src="html5-qrcode.js"></script>
+    <script type="text/javascript" src="jquery.1.6.2.js"></script>
+</head>
+<body>
+ <div id="qrcode"></div>
+             <input type="radio" name="mode" id="mode_text" value="text"  /> Text<br/>
+            <input type="radio" name="mode" id="mode_url" value="url" checked="checked" /> URL<br/>
+			<textarea id="svg-text-output" rows="7" cols="40" onclick="this.focus();this.select();"></textarea>
+			<textarea name="textField" rows="7" cols="30" onkeyup='updateQRCode(this.value)'>http://princeton.edu</textarea><br />
+			<div id="QRCoded" style="display:none;border:1px solid #999;padding: 1px;width:119px;height:119px;"></div>
+ <!--<input id="toggleQR" type="button" value="Show/Hide QRCode" style="width:123px;border:1px solid #F90;background-color:#333; color:#FF9900;" onClick="$('#QRCoded').slideToggle('fast');";/>
+  -->
+  <script>
+      function updateQRCode(text) {
+				if( document.getElementById("mode_url").checked ){
+        	text = encodeURI( text ); 
+				}
+				var element = document.getElementById("qrcode");
+        var bodyElement = document.body;
+        if(element.lastChild){
+          element.replaceChild(showQRCode(text, true), element.lastChild);
+					jQuery("#svg-text-output").attr("value", _SVG);
+				}else{
+							element.appendChild(showQRCode(text, true));
+					jQuery("#svg-text-output").attr("value", _SVG);
+				}
+    	}
+			function svgWindow(){
+				window.open("data:text/svg+xml;charset=utf-8," + encodeURIComponent( jQuery("#svg-text-output").attr("value") ), "child");
+			}
+	
+jQuery(document).ready(function(){jQuery('#QRCoded').append(showQRCode(encodeURI(document.location),'120','120'));});
+    </script>
+</body>
+</html>

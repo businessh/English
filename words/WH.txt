@@ -1,0 +1,995 @@
+﻿//replace " with ' or \"
+var data1 = "\
+ˈæbəkəs|ˈæbəkəs}-{abacus}-{use abacus for statistic}-{n. 算盘； <建>（圆柱）顶板；|,|\
+əˈbəʊd|əˈboʊd}-{abode}-{permanent abode; bode}-{n. 住所； 公寓； <古>（在某地的）暂住； 逗留|vt. <古>预兆，预示；|v. 容忍( abide的过去式和过去分词 )； 等候； 逗留； 停留|,|\
+əˈbɒmɪnəbl|əˈbɑmɪnəbl}-{abominable}-{abominable cruelty ;an abominable crime}-{adj. 讨厌的； 可恶的； 糟糕的； 令人极为不快的|n. 讨厌，可恶；|adv. 恶劣地，令人厌恶地；|,|\
+ˈæbstɪnəns|ˈæbstənəns}-{abstinence}-{Abstinence from alcoholic ;six months of abstinence}-{n. 节制； 节欲； 戒酒；|,|\
+ə'klɪvɪtɪ|ə'klɪvətɪ}-{acclivity}-{declivity proclivity;go up the acclivity}-{n. <地>向上的斜坡，上斜；|,|\
+əˈku:tə(r)}-{accoutre}-{accoutre the army with new ordnance}-{vt. 供以服装，供以军用品，装备；|,|\
+əˈsɪdjələs|əˈsɪdʒələs}-{acidulous}-{acidulous grain alcohol;acidulous remarks towards}-{adj. 微酸的； 带酸味的； 尖酸刻薄的； 有讽刺意味的|,|\
+əˈku:stɪks|əˈkustɪks}-{acoustics}-{good acoustics;his work in acoustics}-{n. 声学； （传声系统的）音响效果； 声音的( acoustic的名词复数 )； 听觉的 原声的；|,|\
+əˈdɪkʃn|əˈdɪkʃən}-{addiction}-{addict v - to drugs; his addiction to gambling;drug addtition}-{n. 入迷，嗜好； 上瘾； 吸毒成瘾； 癖好|,|\
+ˌædʒʊə'reɪʃən|ˌædʒʊ'reɪʃən}-{adjuration}-{be neglectful of the adjuration;}-{n. 祈求，命令；|,|\
+ˈædʒʊtənt|ˈædʒətənt}-{adjutant}-{adjunct n.附件, 助手adj.附属的his adjutant;effective adjutant method}-{n. 助手； 助理； 副官； 辅助的东西|,|\
+ˌædjuˈleɪʃn|ˌædʒəˈleɪʃn}-{adulation}-{receive with adulation by the public}-{n. 谄媚；|,|\
+ˈædvəsəri|ˈædvərseri}-{adversary}-{opponent ;His political adversaries}-{n. 对手，敌手； 魔鬼；|,|\
+ədˈvɜ:səti|ədˈvɜrsəti}-{adversity}-{his courage in the face of adversity}-{n. 逆境； 不幸； 灾难；|,|\
+ˈɛəri|ˈɛri, ˈɪri}-{aerie}-{Each battered high-rise becomes a sniper's aerie}-{n. 猛禽的窝，高处的房子或城堡；|,|\
+ˌæfə'meɪʃn|ˌæfɚˈmeʃən}-{affirmation}-{affirm ;reply in affirmation ;nod of affirmation;}-{n. 肯定； 确认； 证实； 批准|,|\
+ˈɑ:ftəlaɪf|ˈæftərlaɪf}-{afterlife}-{But I do hope there’s afterlife}-{n. <宗>来世； 来生； 余生； 晚年|,|\
+əˌglɒməˈreɪʃn|əˌglɑməˈreɪʃn}-{agglomeration}-{buildings in an agglomeration of styles;an agglomeration of}-{n. 成团，结块；|,|\
+ˈeəri|ˈeri}-{airy}-{All the hotel’s bedrooms are light and airy. ;an airy place}-{adj. 空气的； 空中的； 轻快的； 通风的|,|\
+ˈælɪməni|ˈælɪmoʊni}-{alimony}-{maintenance ;give up that alimony}-{n. （离婚或分居后在诉讼期间男方给女方的）赡养费，生活费；|,|\
+əˌlɪtəˈreɪʃn|əˌlɪtəˈreʃən}-{alliteration}-{alliterate;Great use of alliteration in the third paragraph}-{n. 头韵； 双声；|,|\
+əˈlʊə(r)|əˈlʊr}-{allure}-{the allure of foreign travel ;allure kids into lifetime addiction}-{n. 诱惑力，魅力；|vt.& vi. 引诱，诱惑； 吸引；|vt. 引诱，诱惑； 勾引；|vi. 诱人，吸引人；|,|\
+əˈlu:viəl|əˈluviəl}-{alluvial}-{alluvial soil}-{adj. （河流、洪水）冲积的，淤积的；|n. 冲积土，冲积层；|,|\
+ˌɔ:ltəˈkeɪʃn|ˌɔltərˈkeɪʃn}-{altercation}-{altercate v. - with sb. - over sth. Controvert;I had a slight altercation with him}-{n. 争辩，争吵；|,|\
+ˈæməzən|ˈæməˌzɑn, -zən}-{Amazon}-{.}-{n. 亚马逊河（南美洲大河）；|,|\
+æmˈbrəʊziə|æmˈbroʊziə}-{ambrosia}-{ambrosial adj.; nectar and ambrosia}-{n. （希腊罗马神话中）神仙的食物； 美味食品； 蜂食；|,|\
+ə'mendəbl|ə'mendəbl}-{amendable}-{make amends (to somebody/for something) ;amendable surgical method}-{adj. 可修正的；|,|\
+}-{amenities}-{facilities and amenities}-{n. 令人愉快的事物； 礼仪； 礼节； 便利设施 礼仪( amenity的名词复数 )；|,|\
+əˈmɒk|əˈmɑk}-{amok}-{an age in which global capitalism has run amok}-{adj.& adv. 杀人狂，狂乱地，杀气腾腾地；|,|\
+ˈæmərəs|ˈæmərəs}-{amorous}-{Amor 爱神埃莫 be amorous of sb.}-{adj. 色情的；  多情的；  爱情的； 热情的|,|\
+ˌæmfɪ'θɪətə|ˌæmfɪ'θɪrtə}-{amphitheater}-{at the nearby Amphitheater}-{n. 圆形露天剧场； 竞技场面； （供观摩外科手术等的）梯形教室； （剧场中的）阶梯式座位区|,|\
+əˈnækrənɪzəm|əˈnækrəˌnɪzəm}-{anachronism}-{anachronic;regard sth as an anachronism}-{n. 时代错误； 不合时代的事，过时的事或人；|,|\
+ə'næθəməˌtaɪz|ə'næθəməˌtaɪz}-{anathematize}-{anathematize the party}-{v. 开除教籍，诅咒，咒逐；|,|\
+ˌænɪmæd'vɜ:ʃən|ˌænəmæd'vɚʃən}-{animadversion}-{media animadversion}-{n. 责备，谴责，批评；|,|\
+əˈnju:əti|əˈnuəti}-{annuity}-{annuity rates}-{n. 年金； 养老金； 年金享受权； 年金保险投资|,|\
+əˈnɔɪnt|əˈnɔɪnt}-{anoint}-{anoint somebody with something}-{vt. 用油软膏涂抹； （宗教仪式上）抹油使神圣化； （如奉圣意般地）选定； 指定|,|\
+ænˌtægəˈnɪstɪk|ænˌtæɡəˈnɪstɪk}-{antagonistic}-{be antagonistic to/towards}-{adj. 敌对的，对抗性的；|,|\
+æn'tɑ:ktɪkə|æn'tɑrktɪkə}-{Antarctica}-{.}-{n. 南极洲；|,|\
+ˌæntɪ'si:d|ˌæntɪ'sid}-{antecede}-{thinkers who anteceded the rise of capitalism}-{v. 先前，先行；|,|\
+ˌænθrəpəˈmɔ:fɪk|ˌænθrəpəˈmɔrfɪk}-{anthropomorphic}-{the anthropomorphic attitude to animals}-{adj. 拟人的，赋予人性的；|,|\
+ˈæntlə(r)|ˈæntlɚ}-{antler}-{venison 野味, 鹿肉 a pair of antlers}-{n. 鹿角； 角枝；|,|\
+ˌæpəˈθetɪk|ˌæpəˈθɛtɪk}-{apathetic}-{pathetic adj. 可怜的, 悲惨的;the most apathetic students}-{adj. 无感情的； 冷淡的； 无兴趣的； 无动于衷的|,|\
+eɪp|ep}-{ape}-{simian;chimpanzees and other apes}-{n. 猿； 狂热； 模仿者；|vt. 模仿；|,|\
+əˈfeɪziə|əˈfeʒə}-{aphasia}-{anemia;cause aphasia;aphasia patients}-{n. 失语症；|,|\
+eɪ'pɪərɪst|eɪ'pɪərɪst}-{apiarist}-{state apiarist}-{n. 养蜂家；|,|\
+ˈeɪpɪkʌltʃə(r)|ˈepɪˌkʌltʃɚ}-{apiculture}-{culture;professor of apiculture}-{n. 养蜂（业）；|,|\
+ˌeɪpəˈlɪtɪkl|ˌepəˈlɪtɪkəl}-{apolitical}-{an apolitical organization}-{adj. 对政治不感兴趣的，与政治无关的； 无政治意义的；|,|\
+əˈpɒlədʒɪst|əˈpɑlədʒɪst}-{apologist}-{an apologist for socialism}-{n. 辩解者，辩护士； 护教论者；|,|\
+ˈæpəpleksi|ˈæpəˌplɛksi}-{apoplexy}-{stroke ;cause apoplexy with his books}-{n. 中风； 卒中；|,|\
+əˈpɔ:lɪŋ}-{appalling}-{She suffered appalling injuries.}-{adj. 骇人听闻的，令人震惊的； 可怕的；|,|\
+əˈpɜ:tɪnəns|əˈpɜrtɪnəns}-{appurtenance}-{As an appurtenance of}-{n. 附件，附属物，从属权利；|,|\
+ɑ:ˈkeɪɪk|ɑrˈkeɪɪk}-{archaic}-{archaic grave}-{adj. 古代的； 过时的，陈旧的； 古体的； 古色古香的|,|\
+ɑ:kaɪvz|'ɑkaɪvz}-{archives}-{the State Library's archives.}-{n. 档案，档案馆； 档案文件( archive的名词复数 )； 档案馆，档案室；|v. 存档( archive的第三人称单数 )；|,|\
+ɑ:də|ˈɑrdɚ}-{ardor}-{the ardor of discovery}-{n. 激情； 狂热； 热情； 热忱|,|\
+ə'rɪə|ə'rɪr}-{arrear}-{The rent money is two months in arrears. ;be much in arrear of U.S.;the arrear of}-{n. 欠款；|,|\
+ˈɑ:tfl|ˈɑrtfl}-{artful}-{artful tricks}-{adj. 巧妙的； 狡猾的； 有技巧的； 人工的|,|\
+əsˌfɪksɪ'eɪʃn|æsˌfɪksɪˈeʃən}-{asphyxiation}-{asphyxiate ,suffocate;die of asphyxiation}-{n. 窒息；|,|\
+əˈstɪgmətɪzəm|əˈstɪɡməˌtɪzəm}-{astigmatism}-{cause serious astigmatism;}-{n. 散光；|,|\
+ˈæstrəl|ˈæstrəl}-{astral}-{out-of-body experiences and astral travel;an astral realm}-{adj. 星形的； 星际的；|,|\
+ætəvɪzəm|ætə'vɪzəm}-{atavism}-{example of an atavism}-{n. 隔代遗传，返祖现象；|,|\
+ˌeɪθɪ'ɪstɪk|ˌeθiˈɪstɪk}-{atheistic}-{atheistic society}-{adj. 无神论的，无神论者的；|,|\
+əˈtentɪv|əˈtɛntɪv}-{attentive}-{be attentive to}-{adj. 注意的； 周到的，殷勤的； 温存； 细心|,|\
+ˌeɪˈtɪpɪkl|eˈtɪpɪkəl}-{atypical}-{usual ;be atypical;atypical symptoms}-{adj. 非典型的；|,|\
+ɔ:'rɔ:rəl|ɔ'rɔrəl}-{auroral}-{auroral region}-{adj. 曙光的，极光的，玫瑰色的；|,|\
+ɔ:ˈθentɪkeɪt|ɔˈθɛntɪˌket}-{authenticate}-{The painting has been authenticated by experts.}-{vt. 证明是真实的、可靠的或有效的； 鉴定，使生效；|,|\
+ˌɔ:tə'krætɪk|ˌɔtə'krætɪk}-{autocratic}-{an autocratic leadership style}-{adj. 独裁的； 专制的；|,|\
+ɔ:ˈtɒmətən|ɔˈtɑmətən}-{automaton}-{robot ;become an automaton}-{n. 自动机，机器人；|,|\
+ˈɔ:tɒpsi|ˈɔtɑpsi}-{autopsy}-{make an autopsy on the corpse}-{n. 尸体解剖； 验尸； [病理]尸体剖检； （事后的）分析，检查|,|\
+}-{Bacchanalia}-{a weeklong bacchanalia}-{n. 罗马酒神节； 狂饮的酒宴；|,|\
+ˌbækəˈneɪliən|ˌbækəˈneljən}-{bacchanalian}-{a bacchanalian orgy}-{adj. 酒神节的； 狂饮作乐的；|n. 发酒疯的人；|,|\
+ˈbæntərɪŋ}-{bantering}-{they bantered with the waitresses.}-{adj. 嘲弄的；|v. 开玩笑，说笑，逗乐( banter的现在分词 )； （善意地）取笑，逗弄；|,|\
+ˈbæstiən|ˈbæstʃən,-tiən}-{bastion}-{These clubs are the last bastions of male privilege.}-{n. 棱堡； 堡垒； 设防地区，阵地工事；|,|\
+beɪt|beɪt}-{bate}-{abate;bate my enthusiasm}-{vt. 减轻； 压制； 减去； 使软化|vi. <方> 减少； 减弱； 衰落； 变弱|n. （制革用的）软化剂；|,|\
+biˈætɪtju:d|biˈætɪtud}-{beatitude}-{with beatitude;Her favorite Beatitude}-{n. 至福； 天福； 八福词； （东正教）法座|,|\
+bɪ'drægl|bɪ'drægəl}-{bedraggle}-{draggle拖湿, 拖脏 drag; bedraggle sb's skirt;}-{vi. 弄脏，弄湿，弄皱；|,|\
+ˈbi:laɪn|ˈbiˌlaɪn}-{beeline}-{make a beeline for somebody/something}-{n. （两地之间的）直线； 直路； 最短距离； <非正>迅速直奔|,|\
+bɪˈhi:mɒθ|bɪˈhimɔθ}-{behemoth}-{a trade behemoth ; a dominant behemoth;mammoth}-{n. 巨兽，庞然大物；|,|\
+bəˈlɪdʒərənt|bəˈlɪdʒərənt}-{belligerent}-{a belligerent person}-{adj. 交战的； 卷入冲突的； 好战的； 交战国的|n. 交战国，交战者； 参加斗殴的人或集团；|,|\
+bɪˈməʊn|bɪˈmoʊn}-{bemoan}-{bemoan the lack/absence/loss of something}-{vt. 为（某人或某事）抱怨； 悲悼； 为…恸哭； 哀叹|vi. 悲悼，叹息；|,|\
+bɪˈnefɪsnt|bəˈnɛfɪsənt}-{beneficent}-{a beneficent donation}-{adj. 行善的； 仁慈的，慈爱的；|,|\
+bɪˈri:vd|bɪˈrivd}-{bereaved}-{a bereaved mother}-{adj. 刚刚丧失亲人的；|v. 使失去（希望、生命等）( bereave的过去式和过去分词)； （尤指死亡）使丧失（亲人、朋友等）； 使孤寂； <废>抢走（财物）|,|\
+bɪˈri:vmənt|bɪˈrivmənt}-{bereavement}-{depression caused by bereavement or divorce}-{n. 亲人丧亡，丧失亲人，丧亲之痛；|,|\
+ˈbevi|ˈbɛvi}-{bevy}-{a bevy of girls}-{n. （尤指少女或妇女的）一群； （鸟类的）一群；|,|\
+bɪˈweə(r)|bɪˈwer}-{beware}-{beware of doing something}-{v. 当心； 提防；|,|\
+bɪˈwɪtʃ|bɪˈwɪtʃ}-{bewitch}-{Tim’s utterly bewitched by her}-{vt. 对（某人）施魔法； 令（某人）心醉，入迷；|,|\
+bɪb|bɪb}-{bib}-{The child beslobbered his bib}-{n. （小儿用的）围嘴； 围裙的上部；|,|\
+ˌbaɪˈkæmərəl|ˌbaɪ'kæmərəl}-{bicameral}-{The bicameral Slovenian parliament}-{adj. 有两个议会的；|,|\
+baɪfɜ:keɪtɪd|baɪ'fɜkɪtɪd}-{bifurcated}-{bifurcated pipe}-{adj. 分为两部分；|v. （指道路、河流、树枝等）分岔，分成两支( bifurcate的过去式和过去分词 )； 使分枝，使分叉；|,|\
+ˈbɪgətri|ˈbɪɡətri}-{bigotry}-{encourage bigotry ;criticism for bigotry}-{n. 偏执，顽固，偏执的行为； 盲从；|,|\
+ˈbɪvuæk|ˈbɪvuˌæk, ˈbɪvˌwæk}-{bivouac}-{The climbers bivouacked halfway up the mountain. ;a bivouac on grass}-{n. 露营，野营，露营地；|vi. 露宿；|,|\
+ˈblɑ:zeɪ|blɑˈzeɪ}-{blase}-{be blase about}-{adj. 玩厌了的；|,|\
+blæsfəməs|'blæsfəməs}-{blasphemous}-{The book has been widely condemned as blasphemous.}-{adj. 亵渎上帝的，亵渎宗教信仰的；|,|\
+blʌdɪd|'blʌdɪd}-{blooded}-{.}-{adj. 有（某种的）血的，血统优良的，有战斗经验的；|,|\
+blu:z|bluz}-{blues}-{Eat away your blues}-{n. （一阵）沮丧； 忧郁； 蓝调； 一首布鲁斯乐曲 蓝色( blue的名词复数 )；|,|\
+ˈbʊkɪʃ|ˈbʊkɪʃ}-{bookish}-{a shy bookish man}-{adj. 书本上的，好学的； 书呆子；|,|\
+ˈbʊərɪʃ|ˈbʊrɪʃ}-{boorish}-{boorish manners}-{adj. 粗野的； 粗鲁的； 笨拙的； 乡巴佬的|,|\
+bu:jɒn|ˈbʊlˌjɑn, -jən, ˈbuˌjɑn}-{bouillon}-{beef bouillon}-{n. 肉汤，牛肉汤；|,|\
+ˈbaʊntɪfl|ˈbaʊntəfəl}-{bountiful}-{bountiful harvests}-{adj. 慷慨给予的； 丰富的，充裕的；|,|\
+bru:ɪŋ|'bruɪŋ}-{brewing}-{the brewing conflict}-{n. 酿造；|v. 调制( brew的现在分词 )； 酝酿； 沏（茶）； 煮（咖啡）|,|\
+ˌbʌkəˈnɪə(r)|ˌbʌkəˈnɪr}-{buccaneer}-{pirate;famous buccaneer ;}-{n. 海盗； 掠夺者；|vi. 做海盗；|,|\
+bə'fu:nərɪ|bə'funərɪ}-{buffoonery}-{buffoon;with a large number of buffoonery}-{n. 打诨，滑稽；|,|\
+ˈbʊlwək|ˈbʊlwɜrk}-{bulwark}-{Law and morality are the bulwarkof society.}-{n. 堡垒； 保障； 支柱； 舷墙|vt. 筑垒保卫； 保护，使安全；|,|\
+bʌmpt|bʌmpt}-{bumped}-{bumped stones;}-{adj. 凸起的，凸状的；|v. 撞倒，冲撞( bump的过去式和过去分词 )； 颠簸着前进；|,|\
+ˈbɜ:li|ˈbɜrli}-{burly}-{a burly policeman}-{adj. 结实的，健壮的； 直率的，直截了当的； 粗鲁的；|,|\
+kəˈdævərəs|kəˈdævərəs}-{cadaverous}-{a cadaverous odor}-{adj. 死人似的；  尸体般的； 面色灰白的； 枯槁的|,|\
+kælɪbə|ˈkæləbɚ}-{caliber}-{the caliber of their fellow students}-{n. 口径； 能力； 水准； 枪弹的直径|,|\
+ˌkæləˈrɪfɪk|ˌkæləˈrɪfɪk}-{calorific}-{food that is calorific tends to make you fat}-{adj. 生热的；|,|\
+ˌkæməˈrɑ:dəri|ˌkɑməˈrɑdəri}-{camaraderie}-{the camaraderie of the women’s basketball team}-{n. 同志之爱，友情；|,|\
+ˈkæntə(r)|ˈkæntɚ}-{canter}-{She rode off at a canter. ;canter into the arena}-{n. （指马）慢跑，小跑； 骑马慢跑；|vt.& vi. （使马）慢跑；|,|\
+ˌkɑ:sɪnəˈdʒenɪk|ˌkɑrsɪnəˈdʒenɪk}-{carcinogenic}-{a carcinogenic substance}-{adj. 致癌物（质）的；|,|\
+ˈkeəfri:|ˈkerfri}-{carefree}-{a carefree attitude}-{adj. 无忧无虑的，快乐舒畅的； 逍遥自在； 宽畅； 闲逸|,|\
+ˈkɑ:nl|ˈkɑrnl}-{carnal}-{carnal desires}-{adj. 世俗的； 肉体的； 性欲的； 好色的|,|\
+kə'raʊzəl|kə'raʊzəl}-{carousal}-{carouse v.;in a carousal;}-{n. 大宴会，狂欢；|,|\
+kɑ:pɪŋ|'kɑpɪŋ}-{carping}-{the carping about/that;the carping West;}-{adj. 挑剔的；|v. 挑剔，吹毛求疵，找茬儿( carp的现在分词 )；|,|\
+ˈkɑ:stɪŋ|ˈkæstɪŋ}-{casting}-{metal casting}-{n. 铸造，铸件； 角色分配； 投掷； [动]脱落物|v. 扔掉(cast的现在分词)； 铸造； 投掷； 选派演员|,|\
+kæˈstreɪt|ˈkæstreɪt}-{castrate}-{emasculate; castrate a dog}-{vt. 阉割，割除（睾丸，卵巢）； 使丧失力量； 删改（文章等）；|,|\
+ˈkætərækt|ˈkætəˌrækt}-{cataract}-{an operation to remove cataract;cascade;}-{n. 大瀑布，急瀑布； [医]白内障； 暴雨，洪水； 奔流|v. 像瀑布似地注流；|,|\
+ˈkætkɔ:l|ˈkætˌkɔl}-{catcall}-{The young actor was catcalled at his first performance.;make catcall}-{n. 不满之声，嘘声；|v. 发嘘声；|,|\
+ˈkætəkɪzəm|ˈkætɪˌkɪzəm}-{catechism}-{We were taught to recite the catechism.}-{n. 教义问答（手册）； 一系列提问；|,|\
+ˈkeɪtərɪŋ}-{catering}-{catering business/service etc}-{n. 给养； 承办酒席； 提供饮食及服务；|v. 提供饮食及服务( cater的现在分词)； 满足需要，适合；|,|\
+kə'θɑ:tɪk|kəˈθɑrtɪk}-{cathartic}-{cathartic drug}-{adj. 通便的，导泻的；|n. 泻药；|,|\
+ˈkɔ:ldrən|ˈkɔldrən}-{cauldron}-{a witch’s cauldron}-{n. 大锅，大汽锅； 煮皂锅； 海釜；|,|\
+senˈsɔ:riəs|sɛnˈsɔriəs, -ˈsor-}-{censorious}-{be censorious of petty failings}-{adj. 苛评的，吹毛求疵的；|,|\
+ˈsenʃə(r)|ˈsɛnʃɚ}-{censure}-{censure sb for sth}-{n. 指责，谴责； 责备； 斥责；|vt. 指责； 谴责； 责备； 批评|vi. 谴责，责备；|,|\
+ˈsentrɪfju:dʒ|ˈsɛntrəˌfjudʒ}-{centrifuge}-{first-generation centrifuge}-{n. 离心机；|vt. 使离心，以离心机分离；|,|\
+ˌserɪ'breɪʃən|ˌserə'breɪʃən}-{cerebration}-{cerebrate v.;abundant cerebration}-{n. 大脑活动；|,|\
+keɪˈɒtɪk|keɪˈɑtɪk}-{chaotic}-{a chaotic mixture of images}-{adj. 混沌的； 一片混乱的； 一团糟的； 无秩序的|,|\
+ʃæpərəʊn|ˈʃæpəˌron}-{chaperon}-{go as chaperones}-{n. （在社交场所陪伴未婚少女的）女监护人；|vt. 陪伴，伴随（未婚少女）；|,|\
+ˈtʃæplɪn|ˈtʃæplɪn}-{chaplain}-{the prison chaplain}-{n. （王宫等的）附属教堂牧师； （军队、医院、监狱等的）牧师； 犹太教教士； （在社团等会议上）执行宗教仪式的牧师（或俗人）|,|\
+ˈʃæsi|ˈʃæsi}-{chassis}-{chassis earth 接地;the chassis of the car;}-{n. （车辆的）底盘； （飞机的）起落架； 炮底架； （无线电、电视等的）底架|,|\
+ˈʃəʊvɪnɪst|ˈʃoʊvɪnɪst}-{chauvinist}-{He’s a bit of a male chauvinist .}-{n. 沙文主义者； 沙文主义； 本国至上主义；|,|\
+kaɪ'merɪkəl|kaɪ'merɪkəl}-{chimerical}-{chimeric;chimerical terrors}-{adj. 不真实的，奇异的；|,|\
+ˈkrɒnɪkl|ˈkrɑnɪkl}-{chronicle}-{a chronicle of his life during the war years}-{n. 编年史； 年代记； 记录；|vt. 将（某事物）载入编年史； 记录；|,|\
+tʃʌkɪŋ|'tʃʌkɪŋ}-{chucking}-{The chucking force;}-{n. 夹具；|v. 扔( chuck的现在分词 )； 抛； 抛弃； 丢弃|,|\
+ˈtʃɜ:lɪʃ|ˈtʃɜrlɪʃ}-{churlish}-{churlish as a bear}-{adj. 脾气坏的； 吝啬的； 小气的； 无礼的|,|\
+sɪlɪeɪtɪd|'sɪlɪˌeɪtɪd}-{ciliated}-{ciliated cells}-{adj. 有纤毛的；|,|\
+ˈsɜ:klət|ˈsɜrklət}-{circlet}-{the circlet as a gift}-{n. 小圈，环形饰物； 琐环；|,|\
+ˈsɜ:kəmspekt|ˈsɜrkəmspekt}-{circumspect}-{The governor was usually circumspect when dealing with the media.}-{adj. 谨慎小心的，周到的；|,|\
+ˈsɪtədəl|ˈsɪtədəl, -ˌdɛl}-{citadel}-{the citadel of something}-{n. 城堡，要塞； 大本营，根据地，避难所； （军舰上的）炮廓；|,|\
+ˈklæmə(r)|ˈklæmɚ}-{clamour}-{the rising clamour of voices. ;clamour for}-{n. 喧哗声，喧闹； 大声的要求或抗议；|vi.&vt. 喧哗，吵闹； 大声地要求或抗议；|,|\
+ˈklæŋgə(r)|ˈklæŋɚ, ˈklæŋɡɚ}-{clangour}-{the clangour ceased}-{n. （尤指连续的）铿锵声，叮当声；|,|\
+ˈklæpə(r)|'klæpər}-{clapper}-{run/go/drive etc like the clappers --very fast}-{n. <英俚>飞快地； 拍板； 铃锤； 拍手者|,|\
+ˌklɔ:strəˈfəʊbiə|ˌklɔstrəˈfoʊbiə}-{claustrophobia}-{phobia恐怖病, 恐怖症;cause claustrophobia}-{n. 幽闭恐怖；|,|\
+ˈklævɪkl|ˈklævɪkəl}-{clavicle}-{break one's clavicle}-{n. 锁骨；|,|\
+klaɪˈmæktɪk|klaɪˈmæktɪk}-{climactic}-{n climax ;a climactic moment}-{adj. 高潮的，形成高潮的；|,|\
+klaɪm|klaɪm}-{clime}-{sunnier climes}-{n. 气候，地方，地域；|,|\
+ˈkəʊdɪsɪl|ˈkɑdəsl}-{codicil}-{add a codicil to}-{n. 遗嘱的附件；|,|\
+kɒgnɪzəns|'kɒgnəzəns}-{cognisance}-{take(no)cognisance of sth;be/go beyond one's cognizance;}-{n. <主英>认识，审理，认定；|,|\
+kɒgnɪzənt|'kɒgnɪzənt}-{cognisant}-{He was cognizant of the peculiarities of the case.}-{adj. <主英>认知的；|,|\
+kəʊˈhɪə(r)|koʊˈhɪr}-{cohere}-{All the details are there and are correct but they don’t cohere ;sth cohere with sth;}-{vi. 黏合； 联合； 结合； （指看法、推理等）前后一致|,|\
+ˈkəʊhɔ:t|ˈkoʊhɔrt}-{cohort}-{a cohort of 386 patients aged 65 plus}-{n. （古罗马军队的）步兵大队，军队； 一群人； 同伙，共犯； 支持者|,|\
+kwɑ:ˈfjʊə(r)|kwɑˈfjʊr}-{coiffure}-{hairstyle ;her immaculate golden coiffure;}-{vt. 把头发做成某种式样； 把头饰给…戴上；|n. 发型； 头饰； 帽子；|,|\
+kə'leɪʃn|kə'leɪʃn}-{collation}-{collate information/results/data/figures ;with collation;in collation of;}-{n. 核对，小吃；|,|\
+kəˈlu:ʒn|kəˈluʒən}-{collusion}-{in collusion with}-{n. 共谋，勾结，串通；|,|\
+kɒləˌnaɪz|'kɒləˌnaɪz}-{colonise}-{colonise North America ;colonise the market of;}-{vt. 开拓殖民地，移民于殖民地；|,|\
+ˈkʌmbæk|ˈkʌmˌbæk}-{comeback}-{make/stage a comeback}-{n. 恢复，复原； 巧妙的回答或反驳； 东山再起； 回归|,|\
+ˌkɒmənˈdɪə(r)|ˌkɑmənˈdɪr}-{commandeer}-{The local hotel was commandeered for the wounded. ;The hijacker commandeered the plane}-{vt. 征用； 强占；|,|\
+kəˈmemərətɪv|kəˈmeməreɪtɪv}-{commemorative}-{a commemorative plaque}-{adj. 纪念的，纪念性的；|n. 纪念品；|,|\
+kəmˈpʌlsɪv|kəmˈpʌlsɪv}-{compulsive}-{a compulsive eater;compulsive reading/viewing}-{adj. 极有趣的； 令人着迷的； 因着迷而引起的； 强迫性的|adv. 极有趣地，令人着迷地，强迫性地；|,|\
+kənˈsɜ:tɪd|kənˈsɜrtɪd}-{concerted}-{concerted effort/action/attack}-{adj. 协调的； 协定的； 协商好的； [乐]合拍调的|,|\
+kənˈkɔ:dæt|kənˈkɔrdæt}-{concordat}-{The Concordat with the German}-{n. 协定，宗派间的协约；|,|\
+kɒndɪmənt|'kɒndɪmənt}-{condiments}-{the oldest condiments known to man}-{n. 调味品； 调味品，佐料( condiment的名词复数 )； 作料；|,|\
+ˈkɒnfluəns|ˈkɑnfluəns}-{confluence}-{the confluence of two rivers ; confluent 汇合的}-{n. <术>（河流的）汇合处； 汇流处； <正>（事物的）汇合； 汇流|,|\
+kənˌglɒməˈreɪʃn|kənˌglɑməˈreɪʃn}-{conglomeration}-{a conglomeration of flames}-{n. 团块，聚集，混合物；|,|\
+kɒŋgrʊəns|ˈkɑŋɡruəns, kənˈɡru-}-{congruence}-{adj congruent ;live in congruence with our faith;have congruence between}-{n. 适合； 一致； 叠合； 全等|,|\
+kəˈnaɪvəns|kəˈnaɪvəns}-{connivance}-{We could not have escaped without the connivance of the guards.}-{n. 默许，纵容；|,|\
+ˌkɒnsæŋ'gwɪnɪəs|ˌkɒnsæŋ'gwɪnɪrs}-{consanguineous}-{consanguineous marriage}-{adj. 血亲的，血缘的，密切的；|,|\
+ˌkɒnsæŋˈgwɪnəti|ˌkɑnsæŋˈgwɪnəti}-{consanguinity}-{sanguinity血色, 气色好be bound to each other by consanguinity and affinity}-{n. 血亲，同族，密切关系； 同源；|,|\
+kənˈteɪdʒən|kənˈtedʒən}-{contagion}-{There is some danger of contagion.}-{n. 传染； 接触传染； 道德败坏； 歪风|,|\
+ˈkɒntɪnəns|ˈkɑntɪnəns}-{continence}-{observance of rigid continence}-{n. 自制，节制，禁欲； 节欲；|,|\
+kənˈtɔ:ʃn|kənˈtɔrʃn}-{contortion}-{facial contortions}-{n. 扭曲，弄歪，歪曲；|,|\
+kən'tɔ:rʃəns|kən'tɔrʃəns}-{contortions}-{it blocks the final structural contortions from taking place}-{n. 扭歪，弯曲； 扭曲，弄歪，歪曲( contortion的名词复数 )；|,|\
+kənˈtju:ʒn|kənˈtuʒn}-{contusion}-{contuse;with a contusion on the back}-{n. 挫伤，擦伤，撞伤；|,|\
+kɒˈket|koʊˈket}-{coquette}-{flirt ;she was such an utter coquette;}-{n. 卖弄风情的女子；|,|\
+ˈkɔ:dn|ˈkɔrdn}-{cordon}-{A cordon of police surrounded the building.}-{vt. 封锁； 用警戒线围住；|n. 警戒线； 绶带，饰带；|,|\
+ˈkɒrənə(r)|ˈkɔrənə(r)}-{coroner}-{the coroner’s court}-{n. 验尸官； 法医；|,|\
+ˌkɒrəˈleɪʃn|ˌkɔrəˈleɪʃn}-{correlation}-{correlation between…and}-{n. 相互关系； 相关性；|,|\
+ˈkʊriə(r)|ˈkʊriɚ, ˈkə-, ˈkʌr-}-{courier}-{messenger runner;a motorcycle courier}-{n. 旅游团的服务员； 导游； （传递信息或重要文件的）信使； 通讯员|,|\
+ˈkʌvətəs|ˈkʌvɪtəs}-{covetous}-{be covetous of learning}-{adj. <贬>贪婪的，垂涎的； 狼贪虎视； 爱财； 馋|,|\
+kreɪv|krev}-{crave}-{crave for food}-{vt.& vi. 渴望，热望； 恳求，恳请； 要求，需要；|vt. 恳求，请求； 渴望；|,|\
+krəˈdenʃl|krɪˈdɛnʃəl}-{credential}-{credentials for/as ;user credential}-{n. 外交使节所递的国书，信任状； 文凭；|v. 提供证明书；|,|\
+krɪˈdju:ləti|krɪˈduləti}-{credulity}-{consumers’ credulity to/with}-{n. 轻信，易受骗；|,|\
+kri:d|krid}-{creed}-{men of all races and creeds 宗教信仰;their creed of self-help}-{n. （尤指宗教）信条，教义； 主义，纲领； 宗派；|,|\
+krəˈmeɪt|ˈkriˌmet,krɪˈmet}-{cremate}-{cremation ;cremate bodies by burning firewood}-{vt. 火葬，火化； 烧成灰；|,|\
+krɪmpŋ|krɪmpŋ}-{crimping}-{crimp a pie crust}-{v. 使（头发）卷曲，把…压成褶子( crimp的现在分词 )； 皱缩； 压接；|,|\
+krəʊn|kroʊn}-{crone}-{the crone is a witch}-{n. 干瘪老丑婆；|,|\
+krɔ:sbri:d|ˈkrɔsˌbrid, ˈkrɑs-}-{crossbreed}-{hybrid ;foreign purebred horses crossbreed with local ones;a crossbreed of two species}-{n. 杂交动物； 杂种；|,|\
+krɒst|krɒst}-{crossed}-{I phoned him up and got a crossed line .}-{adj. 十字的，划掉的，交叉的；|v. 交叉( cross的过去式和过去分词 )； 穿过； 使交叉； 使杂交|,|\
+}-{crumpled}-{a crumpled suit}-{adj. 摺皱的，弄皱的；|v. 压皱，弄皱( crumple的过去式和过去分词 )； 变皱；|,|\
+ˈkʌlvət|ˈkʌlvərt}-{culvert}-{railway culvert;}-{n. 管路；|,|\
+ˈdeɪɪs|ˈdeɪs, ˈdaɪ-, des}-{dais}-{at the dais}-{n. 台，讲台；|,|\
+dæʃt}-{dashed}-{The horses dashed out of burning stable;dashed line}-{n. 虚线；|v. 冲，猛冲( dash的过去式和过去分词 )； 猛掷， （使）猛撞； 匆匆地写或画； 打碎|,|\
+ˈdɔ:ntləs|ˈdɔntlɪs, ˈdɑnt-}-{dauntless}-{indomitable;dauntless courage;a dauntless hero}-{adj. <主文>无畏的，勇敢的；|adv. 无畏地，勇敢地；|,|\
+deɪzd|dezd}-{dazed}-{dazed look;The fall from the tree dazed her}-{adj. 晕眩的； 茫然的； 神魂颠倒的，失魂落魄的；|vt. 使眩晕，使惶惑(daze的过去式)；|,|\
+dɪ'bɔ:tʃ|dɪ'bɔtʃ}-{debauch}-{He debauched (ie seduced) many innocent girls}-{vt. 使堕落，败坏；|,|\
+ˈdebjutɑ:nt|ˈdɛbjʊˌtɑnt, ˈdebju-}-{debutante}-{a debutante’s delight of a dinner}-{n. 初进社交界的上流社会年轻女子；|,|\
+dɪ'kæntɪŋ|dɪ'kæntɪŋ}-{decanting}-{decant the wine}-{n. 滗析（手续）；|v. 将（酒等）自瓶中倒入另一容器( decant的现在分词 )；|,|\
+dɪˈkæpɪteɪt|dɪˈkæpɪˌtet}-{decapitate}-{a decapitated body ;decapitate 102 black people}-{vt. 杀头；|n. 斩首，杀头； 刽子手；|,|\
+ˌdi:ˈseləreɪt|diˈsɛləˌret}-{decelerate}-{accelerate;decelerate the vehicle;Inflation has decelerated remarkably}-{vt.& vi. （使）减速；|,|\
+dɪ'klɪvɪtɪ|dɪ'klɪvətɪ}-{declivity}-{acclivity;roll down a declivity}-{n. 斜坡； 坡度； 下斜；|,|\
+ˈdekərəs|ˈdɛkərəs, dɪˈkɔrəs, -ˈkor-}-{decorous}-{decorous behaviour, speech 高雅的举止、 言谈}-{adj. 端庄得体的； 厚重；|,|\
+dɪˈkrepɪtju:d|dɪˈkrepɪtud}-{decrepitude}-{in a decrepit state. ;Death and decrepitude}-{n. 衰老，老朽；|,|\
+dɪ'dju:səbl|dɪ'djusəbl}-{deducible}-{be deduce from}-{adj. 可推论的；|,|\
+ˌdefəˈmeɪʃn|ˌdɛfəˈmeʃən}-{defamation}-{fame;Websites sued for defamation}-{n. 诽谤，中伤；|,|\
+dɪ'fekʃn|dɪ'fekʃn}-{defection}-{defect to/from ;the defection of his assistant}-{n. （对国家、事业等的）背叛；|,|\
+ˌdi:ˈfrɒk|ˌdiˈfrɑk}-{defrock}-{defrock a priest}-{v. 剥去法衣，解除僧职；|,|\
+dɪˈlu:sɪv|dɪˈlusɪv}-{delusive}-{under a delusion (that) ;Coax with delusive promises}-{adj. 欺骗的； 迷惑的； 虚妄的； 令人错解的|,|\
+dɪ'ment|dɪ'ment}-{dement}-{She was almost demented with grief. ;dement behaviour}-{n. 狂人，疯子；|,|\
+di:ˈmerɪt|dɪˈmɛrɪt}-{demerit}-{The merits and demerits}-{n. <正>缺点，过失，短处；|,|\
+ˌdemə'ɡræfɪk|ˌdemə'ɡræfɪk}-{demographic}-{demographic change}-{adj. 人口统计学的； 人口统计的；|,|\
+dɪ'məʊnɪæk|dɪ'moʊnɪˌæk}-{demoniac}-{demon;demoniac laugh}-{adj. 魔鬼的； 恶魔的； 着魔的； 疯狂的|n. 着魔的人；|,|\
+dɪ'mɒrəlaɪz|dɪ'mɒrəlˌaɪz}-{demoralise}-{the demoralizing effects of unemployment ;demoralise the new government}-{vt. 使士气低落，使意志消沉；|,|\
+ˌdi:nəʊˈteɪʃn|ˌdinoʊˈteɪʃn}-{denotation}-{denote ;connotation and denotation}-{n. 指示；|,|\
+dɪˈplɔɪ|dɪˈplɔɪ}-{deploy}-{deploy forces/troops/weapons}-{vt.&vi. （尤指军事行动）使展开； 施展； 有效地利用；|,|\
+dɪˈrɪʒn|dɪˈrɪʒən}-{derision}-{Her naive attitude provoked their derision}-{n. 嘲笑，嘲弄； 笑柄；|,|\
+dɪ'sendənt|dɪ'sendənt}-{descendent}-{descendent of the original;descendent word}-{n. 后裔，子孙； （某一原型的）派生物；|adj. 下降的； 降落的； 祖传的； 派生的|,|\
+dɪ'spætʃ|dɪˈspætʃ}-{despatch}-{the despatch of the police ;despatch sb to do sth;}-{n.& v. 派遣；|n. 急件；|vt. 快递，调遣；|vi. 赶紧，匆匆离开；|,|\
+dɪˈtɜ:mɪnət|dɪˈtɜrmɪnət}-{determinate}-{a determinate prison sentence of five years}-{adj. 限定的，确定的；|,|\
+dɪˈterənt|dɪˈtɜrənt}-{deterrent}-{a nuclear deterrent}-{n. 制止物； 威慑物；|adj. 制止的； 遏制的；|,|\
+ˈdaɪədem|ˈdaɪəˌdɛm, -dəm}-{diadem}-{the diadem of white roses}-{n. 王冠，王权，带状头饰；|,|\
+ˌdaɪəˈlektɪk|ˌdaɪəˈlɛktɪk}-{dialectic}-{Dialectic studies how opposites can become identical}-{adj. 辩证的；|n. 辩证法；|,|\
+ˌdaɪə'lektɪkl|ˌdaɪə'lektɪkl}-{dialectical}-{dialectical materialism(辩证唯物论)}-{adj. 方言的，辩证的；|,|\
+daɪə'lektɪks|ˌdaɪə'lektɪks}-{dialectics}-{materialist dialectics}-{n. 辩证法； 辩证的( dialectic的名词复数 )；|,|\
+daɪˈkɒtəmi|daɪˈkɑtəmi}-{dichotomy}-{dichotomy between…and}-{n. 一分成二，对分；|,|\
+dɪfɪdəns|ˈdɪfɪdəns, -ˌdɛns}-{diffidence}-{my diffidence got the better of my conversational powers;with a feeling of diffidence;}-{n. 缺乏自信；|,|\
+dɪ'fju:ʒn|dɪˈfjuʒən}-{diffusion}-{the diffusion of learning}-{n. 扩散； <物，化>扩散； 传播； <人>（文化等的）传流|,|\
+ˌdɪsˌæprəˈbeɪʃn|dɪsˌæprəˈbeʃən}-{disapprobation}-{clamors of disapprobation}-{n. 不答应，非难，不赞成；|,|\
+ˌdɪsə'vaʊəl|ˌdɪsə'vaʊəl}-{disavowal}-{a public disavowal of his beliefs.}-{n. 不承认； 否认； 否定； 拒绝|,|\
+dɪsˈkɒnsələt|dɪsˈkɑnsələt}-{disconsolate}-{He was disconsolate after his divorce.}-{adj. 孤独的，郁郁不乐的； 怅怅不乐； 惆怅；|,|\
+dɪsˈkɔ:dənt|dɪsˈkɔrdənt}-{discordant}-{strikes a discordant note}-{adj. 不和的； 不一致的； 不调和的； 不谐和的|,|\
+dɪˈskrɪmɪneɪtɪŋ|dɪˈskrɪməˌnetɪŋ}-{discriminating}-{discriminating readers}-{adj. 有鉴别能力的，有识别能力的；|v. 分别，辨别，区分( discriminate的现在分词 )； 歧视，有差别地对待；|,|\
+ˌdɪsɪnˈfræntʃaɪz|ˌdɪsɪn'fræntʃaɪz}-{disenfranchise}-{disenfranchise African citizens}-{vt. 剥夺…的选举权，剥夺…的公民权，终止…的特许权；|,|\
+dɪˈʃevld|dɪˈʃɛvəld}-{dishevelled}-{Pam arrived late, dishevelled and out of breath.}-{adj. 散乱的，蓬乱的； 乱蓬蓬； 披头散发；|,|\
+dɪsˈɒnə(r)|dɪsˈɑnɚ}-{dishonour}-{bring dishonour on my family;dishonour sb;dishonour a cheque;}-{n. 不名誉； 耻辱； 丢脸； 丢脸的人或事|vt. 使（人、家族等）丧失名誉； 拒绝承兑（支票等）； 不履行（诺言等）；|,|\
+ˌdɪsˌɪnklɪˈneɪʃn|dɪsˌɪnkləˈneʃən}-{disinclination}-{a disinclination for work}-{n. <正>不愿意，不情愿；|,|\
+ˌdɪsɪnˈdʒenjuəs|ˌdɪsɪnˈdʒɛnjuəs}-{disingenuous}-{ingenuous 坦白的, 自然的, 直率的;It would be disingenuous to}-{adj. 不真诚的，不坦率的；|,|\
+dɪsˈdʒɔɪntɪd|dɪsˈdʒɔɪntɪd}-{disjointed}-{disjointed fragments of information}-{adj. 脱离开的，不连贯的；|,|\
+dɪsˈmembə(r)|dɪsˈmɛmbɚ}-{dismember}-{break up ;dismember the company}-{vt. 肢解； 割断手足； 分割；|,|\
+dɪˈspɪrɪtɪd|dɪˈspɪrɪtɪd}-{dispirited}-{discouraged ;feel utterly dispirited}-{adj. 沮丧的； 没有精神的； 意气消沉的；|,|\
+ˌdɪspjʊ'teɪʃəs|ˌdɪspjʊ'teɪʃəs}-{disputatious}-{argumentative ;my most disputatious reader}-{adj. 争辩的，好争辩的；|,|\
+dɪs'kwaɪɪˌtju:d|dɪs'kwaɪəˌtjud}-{disquietude}-{his own personal disquietude}-{n. 不安，忧虑；|,|\
+dɪˈsenʃn|dɪˈsɛnʃən}-{dissension}-{discord;dissension in/within/between/among}-{n. 不和，纠纷，争吵；|,|\
+ˌdɪsəˈlu:ʃn|ˌdɪsəˈluʃən}-{dissolution}-{the dissolution of}-{n. 溶解，融化； （社团等）解散； <律> 离婚； 腐朽，崩溃|,|\
+ˈdɪsənəns|ˈdɪsənəns}-{dissonance}-{sonance n.有声状态, 声音 ;consonance ;reduce dissonance}-{n. 不和谐音，不一致；|,|\
+dɪ'stɔ:ʃn|dɪˈstɔrʃən}-{distortion}-{a gross distortion of the facts}-{n. 扭曲，变形； 失真，畸变； [心理学] 扭转；|,|\
+ˈdɒkɪt|ˈdɑkɪt}-{docket}-{What’s on the docket for tomorrow’s meeting?}-{n. 摘要，记事表，（待判决的）诉讼事件表；|vt. 在…上附加摘要；|,|\
+ˈdɒdərɪŋ|ˈdɑdərɪŋ}-{doddering}-{doddering old men}-{adj. 震颤的，蹒跚的；|v. 枯掉了树梢的，衰弱的，脆弱的( doddered的过去分词 )；|,|\
+dɒgˈmætɪk|dɔgˈmætɪk}-{dogmatic}-{a dogmatic attitude, approach, view, etc 武断的态度、 方法、 看法等}-{adj. 教条的； 固执己见的； 武断的；|,|\
+ˌdɒmɪ'nɪə|ˌdɒmə'nɪr}-{domineer}-{a domineering mother ; domineer over everyone}-{v. 压制；|,|\
+dɒn|dɑn}-{don}-{He donned his cloak}-{n. 大学教师，（牛津、剑桥大学的）导师，特别研究员；|vt. 穿上，披上；|,|\
+dɔ:mə|ˈdɔrmɚ}-{dormer}-{my bedroom's dormer wall}-{n. 屋顶窗；|,|\
+ˈdaʊnkɑ:st|ˈdaʊnkæst}-{downcast}-{He seemed very downcast at the news.}-{adj. 情绪低落的，向下的； 颓靡；|,|\
+drɑ:ft|drɑft}-{draught}-{Can you close the window? I’m in a draught .}-{n. 通风； 气流； （船的）吃水深度； 一饮，一口之量|vt. draft的变体； 起草； 征兵； 选派|adj. 汲出的； 拖拉的；|,|\
+ˈdrɑ:ftsmənʃɪp|ˈdræftsmənʃɪp}-{draughtsmanship}-{his unrivalled draughtsmanship}-{释义 制图术；|,|\
+ˈdrʌbɪŋ|ˈdrʌbɪŋ}-{drubbing}-{Ireland gave England a drubbing at Twickenham.}-{n. 殴打，彻底击败；|,|\
+drʌdʒ|drʌdʒ}-{drudge}-{drudge at a tedious work;peon;}-{n. 做苦工的人，劳碌的人；|vi. 做苦工，操劳；|,|\
+dʌk'tɪlɪtɪ|dʌk'tɪlətɪ}-{ductility}-{ductile ;enhance ductility}-{n. 展延性，柔软性，顺从； 韧性； 塑性； 展性|,|\
+ˈdɪsəntri|ˈdɪsənteri}-{dysentery}-{Acute dysentery}-{n. 痢疾； 脏毒；|,|\
+dɪs'fʌŋkʃn|dɪsˈfʌŋkʃən}-{dysfunction}-{severe emotional dysfunction}-{n. 机能障碍，机能失调；|,|\
+ˈɪəmɑ:k|ˈɪrmɑrk}-{earmark}-{earmark a sum of money for research 拨出一笔款项作研究经费}-{vt. 指定用途； 标记； 打耳记；|n. 特征； 耳记； 标记；|,|\
+ˈɪəˌsplɪtɪŋ|ˈɪrˌsplɪtɪŋ}-{ear-splitting}-{There was an ear-splitting crack.}-{adj. 震耳欲聋的，非常响的；|,|\
+ɪˈbʌliənt|ɪˈbʊljənt, ɪˈbʌl-}-{ebullient}-{My father is a naturally ebullient personality.}-{adj. 热情奔放的； 精力充沛的； 沸腾的；|,|\
+ɪˌkli:ziˈæstɪk|ɪˌkliziˈæstɪk}-{ecclesiastic}-{priest ;in an ecclesiastic writing;soldier and ecclesiastic}-{n. 神职者，教会，牧师；|adj. 神职者的，牧师的，教会的；|,|\
+ɪ'klɪptɪk|ɪ'klɪptɪk}-{ecliptic}-{the ecliptic plane}-{n. 黄道；|adj. 黄道的，日（或月）食的，蚀的；|,|\
+ˈi:kəʊsɪstəm|ˈikoʊsɪstəm}-{ecosystem}-{agricultural ecosystem}-{n. <生>生态系统；|,|\
+ɪˈfektʃuəl|ɪˈfɛktʃuəl}-{effectual}-{effective ; effectual resistance}-{adj. 奏效的，收效的； 行之有效；|,|\
+ɪˈfektʃueɪt|ɪ'fektʃʊeɪt}-{effectuate}-{effectuate the sale}-{vt. 实行，完成；|,|\
+}-{effervescence}-{an effervescent personality ;creates rich effervescence}-{n. 冒泡，泡腾，活泼；|,|\
+e'flu:vɪəm|e'fluvɪrm}-{effluvium}-{effluvium derived from municipal wastewater}-{n. 臭气； 恶臭； 放出； 无声放电|,|\
+ɪˈfju:ʒn|ɪˈfjuʒən}-{effusion}-{a massive effusion of poisonous gas ;effusions of empathy}-{n. 流出，喷出；|,|\
+ɪˈfju:sɪv|ɪˈfjusɪv}-{effusive}-{Dotty was effusive in her thanks. ;Our host gave us an effusive welcome.}-{adj. 流露感情的； 溢于言表的； 流出的； 喷出的|,|\
+eɡətɪzəm|ˈiɡəˌtɪzəm, ˈɛɡə-}-{egotism}-{disdain for egotism}-{n. 自我中心，自尊自大；|,|\
+ˌi:ɡə'tɪstɪk|ˌiɡə'tɪstɪk}-{egotistical}-{He’s a selfish, egotistical individual!}-{adj. 自我本位的，任性的；|,|\
+iˌdʒækjuˈleɪʃn|ɪˌdʒækjəˈleʃən}-{ejaculation}-{Erection or ejaculation problems}-{n. 射出； 突然的喊出；|,|\
+ˌelɪˈveɪʃn|ˌɛləˈveʃən}-{elevation}-{The road climbs steadily to an elevation of 1,400 feet. elevation to}-{n. 高处，高地，高度，海拔，（枪炮的）仰角，射角； 升级，上进，向上； 高尚； [建]正视图，立视图|,|\
+ɪˈləʊp|ɪˈloʊp}-{elope}-{elope with sth decamp abscond}-{vi. 私奔；|,|\
+iˈliziəm|ɪˈlɪziəm, ɪˈlɪʒ-}-{Elysium}-{enter the Gates of Elysium}-{n. 极乐世界，至福之境；|,|\
+ˌi:menˈdeɪʃn|ɪˌmɛnˈdeʃən, ˌimɛn-}-{emendation}-{amend ;the emendation of sth;}-{n. 校订，修改； 增删；|,|\
+iˈmetɪk|ɪˈmɛtɪk}-{emetic}-{emetic medicine}-{adj. 催吐的；|n. 催吐药；|,|\
+ɪ'næmə|ɪn'æmə}-{enamour}-{be enamoured by}-{vt. 使倾心，使迷恋；|,|\
+ɪnˈsɜ:kl|ɪnˈsɜrkl}-{encircle}-{be encircled [with];Trees encircle the house}-{vt. 包围； 围绕；|,|\
+ˈenkleɪv|ˈɛnˌklev, ˈɑn-}-{enclave}-{the former Portuguese enclave of East Timor}-{n. 飞地（指在本国境内的隶属另一国的一块领土）； 被包围的领土；|,|\
+ɪn'krəʊtʃmənt|ɪnˈkrotʃmənt}-{encroachment}-{encroach on/upon ;control the encroachment of}-{n. 侵入，侵占，侵蚀；|,|\
+enˌsaɪkləʊ'pi:djə|ɪnˌsaɪkləˈpidɪə}-{encyclopaedia}-{Encyclopaedia of the Social Sciences}-{n. 百科全书，大全；|,|\
+enˌsaɪklə'pi:dɪk|ɪnˌsaɪklə'pidɪk}-{encyclopaedic}-{an encyclopedic knowledge of medieval literature}-{adj. 如百科辞典的，百科全书式的；|,|\
+ɪnˈdɪə(r)|ɪnˈdɪr}-{endear}-{endear somebody to somebody}-{vt. 使受喜爱； 使亲密； 使被爱恋；|,|\
+ɪnˈdɪəmənt|ɪnˈdɪrmənt}-{endearment}-{nicknames and other terms of endearment ;flattering endearments}-{n. 表示爱慕的话语，亲热的表示；|,|\
+ɪnˈfræntʃaɪz|ɛnˈfrænˌtʃaɪz}-{enfranchise}-{newly enfranchised shareholders}-{vt. 给予选举权； （从奴隶制中）解放；|,|\
+ɪˈnɪgmə|ɪˈnɪɡmə}-{enigma}-{The neighbours regarded him as something of an enigma. ;mystery}-{n. 谜，不可解的事物；|,|\
+ˌenɪgˈmætɪk|ˌɛnɪɡˈmætɪk}-{enigmatic}-{a professor's enigmatic grading system}-{adj. 神秘的； 似谜的； 令人困惑的； 高深莫测的|,|\
+ˌentəˈmɒlədʒi|ˌentəˈmɑlədʒi}-{entomology}-{a PhD in entomology}-{n. 昆虫学；|,|\
+ˈɒntreɪ|ˈɑntreɪ}-{entree}-{an entrée of roast duck ;entrée to/into}-{n. <法>入场权； <美>主菜；|,|\
+en'vaɪərənəl|en'vaɪərənəl}-{environal}-{Environal Monitoring}-{adj. 周围的，环境的；|n. 环境论；|,|\
+i:ən|ˈiən}-{eon}-{aeon ;the past half eon}-{n. (=aeon)世； 纪； 代； 无限长的时代|,|\
+ɪˌpɪstəˈmɒlədʒi|ɪˌpɪstəˈmɑlədʒi}-{epistemology}-{knowledge about epistemology}-{n. 认识论；|,|\
+ˈi:kwɪnɒks|ˈikwɪnɑks}-{equinox}-{the spring equinox}-{n. 昼夜平分点，春分或秋分；|,|\
+ˈi:kwɪpɔɪz|ˈikwəˌpɔɪz, ˈɛkwə-}-{equipoise}-{poise n v;ignore the equipoise of}-{n. 平衡，均衡；|vt. （保持）平衡，使均衡； 使相称； 与…抗衡；|,|\
+ˈekwɪtəbl|ˈɛkwɪtəbəl}-{equitable}-{an equitable distribution of food supplies}-{adj. 公正的，公平的； 平衡法的； 义； 合理|,|\
+ɪˈkwɪvəkl|ɪˈkwɪvəkəl}-{equivocal}-{an equivocal answer}-{adj. 模棱两可的； 意义不明的； 模糊的； （指人等）不可靠的|,|\
+ɪˈrɒtɪk|ɪˈrɑtɪk}-{erotic}-{a erotic urge}-{adj. （引起）性欲的，色情的；|adv. 引起性欲地；|n. 好色之徒；|,|\
+ˈerənt|ˈɛrənt}-{errant}-{an errant wife}-{adj. 犯错误的； 行为不当的； 出格的（仅用于名词前正式用语）； （丈夫或妻子）对配偶不忠的（仅用于名词前正式用语）|,|\
+ˌeskəˈpeɪd|ˈɛskəˌped}-{escapade}-{their dangerous escapades in the Great War}-{n. 恶作剧，越轨行为，冒险行为；|,|\
+ɪˈsti:m|ɪˈstim}-{esteem}-{esteem his work highly}-{vt. 尊敬，敬重； 认为，以为； 考虑； 估价|n. 尊敬，尊重； 意见，看法； 评价； 名声|,|\
+ju:fənɪ|'jufənɪ}-{euphony}-{euphoria ;the best euphony}-{n. 声音（尤指语音的）和谐，谐音；|,|\
+ˌju:θəˈneɪziə|ˌjuθəˈneɪʒə}-{euthanasia}-{mercy killing ;those in favour of voluntary euthanasia}-{n. 安乐死； 安然去世，无苦痛的死亡；|,|\
+ɪkˈskru:ʃieɪtɪŋ|ɪkˈskruʃiˌetɪŋ}-{excruciating}-{When I bend my arm, the pain is excruciating.}-{adj. 使苦恼的； 极度的；|,|\
+ˌeksɪˈkju:ʃənə(r)|ˌɛksɪˈkjuʃənɚ}-{executioner}-{the executioner lifted his axe}-{n. 行刑者，死刑执行者；|,|\
+ɪgˈzekjətə(r)|ɪɡˈzɛkjətɚ, ˈɛksɪˌkjutɚ}-{executor}-{the executor of the idea}-{n. 执行者； 实行者； 遗嘱执行人；|,|\
+ˌeksɪˈdʒi:sɪs|ˌɛksəˈdʒisɪs}-{exegesis}-{commentary;a substantial exegesis of his work;academic exegesis}-{n. 注释，解释（尤指对基督教<圣经>的注释）；|,|\
+ɪgˈzɜ:ʃn|ɪgˈzɜrʃn}-{exertion}-{the exertion of authority}-{n. 努力； 费力； （能力、权力等的）运用； 行使|,|\
+ɪgˈzɪləreɪtɪŋ|ɪɡˈzɪləˌretɪŋ}-{exhilarating}-{an exhilarating experience}-{adj. 使人高兴的，令人兴奋的； 振奋的；|v. 使高兴，使兴奋( exhilarate的现在分词)；|,|\
+ˈeksɪdʒənsi|ˈɛksədʒənsi, ɪɡˈzɪdʒən-}-{exigency}-{The people had to accept the harsh exigencies of war.}-{n. 急切的需要，危急；|,|\
+ˈekspədaɪt|ˈɛkspɪˌdaɪt}-{expedite}-{strategies to expedite the decision-making process ;set up expedite logistics network}-{vt. 加快进展； 迅速完成；|,|\
+ɪkˈspli:tɪv|ˈeksplətɪv}-{expletive}-{swear word ; shout an expletive}-{n. 感叹词，咒骂语；|,|\
+ˌekspəˈnenʃl|ˌɛkspəˈnɛnʃəl}-{exponential}-{an exponential increase in travel}-{n. 指数； 倡导者； 演奏者； 例子|adj. 指数的，幂数的； 越来越快的；|,|\
+ɪkˌspɒstʃʊ'leɪʃn|ɪkˌspɒstʃʊ'leɪʃn}-{expostulation}-{expostulate;I now went into an earnest expostulation with him}-{n. 规劝，告诫；|,|\
+ˈekstəpeɪt|ˈekstərpeɪt}-{extirpate}-{extirpate evils;deracinate}-{vt. 消灭，灭绝； 根除；|,|\
+ˌekstrə'dɪʃn|ˌɛkstrəˈdɪʃən}-{extradition}-{extradite somebody to/from Britain ; tackle an extradition request}-{n. （根据条约或法令对逃犯等的）引渡；|,|\
+ɪkˌstræpə'leɪʃn|ɪkˌstræpəˈleʃən}-{extrapolation}-{extrapolate (something) from something ;A conservative extrapolation from}-{n. 推断； <统>外推（法）；|,|\
+fækʃəs|'fækʃəs}-{factious}-{factious quarrels}-{adj. 派系的； 与派系相关的； 好争论的； 不合作的|,|\
+fæktʃʊəlɪ|'fæktʃʊrlɪ}-{factually}-{factual information/knowledge/statements ;be factually correct}-{adv. 真实地，确实地；|,|\
+fəˈnætɪsɪzəm|fəˈnætɪˌsɪzəm}-{fanaticism}-{fantasy;religious fanaticism}-{n. 狂热，盲信，着迷；|,|\
+ˈfænsiə(r)|ˈfænsiɚ}-{fancier}-{pigeon/horse etc fancier}-{n. 发烧友； 对莫事物有特别爱好的人； 空想家；|adj. “fancy”的比较级；|,|\
+fænsɪs|'fænsɪs}-{fancies}-{ideas and fancies;fill with fancies}-{n. 花式织物，花色货品； 想像力( fancy的名词复数 )； 爱好； 怪想|,|\
+ˈfɑ:ˈfetʃt|ˈfɑrˈfɛtʃt}-{far-fetched}-{a far-fetched excuse.}-{adj. 牵强的，未必会的； 不着边际；|,|\
+ˈfeɪtəlɪzəm|ˈfetlˌɪzəm}-{fatalism}-{mood of fatalism ;This is no time for fatalism}-{n. 宿命论； 天数；|,|\
+fæðəmlɪs|'fæðəmlɪs}-{fathomless}-{the fathomless depths of the sea}-{adj. 深不可测的，不可了解的；|,|\
+ˈfɔ:nə|'fɔnə}-{fauna}-{the fauna of the forest}-{n. 动物群； 动物志；|,|\
+feɪvərɪtɪzəm|'feɪvərɪtˌɪzəm}-{favoritism}-{private favoritism;make favoritism}-{n. 偏爱，得宠，偏袒；|,|\
+fəˈlɪsəti|fɪˈlɪsɪti}-{felicity}-{with felicity;domestic felicity}-{n. 幸福； 恰当，妥帖；|,|\
+ˈfɜ:vənt|ˈfɜrvənt}-{fervent}-{fervent admirer/believer}-{adj. 热诚的，热烈的； 炽热的； 强烈的； 慷慨|,|\
+ˈfɜ:və(r)|ˈfəvɚ}-{fervour}-{religious fervour}-{n. 热烈，热情；|,|\
+fɪˈdeləti|fɪˈdɛlɪti,faɪ-}-{fidelity}-{fidelity to sb}-{n. 忠诚，忠实； 逼真； 保真度； 尽责|,|\
+ˈfɪnɪʃt|ˈfɪnɪʃt}-{finished}-{a finished story}-{adj. 完成了的； 技术高超的； 精湛的； 〈俚〉死了的，完蛋了的|v. 结束，完成( finish的过去式和过去分词)；|,|\
+ˈflæʃi|ˈflæʃi}-{flashy}-{large flashy cars}-{adj. 浮华的，俗丽的； 闪光的，瞬间的，昙花一现的； （脾气等）暴烈的；|,|\
+ˈfleɪvərɪŋ}-{flavouring}-{artificial flavourings}-{n. 调味品；|v. （加入香料、调味品等）给（某物）调味( flavour的现在分词 )；|,|\
+flɪpənsɪ|ˈflɪpənsɪ}-{flippancy}-{a rather flippant remark;This is no time for flippancy.}-{n. 无礼； 轻率； 无礼的行动（或言语）； 轻率的行动（或言语）|,|\
+fləʊ|floʊ}-{floe}-{ice floe}-{n. 大浮冰，浮殡冰块；|,|\
+ˈflɒtsəm|ˈflɑtsəm}-{flotsam}-{flotsam and jetsam}-{n. 浮货； 废料； 零碎物； 流离失所者|,|\
+ˈflaʊəri|ˈflaʊəri}-{flowery}-{a flowery meadow}-{adj. 用花装饰的； <贬>（说话或作品）辞藻华丽的；|,|\
+ˈflu:ənsi|ˈfluːənsi}-{fluency}-{She was fluent in English}-{n. （尤指外语）流利，流畅；|,|\
+ˈflʌstə(r)|ˈflʌstɚ}-{fluster}-{get flustered;In moment of fluster;fluster sb;}-{vt. 使慌乱，使不安；|n. 慌乱，不安；|,|\
+flu:t|flut}-{flute}-{a nice tune on the flute}-{n. 长笛，长笛吹奏者； 细长香槟杯； （柱上的）凹槽； （女服的）管状裙褶|v. 吹长笛，发笛声； 用长笛吹，用长笛般的声音歌唱； 在…上刻凹槽；|,|\
+fɒndlɪŋ|'fɒndlɪŋ}-{fondling}-{gentle fondling to wild grasps;you naughty fondling}-{n. 被溺爱的人，宠爱的动物，爱子；|v. 爱抚，抚弄( fondle的现在分词 )；|,|\
+ˈfu:lhɑ:di|ˈfulhɑrdi}-{foolhardy}-{It was foolhardy (of him) to go swimming alone}-{adj. <贬>莽撞的，有勇无谋的；|,|\
+fɔ:ˈbəʊdɪŋ|fɔrˈboʊdɪŋ}-{foreboding}-{She waited for news with a grim sense of foreboding .}-{n. （对不祥之事的）预感，预知；|adj. <文>（对不祥之事）预感的，预知的；|v. <正>预示（灾祸等）( forebode的现在分词 )；|,|\
+ˈfreɪlti|ˈfrelti}-{frailty}-{frailty of laziness;the frailties of human nature}-{n. 脆弱； 虚弱； （性格或行为上的）弱点； 缺点|,|\
+ˈfræntʃaɪz|ˈfrænˌtʃaɪz}-{franchise}-{The beer is brewed under franchise.}-{n. 选举权； 参政权； 特许权； 经销权|vt. 赋予特权； 赋予公民权；|,|\
+ˈfri:bu:tə(r)|ˈfriˌbutɚ}-{freebooter}-{pirate;a greasy freebooter}-{n. 海盗；|,|\
+ˈfrenzid|ˈfrɛnzid}-{frenzied}-{frenzied efforts to find a solution}-{adj. 慌乱的，狂热的； 狂乱的； 狂暴的； 激怒的|v. 使狂乱( frenzy的过去式和过去分词)； 极度的激动；|,|\
+frɒk|frɑk}-{frock}-{a party frock}-{n. 女装，连衣裙； 僧袍，教士服，长工作服；|vt. 使穿长工作服(礼服，长衣服〕； 授与…圣职；|,|\
+frʊ'ɡælətɪ|fruˈɡælətɪ}-{frugality}-{opp extravagant ;with frugality ;advocate frugality}-{n. 节约，朴素，节俭；|,|\
+ˈfʌdld}-{fuddled}-{her fuddled mind}-{v. 灌醉( fuddle的过去式和过去分词 )； 使迷糊； 使烂醉； 狂饮|,|\
+fɜ:tɪvlɪ|ˈfətɪvlɪ}-{furtively}-{furtive glances/looks ;furtively destroy evidence}-{adv. 偷偷地，秘密地；|,|\
+gælˈvænɪk|ɡælˈvænɪk}-{galvanic}-{The bomb warning had a galvanic effect.}-{adj. 流电的，抽搐的，以流电所产的； 动电；|,|\
+ˈgæmbɪt|ˈɡæmbɪt}-{gambit}-{a clever debating gambit}-{n. 开局让棋法； 策略，诡计；|,|\
+ˈgeɪmli|ˈɡeɪmli}-{gamely}-{game to do something ;gamely insist that}-{adv. 不屈地，勇敢地；|,|\
+gɔ:k|ɡɔk}-{gawk}-{Don’t just stand there gawking at those girls!}-{n. 呆子；|v. 呆呆地看着；|,|\
+gəˈzet|ɡəˈzɛt}-{gazette}-{the ‘Phoenix Gazette’}-{n. 公报； 报纸（作报纸名）；|vt. 刊载，宣布； 任命；|,|\
+ˌdʒi:nɪ'ælətɪ|ˌdʒinəˈælətɪ}-{geniality}-{a genial smile ;with undiminished geniality}-{n. 和蔼，亲切，友好；|,|\
+dʒenˈtɪləti|dʒɛnˈtɪlɪti}-{gentility}-{The hotel had an air of discreet gentility.}-{n. 高贵的地位[出身]； 有风度，彬彬有礼； 因循旧习；|,|\
+ˌdʒerɪ'ætrɪks|ˌdʒerɪ'ætrɪks}-{geriatrics}-{gerontology ;a geriatrics expert}-{n. （作单数用）老人病学，老人病科； 老年医学的，老年病学的( geriatric的名词复数 )；|,|\
+dʒɜ:mɪnəl|'dʒɜmənəl}-{germinal}-{on a germinal period}-{adj. 幼芽的；|,|\
+dʒeˌstɪkjʊ'leɪʃn|dʒeˌstɪkjʊ'leɪʃn}-{gesticulation}-{facial expression and gesticulation}-{n. 做手势，做示意动作，手势；|,|\
+ˈdʒɪbərɪʃ|ˈdʒɪbərɪʃ}-{gibberish}-{You’re talking gibberish !}-{n. 令人费解的话，莫名其妙的话，胡扯； 混字； 无意义数据；|,|\
+ˈgleərɪŋ|ˈglerɪŋ}-{glaring}-{the glaring noonday sun.}-{adj. 耀眼的，闪闪发光的； 炫耀的，显眼的； 瞪眼的； 粗俗的|v. 怒目而视(glare的现在分词)； 发强光；|,|\
+ˈglʌtn|ˈɡlʌtn}-{glutton}-{glut;a glutton for punishment ;a glutton for hard work}-{n. 贪食者； <口>贪图者； 酷爱…的人； 狼獾|,|\
+nɑ:l|nɑl}-{gnarl}-{gnarled ;gnarl on the tree;}-{n. 节，瘤；|v. 生节； 咆哮； 使有节； 扭|,|\
+ˈgɔ:ri|'ɡɔrɪ}-{gory}-{a gory battle}-{adj. 沾满血污的，充满暴力和血腥的；|,|\
+grænˈdɪləkwənt|ɡrænˈdɪləkwənt}-{grandiloquent}-{a grandiloquent speaker}-{adj. 夸张的，大言不惭的；|,|\
+grænjʊleɪt|'grænjəˌleɪt}-{granulate}-{granula 粒; granulated sugar ;granulate stones}-{vt. 使成颗粒，使成粒状； 使表面粗糙；|,|\
+græplɪŋ|'græplɪŋ}-{grappling}-{grappling iron (打捞用的)抓机 爪钩}-{v. 抓住( grapple的现在分词 )； 搏斗； 与…格斗； 努力应付困境（或解决难题）|,|\
+ˈgreɪzɪŋ}-{grazing}-{acres of grazing and arable land}-{n. 放牧，牧场，草场；|v. （让动物）吃草( graze的现在分词 )； 轻擦，擦破； 擦过； 掠过|,|\
+ˈgrʌdʒɪŋ|ˈɡrʌdʒɪŋ}-{grudging}-{be grudge doing something}-{adj. 不情愿的，勉强的；|,|\
+ˈgru:əl|ˈɡruəl}-{gruel}-{get one's gruel[口]受重罚; 被处死, 被干掉, 被击败}-{n. 燕麦粥 ； 稀粥；|,|\
+grʌnt|ɡrʌnt}-{grunt}-{Grunting with effort, she lifted me up. ;Harvey grunted disgustedly}-{vi. 作呼噜声； （指人）发出类似的哼声；|vt. 咕哝着说； 发哼声，咕哝；|n. （猪等的）呼噜声； 咕哝，牢骚；|,|\
+gʌf|ɡʌf}-{guff}-{I don’t believe any of that guff!}-{n. <美俚>胡说，瞎扯，废话；|,|\
+ˈgʌsti|ˈɡʌsti}-{gusty}-{a cold gusty October night}-{adj. 阵风的； 多阵风的； 起大风的； 迸发的|,|\
+ˈdʒaɪrəskəʊp|ˈdʒaɪrəskoʊp}-{gyroscope}-{a compass and the gyroscope can be used for in indoor navigation}-{n. 陀螺仪，回转仪；|,|\
+hækl|'hækəl}-{hackle}-{raise sb’s hackles (= make someone angry );heckle}-{vt. 梳理，乱砍；|n. 锯齿形，颈上的羽毛，针排；|,|\
+hɑ:f 'hɑ:tɪd|ˈhæfˈhɑrtɪd, ˈhɑf-}-{half-hearted}-{make half-hearted attempts}-{adj. 粗心的； 没精打采的，缺乏热情的； 并非真心的； 半心半意的|,|\
+hæp|hæp}-{hap}-{good hap;haps and mishaps of life;}-{n. 偶然，机会，运气；|vi. 偶然发生；|,|\
+hɑ:d'bɪtn|ˈhɑrdˈbɪtn}-{hard-bitten}-{a hard-bitten cop}-{adj. 坚强的，顽强的；|,|\
+hɔ:tɪnəs|'hɔtɪnəs}-{haughtiness}-{laugh at my haughtiness}-{n. 傲慢； 傲气；|,|\
+hedf'ɜ:st|ˈhɛdˈfɚst}-{headfirst}-{drive headfirst toward each other}-{adv. 头向前地，不顾前后地；|,|\
+ˈhelθfl|ˈhɛlθfəl}-{healthful}-{a healthful diet}-{adj. 有益于健康的；|,|\
+ˈhevi:ˈhændɪd|ˈhɛviˈhændɪd}-{heavy-handed}-{heavy-handed regulation;heavy-handed footballer}-{adj. 笨手笨脚的，拙劣的； 严厉的； 暴虐的； 手辣的|,|\
+heklə(r)|'heklə(r)}-{heckler}-{obnoxious heckler}-{n. 诘问者；|,|\
+ˈhi:dləs|ˈhidlɪs}-{heedless}-{be Heedless of time; in her heedless haste}-{adj. 不加注意的； 苟；|,|\
+ˌhɪərˈɑ:ftə(r)|ˌhɪrˈæftə(r)}-{hereafter}-{.}-{adv. 今后，从此以后；|,|\
+ˈhɜ:mɪtɪdʒ|ˈhɜrmɪtɪdʒ}-{hermitage}-{leave the hermitage;}-{n. 隐居处，修道院；|,|\
+haɪ'bɜ:nl|haɪ'bɜnəl}-{hibernal}-{hibernal annual plants;hibernal food}-{adj. 冬天的，寒冷的；|,|\
+ˈhaɪdɪŋ}-{hiding}-{come out of hiding;}-{n. 躲藏，隐匿； <口>殴打；|,|\
+haɪ fləʊn|ˈhaɪˈflon}-{high-flown}-{fly ; high-flown ideas}-{adj. 颇有野心的； 夸张的；|,|\
+hɪˈlærəti|hɪˈlærətɪ}-{hilarity}-{Eva joined in the hilarity as much as anyone.}-{n. 欢闹，狂欢；|,|\
+haɪndməʊst|'haɪndˌmoʊst}-{hindmost}-{the hindmost of the four;and the devil take the hindmost}-{adj. 最后面的，最后部的；|,|\
+ˈhɪndrəns|ˈhɪndrəns}-{hindrance}-{The floods have been a major hindrance to relief efforts.}-{n. 妨害，障碍； 障碍物； 起妨碍作用的人；|,|\
+ˈhaɪndsaɪt|ˈhaɪndˌsaɪt}-{hindsight}-{the benefit/wisdom of hindsight}-{n. 后见之明； （步枪的）照尺； 表尺；|,|\
+ˈhaɪəlɪŋ|ˈhaɪərlɪŋ}-{hireling}-{he was merely a hireling;}-{n. 雇员，专为金钱而工作者；|adj. 被雇用的；|,|\
+ˈhəʊmspʌn|ˈhoʊmspʌn}-{homespun}-{homespun ideas}-{n. 手织物，朴素的；|adj. （尤指思想）朴素的，平常的； （布料）家纺的；|,|\
+hə'mɒdʒənəs|həˈmɑdʒənəs, ho-}-{homogenous}-{homogeneous light;a homogenous market/nation}-{adj. 同质的，纯系的；|,|\
+hu:vz|hʊvz, huvz}-{hooves}-{.}-{n. hoof 的复数； （兽的）蹄，马蹄( hoof的名词复数 )；|,|\
+ˈhɒrəskəʊp|ˈhɔrəskoʊp}-{horoscope}-{my horoscope says that;Your current horoscope is golden}-{n. 星占； 星象； 算命天宫图；|,|\
+hɔ:tətərɪ|'hɔtəˌtoʊri}-{hortatory}-{a hortatory speech.}-{adj. 劝告的，激励的；|,|\
+ˌhɔ:tɪ'kʌltʃərəl|ˌhɔtɪ'kʌltʃərəl}-{horticultural}-{farming and horticultural;horticultural center;}-{adj. 园艺的；|,|\
+ˈhɒthed|ˈhɑthed}-{hothead}-{hotheaded ;be a bit of a hothead;}-{n. 急性子的人，鲁莽的人；|,|\
+hju:ˌmænɪˈteəriən|hjuˌmænɪˈteriən}-{humanitarian}-{humanitarian aid/assistance/relief}-{adj. 人道主义的； 博爱的； 慈善的；|n. 人道主义者； 慈善家； 博爱主义者；|,|\
+ˈhʌmək|ˈhʌmək}-{hummock}-{a very small hill ;on the hummock}-{n. 小丘，岗；|,|\
+ˈhju:məs|ˈhjuməs}-{humus}-{acid humus}-{n. 腐殖质；|,|\
+ˌhaɪdrəˈfəʊbiə|ˌhaɪdrəˈfoʊbiə}-{hydrophobia}-{rabies;Rabies is also known as hydrophobia}-{n. 狂犬病，恐水病；|,|\
+ˈhaɪpə(r)|'haɪpər}-{hyper}-{make sb hyper. ;balance your already hyper mind;}-{n. 宣传人员；|adj. 既兴奋又紧张的； 高度紧张的； 亢奋的；|,|\
+haɪpə'krɪtɪkəl|'haɪpə'krɪtɪkəl}-{hypercritical}-{stop being hypercritical}-{adj. （尤指对小错误）吹毛求疵的，过于苛刻的；|,|\
+hɪpˈnəʊsɪs|hɪpˈnoʊsɪs}-{hypnosis}-{under hypnosis}-{n. 催眠，催眠状态，催眠术；|,|\
+ˌhaɪpəˈkɒndriæk|ˌhaɪpəˈkɑndriæk}-{hypochondriac}-{I used to be a terrible hypochondriac;}-{n. 疑病症患者；|adj. 患疑病症的；|,|\
+ˌɪkθɪ'ɒlədʒɪ|ˌɪkθɪ'ɒlədʒɪ}-{ichthyology}-{studies in ichthyology}-{n. 鱼类学，鱼类学者作；|,|\
+ˌɪdiəˈsɪŋkrəsi|ˌɪdioˈsɪŋkrəsi}-{idiosyncrasy}-{little idiosyncrasy;one of the many idiosyncrasies of English spelling}-{n. （某人特有的）气质，习性，癖好；|,|\
+ˌɪdɪəsɪŋ'krætɪk|ˌɪdɪrsɪŋ'krætɪk}-{idiosyncratic}-{a highly idiosyncratic personality; the idiosyncratic preferences of}-{adj. 乖僻的； 怪异的；|,|\
+aɪˈdɒlətri|aɪˈdɑlətri}-{idolatry}-{idolize ;stop their idolatry of sth;}-{n. 偶像崇拜；|,|\
+ɪ'lɪmɪtəbl|ɪ'lɪmɪtəbəl}-{illimitable}-{the illimitable complexity}-{adj. 无限的，无边际的； 无边无际；|,|\
+ɪmˈbæləns|ɪmˈbæləns}-{imbalance}-{imbalance in ;imbalance between}-{n. 不平衡； 不安定； 失调；|,|\
+ˌɪmbə'sɪlətɪ|ˌɪmbə'sɪlətɪ}-{imbecility}-{He looked at me as if I was a total imbecile. ;be indignant at the imbecility that}-{n. 愚笨； 低能； 弱智； 愚蠢行为|,|\
+ˌɪmə'bɪlətɪ|ˌɪmoˈbɪlətɪ}-{immobility}-{immobile (motionless );a temporary immobility}-{n. 固定性，静止；|,|\
+ɪmju:naɪz|'ɪmjunaɪz}-{immunise}-{immunize somebody against something}-{vt. 使某人免疫；|,|\
+ɪˈmju:təbl|ɪˈmjutəbəl}-{immutable}-{an immutable law ;mutable}-{adj. 不可改变的；|,|\
+ɪmˈpɑ:səbl|ɪmˈpæsəbl}-{impassable}-{The mountains are impassable.}-{adj. 不能通行的，无法通过； 不可逾越；|,|\
+ɪmˈpɜ:tɪnənt|ɪmˈpɜrtnənt}-{impertinent}-{an impertinent child ;pertinent adj.有关的, 相干的, 中肯的}-{adj. 无礼的； 莽撞的； 不切题的； 不中肯的|,|\
+ɪm'paɪətɪ|ɪm'paɪətɪ}-{impiety}-{piety 虔诚 n ; impious ;guilty of impiety}-{n. 不敬；  不孝； 不敬的行为；  不孝的行为|,|\
+ˈɪmpiəs|ˈɪmpiəs, ɪmˈpaɪ-}-{impious}-{impiety;an impious crime}-{adj. 不尊敬的，无信仰的，不虔诚的；|,|\
+ɪmˈplækəbl|ɪmˈplækəbəl, -ˈplekə-}-{implacable}-{placable adj.易抚慰的 an implacable enemy}-{adj. （指愤怒、仇恨、敌意等）难和解的； 难平息的； 仇恨深的； 不能改变的|,|\
+ɪm'plaɪd|ɪm'plaɪd}-{implied}-{an implied consent}-{adj. 暗指的，含蓄的；|v. 暗示，暗指( imply的过去式和过去分词 )； 必然包含； 说明，表明；|,|\
+ɪmˈpɔ:tʃənət|ɪmˈpɔrtʃənət}-{importunate}-{importunate demands}-{adj. 强求的，纠缠不休的；|,|\
+ˈɪmpətənt|ˈɪmpətənt}-{impotent}-{be impotent}-{adj. 无力的； 虚弱的； 无效的； [医]阳痿的|,|\
+ˈɪmpregneɪt|ɪmˈpregneɪt}-{impregnate}-{pregnant;impregnate something with something}-{vt. 灌注，使饱和； 使怀孕；|,|\
+ˌɪmprəˈpraɪəti|ˌɪmprəˈpraɪɪti}-{impropriety}-{propriety n.;Accusations of impropriety}-{n. 不得体； 不适当； 不得体的举止； 不正确|,|\
+ɪmpjədəns|ˈɪmpjədəns}-{impudence}-{He stared at me with a mixture of impudence and hostility. impudent}-{n. 粗鲁，放肆，无礼的言行；|,|\
+ɪnˌæməˈrɑ:tə|ɪnˌæmə'rɑtə}-{inamorata}-{lover ; present the ring to his inamorata to seal their bond}-{n. 情人，情妇，姘妇；|,|\
+ˌɪnɑ:ˈtɪkjələt|ˌɪnɑrˈtɪkjələt}-{inarticulate}-{Making an inarticulate sound, he turned away.}-{adj. 不善辞令的； 笨口拙舌； 嘴笨；|,|\
+ˌɪnkænˈdesnt|ˌɪnkənˈdɛsənt}-{incandescent}-{the invention of the incandescent lamp}-{adj. <术>白热的； 白炽的； <正>十分明亮的； <正>感情强烈的|,|\
+ˌɪnkɑ:ˈneɪʃn|ˌɪnkɑrˈneɪʃn}-{incarnation}-{in a previous incarnation . ;the/an incarnation of something}-{n. 化身； 前身； 典型体现；|,|\
+ˈɪnsest|ˈɪnˌsɛst}-{incest}-{rape or incest.}-{n. 乱伦； 近亲通婚； 乱伦罪； 血族相婚|,|\
+ˌɪnsɪˈdentl|ˌɪnsɪˈdɛntl}-{incidental}-{incidental expenses 杂费.}-{adj. 附属的； 易发生的，偶然发生的； 伴随发生的；|n. 附带事件； 伴随事件，杂费； 非主要的附带项或费用；|,|\
+ɪnˈklaɪnd|ɪnˈklaɪnd}-{inclined}-{be inclined to do something}-{adj. 倾斜的； 倾向的；|v. （使）倾斜( incline的过去式和过去分词)； （使）偏向；|,|\
+ˌɪnkɒgˈni:təʊ|ˌɪnkɑgˈnitoʊ}-{incognito}-{travel incognito}-{adj. 化装的，用假名的，隐匿姓名身份的；|adv. 化装地；用假名地，隐姓埋名地；|n. 微装出游的人；用假名的人；|,|\
+ˌɪnkə'məʊdɪəs|ˌɪnkə'moʊdɪrs}-{incommodious}-{commodious adj.宽敞的;the incommodious seat}-{adj. <正>太小而不舒适的； 不方便的；|,|\
+ɪn'kɒntɪnənt|ɪnˈkɑntənənt}-{incontinent}-{continent;be incontinent of urine}-{adj. （大小便）失禁的； 不能自制的；|,|\
+ɪnˈkredjələs|ɪnˈkredʒələs}-{incredulous}-{incredulous look/expression/voice}-{adj. 表示怀疑的，不相信的；|,|\
+ɪnˈkjʊərəbl|ɪnˈkjʊrəbl}-{incurable}-{curable;incurable disease/illness/condition}-{adj. 无法治愈的； 无法改变的； 不能矫正的；|n. 医不好的病人；|,|\
+ɪnˈkɜ:ʃn|ɪnˈkɜrʒn}-{incursion}-{the incursion of floodwater}-{n. 侵犯； 侵入； （河水等）流入； 袭击|,|\
+ˌɪndɪˈsɪʒn|ˌɪndɪˈsɪʒən}-{indecision}-{There were weeks of indecision about who would go and when.}-{n. 优柔寡断； 犹豫不决；|,|\
+ˌɪndenˈteɪʃn|ˌɪndɛnˈteʃən}-{indentation}-{Make an indentation in the center of each cookie.}-{n. 凹进； 缩格； 凹口； 缺口|,|\
+ˌɪndɪˈspju:təbl|ˌɪndɪˈspjutəbəl}-{indisputable}-{The evidence was indisputable.}-{adj. 无可争辩的； 不容置疑的； 无可否认的； 无可讳言|,|\
+ˌɪndɪˈsɒljəbl|ˌɪndɪˈsɑljəbl}-{indissoluble}-{the indissoluble link between language and culture}-{adj. 不能分解的；|,|\
+ɪndələns|ˈɪndələns}-{indolence}-{the indolent son of a wealthy landowner}-{n. 懒惰； 好逸恶劳； 懒散； 无痛|,|\
+ɪnˈdɒmɪtəbl|ɪnˈdɑmɪtəbl}-{indomitable}-{indomitable spirit/will/courage}-{adj. 不屈服的，不气馁的，不可战胜的；|adv. 不屈服地，不气馁地，不可战胜地；|,|\
+ɪnˈdʌktɪv|ɪnˈdʌktɪv}-{inductive}-{inductive reasoning}-{adj. 诱导的； 感应的； 归纳法的； 归纳的|,|\
+ɪnˈdʌldʒənt|ɪnˈdʌldʒənt}-{indulgent}-{indulgent grandparents}-{adj. 放纵的，纵容的； 宽容的； 任性的；|,|\
+ɪˈni:brieɪtɪd|ɪnˈibriˌetɪd}-{inebriated}-{drunk ; inebriated celebrants}-{adj. 酒醉的；|,|\
+ɪnɪ'braɪətɪ|ˌɪni'braɪəti}-{inebriety}-{Intoxication;Because of this inebriety; she felt a little inebriety}-{n. 醉，陶醉；|,|\
+ɪn'erənsɪ|ɪn'erənsɪ}-{inerrancy}-{belief in the inerrancy of the Scriptures.}-{n. 无错误；|,|\
+ɪnˈestɪməbl|ɪnˈɛstəməbəl}-{inestimable}-{a painting of inestimable value}-{adj. 极贵重的，（大得）无法估计的； 不可估量；|,|\
+ˌɪnɪkˈstrɪkəbl}-{inextricable}-{the inextricable connection between language and culture}-{adj. <正>无法摆脱的，解不开的；|adv. 无法摆脱地，解不开地；|,|\
+ɪnˈfæləbl|ɪnˈfæləbəl}-{infallible}-{fallible; an infallible method}-{adj. 绝对可靠的； 一贯正确的； 万无一失的；|n. 一贯正确的人； 可靠的事物；|,|\
+ˈɪnfɪdəl|ˈɪnfɪdəl, -ˌdɛl}-{infidel}-{pagan heathen;infidel forces;fight the infidel}-{n. 不信宗教的（人），异教徒；|,|\
+ɪnˈfɜ:məti|ɪnˈfɜrməti}-{infirmity}-{illness; the bodily infirmity}-{n. 体弱； 虚弱； 疾病； 病症|,|\
+ɪnˈfleɪtɪd|ɪnˈfletɪd}-{inflated}-{grossly/vastly/hugely inflated ;inflated prices}-{adj. （价格）飞涨的； （通货）膨胀的； <贬>言过其实的； 充了气的|v. 使充气（于轮胎、气球等）( inflate的过去式和过去分词 )； （使）膨胀； （使）通货膨胀； 物价上涨|,|\
+ˈænʒeɪnju:|ˈændʒənu}-{ingenue}-{.}-{n. 天真无邪的少女，阅历不深的人；|,|\
+ɪnˈɒpətju:n|ɪnˌɑpərˈtun}-{inopportune}-{at an inopportune moment;an inopportune visit}-{adj. 不凑巧的，不合时宜的；|,|\
+ɪnˈkwɪzɪtə(r)|ɪnˈkwɪzɪtɚ}-{inquisitor}-{He looked at his inquisitor}-{n. 询问者； 检察官； 审理者； （尤指天主教对异教徒的）审判者|,|\
+ˌɪnsəˈlu:briəs|ˌɪnsəˈlubriəs}-{insalubrious}-{the less salubrious area near the docks ;salutary}-{adj. 有害的；|,|\
+ɪnˈsensəbl|ɪn'sensəbl}-{insensible}-{insensible to/of}-{adj. 无知觉的； 不知道的； 无感觉的； （尤指）无疼痛感觉的|n. 无知觉，无感觉，不知道；|adv. 无知觉地；|,|\
+ɪnˈsɒlvənt|ɪnˈsɑlvənt}-{insolvent}-{insolvent person}-{adj. 无力偿付债务的； 破产的；|n. 无力偿还债务的人； 破产者；|,|\
+ˌɪnstə'tju:ʃənlaɪz|ˌɪnstə'tjuʃənəlaɪz}-{institutionalise}-{the struggle to institutionalize equality for women}-{vt. 使（某事物）制度化； 将（某人）收容在社会福利机构；|,|\
+ˌɪnsəˌbɔ:dɪˈneɪʃn|ˌɪnsəˌbɔrdɪˈneɪʃn}-{insubordination}-{act of insubordination}-{n. 不顺从，反抗；|,|\
+ɪnˌtelɪˈdʒentsiə|inˌtɛləˈdʒɛntsiə, -ˈɡɛnt-}-{intelligentsia}-{the intelligentsia}-{n. 知识分子； 知识界；|,|\
+ˌɪntə'wəʊvn|ˌɪntə'woʊvn}-{interwoven}-{.}-{v. 使（与…交织）( interweave的过去分词 )；|,|\
+ɪnˈtɒlərənt|ɪnˈtɑlərənt}-{intolerant}-{tolerant ; be intolerant of}-{adj. 不能容忍的，不容异议的，心胸狭窄的；|n. 不能容忍，不容异议，心胸狭窄；|adv. 不能容忍地，不容异议地，心胸狭窄地；|,|\
+ɪn'trænsɪdʒəns|ɪnˈtrænsədʒəns}-{intransigence}-{an intransigent attitude ;be frustrated by the intransigence of both sides}-{n. 不妥协，不让步；|,|\
+ɪn'trɪnsɪkəl|ɪn'trɪnsɪkəl}-{intrinsical}-{intrinsic nature/quality/value/property of something}-{adj. 本质的，固有的；|,|\
+ˈɪntrəvɜ:t|ˈɪntrəvɜrt}-{introvert}-{extrovert;}-{n. 性格内向的人；|,|\
+ɪˈnjʊə(r)|ɪˈnjʊr}-{inure}-{inure to cold climate}-{vt. 使习惯（于）；|,|\
+ɪnˈvɪnsəbl|ɪnˈvɪnsəbəl}-{invincible}-{an invincible army vincible 容易征服的, 易于克服的}-{adj. 不可战胜的，不能征服的； 无敌的； 无攻不克； 无前|,|\
+ˌɪnvəˈkeɪʃn|ˌɪnvəˈkeʃən}-{invocation}-{prayers and invocations}-{n. 祈祷； 乞求； 乞灵； 乞求神助|,|\
+ˌɪrɪˈfju:təbl|ɪˈrɛfjətəbəl, ˌɪrɪˈfju-}-{irrefutable}-{irrefutable evidence/proof/facts}-{adj. 无可辩驳的，驳不倒的； 确凿； 无可争议；|,|\
+ɪˈrepərəbl|ɪˈrɛpərəbəl}-{irreparable}-{reparable;cause irreparable harm}-{adj. 不能修复的，不可弥补的； 不能挽回的； 无可补救；|,|\
+ˌɪrɪˈprəʊtʃəbl|ˌɪrɪˈproʊtʃəbl}-{irreproachable}-{irreproachable conduct.准确无误的举止}-{adj. 无瑕疵的，无可指责的；|,|\
+ɪˈrezəlu:t|ɪˈrɛzəˌlut}-{irresolute}-{irresolution;be slightly irresolute;stand irresolute;}-{adj. 犹豫不定的，无决断的； 憧； 迟疑不决；|,|\
+ˌɪrɪˈtri:vəbl|ˌɪrɪˈtrivəbəl}-{irretrievable}-{irretrievable loss}-{adj. 不能挽回的，不能复原的； 不可弥补； 不可挽回；|,|\
+ɪ'revərəns|ɪˈrɛvərəns}-{irreverence}-{it does suggest irreverence}-{adj. 不尊敬的；|,|\
+ɪˈrevərənt|ɪˈrɛvərənt}-{irreverent}-{his irreverent sense of humour;it is irreverent to do sth;}-{adj. 不敬的，无礼的； 不虔诚的；|,|\
+ˈdʒetsəm|ˈdʒɛtsəm}-{jetsam}-{flotsam and jetsam}-{n. 投弃货物，漂流到海岸的货物； 沉料； 投弃负荷；|,|\
+dʒɪŋɡə'ʊɪst|dʒɪŋɡə'ʊɪst}-{jingoist}-{jingo n.沙文主义者 chauvinism;chauvinist;the hard jingoist}-{n. 沙文主义者，侵略主义者；|,|\
+dʒəˈkəʊs|dʒəˈkoʊs}-{jocose}-{humorous;a jocose actor}-{adj. 闹着玩的，爱开玩笑的，滑稽的；|,|\
+ˈdʒɒgɪŋ|ˈdʒɑgɪŋ}-{jogging}-{jogging suit}-{n. 慢跑；|v. （使）慢走，慢跑( jog的现在分词 )； 轻敲，轻推；|,|\
+dʒɒlətɪ|ˈdʒɑlɪti}-{jollity}-{a night of riotous jollity}-{n. <正>欢乐，愉快；|,|\
+dʒɒslɪŋ|'dʒɒslɪŋ}-{jostling}-{an hour jostling with the crowds}-{n. 推撞，冲撞别人的马；|v. 挤( jostle的现在分词 )； 推； 撞； 争夺|,|\
+dʒuˈdɪʃəri|dʒuˈdɪʃieri}-{judiciary}-{judiciary proceedings}-{n. 司法部； （总称）法官，审判官； 司法制度；|adj. 法院的，审判员的； 司法的；|,|\
+ˈdʒʌŋkɪt|ˈdʒʌŋkɪt}-{junket}-{junk food; afford such a junket;}-{n. <非正>公费旅游； （旧时流行的）乳冻甜食，凝乳甜食；|vt. 以游宴款待；|,|\
+ˈdʒʌntə|ˈhʊntə}-{junta}-{a military junta}-{n. 小集团； 政务审议会；|,|\
+dʒʊəˈrɪdɪkl|dʒʊˈrɪdɪkl}-{juridical}-{technical and juridical sophistication}-{adj. 裁判的，司法的，法院的；|,|\
+kɪpəd|'kɪpəd}-{kippered}-{kippered herring}-{adj. 熏制的（指咸鲑鱼或鲱鱼）；|,|\
+ˈkɪzmet|'kɪzmet}-{kismet}-{fate ;Omar and I were meant for each other. It was kismet.}-{n. 命运，天命；|,|\
+ˌkleptə'meɪnɪæk|ˌkleptə'meɪnɪæk}-{kleptomaniac}-{pyromaniac demoniac hypochondriac;dislodge the kleptomaniac}-{n. 患偷窃狂者，有偷窃癖者；|,|\
+neɪvərɪ|'neɪvərɪ}-{knavery}-{knavish ;Knavery may serve,but honesty is best}-{n. 流氓行为；|,|\
+nel|nel}-{knell}-{death knell}-{n. 丧钟声； 某事物结束的象征；|v. 〈古〉敲丧钟； 敲丧钟报丧； 敲丧钟，发丧钟声； 发出不吉利的声音|,|\
+ləˈbɔ:riəs|ləˈbɔriəs, -ˈbor-}-{laborious}-{laborious process/task/business etc}-{adj. 费力的； 勤劳的； 辛苦的；|,|\
+ˈlɑ:səni|ˈlɑrsəni}-{larceny}-{larcener larcenist;put in jail for grand larceny}-{n. 盗窃（罪）；|,|\
+ləˈsɪviəs|ləˈsɪviəs}-{lascivious}-{lascivious dance erotic}-{adj. 好色的； 淫荡的； 色情的；  猥亵的|,|\
+ˈlɔ:dəbl|ˈlɔdəbəl}-{laudable}-{a laudable attempt;}-{adj. 值得赞美的；|,|\
+ˈlɔ:dətəri|ˈlɔdətɔri}-{laudatory}-{a laudatory review}-{adj. 颂扬的；|,|\
+læks|læks}-{lax}-{be lax with sb;relax;lax security for airport personnel}-{adj. <医>（肠）宽松的； 松弛的； 松懈的； 不严格的|n. 泻肚； （挪威，瑞典的）鲑； 松元音；|,|\
+li:kɪŋ|likɪŋ}-{leaking}-{leaking of fuel}-{n. 漏泄，耗散；|v. 漏( leak的现在分词 )； 渗入，漏出； 使泄露；|,|\
+ˈli:vˌteɪkɪŋ|ˈlivˌtekɪŋ}-{leave-taking}-{a message of leave-taking}-{n. 离去，告别，告别语；|,|\
+letʃərɪ|ˈlɛtʃəri}-{lechery}-{lecher n.好色之徒, 纵欲的人, 私通者There was a hint of lechery in his eyes.}-{n. <贬>好色，色欲，淫荡；|,|\
+lɪˈgɑ:təʊ|lɪˈgɑtoʊ}-{legato}-{legato learning}-{adv.& adj. 连奏地（的），连唱地（的）；|,|\
+ˈli:ənaɪn|ˈliəˌnaɪn}-{leonine}-{a tall leonine grey-haired man}-{adj. 狮子般的； 狮子的；|,|\
+levl 'hedɪd|ˈlɛvəlˌhɛdɪd}-{level-headed}-{hot-headed ;level-headed approach;be level-headed}-{adj. 稳健的； 能识别的； 冷静的； 明智的|,|\
+ˈlevɪteɪt|ˈlɛvɪˌtet}-{levitate}-{levitation ; levitate things}-{vt.& vi. （使）轻轻浮起； （使）飘浮空中；|,|\
+lu:d|lud}-{lewd}-{a lewd expression;make lewd comments}-{adj. 好色的，淫荡的，下流的；|,|\
+lɪˈbɪdɪnəs|lɪˈbɪdnəs}-{libidinous}-{libidinal adj.性欲的libido ;his libidinous imagination}-{adj. 好色的；|,|\
+ˌlɪlɪˈpju:ʃn}-{Lilliputian}-{A curious Lilliputian}-{adj. 小人国居民的；|n. 小人国居民，侏儒；|,|\
+ˈlɪtəni|ˈlɪtni}-{litany}-{an endless litany of complaints}-{n. 连祷； [宗]启应祷文； （英国国教公祷书中的）连祷文； 冗长而枯燥的陈述|,|\
+laɪˈtəʊti:z|laɪˈtoʊtiz}-{litotes}-{Resorting to litotes, it said}-{n. 间接肯定法，反语法；|,|\
+ləˈgu:briəs|lʊˈɡubriəs, -ˈɡju-}-{lugubrious}-{lugubrious fate;melancholy , morose}-{adj. 悲哀的； 阴郁的； 令人伤心的； 令人灰心的|,|\
+ˈlʌstə(r)|ˈlʌstɚ}-{lustre}-{Her thick, black hair shone with lustre.}-{n. 光泽； 光荣； 荣誉； 出色|,|\
+lʌgˈʒʊərieɪt|lʌgˈʒʊrieɪt}-{luxuriate}-{He ran a hot bath and luxuriated in it for half an hour.}-{vi. 茂盛的生长，生活奢侈，沉溺；|,|\
+lɪntʃɪŋ|lɪntʃɪŋ}-{lynching}-{They were about to lynch him}-{n. 处私刑；|,|\
+meɪs|mes}-{mace}-{short-sword, mace and club ;with a mace in one hand}-{n. 权杖； 狼牙棒（古代兵器）； 肉豆蔻干皮； 肉豆蔻种衣（用作香料）|,|\
+ˌmækiəˈveliən}-{Machiavellian}-{Machiavellian republicans;A Machiavellian plot}-{adj. 马基雅弗利的，权谋术的；|n. 权谋政治家；|,|\
+ˈmælədi|ˈmælədi}-{malady}-{disease; fatal malady}-{n. （制度或机构的）弊病，弊端； 疾病； 病症； 弊害|,|\
+ˌmæl'æprəpəʊ|ˌmælæprə'poʊ}-{malapropos}-{apropos of (关于)something ;the most malapropos time}-{adj. 不合时宜的；|,|\
+}-{malingerer}-{He accused Frank of malingering. ;he's a malingerer}-{n. 装病以逃避责任者，装病的人；|,|\
+ˌmælˈəʊdərəs|ˌmælˈoʊdərəs}-{malodorous}-{smelly ;tons of malodorous rubbish}-{adj. 难闻的，恶臭的；|,|\
+mæl'əʊdə(r)|mæl'oʊdə(r)}-{malodour}-{oral malodour}-{n. 难闻的气味，恶臭；|,|\
+meɪndʒ|meɪndʒ}-{mange}-{a fox with mange}-{n. 兽疥癣，家畜疥； 螨病；|,|\
+məˈnaɪəkl|məˈnaɪəkəl}-{maniacal}-{He was almost maniacal in his pursuit of sporting records}-{adj. 发狂的，癫狂的；|,|\
+ˈmænərɪzəm|ˈmænəˌrɪzəm}-{mannerism}-{a man with many old mannerisms}-{n. 习性； 言谈举止； （绘画、写作中）过分的独特风格； 风格主义|,|\
+məˈrɔ:dɪŋ|məˈrɔdɪŋ}-{marauding}-{marauding street gangs ;maraud}-{adj. 到处抢劫的，劫掠的；|v. 抢劫( maraud的现在分词 )； 掠夺；|,|\
+ˌmɑ:tɪˈnet|ˌmɑrtnˈet}-{martinet}-{disciplinarian ;The teacher was a martinet}-{n. 严格执行纪律的人；|,|\
+mæsəkɪst|'mæsəkɪst}-{masochist}-{masochistic behavior ;The high jump is a masochist's event}-{n. 性受虐狂者，受虐狂者；|,|\
+ˈmeɪtriɑ:k|ˈmeɪtriɑrk}-{matriarch}-{patriarch ;families led by a matriarch}-{n. 女家长，高雅的老妇人；|,|\
+ˈmeɪtrɪsi:z|ˈmetrɪˌsiz, ˈmætrɪ-}-{matrices}-{diagrams and matrices}-{n. 母体，子宫(matrix的复数)； <数>矩阵( matrix的名词复数 )； 铸模； （内含宝石等的）岩石 杂基；|,|\
+ˈmætrɪməni|ˈmætrɪmoʊni}-{matrimony}-{unite a couple in holy matrimony;the bonds of matrimony}-{n. 结婚，婚姻生活；|,|\
+ˌmɔ:səˈli:əm|ˌmɔsəˈliəm, -zə-}-{mausoleum}-{the Lenin Mausoleum ;necropolis}-{n. 陵墓；|,|\
+mæksɪmaɪz|'mæksəmaɪz}-{maximise}-{maximise the use of}-{vt. 使（某事物）增至最大限度； 最大限度地利用（某事物）；|,|\
+ˈmi:gə(r)|ˈmiɡɚ}-{meagre}-{a meagre meal}-{adj. 瘦的； 贫弱的； 思想贫乏的； 土地不毛的|,|\
+ˈmi:li:ˌmaʊðd, -ˌmaʊθt|ˈmiliˌmaʊðd, -ˌmaʊθt}-{mealy-mouthed}-{Mr Major fought a pretty mealy-mouthed campaign}-{adj. 说话拐弯抹角的，说话委婉的； 油嘴滑舌；|,|\
+ˈmeleɪ|ˈmeɪleɪ}-{melee}-{Luckily no one was hurt in the melée. scuffle}-{n. <主文> 混战； 乱战； 混乱； 混乱的人群|,|\
+mɪ'mɔ:rɪəlaɪz|mɪ'mɔrɪrlaɪz}-{memorialise}-{memorialize their affection}-{v. <主英>请愿；|,|\
+məˈnædʒəri|məˈnædʒəri, -ˈnæʒ-}-{menagerie}-{zoo;have a menagerie of stuffed animals;a menagerie of wild African animals}-{n. 小动物园；|,|\
+ˈmɜ:dʒə(r)|ˈmɜrdʒə(r)}-{merger}-{merger of/between ;merger with}-{n. （两个公司的）合并； 联合体； 吸收；|,|\
+mezməraɪz|'mesməˌraɪz}-{mesmerise}-{I was mesmerized by her beauty. ;hypnotize}-{vt. 对…施催眠术； 迷住，迷惑；|,|\
+ˌmetə'lɜ:dʒɪkl|ˌmetə'lɜdʒɪkl}-{metallurgical}-{metallurgy;metallurgical methods /company;}-{adj. 冶金学的；|,|\
+ˌmetəˈmɔ:fəsɪs|ˌmetəˈmɔrfəsɪs}-{metamorphosis}-{transformation ;metamorphose;the metamorphosis of China under Deng’s economic reforms}-{n. 变形（尤指从蛹变为昆虫）； （性格、环境等的）改变；|,|\
+ˈmi:tə(r)|ˈmitɚ}-{meter}-{the electricity meter}-{n. 计量器； 计量仪；|v. 用仪表测量；|,|\
+ˈmaɪkrəʊkɒzəm|ˈmaɪkroʊkɑzəm}-{microcosm}-{microcosm of ;in microcosm;macrocosm}-{n. 微观世界； 小宇宙； 缩影； 小规模地|,|\
+mi:ˈljɜ:|mi'ljə}-{milieu}-{She never felt happy in a student milieu. ;purlieu}-{n. 周围； 环境；|,|\
+ˈmɪlɪteɪt|'mɪlɪteɪt}-{militate}-{The bad weather militated against the festivities.}-{vi. 产生作用或影响；|,|\
+ˈmɪlɪnəri|ˈmɪlɪneri}-{millinery}-{milliner;modest millinery shop;}-{n. 女帽类； 女帽制造（贩卖）业；|,|\
+ˈmɪmɪkri|ˈmɪmɪkri}-{mimicry}-{mimic ; his skill at mimicry;a mimicry of ivy}-{n. 模仿，模仿的技巧；|,|\
+ˈmɪnsɪŋ|ˈmɪnsɪŋ}-{mincing}-{mincing speech}-{adj. 装腔作势的；|v. 切碎； 切碎( mince的现在分词 )； 剁碎； 绞碎 用绞肉机绞（食物，尤指肉）；|,|\
+mɪnɪskju:l|'mɪnəˌskjul}-{miniscule}-{a miniscule market share;}-{adj. 草写小字的，小字的；|,|\
+ˌmɪsədˈventʃə(r)|ˌmɪsədˈvɛntʃɚ}-{misadventure}-{death by misadventure}-{n. 运气不佳的遭遇；|,|\
+ˌmɪsæprɪˈhenʃn|ˌmɪsæprɪˈhenʃn}-{misapprehension}-{under a misapprehension}-{n. 误会，误解；|,|\
+ˌmɪsəˈleɪniəs|ˌmɪsəˈleniəs}-{miscellaneous}-{a miscellaneous assortment of books}-{adj. 各种各样的； 五花八门的； 混杂的； 多方面的|,|\
+ˌmɪsˈtʃɑ:ns|ˌmɪsˈtʃæns}-{mischance}-{a series of mischances;If by some mischance the government get elected again, I think taxes will rise.}-{n. 厄运，不幸； 倒霉事；|,|\
+ˈmɪstʃɪf|ˈmɪstʃɪf}-{mischief}-{full of mischief}-{n. 损害，危害； 顽皮，淘气； 恶作剧； 祸根|,|\
+ˌmɪsˈkɒndʌkt|ˌmɪsˈkɑndʌkt}-{misconduct}-{serious misconduct}-{n. 行为不正，不规矩； 处理不当； （尤指官吏等的）胡作非为，渎职；|v. 处理…失当； 不规矩；|,|\
+ˌmɪskənˈstru:|ˌmɪskənˈstru}-{misconstrue}-{misconstrue sb's words}-{vt. 误解；|,|\
+ˌmɪsdɪˈmi:nə(r)|ˌmɪsdɪˈminɚ}-{misdemeanour}-{Alfred beat his children for even the smallest misdemeanour. ;demeanor}-{n. 不法行为； （相对于重罪的）轻罪，小罪；|,|\
+mɪs'ɡɪvɪŋz|mɪs'ɡɪvɪŋz}-{misgivings}-{misgive;She had some misgivings about}-{n. 疑虑，担忧，害怕； 疑虑，担心，恐惧( misgiving的名词复数 )； 疑惧；|,|\
+ˈmɪshæp|ˈmɪsˌhæp, mɪsˈhæp}-{mishap}-{hap ;end without mishap}-{n. 灾祸； 不幸事故；|,|\
+mɪˈsɒdʒɪnɪst|mɪˈsɑdʒɪnɪst}-{misogynist}-{misogamy;he is a}-{n. 厌恶女人的人；|,|\
+ˌmɪsˈtaɪm|ˌmɪs'taɪm}-{mistime}-{He mistimed his kick and missed the ball.}-{vt. 在不适宜的时候说或做；|,|\
+nɪˈmɒnɪk|nɪˈmɑnɪk}-{mnemonic}-{mnemonic technique}-{adj. 记忆的，记忆术的；|,|\
+ˌmɒdjʊ'leɪʃn|ˌmɑdʒəˈleʃən}-{modulation}-{Contour modulation}-{n. 调制； 调幅度； 移调；|,|\
+məˈnæstɪk|məˈnæstɪk}-{monastic}-{the monastic life}-{n. 僧侣，修道士；|adj. 庙宇的；|,|\
+ˈmɒnəgræm|ˈmɑnəgræm}-{monogram}-{The monogram logo;be embroidered with his monogram}-{n. 字母组合；|,|\
+ˈmɒnəʊθiɪzəm|ˈmɑnoʊθiɪzəm}-{monotheism}-{He recommended monotheism}-{n. 一神论，一神教；|,|\
+mu:dɪnəs|'mudɪnəs}-{moodiness}-{a moody teenager ;Whatever the reason for your moodiness}-{n. 喜怒无常； 喜怒无常，闷闷不乐； 情绪；|,|\
+mɔ:g|mɔrg}-{morgue}-{mortuary ;be (like) a morgue}-{n. 太平间，停尸房；|,|\
+mɔ:ˈtɪʃn|mɔrˈtɪʃn}-{mortician}-{undertaker ;no mortician is going to help you bury your pet rabbit}-{n. 殡仪业者；|,|\
+mʌlz|mʌlz}-{mulls}-{plaster;mull;}-{n. （高熔点）膏药；|v. 将（葡萄酒、啤酒等）制成热饮（加糖、香料等）( mull的第三人称单数 )； 思索或思考（某事物）； 认真琢磨； 反复思考（计划、建议等）|,|\
+mʌltɪfɔ:m|'mʌltɪfɔm}-{multiform}-{multiform shops online}-{adj. 多种形式的； 多形式； 多形；|,|\
+ˌmʌltiˈlɪŋgwəl|ˌmʌltiˈlɪŋɡwəl, -taɪ-}-{multilingual}-{a multilingual phrasebook}-{adj. 使用多种语言的；|,|\
+mju:ˈnɪfɪsnt|mjuˈnɪfɪsənt}-{munificent}-{a munificent gift}-{adj. （指送礼者）慷慨的，（指礼品）丰厚的；|,|\
+mju:nɪmənt|'mjunəmənt}-{muniment}-{the owner's muniment of title(权利，资格)}-{n. 防卫手段，土地所有权凭证；|,|\
+ˈmʌski|ˈmʌski}-{musky}-{musky perfume}-{adj. 麝香的，有麝香味的，麝香似的；|,|\
+ˌmju:tə'bɪlətɪ|ˌmjutə'bɪlətɪ}-{mutability}-{immutable ;explain their mutability}-{n. 易变性，性情不定； 突变性； 易弯性；|,|\
+ˈmju:təbl|ˈmjutəbəl}-{mutable}-{the mutable state of}-{adj. 易变的，性情不定的；|,|\
+ˈnɔ:ziəs|ˈnɔʃəs}-{nauseous}-{a nauseous smell;nauseate}-{adj. 令人作呕的； 讨厌的；|,|\
+ˈnævɪgəbl|ˈnævɪɡəbəl}-{navigable}-{navigable area}-{adj. （水域）可航行[通航]的； （船只、飞机等）可领航的，可操纵的；|n. （河、海和船舶等的）适航性；|,|\
+ˈnekrəʊmænsi|ˈnekroʊmænsi}-{necromancy}-{chiromancy;arts of necromancy}-{n. （招亡魂问卜的）巫术； 通灵术； 魔术； 妖术|,|\
+ˈneðə(r)|ˈnɛðɚ}-{nether}-{nether regions}-{adj. 下面的； 下部的； 下界的；  地下的|n. 阴间； 下层社会；|,|\
+nju:trəlaɪz|'njutrəˌlaɪz}-{neutralise}-{a medicine that neutralizes the acid in the stomach}-{vt. 使失效； 抵消； 中和； 使（一个国家）中立化|,|\
+ˈnɪgədli|ˈnɪgərdli}-{niggardly}-{be niggardly of money;niggard;a niggardly supply of hot water;I never use it niggardly}-{adj. 吝啬的； 小气的； 不大度的； （钱数）不值钱的|,|\
+ˈnaɪɪlɪst}-{nihilist}-{a misanthropic nihilist}-{n. 虚无主义者；|,|\
+ˈnɪpə(r)|ˈnɪpər}-{nipper}-{nippers;borrow your nipper}-{n. 小孩（尤指男孩）； 看风门工； 送钻头工； 钳板|,|\
+nɪəˈvɑ:nə|nɪrˈvɑnə}-{nirvana}-{the ultimate female nirvana;}-{n. （亦作N-）（印度教）生命之火的熄灭； 天堂； 极乐世界； 涅槃|,|\
+nɪtˌpɪk|'nɪtˌpɪk}-{nit-pick}-{A lot of nit-picking was going on about irrelevant things.}-{vi. 挑剔，吹毛求疵； 横挑鼻子竖挑眼；|,|\
+nəˈmenklətʃə(r)|ˈnomənˌkletʃɚ, noˈmɛnklə-}-{nomenclature}-{the nomenclature of the chemistry}-{n. 系统命名法； 命名（过程）； （某一学科的）术语； 专门名称|,|\
+ˈnɒndɪskrɪpt|ˈnɑndɪskrɪpt}-{nondescript}-{descript;a rather nondescript suburban house}-{adj. 无明显特征的，难以归类的，难以形容的；|n. 难以形容或归类的人或物；|,|\
+ˌnəʊtəˈraɪəti|ˌnoʊtəˈraɪəti}-{notoriety}-{gain/win/achieve notoriety (for something)}-{n. 恶名，丑名； 臭名昭著，声名狼藉；|,|\
+ˈnʌrɪʃmənt|ˈnɜrɪʃmənt}-{nourishment}-{emotional/intellectual/spiritual nourishment}-{n. 食物； 滋养品，营养品； “nourish”的派生；|,|\
+njuˈtrɪʃəs|nuˈtrɪʃəs}-{nutritious}-{highly nutritious meals.}-{adj. 有营养的，滋养的；|,|\
+əʊf|oʊf}-{oaf}-{oafish ;you drunken oaf}-{n. <罕>呆子，畸形儿；|,|\
+ˈəʊfɪʃ| ˈofɪʃ}-{oafish}-{brave but oafish}-{adj. 痴呆的，笨手笨脚的；|,|\
+əˈblɪviən|əˈblɪviən}-{oblivion}-{sink into oblivion}-{n. 遗忘； 淹没； 赦免；|,|\
+ˈɒbsəkwiz|ˈɑbsəkwiz}-{obsequies}-{a funeral ceremony ;funeral;at his obsequies}-{n. 葬礼，丧礼；|,|\
+əbˈsɪdiən|ɑbˈsɪdiən}-{obsidian}-{an obsidian mask}-{n. 黑曜石；|,|\
+ˌɒbstəˈtrɪʃn|ˌɑbstəˈtrɪʃn}-{obstetrician}-{obstetrics ;obstetrician or dentist}-{n. 产科医师；|,|\
+əbˈtru:sɪv|ɑbˈtrusɪv, -zɪv, əb-}-{obtrusive}-{the obtrusive behavior of a spoiled child.}-{adj. （难看得）刺眼的； 冒失的； 莽撞的； 强加于人的|,|\
+ˈɔksidənt|ˈɑksɪdənt, -ˌdɛnt}-{occident}-{Orient ;famous star of the Occident;mysterious Occident}-{n. 西方； 西洋； 欧美； 西欧诸国|,|\
+ˈɒkjəlɪst|ˈɑkjəlɪst}-{oculist}-{the great oculist}-{n. 眼科医生；|,|\
+ɒdmənt|ˈɑdmənt}-{oddment}-{oddments of}-{n. 碎屑；|,|\
+ˈəʊdərəs|ˈoʊdərəs}-{odorous}-{odorous gases}-{adj. 有气味的；|,|\
+ˌɒnəˌmætəˈpi:ə|ˌɑnəˌmætəˈpiə}-{onomatopoeia}-{a word of onomatopoeia}-{n. 拟声，拟声法；|,|\
+ˌəʊpəˈlesnt|ˌoʊpəˈlesnt}-{opalescent}-{an opalescent sky}-{adj. 发乳白色光的；|,|\
+ˌɒpəˈtju:nɪst|ˌɑpərˈtunɪst}-{opportunist}-{Voters dislike opportunists}-{n. <贬>机会主义者； 投机取巧者；|,|\
+əˈprəʊbriəm|əˈproʊbriəm}-{opprobrium}-{the opprobrium of}-{n. <正>耻辱，羞辱；|,|\
+ɒpˈtɪʃn|ɑpˈtɪʃn}-{optician}-{a visit to a high street optician}-{n. 眼镜（制造）商，配制眼镜技师；|,|\
+ɒpˈtɒmətrɪst|ɑpˈtɑmətrɪst}-{optometrist}-{optician ;a professional optometrist}-{n. 验光师，视力测定者；|,|\
+ˈɒrətə(r)|ˈɔrətə(r)}-{orator}-{an orator contest 演讲比赛.}-{n. 演说者，演讲家；|,|\
+ˌɔ:dɪˈneɪʃn|ˌɔrdnˈeɪʃn}-{ordination}-{ordinate n.[数]纵线, 纵座标;the ordination of women ;community ordination}-{n. [宗]圣职授任； 任命； 分类，排成等级；|,|\
+ɔ:ˈθɒgrəfi|ɔrˈθɑgrəfi}-{orthography}-{rather confusing orthography}-{n. 正确拼字，正字法，正字学；|,|\
+ˌɒstenˈteɪʃəs|ˌɑstenˈteɪʃəs}-{ostentatious}-{ostentatious manner}-{adj. 好夸耀的，炫耀的； （态度）自负的； 讲排场的，铺张的； 外观美丽的，浮华的|,|\
+ˈaʊtkɑ:st|ˈaʊtkæst}-{outcast}-{be treated as an outcast;an outcast male}-{n. 被抛弃者； 流浪的人； 被驱逐的人； 流氓，无赖|adj. 被遗弃的； 被逐出（家庭，国家）的； 无家可归的； 被排斥的|,|\
+ˌəʊvəˈbləʊn|ˌoʊvərˈbloʊn}-{overblown}-{exaggerated ; the risks have been overblown; the terror threat to the US is overblown(停息的)}-{adj. 停息的，盛开过的；|v. （风等）吹散( overblow的过去分词 )； 吹倒[落，过]，狂吹，（管乐器）吹得过响；|,|\
+ˌəʊvəˈsɔ:|ˌoʊvər'sɔ}-{oversaw}-{oversee and inspect sth}-{v. 监督，监视( oversee的过去式 )；|,|\
+ˈəʊvɔɪd|ˈoʊvɔɪd}-{ovoid}-{oval;lymph nodes are ovoid}-{adj. （指固体）卵形的；|,|\
+ˈpækidɜ:m|ˈpækidɜrm}-{pachyderm}-{pachyderm hide;The now retired pachyderm}-{n. 大的厚皮动物（如象和犀牛）； <喻>厚脸皮的人； 麻木不仁的人； 迟钝的人|,|\
+ˈpɑ:dreɪ|ˈpɑdre, -dri}-{padre}-{Could I speak to you in private a moment, padre}-{n. 神父，<俚>随军牧师；|,|\
+ˈpælətəbl|ˈpælətəbəl}-{palatable}-{a very palatable wine ; make it more palatable to women.}-{adj. 可口的； 美味的； 宜人的； 可接受的|,|\
+ˈpælɪmpsest|'pælɪmpsest}-{palimpsest}-{with a palimpsest of typed meeting-minutes}-{n. 重写本；|,|\
+ˈpeɪlɪŋ|'peɪlɪŋ}-{paling}-{iron palings}-{n. 木栅，围篱；|v. 变得苍白，失色，变得暗淡( pale的现在分词 )；|,|\
+ˈpælət|ˈpælɪt}-{pallet}-{wooden pallets}-{n. 托盘； 平台； 运货板； 草垫子|,|\
+pærəlaɪzd|'pærəlaɪzd}-{paralysed}-{be paralysed by/with}-{v. 使瘫痪[麻痹]( paralyse的过去式和过去分词 )； 使不能正常活动；|,|\
+ˈpærəmʊə(r)|ˈpærəmʊr}-{paramour}-{lover ;inamorata;an Italian paramour}-{n. 情夫，情妇，<古>情人；|,|\
+ˌpærəfəˈneɪliə|ˌpærəfɚˈneljə, -fəˈneljə}-{paraphernalia}-{painter's paraphernalia}-{n. 随身物品； 装备，设备； [法]妻子的财产；|,|\
+pɑ:tʃt|pɑrtʃt}-{parched}-{the parched African landscape}-{adj. 炎热的；|v. （使）焦干， （使）干透( parch的过去式和过去分词 )； 使（某人）极口渴；|,|\
+ˈpɑ:tʃmənt|ˈpɑrtʃmənt}-{parchment}-{old manuscripts written on parchment;}-{n. 羊皮纸； 文凭； 上等纸； 羊皮纸古文稿|,|\
+ˈpærɪʃ|'pærɪʃ}-{parish}-{Father Doyle moved to a new parish.}-{n. 教区以下的地方行政区； （英国）郡以下的行政区；|,|\
+ˌpɑ:sɪˈməʊniəs|ˌpɑrsəˈmoʊniəs}-{parsimonious}-{parsimony ;generous;be parsimonious in their marketing budgets}-{adj. 过分节俭的，吝啬的，小气的；|,|\
+ˈpɑ:vənju:|ˈpɑrvənu}-{parvenu}-{upstart; a southwestern parvenu}-{n. 暴富者； 暴发户； 新贵； 傲慢自负的人|,|\
+ˈpeɪtriɑ:k|ˈpeɪtriɑrk}-{patriarch}-{matriarch ;The patriarch of the house}-{n. 家长，族长，元老，（特指）犹太民族的祖先； 创始人，鼻祖；|,|\
+pætrənaɪz|'pætrənaɪz}-{patronise}-{Don’t patronize me! ;patronise the poor}-{vt. 以高人一等的态度对待； 光顾，惠顾；|,|\
+pɪˈdæntɪk|pəˈdæntɪk}-{pedantic}-{a pedantic style of writing;Some people can be very pedantic about punctuation.}-{adj. 卖弄学问的； 学究式的，迂腐的； 卖弄笔墨；|,|\
+ˌpi:dɪə'trɪʃn|ˌpidɪr'trɪʃn}-{pediatrician}-{the pediatrician’s office}-{n. 小儿科医师；|,|\
+ˈpedɪgri:|ˈpɛdɪˌɡri}-{pedigree}-{people without pedigree 非名门出身的人}-{n. 血统； 家谱； 血统表；|adj. 纯种的； 有血统来源的；|,|\
+ˈpendənt|ˈpɛndənt}-{pendant}-{a ruby pendant}-{n. （装在项链等上的）垂饰，坠儿；|,|\
+pi:ˈnɒlədʒi|piˈnɑlədʒi}-{penology}-{Criminology and Penology}-{n. 刑罚学，监狱管理学；|,|\
+pəˈnjʊəriəs|pəˈnʊriəs}-{penurious}-{a penurious land;the penurious ways of}-{adj. 贫穷的，赤贫的； 吝啬的；|,|\
+pəˈseptɪv|pərˈseptɪv}-{perceptive}-{a perceptive young man ;That’s very perceptive of you.}-{adj. 有知觉力的； 感知的； 有理解力的；|,|\
+pɜ:ˈdɪʃn|pɜrˈdɪʃn}-{perdition}-{an alcoholic on the road to perdition ;destruction}-{n. 毁灭；|,|\
+ˌperəˈreɪʃn|ˌperəˈreɪʃn}-{peroration}-{oration;brief peroration}-{n. （演说等的）结束语，结论； 夸夸其谈的演说；|,|\
+ˈpɜ:pətreɪt|ˈpɜrpətreɪt}-{perpetrate}-{perpetrate a crime}-{vt. 犯（罪）； 做（恶）；|,|\
+ˌpɜ:sɪˈvɪə(r)|ˌpɜrsəˈvɪr}-{persevere}-{persevere at/in/with persevere in an effort persevere in one's studies}-{vi. 坚忍，熬住； 坚持； 百折不回，不屈不挠； 支撑|,|\
+pəˈsɒnɪfaɪ|pərˈsɑnɪfaɪ}-{personify}-{Time is often personified as an old man.}-{vt. 人格化，拟人化； 赋与…人性； 象征，体现；|,|\
+pɜ:t|pɜrt}-{pert}-{Angie gave him one of her pert little glances.}-{abbr. Program Evaluation and Review Technic 计划评价与审查技术；|adj. （穿戴）时髦的，得体的；|,|\
+pəˈveɪsɪv|pərˈveɪsɪv}-{pervasive}-{the pervasive odor;the pervasive influence of}-{adj. 普遍的； 扩大的； 渗透的； 弥漫的|adv. 无处不在地； 遍布地；|n. 无处不在； 遍布；|,|\
+pəˈvɜ:ʃn|pərˈvɜrʒn}-{perversion}-{a perversion of the true meaning of democracy}-{n. 歪曲，曲解； 变坏； [医]性欲倒错； [心]性变态|,|\
+ˌpestɪˈlenʃl|ˌpɛstəˈlɛnʃəl}-{pestilential}-{pestilent;a pestilential fever}-{adj. 瘟疫的；  传染病的； 有害的；  危害社会的|,|\
+ˈfælæŋks|ˈfeˌlæŋks, ˈfælˌæŋks}-{phalanx}-{A solid phalanx of policemen blocked the road.}-{n. 方阵； 密集队； 密集人群； 趾骨|,|\
+}-{pharisee}-{Freddy the Pharisee}-{n. 伪君子；|,|\
+fɪˈlændərə(r)}-{philanderer}-{playboy ;a notorious philanderer}-{n. 爱和女人调情的男人，玩弄女性的男人；|,|\
+fɪˈlænθrəpɪst| fəˈlænθrəpɪst}-{philanthropist}-{anthrop 人类学;be an entrepreneur and a philanthropist}-{n. 慈善家；|,|\
+ˈfaɪləm|ˈfaɪləm}-{phylum}-{species ;animal phylum}-{n. （生物分类学上的）门，语群（比语系关系松散的一种语言）；|,|\
+ˌfɪziˈɒnəmi|ˌfɪziˈɑnəmi}-{physiognomy}-{He was fascinated by her physiognomy}-{n. 人相学； 脸； 相面术；|,|\
+ˈpaɪəti|ˈpaɪɪti}-{piety}-{filial piety}-{n. 虔诚，虔敬；|,|\
+ˈpɪnjən|ˈpɪnjən}-{pinion}-{opinion;My arms were pinioned behind me by the policemen. ;with rack and pinion}-{vt. 抓住[捆住]（双臂）；|n. <术>小齿轮；|,|\
+pɪnɪs|'pɪnɪs}-{pinnace}-{pin; a Naval Steam Pinnace}-{n. 装载于舰上的中型艇；|,|\
+ˈpɪvətl|ˈpɪvətl}-{pivotal}-{a pivotal role ;be pivotal to}-{adj. 中枢的； 枢轴的； 关键的；|,|\
+plæˈstɪsəti|plæˈstɪsətɪ}-{plasticity}-{lack plasticity}-{n. 粘性； 成形性； 柔软性； <生>可塑性（指生物体对环境的适应性）|,|\
+ˈplebɪsɪt|ˈplɛbɪˌsaɪt, -sɪt}-{plebiscite}-{a plebiscite on independence ;referendum}-{n. 公民投票； [罗史]全民表决；|,|\
+ˈplu:mɪdʒ|ˈplumɪdʒ}-{plumage}-{the parrot’s brilliant blue plumage}-{n. 鸟类羽毛； 漂亮衣服； 羽衣；|,|\
+pəʊ'lemɪks|poʊ'lemɪks}-{polemics}-{the dispute degenerated into fierce polemics. ;polemic}-{n. 辩论术，辩论法； 争论( polemic的名词复数 )； 辩论； 辩论术 辩论法；|,|\
+ˈpɒlətɪk|ˈpɑlətɪk}-{politic}-{a politic decision; a politic man}-{adj. （计划、言行）考虑周到的； 有见识的； 谨慎的； 慎重的|v. 从政；|,|\
+ˈpɒləti|ˈpɑləti}-{polity}-{a democratic polity}-{n. 政治组织； 国家组织； 政体；|,|\
+pə'lɪɡəmɪst|pə'lɪɡəmɪst}-{polygamist}-{bigamy , monogamy ;polygamy; a polygamist with his 4 wives}-{n. 多配偶，一妻多夫，一夫多妻；|,|\
+pɒpɪŋ|'pɒpɪŋ}-{popping}-{advertisements popping up on your home page}-{n. 爆音[裂]（收音机障碍），汽船声；|adj. 间歇（振荡）的；|v. （意外地、突然地）出现( pop的现在分词 )； 突然出现； 发出爆裂声； （突然地）行动|,|\
+ˈpɔ:tent|ˈpɔrtent}-{portent}-{I see it as a portent of things to come}-{n. 预兆； 征兆； 怪事； 奇物|,|\
+ˈpɔ:tli|ˈpɔrtli}-{portly}-{a portly old gentleman}-{adj. 肥胖的；|,|\
+pɒˈsterəti|pɑˈsterəti}-{posterity}-{post;go down to posterity ;without posterity}-{n. 后代，后世； 子孙； 后裔； 儿孙|,|\
+ˈpɒstjʊməs|ˈpɑstʃəməs}-{posthumous}-{humour;the posthumous publication of his first novel; a posthumous award}-{adj. 死后的； 遗腹的，死后出生的； 作者死后出版的；|,|\
+pəʊst'mɔ:tem|postˈmɔrtəm}-{postmortem}-{postmortem criticism}-{adj. 死后的，验尸的； 事后的；|vt.& vi. （对…）验尸；|adv. 在死后；|,|\
+ˈpəʊtnt|ˈpoʊtnt}-{potent}-{a potent charm符咒,cure, medicine}-{adj. 有效的，强有力的； 有权势的； 烈性的； 有说服力的|,|\
+ˈpəʊʃn|ˈpoʊʃn}-{potion}-{a magic potion ;a love potion}-{n. （药的）一服，一剂；|,|\
+ˈpəʊltɪs|ˈpoʊltɪs}-{poultice;unguen}-{a poultice to relieve pain}-{n. 膏状药；|vt. 敷膏状药于；|,|\
+præɡmətɪst|'præɡmətɪst}-{pragmatist}-{a politician known for his pragmatism ;a pragmatist rather than an ideologue}-{n. 实用主义者；|,|\
+ˈprætl|ˈprætl}-{prattle}-{prattle on about sth.}-{vt.& vi. （小孩般）天真无邪地说话； 发出连续而无意义的声音； 闲扯； 东拉西扯|n. 闲扯，东拉西扯，（小孩般）咿咿呀呀的话；|,|\
+ˈpri:sɪŋkt|ˈpriˌsɪŋkt}-{precinct}-{shopping/pedestrian precinct}-{n. <英>（教堂或大学）的围地； <美>选区； 管辖区； 界限，范围|,|\
+prɪˈsɪpɪtəs|prɪˈsɪpɪtəs}-{precipitous}-{a precipitous path;steep}-{adj. 险峻的； 多悬崖的； 急躁的； 鲁莽的|,|\
+preɪsi:|preɪ'si}-{precis}-{a précis of the report ;summary ;synopsis}-{n. <法>大意，概略，摘录；|vt. <法>为…写摘要，概括…的大意；|,|\
+ˈpredətri|ˈpredətɔri}-{predatory}-{predatory pricing ;predatory birds}-{adj. 掠夺成性的； 食肉的； 捕食生物的；|,|\
+ˌpri:dɪˈtɜ:mɪn|ˌpridɪˈtɜrmɪn}-{predetermine}-{predetermined level/limit/amount etc}-{vt.& vi. 预先裁定； 注定；|,|\
+ˌpri:dɪˈspəʊz|ˌpridɪˈspoʊz}-{predispose}-{fatique predisposes one to illness}-{vt. 使预先有倾向； 使易接受； 使倾向于做； 使易于患（病）|,|\
+pri:dɪs'pəʊzd|pridɪs'poʊzd}-{predisposed}-{people who are predisposed to violent crime ;Diabetes predisposes patients to infections.}-{adj. 先倾向于…的；|v. 使预先有倾向( predispose的过去式和过去分词 )； 使易接受； 使倾向于做； 使易于患（病）|,|\
+ˈprefətri|ˈprefətɔri}-{prefatory}-{a few prefatory remarks ;preface}-{adj. 前言的，序文的；|,|\
+ˈprelət|ˈprɛlɪt}-{prelate}-{clergyman;The Italian-born prelate}-{n. 高级教士；|,|\
+prɪ'mɒnɪtərɪ|prɪ'mɒnɪtərɪ}-{premonitory}-{premonitory symptoms of the disease}-{adj. 有预兆的；|,|\
+prɪz'ju:md|prɪz'jumd}-{presumed}-{I presume you're tired.;presumed to be female}-{v. 以为，假定( presume的过去式和过去分词 )； 推定； 妄行； 冒昧地做某事|,|\
+ˈpraɪml|ˈpraɪməl}-{primal}-{a primal fear of the unknown}-{adj. 第一的，最初的； 原始的； 首位的，主要的； 根本的|,|\
+praɪˈmɔ:diəl|praɪˈmɔrdiəl}-{primordial}-{primordial state}-{adj. 初生的，初发的，原始的；|,|\
+ˈprɪvi|ˈprɪvi}-{privy}-{be privy to something}-{adj. 个人的，私人的； 秘密参与的； （行为）暗中参与的； 不公开的|n. 有利害关系的人； <古>厕所；|,|\
+ˌprɒbləˈmætɪk|ˌprɑbləˈmætɪk}-{problematic}-{to be highly problematic .}-{adj. 成问题的，有疑问的，不确定的；|,|\
+prəˈklɪvəti|proˈklɪvɪti}-{proclivity}-{a proclivity for/to/towards sth /doing sth}-{n. 倾向，癖性；|,|\
+prəˈfju:ʒn|prəˈfjuʒən,pro-}-{profusion}-{a profusion of suggestions;ampleness;profuse}-{n. 丰富，充沛； 慷慨，大方； 浪费，挥霍；|,|\
+ˌprəʊləˈteəriən|ˌproʊləˈteriən}-{proletarian}-{prole n.穷人;proletarian dictatorship;a proletarian revolution;}-{adj. 无产阶级的， （大工业的）工人阶级的；|n. 无产阶级一员； 无产者； 产业工人； 劳工|,|\
+prəˈpelənt|prəˈpɛlənt}-{propellant}-{a propellant for nuclear rockets.;propellant engines}-{adj. 推进的；|n. 推进物；|,|\
+ˌprɒfɪˈlæktɪk|ˌprɑfɪˈlæktɪk}-{prophylactic}-{lactic ;prophylactic medicine;prophylactic treatment}-{adj. 预防（性）的；|n. 预防剂； 预防用品； 预防法； 避孕用品|,|\
+prəˈpɪŋkwəti|prəˈpɪŋkwɪti}-{propinquity}-{close propinquity to sb}-{n. （时间等方面的）接近； （血统上的）近亲关系； 类似； 近似|,|\
+prəˈpəʊnənt|prəˈpoʊnənt}-{proponent}-{prop 支持者, 倚靠人;a strong proponent of women’s rights.}-{n. 支持者，拥护者； 提倡者； 提出认证遗嘱者；|,|\
+prəˈpaʊnd|prəˈpaʊnd}-{propound}-{propound an idea}-{vt. 提出（问题、计划等）供考虑[讨论]，提议；|,|\
+prə'pʌlsɪv|prə'pʌlsɪv}-{propulsive}-{as a means of propulsion ;generate propulsive forces}-{adj. 对某物（尤指机动交通工具）起推动作用的，推进的，有推进力的； 趋于推动；|,|\
+prəˈsi:niəm|proˈsiniəm, prə-}-{proscenium}-{proscenium arch}-{n. （古希腊，古罗马的）舞台，舞台前部装置（包括幕布，拱形墙等）；|,|\
+prɒsɪlɪtaɪz|'prɒsəlaɪˌtaɪz}-{proselytise}-{proselytize sb's ideas}-{vt. （使）改变宗教信仰[政治信仰、意见等]，使变节；|,|\
+ˈprɒsədi|ˈprɑsədi}-{prosody}-{prose;This pitch-and-rhythm variation, known as prosody}-{n. 韵文学； 诗体学； （某语言的）韵律（学）； 诗体学者|,|\
+ˈprɒspə(r)|ˈprɑspə(r)}-{prosper}-{Businesses across the state are prospering.}-{vi. 繁盛，成功；|vt. 使…成功； 使…昌盛；|,|\
+ˈprɒvɜ:b|ˈprɑvɜrb}-{proverb}-{saying ;adage;aphorism;An old Arab proverb says}-{n. 谚语，格言； 话柄，笑柄； 人人知道的事情，有名的事情； 俚谚剧，俚谚游戏|,|\
+ˈprɒvɪdəns|ˈprɑvɪdəns}-{providence}-{divine providence;let us suppose it is providence}-{n. 天道，天意； 远见； 节约； 上帝，神|,|\
+ˈprɒksi|ˈprɑksi}-{proxy}-{by proxy ;proxy for}-{n. 代表权； 代理人，代替物； 委托书； 代理服务器|,|\
+ˈsaɪkɪk|ˈsaɪkɪk}-{psychic}-{a spiritual healer with psychic powers}-{adj. 精神的； 超自然的； 灵魂的，心灵的；|n. 通灵的或有特异功能的人，巫师；|,|\
+ˌsaɪkə'pæθɪk|ˌsaɪkəˈpæθɪk}-{psychopathic}-{a psychopathic personality}-{adj. 精神病的，精神错乱的，要发疯似的；|n. 精神变态者；|,|\
+saɪˈkəʊsɪs|saɪˈkoʊsɪs}-{psychosis}-{psychotic patients ;psychotic illness ;paranoid psychosis}-{n. 精神病； 精神错乱； 精神上极度的紧张，不安；|,|\
+ˌsaɪkəʊsəˈmætɪk|ˌsaɪkoʊsəˈmætɪk}-{psychosomatic}-{psychosomatic illness/symptoms/disorder}-{adj. 受心理影响的，精神身体相关的；|,|\
+ˌterəˈdæktɪl|ˌtɛrəˈdæktəl}-{pterodactyl}-{pterodactyl-like birds}-{n. 翼龙；|,|\
+ˈpʌblɪsaɪz|ˈpʌblɪˌsaɪz}-{publicize}-{to publicize a new policy}-{v. 宣传； 推广； 宣扬； 传播|,|\
+pʌɡ'næsətɪ|pʌɡˈnæsətɪ}-{pugnacity}-{fearlessness and pugnacity;}-{n. 好斗，好战；|,|\
+ˈpʌlmənəri|ˈpʌlməneri}-{pulmonary}-{pulmonary arteries;pulmo(lung)}-{adj. 肺的，肺部的； 有肺[肺状器官]的，肺状的； 患肺部疾病的，易患肺部疾病的； 肺活量|,|\
+pʌndʒənsɪ|ˈpʌndʒənsɪ}-{pungency}-{pungent smell/aroma/odour etc ;the garlic pungency ; the pungency of}-{n. （气味等的）刺激性； 辣； （言语等的）辛辣； 尖刻|,|\
+ˈpju:nətɪv|ˈpjunɪtɪv}-{punitive}-{punitive taxation 重税}-{adj. 处罚的，惩罚性的； 令人受苦的；|,|\
+pəˈveɪə(r)|pərˈveɪə(r)}-{purveyor}-{purveyors of farmyard fresh poultry}-{n. 承办商，伙食承办商；|,|\
+pju:'tresnt|pju'tresənt}-{putrescent}-{corrupt;putrefy;putrescent corpses}-{adj. 将腐烂的，腐败的；|,|\
+ˌpaɪrəʊˈmeɪniæk|ˌpaɪroʊˈmeɪniæk}-{pyromaniac}-{a troubled pyromaniac child}-{n. 放火狂；|adj. 放火狂的；|,|\
+ˈkwaɪətju:d|ˈkwaɪətud}-{quietude}-{calm ;This time of quietude;find zones of quietude}-{n. 平静，寂静；|,|\
+ˈkwɪzɪkl|ˈkwɪzɪkəl}-{quizzical}-{He continued in a quizzical tone.}-{adj. 疑问的，戏弄的；|adv. 疑问地，戏弄地；|,|\
+ˈkwɔ:rəm|ˈkwɔrəm, ˈkwor-}-{quorum}-{have/form a quorum 具备[构成]法定人数.}-{n. 法定人数；|,|\
+ˈrægəmʌfɪn|ˈræɡəˌmʌfɪn}-{ragamuffin}-{They looked like little ragamuffins}-{n. 衣裳褴褛的而又肮脏的人（尤指儿童）；|,|\
+ˈreɪmənt|ˈremənt}-{raiment}-{vestment garment;raiment and daily bread}-{n. <古>服装，衣饰；|,|\
+reɪk|rek}-{rake}-{rake the soil;They raked the room with gunfire.}-{n. 耙子； 放荡的男人； 倾斜度；|v. 耙； 梳理； 扫视； 搜寻|,|\
+ˌræmɪfɪˈkeɪʃn|ˌræməfɪˈkeʃən}-{ramification}-{legal/political/economic etc ramifications}-{n. 衍生物，结果； 分叉，分支； 支流；|,|\
+reərɪfaɪ|ˈrɛrəˌfaɪ}-{rarefy}-{rarefy one's earthy desires}-{vt. 使稀薄； （思想等）精炼； 使纯化； 使变得精妙深奥|,|\
+ˌræʃəˈnɑ:l|ˌræʃəˈnæl}-{rationale}-{rationale behind/for/of}-{n. 理论的说明； 基本原理，基础理论； 根据；|,|\
+ˈreɪvn|ˈrevən}-{raven}-{raven hair;a raven snatches a chick}-{n. 掠夺，劫掠； 大乌鸦，渡鸦；|adj. （指头发）乌亮的；|v. 掠夺； 狼吞虎咽地吃；|,|\
+rɪ'sɪdɪvɪzəm|rɪˈsɪdəˌvɪzəm}-{recidivism}-{recidivate v;a much lower recidivism rate ;reduce recidivism}-{n. <律>再犯，累犯（行为或倾向）；|,|\
+ˈrekriənt|ˈrɛkriənt}-{recreant}-{you recreant knave}-{adj. <文>怯懦的；|n. 懦夫；|,|\
+rɪˌkrɪmɪˈneɪʃn|rɪˌkrɪməˈneʃən}-{recrimination}-{accusations and recriminations}-{n. 相互指责，吵架； 反诉； 揭丑；|,|\
+rɪˈkʌrənt|rɪˈkɜrənt}-{recurrent}-{recurrent minor illnesses}-{adj. 复发的，复现的； 周期性的，经常发生的； 回归的； 循环的|,|\
+ˌrefəˈrendəm|ˌrɛfəˈrɛndəm}-{referendum}-{held a referendum on}-{n. 公民投票； 外交官请示书； 全民公决； 请示书|,|\
+rɪˈgætə|rɪˈɡɑtə, -ˈɡætə}-{regatta}-{Royal Regatta}-{n. 划船比赛； 赛艇会；|,|\
+rɪˌdʒenə'reɪʃn|rɪˌdʒɛnəˈreʃən}-{regeneration}-{a new strategy for urban regeneration ; prevent regeneration}-{n. <生>再生； 恢复； <宗>（灵魂的）重生； <电子>正反馈|,|\
+ˈredʒɪsaɪd|ˈrɛdʒɪˌsaɪd}-{regicide}-{He had become czar through regicide;regicides were sentenced to death}-{n. 弑君者，弑君；|,|\
+ˈredʒɪmən|ˈrɛdʒəmən, -ˌmɛn}-{regimen}-{follow a strict regimen}-{n. （为病人规定的）生活规则，养生法； 养生之道；|,|\
+rɪˈmi:diəbl|rɪˈmidiəbəl}-{remediable}-{remediable problems}-{adj. 可治疗的，可补救的，可矫正的；|,|\
+ˌremɪˈnɪsnt|ˌrɛməˈnɪsənt}-{reminiscent}-{be reminiscent of something}-{adj. 怀旧的； 回忆往事的； 使人联想…的；|n. 回忆录作者；|,|\
+rɪˈpɑ:st|rɪˈpæst}-{repast}-{Meanwhile his comrades had prepared the repast,}-{n. 餐；|vi. 设宴，就餐；|,|\
+ˈreplɪkeɪt|ˈrɛplɪˌket}-{replicate}-{the ability of DNA to replicate itself}-{vt. 复制，复写； 重复，反复； 折转； [生] 复制|adj. 复制的； 折叠的； [植]折转的；|n. 复制品； 八音阶间隔的反覆音；|,|\
+rɪˈpres|rɪˈprɛs}-{repress}-{repress a cough}-{v. 抑制； 镇压； 压抑；|,|\
+ˌreprə'beɪʃən|ˌreprə'beɪʃən}-{reprobation}-{reproach;approbate;receive severe reprobation;}-{n. 斥责；|,|\
+rɪˈpju:tɪd|rɪˈpjutɪd}-{reputed}-{be reputed to be/do something}-{adj. 名誉好的； 号称…的，据说是…的； 被认为。。的；|v. 认为( repute的过去式)； 称为；|,|\
+ˈrekwiəm|ˈrɛkwiəm, ˈrikwi-}-{requiem}-{elegy;a performance of Verdi's Requiem}-{n. （天主教）安魂弥撒仪式，安魂曲；|,|\
+ˌrekwɪˈzɪʃn|ˌrɛkwɪˈzɪʃən}-{requisition}-{requisition for money 拨款要求, 请款单}-{n. 征用，（财产或材料的正式）征用令； 申请书；|vt. 征用，征发；|,|\
+rɪˈzɒlvd|rɪˈzɑlvd}-{resolved}-{be resolved to defend it.}-{adj. 下定决心的，断然的； 坚决的； 已解决的；|v. 做决定，分解(resolve的过去式和过去分词)；|,|\
+rɪˈzʌmpʃn|rɪˈzʌmpʃən}-{resumption}-{resumption of negotiations;resume}-{n. <正>重新开始，继续；|,|\
+rɪˈsɜ:dʒənt|rɪˈsɜrdʒənt}-{resurgent}-{a resurgent insteresting}-{adj. 复活的，复兴的；|,|\
+rɪˈtrækʃn|rɪˈtrækʃən}-{retraction}-{economic retraction}-{n. 收回； 缩回； 缩入；|,|\
+ˈretrəgreɪd|ˈrɛtrəˌɡred}-{retrograde}-{a retrograde step retro- upgrade}-{adj. 向后的； 退化的； 恶化的； 次序颠倒的|vi. 逆行； 倒退； 退步；|vt. 使倒退；|vi. 倒退地； 向后地；|,|\
+ˌretrəˈspektɪv|ˌrɛtrəˈspɛktɪv}-{retrospective}-{a retrospective study of 110 patients}-{adj. 回顾的； 怀旧的； [法]有追溯力的； 可追溯的|n. 回顾展；|,|\
+ˈrevərənd|'revərənd}-{reverend}-{revere; the Reverend Jim Simons;}-{adj. 可尊敬的，教士的，对牧师或神父的尊称；|n. 教士，牧师；|,|\
+ˈrevərənt|ˈrɛvərənt}-{reverent}-{impious;his reverent submission; their reverent awe o}-{adj. 恭敬的，虔敬的； 穆；|,|\
+rɪˈvəʊk|rɪˈvoʊk}-{revoke}-{revoke driving licence}-{vt. 撤销，取消； 废除；|vi. 有牌不跟；|,|\
+ˈræpsədaɪz|ˈræpsəˌdaɪz}-{rhapsodize}-{rhapsodize about/over}-{vi. 狂热地说，写作狂想诗文；|,|\
+rɪgd|rɪgd}-{rigged}-{the biggest rigged casino game}-{adj. 作弊的，非法操纵的；|v. 给（船、桅杆）装配帆及索具( rig的过去式和过去分词 )； 用临时替代材料迅速搭起； （用不正当手段）操纵； 垄断|,|\
+ˈraɪtʃəs|ˈraɪtʃəs}-{righteous}-{righteous indignation/anger}-{adj. 正直的； 正义的； 公正的；|,|\
+ˈraɪtfl|ˈraɪtfəl}-{rightful}-{I’ll return the money to its rightful owner .}-{adj. 合法的； 正当的； 正直的；|,|\
+raɪm|raɪm}-{rime}-{Age had rimed his beard .}-{n. 结晶，<诗>白霜；|v. 使蒙霜；|,|\
+rəˈkəukəu|rəˈkoko, ˌrokəˈko}-{rococo}-{a rococo manor house}-{n. 洛可可；|adj. 洛可可式的，过分修饰的；|,|\
+ˈrɔɪstərɪŋ}-{roistering}-{his roistering friends}-{adj. 摆架子的，喝酒喧哗的；|v. 喧闹作乐( roister的现在分词 )；|,|\
+ˈrəʊlɪŋ|ˈroʊlɪŋ}-{rolling}-{the rolling countryside;We recommend a rolling (not all at once)programme of machine upgrading.}-{adj. 旋转的； 波动的； 起伏的；|n. 旋转； 动摇； 轰鸣；|,|\
+rɒmp|rɑmp}-{romp}-{The old man was romping in the courtyard with his grandsons.}-{vi. 嬉笑玩闹； 欢快地迅速奔跑； [俚]轻易地取胜，不费力地完成；|n. 顽皮嬉闹，玩闹； 顽童； 轻易取得的胜利；|,|\
+ˈru:stə(r)|ˈrustɚ}-{rooster}-{cock ;like a rooster}-{n. 公鸡； [美]狂妄自负的人，好斗者；|,|\
+ˈrəʊziət|ˈroʊziət}-{roseate}-{the roseate glow of the evening sun}-{adj. 玫瑰色的； 红润的； 容光焕发的； 愉快的|,|\
+rəʊˈtʌndə|roʊˈtʌndə}-{rotunda}-{Behind the rotunda}-{n. 圆形建筑，圆形大厅；|,|\
+}-{rotundity}-{rotund (stout);irregular rotundity}-{n. 球状，圆形；|,|\
+ˈraʊzɪŋ|ˈraʊzɪŋ}-{rousing}-{a rousing chorus of ‘Happy Birthday’}-{adj. 充满活力[激情]的； 激励的，激动人心的；|v. 醒来，唤醒( rouse的现在分词 )； 使…活跃起来[产生兴趣]；|,|\
+ˈrəʊvɪŋ|ˈroʊvɪŋ}-{roving}-{rove(roam);a roving reporter}-{adj. 流浪的； 流动的； 不固定的；|n. 粗纱；|v. 流浪( rove的现在分词)；|,|\
+ˈru:brɪk|ˈrubrɪk}-{rubric}-{The names were listed under the rubric ‘Contributors’.}-{n. （用红字印刷的）题目（或句子等）； 注释； 写在礼拜规程里的礼仪指示； 习俗|adj. 印为红字的；|,|\
+ˈru:fl|ˈrufəl}-{rueful}-{a rueful smile}-{adj. 后悔的，悔恨的； 悲伤的； 可怜的；|,|\
+ˈrʌfld|ˈrʌfəld}-{ruffled}-{He ruffled her hair affectionately ;A light wind ruffled the water.}-{adj. 有褶饰边的；|v. 弄皱( ruffle的过去式和过去分词 )； 弄乱； 激怒； 扰乱|,|\
+ˈrʌmɪdʒ|ˈrʌmɪdʒ}-{rummage}-{rummage (among/in/through sth)}-{v. 翻查； 搜出； 翻箱倒柜；|n. 翻查，搜查； 杂物，七零八碎的东西；|,|\
+rʌstɪkeɪt|'rʌstɪˌkeɪt}-{rusticate}-{rusticate western area}-{vt. 罚（大学生）暂时停学离校； 在农村定居；|n. 被罚休学，定居农村；|,|\
+ˈru:θləs|ˈruθlɪs}-{ruthless}-{ruth n 怜悯, 悲哀;be ruthless in doing sth;ruthless enemy}-{adj. 无情的，冷酷的； 残忍的； 狠； 辣|,|\
+ˈsækrəʊsæŋkt|ˈsækroʊsæŋkt}-{sacrosanct}-{that's sacrosanct;be considered sacrosanct}-{adj. 极其神圣的，不可侵犯的；|,|\
+səˈleɪʃəs|səˈleʃəs}-{salacious}-{a salacious book ;lascivious}-{adj. 色情的，淫荡的； 猥； 猥亵； 淫秽|,|\
+ˈseɪlaɪn|ˈseɪlin}-{saline}-{saline solution (盐溶液);a saline lake}-{adj. 含盐的，咸的；|n. 盐湖，盐泉； 盐溶液；|,|\
+ˈsæləʊ|ˈsæloʊ}-{sallow}-{sallow face/skin/complexion}-{adj. （尤指面色）蜡黄色的；|n. 黄华柳； 山毛柳； 黄华柳细枝； 黄华柳木|,|\
+ˈsæŋktʃuəri|ˈsæŋktʃueri}-{sanctuary}-{The park is the largest wildlife sanctuary in the US. ;find/seek sanctuary}-{n. 避难所； 庇护所； 圣所； 庇护|,|\
+ˈsæŋgwɪnəri|ˈsæŋgwɪneri}-{sanguinary}-{a sanguinary ruler}-{adj. 血污的； 流血的； 血腥的； 残暴的|,|\
+ˈsɑ:kæzəm|ˈsɑrkæzəm}-{sarcasm}-{her constant sarcasm about his poor work with biting sarcasm}-{n. 讥讽； 讽刺话；|,|\
+ˈseɪʃieɪt|ˈseʃiˌet}-{satiate}-{satiate with pleasure}-{vt. 充分满足，使厌腻；|,|\
+səˈtɪrɪkl|səˈtɪrɪkəl}-{satirical}-{a well-known satirical magazine}-{adj. 含讽刺意味的，嘲讽的；|,|\
+ˈsætə(r)|ˈsetɚ, ˈsætɚ}-{satyr}-{a satyr crouches over her corpse}-{n. （希腊及罗马神话）半人半兽的森林之神，好色之徒，性欲极强的男人；|,|\
+ˈseɪvə(r)|ˈsevɚ}-{savour}-{the sweet savour of wood smoke}-{n. （美）味； 味道； 滋味； 兴趣|vt. 欣赏（某物）的味道或风味； 有…的气味；|,|\
+ˈseɪvəri|ˈsevəri}-{savoury}-{savoury party snacks}-{adj. 可口的； 咸味的，辣味的； 令人愉快的；|n. 美味小盘菜肴；|,|\
+ˈskeɪpgəʊt|ˈskeɪpgoʊt}-{scapegoat}-{make the scapegoat for sb escape goat}-{n. 代人受过的人，替罪羊； 替身；|vt. 使…成为替罪羊；|,|\
+ˈskævɪndʒ|ˈskævəndʒ}-{scavenge}-{rats scavenging for food}-{vt.& vi. 清除污物，打扫； （在废物中）寻觅； （动物）食腐肉；|,|\
+ˈskɒləli|ˈskɑlərli}-{scholarly}-{a scholarly journal}-{adj. 学术性的； 有学者风度的； 学者的；|,|\
+sɪnˈtɪlə|sɪnˈtɪlə}-{scintilla}-{a scintilla of}-{n. <正>极少，微量；|,|\
+skri:tʃ|skritʃ}-{screech}-{She screeched her disapproval.}-{n. 尖叫声，尖锐的声音；|vt.& vi. 发出尖叫声，发出尖锐刺耳的声音； 发出恐惧或痛苦的叫喊声；|,|\
+ˈskrɪmɪdʒ|'skrɪmɪdʒ}-{scrimmage}-{fight ;a football scrimmage;}-{n.& v. 混战，并列争球；|,|\
+ˈskru:pjələs|ˈskrupjələs}-{scrupulous}-{be scrupulous in sth/doing sth}-{adj. 严谨的； 小心的； 良心不安的； 有顾忌的|,|\
+ˈskʌfl|ˈskʌfəl}-{scuffle}-{scuffle with sb ;scrimmage}-{n. 扭打，混战； 拖脚行走，拖步； 拖着脚走的声音；|vi. 扭打，混战； 拖脚行走；|,|\
+ˈsi:znəbl|ˈsizənəbəl}-{seasonable}-{seasonable temperatures}-{adj. 合时令的； 及时的，合时宜的；|n. 合时，及时；|adv. 合时地，及时地；|,|\
+ˈsi:zənl|ˈsizənəl}-{seasonal}-{seasonal workers/employment ;heavy seasonal rains}-{adj. 季节的，季节性的； 周期性的； 随季节变化的；|,|\
+sɪˈseʃn|sɪˈsɛʃən}-{secession}-{secession from}-{n. 退出，脱离； 分离； [史](1861年美国南方十一州的)脱离联邦；|,|\
+sɪˈklu:dɪd|sɪˈkludɪd}-{secluded}-{secluded garden/spot/beach}-{adj. 与世隔绝的； 隐退的； 偏僻的；|v. 使隔开，使隐退( seclude的过去式和过去分词)；|,|\
+sɪˈklu:ʒn|sɪˈkluʒən}-{seclusion}-{a policy of seclusion ;isolation}-{n. 隔绝，隔离，隐居；|,|\
+sekˈteəriən|sekˈteriən}-{sectarian}-{sectarian views}-{adj. 宗派的，派系的； 党派心强的； 偏狭的；|n. 宗派主义者，属于宗派的人； 宗派心强的人；|,|\
+sɪˈdju:s|sɪˈdus}-{seduce}-{induce ; seduce one's secretary seduce sb into sth/doing sth}-{vt. 勾引，引诱； 诱奸（妇女）； 诱使…堕落； 迷惑，使入迷|,|\
+ˈsi:di|ˈsidi}-{seedy}-{a seedy-looking old man ;a seedy nightclub}-{adj. 破烂的； 多籽的，籽状的； 疲倦的； 粗鄙的|,|\
+ˈselfinˈdʌldʒəns|ˌsɛlfɪnˈdʌldʒəns}-{self-indulgence}-{My one self-indulgence is good coffee.}-{n. 放纵，任性；|,|\
+ˈselfˈraɪtʃəs|ˈsɛlfˈraɪtʃəs}-{self-righteous}-{She’s a vegetarian, but she’s not at all self-righteous about it.}-{adj. 自以为是的；|,|\
+sə'nɪlətɪ|sə'nɪlətɪ}-{senility}-{a senile old man ;his ticket to avoiding senility}-{n. 衰老的状态；|,|\
+sensɪtaɪzd|'sensɪtaɪzd}-{sensitized}-{sensitize somebody to something ;be sensitized to something}-{adj. 激活的；|v. 使某事物或某人敏感( sensitize的过去式和过去分词 )； （摄影）使（胶片、纸等）易于感光；|,|\
+ˈsenʃuəs|ˈsɛnʃuəs}-{sensuous}-{his full sensuous lips}-{adj. 感觉（上）的； 感官的； （引起）美感的；|,|\
+ˌsentɪˈmentl|ˌsɛntəˈmɛntl}-{sentimental}-{She said a sentimental goodbye. ;sentimental about}-{adj. 伤感的； 多愁善感的； 感情用事的； 寓有情感的|,|\
+ˈsevərəns|ˈsɛvərəns, ˈsɛvrəns}-{severance}-{the severance of diplomatic ties between the two countries}-{n. 切断； 断绝； 割断； 离职金|,|\
+sɪ'verətɪ|səˈvɛrɪti}-{severity}-{His injuries were quite severe. ;the severity of the impact}-{n. 严重； 严格； 严谨； 严厉的对待|,|\
+ˌʃæŋgri ˈlɑ:|ˌʃæŋɡrɪ'lɑ}-{Shangri-La}-{a musical Shangri-La}-{n. 香格里拉；|,|\
+ʃeɪvɪŋ|ˈʃevɪŋ}-{shaving}-{shave;shavings from his wood carvings}-{n. 剃胡子，修面； 削； 刨花；|v. 修面，剃(shave的现在分词)；|,|\
+ˈʃɜ:bət|ˈʃɜrbət}-{sherbet}-{lemon sherbet}-{n. <英>冰冻果子露；|,|\
+ʃɪftɪŋ|ʃɪftɪŋ}-{shifting}-{phase shifting;shifting populations.}-{n. 移位； 转移，偏移； 狡猾；|v. 改变(shift的现在分词)；|adj. 移动的； 多变的； 狡诈的；|,|\
+ˈʃɪfti|'ʃɪftɪ}-{shifty}-{shifty behaviour 不正直的行为;shifty winds.}-{adj. <非正>看着不可靠的，贼眉鼠眼的，显得心里有鬼的； 善于应变；|,|\
+ʃru:|ʃru}-{shrew}-{shrewd;virago;he did seem like a shrew}-{n. 泼妇，悍妇；|,|\
+ˈʃaɪstə(r)|ˈʃaɪstɚ}-{shyster}-{shyster politicians; the damned shyster}-{n. 不择手段的律师；|,|\
+ˈsɪbɪlaɪn|ˈsɪbəˌlaɪn, -ˌlin}-{sibylline}-{sibylline books ;sibyl}-{adj. 女预言家的； 来自女预言家的； 神谕的； 预言的|,|\
+ˈsaɪdtræk|ˈsaɪdˌtræk}-{sidetrack}-{An effort to improve security was sidetracked by budget problems.}-{n. 旁轨，侧线，次要地位；|vt. 导入侧线，转移目标，使受牵制；|,|\
+sɪmˈplɪstɪk}-{simplistic}-{This is a very simplistic approach to the problem.}-{adj. 过分单纯化的； 过分简单化的； 把复杂问题搞得过于简单的；|,|\
+ˈsɪnju:i|ˈsɪnjui}-{sinewy}-{sinewy prose;sinewy young man;}-{adj. （多）肌腱的； 肌肉发达的； 有力的；|,|\
+skeptɪk|ˈskɛptɪk}-{skeptic}-{they are real skeptics}-{n. 怀疑者； 怀疑论者； 无神论者；|adj. 怀疑性的；|,|\
+skʌlk|skʌlk}-{skulk}-{skulk behind a hedge}-{vi. <贬>潜伏，偷偷摸摸地走动，鬼鬼祟祟地活动；|,|\
+ˈsleɪvɪʃ|ˈslevɪʃ}-{slavish}-{a slavish adherence to the rules}-{adj. 奴隶似的，奴性的； 没有独创性的；|,|\
+sli:k|slik}-{sleek}-{sleek hair, fur, etc 光滑而有光泽的毛发、 毛皮等.}-{adj. 圆滑的，花言巧语的； 有光泽的； 时髦的； （动植物）喂养得好的，长得好的|vt. 使光滑，使有光泽； 掩饰，隐瞒； 使整洁；|vi. 打扮整洁； 滑动；|,|\
+slɪpɪŋ|'slɪpɪŋ}-{slipping}-{slipping effort}-{adj. <美俚>渐渐松驰的，渐渐不行了的，渐渐变懒的；|v. 滑( slip的现在分词 )； 滑脱； 下降； （健康状况等）变差|,|\
+ˈslʌvnli|ˈslʌvənli}-{slovenly}-{a slovenly waiter}-{adj. 疏忽的； 懒散的； 邋遢的； 不整洁的|,|\
+ˈslʌgɪʃ|ˈslʌɡɪʃ}-{sluggish}-{Alex woke late, feeling tired and sluggish.}-{adj. 行动迟缓的，反应慢的； 不机警的； 懒散的，不活泼的； 无精打采的|,|\
+smelt|smɛlt}-{smelt}-{a copper-smelting works;The room was warm and smelt musty.}-{vt. 熔炼，提炼（矿石）；|n. 银白鱼，胡瓜鱼；|v. 嗅，闻( smell的过去式和过去分词 )； 闻到； 嗅出； 觉察出|,|\
+sməʊldə|ˈsmoldɚ}-{smolder}-{The campfire smoldered for hours}-{vi. 用文火焖烧，熏烧，慢燃；|n. 焖烧，文火，冒烟；|,|\
+sməʊt|smoʊt}-{smote}-{.}-{v. 猛打，重击，打击( smite的过去式 )；|,|\
+ˈsnɪvl|ˈsnɪvəl}-{snivel}-{A small boy was sniveling on a chair.}-{vi. 啜泣，呜咽，哭诉； 啜泣；|n. 流鼻涕，啜泣；|,|\
+ˈsnʌfl|ˈsnʌfəl}-{snuffle}-{The little boys snuffled in their sleep.}-{vi. （吸气时）发出响声； 带鼻音说话； 抽鼻儿地说； （鼻塞时）带鼻音地呼吸|n. 以鼻吸气声； 带鼻音说的话； (the snuffles)鼻塞； 伤风|,|\
+ˈsɒlɪsɪzəm|ˈsɑlɪsɪzəm}-{solecism}-{commit a solecism}-{n. 语法[成语]错误； 失礼，无礼；|,|\
+səˈlɪləkwi|səˈlɪləkwi}-{soliloquy}-{monologue ; give a long soliloquy}-{n. 自言自语； （戏剧中的）独白；|,|\
+ˈsɒlstɪs|ˈsɑlstɪs}-{solstice}-{the summer/winter solstice ;equinox}-{n. 至，至日；|,|\
+sɒmbə(r)|ˈsɑmbɚ}-{sombre}-{in a somber mood ;grave;His room is sombre and dark.}-{adj. 忧郁的； 昏暗的，阴沉的； 暗淡的，不鲜艳的（颜色等）；|,|\
+sɒmˈnæmbjəlɪst|sɑmˈnæmbjəlɪst}-{somnambulist}-{sleepwalker ;like a somnambulist}-{n. 梦游者，梦游症患者；|,|\
+ˈsɒnɪk|ˈsɑnɪk}-{sonic}-{sonic locator}-{adj. <物>音波的，音速的； 能发声音的；|,|\
+ˈsu:θseɪə(r)|ˈsuθˌseɚ}-{soothsayer}-{soothsay;consult a soothsayer}-{n. 占卜者，预言家；|,|\
+ˈsɒfɪst|ˈsɑfɪst}-{sophist}-{he was considered by many Athenians to be just another Sophist.}-{n. 诡辩家，博学者，诡辩者；|,|\
+ˌsɒfə'mɒrɪk|ˌsɒfə'mɒrɪk}-{sophomoric}-{sophomoric humor}-{adj. 大学或四年制中学的二年级的，一知半解的；|,|\
+saʊst}-{soused}-{souse(腌, 泡在盐水里);be soused into water;}-{adj. 喝醉的，醉酒的；|v. 将（某人或某物）投入或浸入水中，将水泼在…上( souse的过去式 )； 腌制（鱼等）；|,|\
+spektə(r)|ˈspɛktɚ}-{spectre}-{the terrible specter of nuclear war.}-{n. 鬼怪； 幽灵； 缠绕心头的恐惧； 凶兆|,|\
+ˈspi:tʃləs|ˈspitʃlɪs}-{speechless}-{His comments left me speechless with rage.}-{adj. 无言的； （因惊愕）一时语塞的； 默然； 无言以对|,|\
+ˈspɪnɪŋ|ˈspɪnɪŋ}-{spinning}-{spin;a spinning wheel}-{n. 纺纱；|v. 使…旋转( spin的现在分词 )； 纺（线）； 杜撰； （使）急转身|,|\
+ˈspu:nərɪzəm|ˈspunəˌrɪzəm}-{spoonerism}-{‘sew you to a sheet’ instead of ‘show you to a seat’}-{n. 斯本内现象，首音互换；|,|\
+spraɪ|spraɪ}-{spry}-{He’s still remarkably spry.}-{adj. （指老年人）活跃的，敏捷的；|,|\
+ˈstæmɪnə|ˈstæmənə}-{stamina}-{have the stamina to}-{n. 体力，耐力，持久力； 雄蕊( stamen的名词复数)； 毅力； 恒劲|,|\
+stɪŋk|stɪŋk}-{stink}-{the fish stinks}-{vi. 散发出恶臭； 招人厌恶； 糟透；|n. 恶臭，难闻的气味；|,|\
+ˈstaɪpend|ˈstaɪˌpɛnd, -pənd}-{stipend}-{Scholarship Stipend;stipend subsidy}-{n. （尤指牧师的）薪俸；|,|\
+}-{stout-hearted}-{stout-hearted investor}-{adj. 勇敢的，刚毅的；|,|\
+stəʊ|stoʊ}-{stow}-{I stowed(stash ) my bag under the seat. ;A boy was caught trying to stow away on a plane.}-{vt. 装，装载； 收藏； 使暂停； 堆装|,|\
+ˈstræŋgl|ˈstræŋɡəl}-{strangle}-{The victim had been strangled with a belt. ;strangle the recovery}-{vt. 扼死，勒死，绞死； 使…窒息； 抑制； 压制|vi. 窒息而死，被勒死；|,|\
+strætɪfaɪd|ˈstrætəˌfaɪd}-{stratified}-{stratified rock}-{adj. 成层了的，层积了的，分层的；|v. <正，术>（使）分层，成层( stratify的过去式和过去分词 )；|,|\
+strəʊv|stroʊv}-{strove}-{He still, still strove}-{v. 努力奋斗，力求( strive的过去式 )；|,|\
+ˈstju:diəs|ˈstudiəs}-{studious}-{with studious politeness}-{adj. 好学的；  用功的； 仔细的； 故意的|,|\
+ˈsʌbltən|səˈbɔltərn}-{subaltern}-{Subaltern Studies}-{n. 次长，中尉，副官；|adj. 下的，副的，次的；|,|\
+sə'bɔ:nɪŋ|sə'bɔnɪŋ}-{suborning}-{.}-{v. 行贿，受贿，贿赂； 行贿，教唆[买通]…作伪证( suborn的现在分词 )；|,|\
+səbˈsaɪdns|səbˈsaɪdns}-{subsidence}-{Is your house insured against subsidence?}-{n. 沉淀，陷没，下沉； 沉淀物；|,|\
+ˌsʌb'stændəd|ˌsʌb'stændərd}-{substandard}-{substandard housing}-{adj. 不够标准的，在标准以下的； 低等级标准；|,|\
+ˈsʌtlti|ˈsʌtlti}-{subtlety}-{gain sth by subtlety}-{n. 精妙，巧妙； 敏锐，敏感； 狡猾，阴险； 细微的差别等|,|\
+ˈsʌkə(r)|ˈsʌkɚ}-{succour}-{They give succour to the victims of war.}-{n. <古，正>救助，帮助（尤指需要时）；|vt. 给予帮助；|,|\
+ˈsʌkjələnt|ˈsʌkjələnt}-{succulent}-{a succulent steak, pear, etc 鲜美的牛排、 梨等.}-{adj. 多汁的，多水分的，多汁性的； （植物）茎叶肥厚含水分多的，肉质的； 极有兴趣的，津津有味的，有活力的；|n. 肉质植物； 多汁植物；|,|\
+ˈsu:tə(r)|ˈsutɚ}-{suitor}-{a suitor who adored her.}-{n. 求婚者； 起诉者； 请愿者；|,|\
+ˌsu:pəˈnju:mərəri|ˌsupərˈnuməreri}-{supernumerary}-{numerary(数目的);supernumerary nipples/limb; supernumerary product of commercial printing industr}-{n. 定额以外的人，临时雇工；|,|\
+ˌsʌpəˈzɪʃn|ˌsʌpəˈzɪʃən}-{supposition}-{position on the supposition that}-{n. 猜测；  推测； 假定； 猜想|,|\
+sə'pɒzɪ'tɪʃəs|səˌpɒzə'tɪʃəs}-{supposititious}-{suppositive;supposititious writings;}-{adj. 冒充的； 想象的； 假的； 私生的|,|\
+sweəwɜ:d|'swerˌwɜd}-{swearword}-{That's the worst swearword of all}-{n. 诅骂，骂人的话； 骂人话； 脏字；|,|\
+ˈsweltə(r)|ˈswɛltɚ}-{swelter}-{Crowds of shoppers sweltered in the summer heat.}-{vi. 热得难受；|n. 热得难受，闷热；|,|\
+swɪndlə(r)| ˈswɪndlɚ}-{swindler}-{swindle something out of somebody ; a master swindler}-{n. 骗子；|,|\
+swʌŋ|swʌŋ}-{swung}-{.}-{v. （使）摇摆( swing的过去式和过去分词 )； （使）摇荡； （使）旋转； （使）突然转向|,|\
+ˈsɪlədʒɪzəm|ˈsɪləˌdʒɪzəm}-{syllogism}-{all men will die, Socrates is a man, therefore Socrates will die}-{n. 三段论，演绎推理；|,|\
+ˈsɪlvən|ˈsɪlvən}-{sylvan}-{satyr;the sylvan myth ;Sylvan retirement}-{adj. 森林的，林木的； 乡村的；|,|\
+ˈtæki|ˈtæki}-{tacky}-{tacky clothes}-{adj. 发黏的； 俗气的； 褴褛的； 缺乏教养或风度的|,|\
+ˈtæktfl|ˈtæktfəl}-{tactful}-{a tactful person; a tactful remark.}-{adj. 机智的，机敏的； 得体的； 老练的，圆滑的； 婉转|,|\
+teɪnt|tent}-{taint}-{a taint of; be tainted by}-{n. 污点，污名； <废〉气味； 传染，腐败；|vt. 使变质； 使污染； 败坏； 玷污|vi. 被污染； 败坏； 腐坏；|,|\
+ˈtænə(r)|ˈtænɚ}-{tanner}-{the knacker and tanner}-{n. 制革工人； <英><口>（英国旧时的）六便士币；|,|\
+təˈræntʃələ|təˈræntʃələ}-{tarantula}-{prevent from touching the tarantula}-{n. 鸟蛛，狼蛛；|,|\
+ˈtɔ:ni|ˈtɔni}-{tawny}-{the lion's tawny mane}-{adj. 黄褐色的；|n. 黄褐色；|,|\
+ti:'təʊtələ|ti'toʊtələ}-{teetotaler}-{My Dad was a teetotaler}-{n. 绝对禁酒者，禁酒主义者；|,|\
+ tiː'təʊtəlɪzəm}-{teetotalism}-{Teetotalism is against nature}-{n. 绝对禁酒；|,|\
+ˈtempərət|ˈtɛmpərɪt, ˈtɛmprɪt}-{temperate}-{temperate climate/zone/region}-{adj. 有节制的； （气候）温和的； 适度的；|,|\
+ˈtɜ:ʃəri|ˈtɜrʃieri}-{tertiary}-{tertiary shool}-{adj. 第三的； <医>第三期的； (T-)<地>第三纪的； <化>叔的|n. (T-)<地>第三纪； 第三系； 三期梅毒病害； <宗>第三级教士|,|\
+ˈtesəleɪtɪd}-{tessellated}-{tessella;tessellated pavement}-{adj. 棋盘格的，镶嵌的花样的；|v. 把…镶嵌成棋盘花纹( tessellate的过去式和过去分词 )； （反复使用单一形态）使平面完全嵌合；|,|\
+θrɒb|θrɑb}-{throb}-{throb with sth}-{n. 跳动，悸动； 脉搏；|vi. 抽痛； （心脏、脉搏等）跳动；|,|\
+θrəʊ|θroʊ}-{throe}-{a country in the throes of a profound economic crisis}-{n. （尤指分娩时的）阵痛， （临死时挣扎的）痛苦；|,|\
+ˈtaɪtwɒd|ˈtaɪtwɑd}-{tightwad}-{she's such a tightwad}-{n. 吝啬鬼；|,|\
+ˈtɪlə(r)|ˈtɪlɚ}-{tiller}-{He became a tiller of the ground}-{n. <植>分蘖； （小船的）舵柄； 耕种者； 耕作机|vi. 长出分蘖；|,|\
+taɪð|taɪð}-{tithe}-{he gives a tithe for the war; I tithe every week}-{n. （宗教捐税）什一税，什一的教区税，小部分；|v. 课什一税，缴什一税；|,|\
+ˈtɪtɪleɪt|ˈtɪtlˌet}-{titillate}-{Scientific stories titillate the fancy of the school boys.}-{vt. 使觉得痒； 挑逗； 使高兴；|vi. 觉得痒； 被激发； 感到兴奋；|,|\
+ˈtɪtə(r)|ˈtɪtɚ}-{titter}-{At the word ‘breast’, some of the class tittered.}-{vi. 窃笑，傻笑；|n. 短促而神经质的笑；|,|\
+ˈtəʊgə|ˈtoʊgə}-{toga}-{a man in a toga}-{n. 宽外袍，参议员的职位；|,|\
+ˈtɒnʃə(r)|ˈtɑnʃə(r)}-{tonsure}-{his tonsured head ; monastic tonsure}-{n. 剪发，头顶剃光的部分，削发式；|vt. 剃；|,|\
+tɔ:n|tɔrn}-{torn}-{.}-{v. 撕( tear的过去分词)； 扯裂； 破损；|,|\
+təʊtə|'toʊtə}-{toter}-{.}-{n. （导弹）装载起重机；|,|\
+tɒtərɪŋ|'tɒtərɪŋ}-{tottering}-{Lorrimer swayed a little, tottered, and fell. ;the tottering status}-{adj. 蹒跚的，动摇的；|v. 走得或动得不稳( totter的现在分词 )； 踉跄； 蹒跚； 摇摇欲坠|,|\
+trænˈspaɪə(r)|trænˈspaɪr}-{transpire}-{These secrets presently transpired.}-{vi. 蒸发； 泄露； （事情）发生；|vt. 使蒸发； 使排出； [医]发汗； （秘密）被泄漏|,|\
+ˈtræpɪŋz|ˈtræpɪŋz}-{trappings}-{the trappings(虚饰) of power ;daily trappings;}-{n. 马饰； 装饰； 外部标志； （标志官职的）服饰|,|\
+trɔ:ˈmætɪk|traʊˈmætɪk}-{traumatic}-{traumatic neurosis (神经症, 神经衰弱症)}-{adj. <医>外伤的损伤的； 创伤的； 治外伤的；|n. 外伤药；|,|\
+ˈtræveɪl|trəˈvel, ˈtrævˌel}-{travail}-{the travails of last year’s water shortage}-{n. <文>艰苦劳动； 辛勤努力； 痛苦； 分娩的阵痛|vi. 辛勤工作，努力，尤指经受分娩的阵痛；|,|\
+tres|tres}-{tresse}-{tress n.一绺头发, 卷发, 发辫, [植]枝条vt.把(头发)梳理成绺}-{n. 组饰，织饰；|,|\
+ˈtrɪbju:n|'trɪbjun}-{tribune}-{a faithful tribune of popular perception}-{n. （古罗马）护民官； 民众领袖； 论坛； （赛马场的）看台|,|\
+ˈtrɪkstə(r)|ˈtrɪkstɚ}-{trickster}-{confidence trickster ; financial trickster}-{n. 骗子，无赖；|,|\
+trəʊlɪŋ|'troʊlɪŋ}-{trolling}-{.}-{n. 拖捕的行为；|,|\
+trəʊθ|trɑθ}-{troth}-{truth;oath;I believe his troth}-{n. 誓言； 诚实；|vt. 与…订婚；|,|\
+trʌkjələns|ˈtrʌkjələns}-{truculence}-{a truculent attitude ;famed for truculence and cruelty;my voice with truculence}-{n. 野蛮； 致命性； 好斗； 刻薄|,|\
+trɪst|trɪst}-{tryst}-{a lover's tryst}-{n. <古>约会，幽会； 幽会地点；|vt. 与…幽会； 约定（幽会时间、地点等）；|,|\
+tʌmblɪŋ|'tʌmblɪŋ}-{tumbling}-{tumble down}-{n. 摔跤，翻跟头，翻筋斗；|adj. 歪斜状的；|v. 倒塌( tumble的现在分词 )； 翻滚； 突然摔倒； <非正>恍然大悟|,|\
+ˈtɜ:bɪd|ˈtɜrbɪd}-{turbid}-{turbid thoughts}-{adj. <正>混浊的； （思想等）混乱的； 紊乱的； （烟、云等）浓密的|,|\
+ˈtɜ:bjələns|ˈtɜrbjələns}-{turbulence}-{A period of political turbulence followed the civil war. ;turmoil}-{n. 骚动，骚乱； [物]湍流； （海洋、天气等的）狂暴； 动荡|,|\
+tjuˈri:n|tʊˈrin, tjʊ-}-{tureen}-{the lid of a tureen}-{n. 有盖的汤盘，盛汤的碗；|,|\
+tju:tɪlərɪ|'tjutˌleri}-{tutelary}-{tutelary gods;tutelary deity;Law Tutelary}-{adj. 守护的； 监护的； 保护的； 守护人的|,|\
+ˌʌltɪˈmeɪtəm|ˌʌltəˈmeitəm, -ˈmɑ-}-{ultimatum}-{issue an ultimatum ;give an ultimatum}-{n. 最后通牒，最后条件； 最后结论； 基本意义（原理）；|,|\
+ˌʌnəˈkaʊntəbl|ˌʌnəˈkaʊntəbəl}-{unaccountable}-{unaccountable Anger}-{adj. 不负责任的； 无责任的； 不能理解的； 难以说明的|,|\
+ˌju:nəˈnɪməti|ˌjunəˈnɪmɪti}-{unanimity}-{achieve unanimity through consultation}-{n. 一致同意，全体一致；|,|\
+ˌʌnəˈseɪləbl|ˌʌnəˈseləbəl}-{unassailable}-{unassailable truths assail vt.攻击, 质问}-{adj. 攻不破的；|,|\
+ʌnə'sweɪdʒd|ʌnə'sweɪdʒd}-{unassuaged}-{assuage;unassuaged maternal love}-{adj. （愤怒等强烈情绪）未平息的； （人）未安静下来的； （肉体或精神上的痛苦）未减轻的； （欲望）未得满足的|,|\
+ˌʌnˌserəˈməʊniəs|ˌʌnˌserəˈmoʊniəs}-{unceremonious}-{unceremonious changes}-{adj. 不拘礼仪的； 随意的； 无礼的； 唐突的|adv. 无礼地，粗鲁地，唐突地；|n. 不拘礼仪，无礼，唐突；|,|\
+ˈʌŋkʃn|ˈʌŋkʃən}-{unction}-{tell a story with much unction}-{n. 涂油礼； 油膏； 虚情假意； 津津有味|,|\
+ˌʌndəˈhænd|ˌʌndərˈhænd}-{underhand}-{They did it all in such an underhand way.}-{adj. 暗中或秘密进行的，诡诈的； （球赛时投球）低手的；|adv. 秘密地，不正当地； （投球时）低手地；|,|\
+ˈʌndəteɪkə(r)|ˈʌndərteɪkə(r)}-{undertaker}-{funeral director ;Undertaker business}-{n. 殡仪业人员； 承办人； 承担者；|,|\
+ʌndə'ju:tɪlaɪz|ˌʌndə'jutlˌaɪz}-{underutilize}-{underutilize materials}-{vt. 未充分使用；|,|\
+ˌʌnɪˈkwɪvəkl|ˌʌnɪˈkwɪvəkəl}-{unequivocal}-{His answer was an unequivocal ‘No’.}-{adj. 不含糊的； 明确的； 毫不含糊；|,|\
+ʌn'ɜ:rɪŋlɪ|ʌn'ɜrɪŋlɪ}-{unerringly}-{He passes the ball with unerring accuracy . ;go unerringly toward}-{adv. 无过失地，正确地；|,|\
+ʌn'fɔ:ltərɪŋ|ʌn'fɔltərɪŋ}-{unfaltering}-{unfaltering confidence}-{adj. 稳步的，坚决的，专心的；|,|\
+ʌn'fetə|ʌn'fetə}-{unfetter}-{unfetter economic activity}-{v. 解放；|,|\
+ʌn'fledʒd|ʌn'fledʒd}-{unfledged}-{.}-{adj. 未成熟的，羽毛未丰的，未充分发达的；|,|\
+ʌn'frɒk|ʌn'frɒk}-{unfrock}-{defrock;The old physician was unfrocked by the Medical Association}-{vt. 剥去法衣，解除僧职；|,|\
+ˌʌnɪnˈhɪbɪtɪd|ˌʌnɪnˈhɪbɪtɪd}-{uninhibited}-{uninhibited laughter}-{adj. 无限制的，无拘束的，放任的； 狂放不羁； 畅； 不羁|,|\
+ʌnˈru:li|ʌnˈruli}-{unruly}-{unruly behavior ;ruly 有条不紊的, 有秩序的}-{adj. 不守规矩的； 任性的； 难驾驭的； 难控制的|,|\
+ʌnˈseɪvəri|ʌnˈsevəri}-{unsavoury}-{unsavoury tastes}-{adj. 味道很不好的，讨厌的；|,|\
+ʌnˈsaɪtli|ʌnˈsaɪtli}-{unsightly}-{unsightly buildings}-{adj. 不美观的，难看的； 不好看的；|,|\
+ʌnˈtenəbl|ʌnˈtɛnəbəl}-{untenable}-{untenable propositions 主张}-{adj. （尤指辩论中的立场）站不住脚的； 不能维持的； 难以防守的； 不能租赁的|,|\
+ˈʌpʃɒt|ˈʌpʃɑt}-{upshot}-{the upshot (of something)}-{n. 结果；|,|\
+ɜ:ˈbeɪn|ɜrˈbeɪn}-{urbane}-{an urbane smile}-{adj. 都市化的； 彬彬有礼的，温文尔雅的；|,|\
+ˌveɪnˈglɔ:riəs|venˈɡlɔriəs, -ˈɡlor-}-{vainglorious}-{glorious 光荣的, 显赫的;she becomes unattractive and vainglorious}-{adj. 非常自负的，虚荣心强的； 爱虚荣；|,|\
+ˈvælə(r)|ˈvælɚ}-{valour}-{valor; gallantry;medals awarded for valor}-{n. （尤指战斗中的）勇猛，英勇；|,|\
+ˈveəriəgeɪtɪd|ˈveriəgeɪtɪd}-{variegated}-{variegated copper ore;our variegated dialects}-{adj. 杂色的； 斑驳的； 变化多端的；|vt. 使成杂色(variegate的过去式和过去分词)；|,|\
+ˈvæsl|ˈvæsəl}-{vassal}-{vassal troops;a vassal state}-{n. 奴仆； <史>（封建时代）诸侯； 从属者； 下属|adj. 奴仆的； 奴隶的； 臣的； 附庸的|,|\
+vɔ:nt|vɔnt, vɑnt}-{vaunt}-{boast; vaunt one's charm}-{vi. <文>吹嘘，自夸；|vt. 吹牛，自吹，夸耀；|n. 自吹自擂，大话，吹牛；|,|\
+ˈvi:əmənt|ˈviəmənt}-{vehement}-{vehement sexuality; a vehement objection}-{adj. 感情强烈的，热情的，热烈的； 激烈的，热烈的； 激越； 慷慨|,|\
+ˈvenərəbl|ˈvɛnərəbəl}-{venerable}-{a venerable tradition}-{adj. 令人尊重的； 庄严的，珍贵的； 副主教；|,|\
+ˈvenɪsn|ˈvɛnɪsən, -zən}-{venison}-{antler;magnificent venison;fish and venison}-{n. 鹿肉； <古>野味； 猎兽；|,|\
+ˈventʃəsəm|ˈventʃərsəm}-{venturesome}-{venturesome decision}-{adj. （人）好冒险的； 胆大的； （行动）有危险的； 冒险（性）的|,|\
+ˈvenju:|ˈvɛnju}-{venue}-{sporting/conference/concert etc venue ;venue for}-{n. 犯罪地点，案发地点； 会场； （尤指）体育比赛场所； 审判地|,|\
+ˈvɜ:bəlaɪz|ˈvɜrbəlaɪz}-{verbalize}-{Urge your child to verbalize his feelings. ;articulate}-{v. 描述； 把…变成动词； 用言语表现； 说话啰唆|,|\
+ˌverɪsɪˈmɪlɪtju:d|ˌverɪsɪˈmɪlɪtud}-{verisimilitude}-{questions about the verisimilitude of the document}-{n. 逼真，逼真的事物，貌似真实；|,|\
+ˈverəti|ˈvɛrɪti}-{verity}-{the eternal verities of life ;truth}-{n. 真实； 事实； 真理； 真实的陈述|,|\
+vɪtl|'vɪtəl}-{victual}-{The ship will victual before sailing.;report the victual condition}-{n. 食物及饮料，粮食；|vi. 吃； 装贮食物；|vt. 给…供应食物；|,|\
+ˈvɪdʒɪl|ˈvɪdʒəl}-{vigil}-{tired out by long nightly vigils at her son's bedside}-{n. 守夜，熬夜； 节日（斋戒）前夜的守夜； 警戒，监视； 不眠|,|\
+vɪdʒɪləns|ˈvɪdʒələns}-{vigilance}-{the need for increased police vigilance}-{n. <正>警觉； 警惕； 警戒； <医>失眠症|,|\
+vɪnˈjet|vɪnˈjɛt}-{vignette}-{outline vignette}-{n. 装饰图案，小插图；|vt. 把…印放为虚光照；|,|\
+ˈvɪgə(r)|ˈvɪɡɚ}-{vigour}-{He began working with renewed vigour .}-{n. 精力，活力； 气势； 强健； 有力行动|释义 vigor的变体；|,|\
+vaɪs|vaɪs}-{vise}-{visa;vise-like grip on broadcast media}-{n. 夹钳，台钳，老虎钳；|vt. 钳住，紧紧夹住；|,|\
+ˌvɪvɪˈsekʃn|ˌvɪvɪˈsɛkʃən, ˈvɪvɪˌsɛk-}-{vivisection}-{opponent of vivisection}-{n. 活体解剖；|,|\
+ˈvɪksn|ˈvɪksən}-{vixen}-{a female fox ;a total vixen}-{n. 雌狐； 泼妇； 刁妇； 坏心眼的女人|,|\
+vəˈsɪfərəs|voʊˈsɪfərəs}-{vociferous}-{a vociferous laugh}-{adj. 吵吵嚷嚷的； 大声叫喊的； 叫嚣的；|,|\
+ˈvu:du:|ˈvudu}-{voodoo}-{the land of voodoo and witchcraft,}-{n. （尤指西印度群岛等地的）伏都教，巫术；|vt. 施巫术以迷惑；|,|\
+ˈvɔ:teks|ˈvɔrteks}-{vortex}-{the vortex of emotions surrounding the case}-{n. [航]涡流； [物]涡旋； （动乱，争论等的）中心； 旋风|,|\
+ˌvaʊtʃˈseɪf|vaʊtʃˈsef, ˈvaʊtʃˌsef}-{vouchsafe}-{be vouchsafed a vision of the future;vouchsafe them a few more drops of brandy.}-{vt. 给予，赐予； 允诺；|,|\
+vwaɪˈɜ:(r)|vɔɪˈjə}-{voyeur}-{make unfeeling voyeurs of all of us}-{n. <贬>窥淫癖者（喜欢窥视他人性行为）； 刺探隐秘者（喜欢刺探他人的问题或私生活）；|,|\
+weɪnɪŋ|'weɪnɪŋ}-{waning}-{interest rates is waning;its waning world influence}-{adj. （月亮）渐亏的，逐渐减弱或变小的；|n. 月亏；|v. 衰落( wane的现在分词 )； （月）亏； 变小； 变暗淡|,|\
+ˈwɔ:hɔ:s|ˈwɔrhɔrs}-{warhorse}-{Mr. Smith is a warhorse in politics}-{n. 军马，<口>老兵，老练的人；|,|\
+weldɪŋ|weldɪŋ}-{welding}-{arc welding}-{n. 焊接法，定位焊接； 粘结；|vt. 熔接； 锻接； 使结合；|vi. 焊牢，能被焊接；|v. 焊接( weld的现在分词 )； 熔接； 锻接； 使紧密结合|,|\
+wɪðˈheld|wɪθ'held}-{withheld}-{Ian was accused of withholding vital information from the police.}-{释义 withhold过去式及过去分词；|,|\
+ˈwɪzəd|ˈwɪzərd}-{wizard}-{a financial wizard}-{n. 男巫； 行家； 奇才； 向导（程序）|,|\
+retʃ|rɛtʃ}-{wretch}-{He was a lonely, miserable wretch.}-{n. 不幸的人； 可怜的人； 恶棍； 坏蛋|,|\
+raɪð|raɪð}-{writhe}-{writhing in pain}-{vi. （因极度痛苦而）扭动或翻滚； 痛苦，苦恼； 蠕动，蜿蜒移动；|n. 扭动，翻滚；|vt. 扭动，转动，弄歪； 盘绕，缠绕；|,|\
+rɒŋhedɪd|'rɒŋhedɪd}-{wrongheaded}-{wrongheaded decision}-{adj. 判断错误的，固执的，坚持错误的；|,|\
+jɔ:(r)|jɔr, jor}-{yore}-{in days of yore}-{n. <书>往昔，昔时；|,|\
+zi:l|zil}-{zeal}-{show zeal for knowledge; zest}-{n. 热心； 热情； 奋发；|,|\
+ˈzelət|ˈzɛlət}-{zealot}-{religious zealots}-{n. 热心者，狂热者；|,|\
+phonetic}-{word}-{definitions_d}-{definitions_e}-{definitions_c}-{|,|";
+
+var wordCount = 990;

@@ -1,0 +1,93 @@
+.phonetic {
+	border-style: hidden;
+	font-family: Lucida Sans Unicode;
+	font-size: 1em;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+
+.currentword {
+	border-style: hidden;
+	background-color: #DCDCDC;
+	text-align: left;
+	font-size: 1em;
+	font-family: Arial,Helvetica,sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+.word {
+	border-style: hidden;
+	text-align: left;
+	font-size: 1em;
+	font-family: Arial,Helvetica,sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+.definition {
+	border-style: hidden;
+	margin: 0 auto;
+	font-size: 1em;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+
+.w6rows {
+	height: 12.5%;
+}
+
+.d6rows {
+	height: 37.5%;
+}
+
+.w8rows {
+	height: 12.5%;
+}
+
+.d8rows {
+	height: 37.5%;
+}
+
+.wlist {
+	height: 100%;
+}
+
+
+.phonetic_1{
+	border-style: hidden;
+	font-family: Lucida Sans Unicode;
+	font-size: 1em;
+	text-align: left;
+	width: 100%;
+
+}
+
+.currentword_1 {
+	border-style: hidden;
+	text-align: left;
+	font-size: 1em;
+	font-family: Courier New,Helvetica,sans-serif;
+	width: 100%;
+
+}
+
+.word_1 {
+	border-style: hidden;
+	text-align: left;
+	font-size: 1em;
+	font-family: Arial,Helvetica,sans-serif;
+	width: 100%;
+
+}
+
+.definition_1 {
+	border-style: hidden;
+	margin: 0 auto;
+	font-size: 1em;
+	text-align: left;
+	width: 100%;
+
+}

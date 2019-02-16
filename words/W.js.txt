@@ -1,0 +1,2341 @@
+	// This will parse a delimited string into an array of  
+	// arrays. The default delimiter is the comma, but this  
+	// can be overriden in the second argument.  
+function CSVToArray( strData, strDelimiter ){  
+	// Check to see if the delimiter is defined. If not,  
+	// then default to comma.  
+	strDelimiter = (strDelimiter || ",");  
+	   
+	// Create a regular expression to parse the CSV values.  
+	var objPattern = new RegExp(  
+	(  
+	// Delimiters.  
+	"(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +  
+	   
+	// Quoted fields.  
+	"(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +  
+	   
+	// Standard fields.  
+	"([^\"\\" + strDelimiter + "\\r\\n]*))"  
+	),  
+	"gi"  
+	);  
+	   
+	   
+	// Create an array to hold our data. Give the array  
+	// a default empty first row.  
+	var arrData = [[]];  
+	   
+	// Create an array to hold our individual pattern  
+	// matching groups.  
+	var arrMatches = null;  
+	   
+	   
+	// Keep looping over the regular expression matches  
+	// until we can no longer find a match.  
+	while (arrMatches = objPattern.exec( strData )){  
+	   
+	// Get the delimiter that was found.  
+	var strMatchedDelimiter = arrMatches[ 1 ];  
+	   
+	// Check to see if the given delimiter has a length  
+	// (is not the start of string) and if it matches  
+	// field delimiter. If id does not, then we know  
+	// that this delimiter is a row delimiter.  
+	if (  
+	strMatchedDelimiter.length &&  
+	(strMatchedDelimiter != strDelimiter)  
+	){  
+	   
+	// Since we have reached a new row of data,  
+	// add an empty row to our data array.  
+	arrData.push( [] );  
+	   
+	}  
+	   
+	   
+	// Now that we have our delimiter out of the way,  
+	// let's check to see which kind of value we  
+	// captured (quoted or unquoted).  
+	if (arrMatches[ 2 ]){  
+	   
+	// We found a quoted value. When we capture  
+	// this value, unescape any double quotes.  
+	var strMatchedValue = arrMatches[ 2 ].replace(  
+	new RegExp( "\"\"", "g" ),  
+	"\""  
+	);  
+	   
+	} else {  
+	   
+	// We found a non-quoted value.  
+	var strMatchedValue = arrMatches[ 3 ];  
+	   
+	}  
+	   
+	   
+	// Now that we have our value string, let's add  
+	// it to the data array.  
+	arrData[ arrData.length - 1 ].push( strMatchedValue );  
+	}  
+	   
+	// Return the parsed data.  
+	return( arrData );  
+}  
+
+
+function isValidValue(val)
+{
+   var ret = false;
+   var min = 0;
+   var i=0;
+	
+    if((val.length > 1) &&(val.charAt(0) == '0'))
+   {
+			return false;
+   }
+
+   for(i;i<val.length;i++)
+   {
+      if ( isValidDigit(val.charAt(i)) == false )
+        break;
+   }
+   if ( i == val.length )
+   {
+       ret = true;
+   }
+
+   if(ret == true)
+   {
+        if (val > min)
+        {
+            ret = true;
+        }
+        else
+        {
+            ret = false;
+        }
+   }
+   return ret;
+}
+
+function isValidServerPort(val){
+   var ret = false;
+   var max = 65535;
+   var min = 0;
+   var i = 0;
+
+   if((val.length > 1) &&(val.charAt(0) == '0'))
+   {
+			return false;
+   }
+
+   for(i;i<val.length;i++)
+   {
+      if ( isValidDigit(val.charAt(i)) == false )
+        break;
+   }
+   if ( i == val.length )
+   {
+       ret = true;
+   }
+
+   if(ret == true)
+   {
+   	   if (( val <= max) &&( val >= min))
+	         ret = true;
+	     else
+	        ret = false;
+   }
+
+   return ret;
+}
+
+function isEqualValue(var1,var2)
+{
+  if( var1 == var2 )
+  {
+     return true;
+  }
+  else
+  {
+     return false;
+  }
+}
+
+function is_dotted_decimal(address)
+{
+	var i;
+
+	for(i = 0; i < address.length; i++) {
+		if (!((address.charAt(i) == '.')
+				|| (address.charAt(i) >= '0' && address.charAt(i) <= '9')))
+			return false;
+	}
+	
+	return true;
+}
+
+function isValidValue0(val)
+{
+   var ret = false;
+   var min = 0;
+
+   if(((val.length > 1) &&((val.charAt(0) == ' ')||(val.charAt(0) == '0')))
+        ||(val.length == 0))
+   {
+	return false;
+   }
+
+   if (val >= min)
+   	{
+         ret = true;
+     }
+   else{
+        ret = false;
+   }
+   return ret;
+}
+
+function isValidValue2(min,max,val)
+{
+   var ret = false;
+
+   var i=0;
+
+   if(((val.length > 1) &&(val.charAt(0) == '0'))||(val.length==0))
+   {
+			return false;
+   }
+
+   for(i;i<val.length;i++)
+   {
+      if ( isValidDigit(val.charAt(i)) == false )
+        break;
+   }
+   if ( i == val.length )
+   {
+       ret = true;
+   }
+
+   if(ret == true)
+   {
+   	   if (( val <= max) &&( val >= min))
+	         ret = true;
+	     else
+	        ret = false;
+   }
+   return ret;
+}
+
+function isValidLen(max,val)
+{
+   if(val.length < max)
+   return true;
+   else
+   return false;
+}
+
+function isValueNull(val1,val2)
+{
+	if((val1.length == 0)&&(val2.length == 0))
+	return true;
+	else
+	return false;
+}
+
+function MacAddrCompare(mac1, mac2)
+{
+	mac1a = mac1.split(':');
+	mac2a = mac2.split(':');
+
+	for(i=0; i<6; i++) {
+		mac1a_n = parseInt(mac1a[i]);
+		alert(mac1a_n);
+		mac2a_n = parseInt(mac2a[i]);
+
+		if(mac1a_n != mac2a_n) {
+			return 1;
+		}
+	}
+
+	if(i == 6)
+		return 0;
+}
+
+function isValidLenAndValue(min,max,val)
+{
+	 var hexVals = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+                           "A", "B", "C", "D", "E", "F","G","H","I","J","K","L","M","N","O","P",
+                           "Q","R","S","T","U","V","W","X","Y","Z", "a", "b", "c", "d", "e", "f","g",
+                           "h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z");
+
+	if((val.length > 1) &&(val.charAt(0) == ' '))
+	 {
+		return false;
+	 }
+
+	var len = hexVals.length;
+	var i = 0;
+	var j = 0;
+
+	for(j = 0;j < val.length; j++)
+	{
+		for ( i = 0; i < len; i++ )
+			if ( val.charAt(j) == hexVals[i] ) break;
+
+		if(i == len)
+		{
+			return false;
+		}
+	}
+
+	if((val.length > max)||(val.length < min))
+	{
+		return false;
+	}
+	else
+		return true;
+}
+
+function isValidMGCAddress(len,address)
+{
+	var hexVals = new Array("0","1","2","3","4","5","6","7","8","9",".");
+	var le = hexVals.length;
+	var i,j;
+	var ret = true;
+	for(j = 0;j < address.length; j++)
+	{
+		for ( i = 0; i < le; i++ )
+			if ( address.charAt(j) == hexVals[i] ) break;
+
+		if(i == le)
+		{
+			ret = false;
+		}
+	}
+
+	if(ret == false)
+	{
+		if(address.length <= len)
+			return true;
+		else
+		{
+			return false;
+		}
+	}
+	else
+	{
+		if ( address == '255.255.255.255' )
+		{
+			return false;
+		}
+
+		addrPartss = address.split('.');
+		if ( addrPartss.length != 4 )
+			return false;
+		for (i = 0; i < 4; i++)
+		{
+			if (isNaN(addrPartss[i]) || addrPartss[i] =="")
+			{
+				return false;
+			}
+			num = parseInt(addrPartss[i]);
+			if ( num < 0 || num > 255 )
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+}
+
+function isValidDialDigit(val){
+    var ret = true;
+    var i,j;
+
+    var hexVals = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+                            "A", "B", "C", "D", "#", "*", "|");
+    var len = hexVals.length;
+
+    for ( i = 0; i < val.length; i++ )
+    {
+      for ( j = 0; j < len; j++ )
+      {
+        if ( val.charAt(i) == hexVals[j] )
+            break;
+      }
+
+      if ( j == len )
+        return false;
+    }
+
+    return ret;
+}
+
+
+function isNameUnsafe(compareChar) {
+   var unsafeString = "\"<>%\\^[]`\+\$\,='#&@.: \t";
+	
+   if ( unsafeString.indexOf(compareChar) == -1 && compareChar.charCodeAt(0) > 32
+        && compareChar.charCodeAt(0) < 123 )
+      return false; 
+   else
+      return true;
+}   
+
+
+function isIncludeInvalidChar(name) {
+   var i = 0;
+
+   for ( i = 0; i < name.length; i++ ) {
+      if ( isTextUnsafe(name.charAt(i)) == true )
+         return true;
+   }
+
+   return false;
+}
+
+function isTextUnsafe(compareChar){
+	var unsafeString = "\"\\`\+\,='\t;";
+
+   if ( unsafeString.indexOf(compareChar) == -1 && compareChar.charCodeAt(0) > 32
+        && compareChar.charCodeAt(0) < 123 )
+      return false; 
+   else
+      return true;
+}
+
+function isNameUnsafeII(compareChar)
+{
+    var unsafeString = "\"<>%\\^[]`\+\$\,='#&@.:/*();?! \t";
+
+    if((unsafeString.indexOf(compareChar) == -1)&&
+        (compareChar.charCodeAt(0) > 32)&&
+        (compareChar.charCodeAt(0) < 123))
+        return false;
+    else
+        return true;
+}
+
+function isValidNameII(name)
+{
+    var i = 0;
+
+    for(i=0; i<name.length; i++) {
+        if(isNameUnsafeII(name.charAt(i)) == true)
+            return false;
+    }
+
+    return true;
+}
+
+function isValidName(name) {
+   var i = 0;	
+   
+   for ( i = 0; i < name.length; i++ ) {
+      if ( isNameUnsafe(name.charAt(i)) == true )
+         return false;
+   }
+
+   return true;
+}
+
+function isCharUnsafe(compareChar) {
+   var unsafeString = "\"<>%\\^[]`\+\$\,='#&@.:\t";
+
+   if ( unsafeString.indexOf(compareChar) == -1 && compareChar.charCodeAt(0) >= 32
+        && compareChar.charCodeAt(0) < 123 )
+      return false; 
+   else
+      return true;
+}
+
+function isValidNameWSpace(name) {
+   var i = 0;
+
+   for ( i = 0; i < name.length; i++ ) {
+      if ( isCharUnsafe(name.charAt(i)) == true )
+         return false;
+   }
+
+   return true;
+}
+
+function isSameSubNet(lan1Ip, lan1Mask, lan2Ip, lan2Mask) {
+
+   var count = 0;
+
+   lan1a = lan1Ip.split('.');
+   lan1m = lan1Mask.split('.');
+   lan2a = lan2Ip.split('.');
+   lan2m = lan2Mask.split('.');
+
+   for (i = 0; i < 4; i++) {
+     var  l1a_n = parseInt(lan1a[i],10);
+     var  l1m_n = parseInt(lan1m[i],10);
+     var  l2a_n = parseInt(lan2a[i],10);
+     var  l2m_n = parseInt(lan2m[i],10);
+	 
+      if ((l1a_n & l1m_n) == (l2a_n & l2m_n))
+         count++;
+   }
+   if (count == 4)
+      return true;
+   else
+      return false;
+}
+
+function IpAddrCompare(ip1, ip2)
+{
+	ip1a = ip1.split('.');
+	ip2a = ip2.split('.');
+
+	for(i = 0; i < 4; i++)
+	{
+		ip1a_n = parseInt(ip1a[i]);
+		ip2a_n = parseInt(ip2a[i]);
+
+		if(ip1a_n > ip2a_n)
+		{
+			return 1;
+		}
+		else if(ip1a_n < ip2a_n)
+		{
+			return -1;
+		}
+		else
+		{
+			continue;
+		}
+	}
+
+	if(i == 4)
+		return 0;
+}
+
+function IpAddrSameByteNums(ip1, ip2)
+{
+	var	count = 0;
+
+	ip1a = ip1.split('.');
+	ip2a = ip2.split('.');
+
+	for(i = 0; i < 4; i++)
+	{
+		ip1a_n = parseInt(ip1a[i]);
+		ip2a_n = parseInt(ip2a[i]);
+
+		if(ip1a_n == ip2a_n)
+		{
+			count++;
+		}
+		else
+		{
+			break;
+		}
+	}
+
+	return count;
+}
+
+// same as is isNameUnsafe but allow spaces
+function isCharUnsafe(compareChar) {
+   var unsafeString = "\"<>%\\^[]`\+\$\,='#&@.:\t";
+
+   if ( unsafeString.indexOf(compareChar) == -1 && compareChar.charCodeAt(0) >= 32
+        && compareChar.charCodeAt(0) < 123 )
+      return false; 
+   else
+      return true;
+}
+
+function isValidNameWSpace(name) {
+   var i = 0;
+
+   for ( i = 0; i < name.length; i++ ) {
+      if ( isCharUnsafe(name.charAt(i)) == true )
+         return false;
+   }
+
+   return true;
+}
+
+function isSameSubNet(lan1Ip, lan1Mask, lan2Ip, lan2Mask) {
+
+   var count = 0;
+
+   lan1a = lan1Ip.split('.');
+   lan1m = lan1Mask.split('.');
+   lan2a = lan2Ip.split('.');
+   lan2m = lan2Mask.split('.');
+
+   for (i = 0; i < 4; i++) {
+     var  l1a_n = parseInt(lan1a[i],10);
+     var  l1m_n = parseInt(lan1m[i],10);
+     var  l2a_n = parseInt(lan2a[i],10);
+     var  l2m_n = parseInt(lan2m[i],10);
+	 
+      if ((l1a_n & l1m_n) == (l2a_n & l2m_n))
+         count++;
+   }
+   if (count == 4)
+      return true;
+   else
+      return false;
+}
+
+function IpAddrCompare(ip1, ip2)
+{
+	ip1a = ip1.split('.');
+	ip2a = ip2.split('.');
+
+	for(i = 0; i < 4; i++)
+	{
+		ip1a_n = parseInt(ip1a[i]);
+		ip2a_n = parseInt(ip2a[i]);
+
+		if(ip1a_n > ip2a_n)
+		{
+			return 1;
+		}
+		else if(ip1a_n < ip2a_n)
+		{
+			return -1;
+		}
+		else
+		{
+			continue;
+		}
+	}
+
+	if(i == 4)
+		return 0;
+}
+
+function IpAddrSameByteNums(ip1, ip2)
+{
+	var	count = 0;
+
+	ip1a = ip1.split('.');
+	ip2a = ip2.split('.');
+
+	for(i = 0; i < 4; i++)
+	{
+		ip1a_n = parseInt(ip1a[i]);
+		ip2a_n = parseInt(ip2a[i]);
+
+		if(ip1a_n == ip2a_n)
+		{
+			count++;
+		}
+		else
+		{
+			break;
+		}
+	}
+
+	return count;
+}
+
+// same as is isNameUnsafe but allow spaces
+function isCharUnsafe(compareChar) {
+   var unsafeString = "\"<>%\\^[]`\+\$\,='#&@.:\t";
+	
+   if ( unsafeString.indexOf(compareChar) == -1 && compareChar.charCodeAt(0) >= 32
+        && compareChar.charCodeAt(0) < 123 )
+      return false; 
+   else
+      return true;
+}   
+
+function isValidNameWSpace(name) {
+   var i = 0;	
+   
+   for ( i = 0; i < name.length; i++ ) {
+      if ( isCharUnsafe(name.charAt(i)) == true )
+         return false;
+   }
+
+   return true;
+}
+
+function isSameSubNet(lan1Ip, lan1Mask, lan2Ip, lan2Mask) {
+
+   var count = 0;
+   
+   lan1a = lan1Ip.split('.');
+   lan1m = lan1Mask.split('.');
+   lan2a = lan2Ip.split('.');
+   lan2m = lan2Mask.split('.');
+
+   for (i = 0; i < 4; i++) {
+      l1a_n = parseInt(lan1a[i]);
+      l1m_n = parseInt(lan1m[i]);
+      l2a_n = parseInt(lan2a[i]);
+      l2m_n = parseInt(lan2m[i]);
+      if ((l1a_n & l1m_n) == (l2a_n & l2m_n))
+         count++;
+   }
+   if (count == 4)
+      return true;
+   else
+      return false;
+}
+
+
+function isValidIpAddress(address) {    
+   ipParts = address.split('/');
+   if (ipParts.length > 2) return false;
+   if (ipParts.length == 2) {
+      num = parseInt(ipParts[1]);
+      if (num <= 0 || num > 32)
+         return false;
+   }
+
+   if (ipParts[0] == '0.0.0.0' ||
+       ipParts[0] == '255.255.255.255' )
+      return false;
+
+   addrParts = ipParts[0].split('.');
+   if ( addrParts.length != 4 ) return false;
+   for (kk = 0; kk < 4; kk++) {
+      if (isNaN(addrParts[kk]) || addrParts[kk] =="")
+         return false;
+      num = parseInt(addrParts[kk]);
+      if ( num < 0 || num > 255 )
+         return false;
+   }
+   num = parseInt(addrParts[0]);
+   if((num < 1)||(num == 127)||(num >223))
+   {
+        return false;
+   }
+   var newadd =String(parseInt(addrParts[0])) + '.' + String(parseInt(addrParts[1])) + '.' + 
+        String(parseInt(addrParts[2])) + '.' +String(parseInt(addrParts[3]));
+   if(newadd != ipParts[0])
+   {
+        return false;    
+   }
+   return true;   
+}
+
+
+function isValidIpAddress2(address) {    
+   ipParts = address.split('/');
+   if (ipParts.length > 2) return false;
+   if (ipParts.length == 2) {
+      num = parseInt(ipParts[1]);
+      if (num <= 0 || num > 32)
+         return false;
+   }
+
+   if (ipParts[0] == '0.0.0.0' ||
+       ipParts[0] == '255.255.255.255' )
+      return false;
+
+   addrParts = ipParts[0].split('.');
+   if ( addrParts.length != 4 ) return false;
+   for (kk = 0; kk < 4; kk++) {
+      if (isNaN(addrParts[kk]) || addrParts[kk] =="")
+         return false;
+      num = parseInt(addrParts[kk]);
+      if ( num < 0 || num > 255 )
+         return false;
+   }
+   num = parseInt(addrParts[0]);
+   if((num < 1)||(num == 127)||(num >223))
+   {
+        return false;
+   }
+   num = parseInt(addrParts[3]);
+   if((num == 0) || (num == 255))
+   {
+        return false;
+   }
+   var newadd =String(parseInt(addrParts[0])) + '.' + String(parseInt(addrParts[1])) + '.' + 
+        String(parseInt(addrParts[2])) + '.' +String(parseInt(addrParts[3]));
+   if(newadd != ipParts[0])
+   {
+        return false;    
+   }
+   return true;   
+}
+
+function IpStrToNum(ipstr)
+{
+    var ipa =ipstr.split('.');
+    var ipnum = (parseInt(ipa[0])<<24) + (parseInt(ipa[1])<<16) + (parseInt(ipa[2])<<8) + (parseInt(ipa[3])<<0);
+    return ipnum;
+}
+
+function isValidMaskAddress(address) {
+   var ipParts = address.split('/');
+   if (ipParts.length > 2) return false;
+   if (ipParts.length == 2) {
+      var num = parseInt(ipParts[1]);
+      if (num <= 0 || num > 32)
+         return false;
+   }
+
+   if (ipParts[0] == '0.0.0.0' ||
+       ipParts[0] == '255.255.255.255' )
+      return false;
+
+   var addrP = ipParts[0].split('.');
+   if ( addrP.length != 4 ) return false;
+   
+   for (var i = 0; i < 4; i++) {
+      if (isNaN(addrP[i]) || addrP[i] =="")
+         return false;
+      var num = parseInt(addrP[i]);
+      if ( num < 0 || num > 255 )
+         return false;   
+   }
+   
+   var nmsk = (parseInt(addrP[0])<<24) + (parseInt(addrP[1])<<16) + (parseInt(addrP[2])<<8) + (parseInt(addrP[3])<<0);
+    var posb =0;
+    var posz =0;
+    for(j =1; j <33; j++) 
+    {
+        if(!(nmsk&1)) 
+        {
+            posz++;   
+        }
+        else if(!posb)
+        {
+            posb =j;
+        }
+        nmsk >>=1;
+    }
+    if((posz >= posb)||!posz || !posb)
+    {
+        return false;
+    }
+   return true;   
+}
+
+function isIpFitMask(ip, mask)
+{
+    var addrip = ip.split('.');
+   	var maskip = mask.split('.');
+
+	var naddr = (parseInt(addrip[0])<<24) + (parseInt(addrip[1])<<16) + (parseInt(addrip[2])<<8) + (parseInt(addrip[3])<<0);
+	var nmask = (parseInt(maskip[0])<<24) + (parseInt(maskip[1])<<16) + (parseInt(maskip[2])<<8) + (parseInt(maskip[3])<<0);
+	var nsubip = naddr&(~nmask);
+	if((nsubip == 0) || (nsubip == ~nmask) || (nsubip == naddr))
+	{
+	    return false;
+	}
+	return true;
+}
+
+function isValidPrefixAddress(address) {
+   var i = 0, num = 0;
+   var space=0;
+   addrParts = address.split(':');
+   if (addrParts.length < 3 || addrParts.length > 8)
+      return false;
+   for (i = 0; i < addrParts.length; i++) {
+      if ( addrParts[i] != "" && isValidHexKey(addrParts[i],addrParts[i].length) )
+         num = parseInt(addrParts[i], 16);
+	  else
+	   {
+		  space++;
+		  if(space>1 && (i + 1) != addrParts.length)
+		  return false;
+		  continue;
+	   }
+      if ( i == 0 ) {
+         if ( (num & 0xf000) == 0xf000 )
+            return false;	//can not be link-local, site-local or multicast address
+      }
+      if ( num > 0xffff || num < 0 )
+         return false;
+   }
+   return true;
+}
+
+function isValidServerPort(val){
+   var ret = false;
+   var max = 65535;
+   var min = 0;
+   var i = 0;
+
+   if((val.length > 1) &&(val.charAt(0) == '0'))
+   {
+			return false;
+   }
+
+   for(i;i<val.length;i++)
+   {
+      if ( isValidDigit(val.charAt(i)) == false )
+        break;
+   }
+   if ( i == val.length )
+   {
+       ret = true;
+   }
+
+   if(ret == true)
+   {
+   	   if (( val <= max) &&( val >= min))
+	         ret = true;
+	     else
+	        ret = false;
+   }
+
+   return ret;
+  
+}
+
+function isValidValue(val)
+{
+   var ret = false;
+   var min = 0;
+ 
+    var i=0;
+    if((val.length > 1) &&(val.charAt(0) == '0'))
+   {
+			return false;
+   }
+
+   for(i;i<val.length;i++)
+   {
+      if ( isValidDigit(val.charAt(i)) == false )
+        break;
+   }
+   if ( i == val.length )
+   {
+       ret = true;
+   }
+
+   if(ret == true)
+   {
+        if (val > min)
+        {
+            ret = true;
+        }
+        else
+        {
+            ret = false;
+        }
+   }
+   return ret;
+}
+
+function isValidValue0(val)
+{
+   var ret = false;
+   var min = 0;
+
+   if(((val.length > 1) &&((val.charAt(0) == ' ')||(val.charAt(0) == '0')))
+        ||(val.length == 0))
+   {
+	return false;
+   }
+
+   if (val >= min)
+   	{
+         ret = true;
+     }
+   else{
+        ret = false;
+   }
+   return ret;
+}
+
+function isValidValue2(min,max,val)
+{
+   var ret = false;
+   var i=0;
+
+   if(((val.length > 1) &&(val.charAt(0) == '0'))||(val.length==0))
+   {
+			return false;
+   }
+
+   for(i;i<val.length;i++)
+   {
+      if ( isValidDigit(val.charAt(i)) == false )
+        break;
+   }
+   if ( i == val.length )
+   {
+       ret = true;
+   }
+
+   if(ret == true)
+   {
+   	   if (( val <= max) &&( val >= min))
+	         ret = true;
+	     else
+	        ret = false;
+   }
+   return ret;
+
+}
+
+function isValidSessionTimer(val,mse)
+{
+   var ret = false;
+   var zero = 0;
+   var min = 90;
+
+   if(((val.length > 1) &&((val.charAt(0) == ' ')||(val.charAt(0) == '0')))
+        ||(val.length == 0))
+   {
+      return false;
+   }
+
+   var i = 0;
+   for(i;i<val.length;i++)
+   {
+      if ( isValidDigit(val.charAt(i)) == false )
+        break;
+   }
+   if ( i != val.length )
+   {
+       return false;
+   }
+
+   if( val == zero)
+   {
+      ret = true;
+   }
+   else
+   {
+      if( eval(val) >= eval(mse) )
+      {
+         if ( val >= min || val == zero )
+         {
+            ret = true;
+         }
+         else
+         {
+            ret = false;
+         }
+      }
+      else
+      {
+         ret = false;
+      }
+   }
+   return ret;
+}
+
+function isValidMinSessionTimer(val,se)
+{
+   var ret = false;
+   var zero = 0;
+   var min = 90;
+
+   if(((val.length > 1) &&((val.charAt(0) == ' ')||(val.charAt(0) == '0')))
+         ||(val.length == 0))
+   {
+      return false;
+   }
+
+   var i = 0;
+   for(i;i<val.length;i++)
+   {
+      if ( isValidDigit(val.charAt(i)) == false )
+        break;
+   }
+   if ( i != val.length )
+   {
+       return false;
+   }
+
+   if( se == zero)
+   {
+       if( val >= min || val == zero )
+       {
+         ret = true;
+       }
+	   else
+       {
+         ret = false;
+       }
+   }
+   else
+   {
+      if( eval(val) <= eval(se) )
+      {
+         if( val >= min || val == zero )
+         {
+            ret = true;
+         }
+         else
+         {
+            ret = false;
+         }
+      }
+	  else
+	  {
+	     ret = false;
+	  }
+   }
+   return ret;
+}
+
+function isEqualValue(var1,var2)
+{
+  if( var1 == var2 )
+  {
+     return true;
+  }
+  else
+  {
+     return false;
+  }
+}
+
+function isValidLen(max,val)
+{
+   if(val.length < max)
+   return true;
+   else
+   return false;
+}
+
+function isValueNull(val1,val2)
+{
+	if((val1.length == 0)&&(val2.length == 0))
+	return true;
+	else
+	return false;
+}
+
+
+function MacAddrCompare(mac1, mac2)
+{
+	mac1a = mac1.split(':');
+	mac2a = mac2.split(':');
+
+	for(i=0; i<6; i++) {
+		mac1a_n = parseInt(mac1a[i]);
+		alert(mac1a_n);
+		mac2a_n = parseInt(mac2a[i]);
+
+		if(mac1a_n != mac2a_n) {
+			return 1;
+		}
+	}
+
+	if(i == 6)
+		return 0;
+}
+
+function isValidDialDigit(val){
+    var ret = true;
+    var i,j;
+
+    var hexVals = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+                            "A", "B", "C", "D", "#", "*", "|");
+    var len = hexVals.length;
+
+    for ( i = 0; i < val.length; i++ )
+    {
+      for ( j = 0; j < len; j++ )
+      {
+        if ( val.charAt(i) == hexVals[j] )
+            break;
+      }
+
+      if ( j == len )
+        return false;
+    }
+
+    return ret;
+}
+
+function substr_count (haystack, needle, offset, length)
+{
+    var pos = 0, cnt = 0;
+
+    haystack += '';
+    needle += '';
+    if (isNaN(offset)) {offset = 0;}
+    if (isNaN(length)) {length = 0;}
+    offset--;
+
+    while ((offset = haystack.indexOf(needle, offset+1)) != -1){
+        if (length > 0 && (offset+needle.length) > length){
+            return false;
+        } else{
+            cnt++;
+        }
+    }
+
+    return cnt;
+}
+
+function test_ipv6(ip)
+{
+  if (ip.length<3)
+  {
+	return ip == "::";
+  }
+
+  if (ip.indexOf('.')>0)
+  {
+        lastcolon = ip.lastIndexOf(':');
+
+        if (!(lastcolon && isValidIpAddress(ip.substr(lastcolon + 1))))
+            return false;
+			
+        ip = ip.substr(0, lastcolon) + ':0:0';
+  } 
+
+  if (ip.indexOf('::')<0)
+  {
+    var match = ip.match(/^(?:[a-f0-9]{1,4}:){7}[a-f0-9]{1,4}$/i);
+    return match != null;
+  }
+
+  // Check colon-count for compressed format
+  if (substr_count(ip, ':'))
+  {
+    var match = ip.match(/^(?::|(?:[a-f0-9]{1,4}:)+):(?:(?:[a-f0-9]{1,4}:)*[a-f0-9]{1,4})?$/i);
+    return match != null;
+  } 
+
+  // Not a valid IPv6 address
+  return false;
+}
+
+function isValidIpAddress6(address) {
+   ipParts = address.split('/');
+   if (ipParts.length > 2) return false;
+   if (ipParts.length == 2) {
+      num = parseInt(ipParts[1]);
+      if (num <= 0 || num > 128)
+         return false;
+   }
+
+   return test_ipv6(ipParts[0]);
+}
+
+function isValidPrefixLength(prefixLen) {
+   var num;
+
+   num = parseInt(prefixLen);
+   if (num <= 0 || num > 128)
+      return false;
+   return true;
+}
+
+/* check if the object is exist. such as before delete */
+function isObjExist(obj) {
+   if ((obj==null) || (typeof(obj)=="undefined")) {
+	return false;
+   }
+   else {
+   	return true;
+   }
+}
+
+function areSamePrefix(addr1, addr2) {
+   var i, j;
+   var a = [0, 0, 0, 0, 0, 0, 0, 0];
+   var b = [0, 0, 0, 0, 0, 0, 0, 0];
+
+   addr1Parts = addr1.split(':');
+   if (addr1Parts.length < 3 || addr1Parts.length > 8)
+      return false;
+   addr2Parts = addr2.split(':');
+   if (addr2Parts.length < 3 || addr2Parts.length > 8)
+      return false;
+   j = 0;
+   for (i = 0; i < addr1Parts.length; i++) {
+      if ( addr1Parts[i] == "" ) {
+		 if ((i != 0) && (i+1 != addr1Parts.length)) {
+			j = j + (8 - addr1Parts.length + 1);
+		 }
+		 else {
+		    j++;
+		 }
+	  }
+	  else {
+         a[j] = parseInt(addr1Parts[i], 16);
+		 j++;
+	  }
+   }
+   j = 0;
+   for (i = 0; i < addr2Parts.length; i++) {
+      if ( addr2Parts[i] == "" ) {
+		 if ((i != 0) && (i+1 != addr2Parts.length)) {
+			j = j + (8 - addr2Parts.length + 1);
+		 }
+		 else {
+		    j++;
+		 }
+	  }
+	  else {
+         b[j] = parseInt(addr2Parts[i], 16);
+		 j++;
+	  }
+   }
+   //only compare 64 bit prefix
+   for (i = 0; i < 4; i++) {
+      if (a[i] != b[i]) {
+	     return false;
+	  }
+   }
+   return true;
+}
+
+function getLeftMostZeroBitPos(num) {
+   var i = 0;
+   var numArr = [128, 64, 32, 16, 8, 4, 2, 1];
+
+   for ( i = 0; i < numArr.length; i++ )
+      if ( (num & numArr[i]) == 0 )
+         return i;
+
+   return numArr.length;
+}
+
+function getRightMostOneBitPos(num) {
+   var i = 0;
+   var numArr = [1, 2, 4, 8, 16, 32, 64, 128];
+
+   for ( i = 0; i < numArr.length; i++ )
+      if ( ((num & numArr[i]) >> i) == 1 )
+         return (numArr.length - i - 1);
+
+   return -1;
+}
+
+function isValidPort(port) {
+   var fromport = 0;
+   var toport = 100;
+   var i=0;
+   var j=0;
+   var is_all_number=1;
+   portrange = port.split(':');
+   if ( portrange.length < 1 || portrange.length > 2 ) {
+       return false;
+   }
+   for( i=0; i<portrange.length; i++ ){
+   		for( j=0; j<portrange[i].length; j++ ){
+   			if( portrange[i].charAt(j) < '0' || portrange[i].charAt(j) > '9' )
+   				is_all_number=0;
+   		}
+   }
+   if( is_all_number==0 )
+   	   return false;
+   if ( isNaN(portrange[0]) )
+       return false;
+   fromport = parseInt(portrange[0]);
+   
+   if ( portrange.length > 1 ) {
+       if ( isNaN(portrange[1]) )
+          return false;
+       toport = parseInt(portrange[1]);
+       if ( toport <= fromport )
+           return false;      
+   }
+   
+   if ( fromport < 1 || fromport > 65535 || toport < 1 || toport > 65535 )
+       return false;
+   
+   return true;
+}
+
+function isValidMacAddress(address) {
+   var c = '';
+   var num = 0;
+   var i = 0, j = 0;
+   var zeros = 0;
+   var cnt_ff=0;
+   addrParts = address.split(':');
+   if ( addrParts.length != 6 ) return false;
+
+   for (i = 0; i < 6; i++) {
+      if ( addrParts[i] == '' )
+         return false;
+      for ( j = 0; j < addrParts[i].length; j++ ) {
+         c = addrParts[i].toLowerCase().charAt(j);
+         if ( (c >= '0' && c <= '9') ||
+              (c >= 'a' && c <= 'f') )
+            continue;
+         else
+            return false;
+      }
+
+      num = parseInt(addrParts[i], 16);
+      if ( num == NaN || num < 0 || num > 255 )
+         return false;
+      if( num == 255 )
+         cnt_ff++;
+      if ( num == 0 )
+         zeros++;
+   }
+   if (zeros == 6 || cnt_ff == 6)
+      return false;
+
+   return true;
+}
+
+function isValidMacMask(mask) {
+   var c = '';
+   var num = 0;
+   var i = 0, j = 0;
+   var zeros = 0;
+   var zeroBitPos = 0, oneBitPos = 0;
+   var zeroBitExisted = false;
+
+   maskParts = mask.split(':');
+   if ( maskParts.length != 6 ) return false;
+
+   for (i = 0; i < 6; i++) {
+      if ( maskParts[i] == '' )
+         return false;
+      for ( j = 0; j < maskParts[i].length; j++ ) {
+         c = maskParts[i].toLowerCase().charAt(j);
+         if ( (c >= '0' && c <= '9') ||
+              (c >= 'a' && c <= 'f') )
+            continue;
+         else
+            return false;
+      }
+
+      num = parseInt(maskParts[i], 16);
+      if ( num == NaN || num < 0 || num > 255 )
+         return false;
+      if ( zeroBitExisted == true && num != 0 )
+         return false;
+      if ( num == 0 )
+         zeros++;
+      zeroBitPos = getLeftMostZeroBitPos(num);
+      oneBitPos = getRightMostOneBitPos(num);
+      if ( zeroBitPos < oneBitPos )
+         return false;
+      if ( zeroBitPos < 8 )
+         zeroBitExisted = true;
+   }
+   if (zeros == 6)
+      return false;
+
+   return true;
+}
+
+var hexVals = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+              "A", "B", "C", "D", "E", "F");
+var unsafeString = "\"<>%\\^[]`\+\$\,'#&";
+// deleted these chars from the include list ";", "/", "?", ":", "@", "=", "&" and #
+// so that we could analyze actual URLs
+
+function isUnsafe(compareChar)
+// this function checks to see if a char is URL unsafe.
+// Returns bool result. True = unsafe, False = safe
+{
+   if ( unsafeString.indexOf(compareChar) == -1 && compareChar.charCodeAt(0) > 32
+        && compareChar.charCodeAt(0) < 123 )
+      return false; // found no unsafe chars, return false
+   else
+      return true;
+}
+
+function decToHex(num, radix)
+// part of the hex-ifying functionality
+{
+   var hexString = "";
+   while ( num >= radix ) {
+      temp = num % radix;
+      num = Math.floor(num / radix);
+      hexString += hexVals[temp];
+   }
+   hexString += hexVals[num];
+   return reversal(hexString);
+}
+
+function reversal(s)
+// part of the hex-ifying functionality
+{
+   var len = s.length;
+   var trans = "";
+   for (i = 0; i < len; i++)
+      trans = trans + s.substring(len-i-1, len-i);
+   s = trans;
+   return s;
+}
+
+function convert(val)
+// this converts a given char to url hex form
+{
+   return  "%" + decToHex(val.charCodeAt(0), 16);
+}
+
+function encodeUrl(val)
+{
+   var len     = val.length;
+   var i       = 0;
+   var newStr  = "";
+   var original = val;
+
+   for ( i = 0; i < len; i++ ) {
+      if ( val.substring(i,i+1).charCodeAt(0) < 255 ) {
+         // hack to eliminate the rest of unicode from this
+         if (isUnsafe(val.substring(i,i+1)) == false)
+            newStr = newStr + val.substring(i,i+1);
+         else
+            newStr = newStr + convert(val.substring(i,i+1));
+      } else {
+         // woopsie! restore.
+         //alert ("Found a non-ISO-8859-1 character at position: " + (i+1) + ",\nPlease eliminate before continuing.");
+		 return "";
+         newStr = original;
+         // short-circuit the loop and exit
+         i = len;
+      }
+   }
+
+   return newStr;
+}
+
+
+var markStrChars = "\"'";
+
+// Checks to see if a char is used to mark begining and ending of string.
+// Returns bool result. True = special, False = not special
+function isMarkStrChar(compareChar)
+{
+   if ( markStrChars.indexOf(compareChar) == -1 )
+      return false; // found no marked string chars, return false
+   else
+      return true;
+}
+
+// use backslash in front one of the escape codes to process
+// marked string characters.
+// Returns new process string
+function processMarkStrChars(str) {
+   var i = 0;
+   var retStr = '';
+
+   for ( i = 0; i < str.length; i++ ) {
+      if ( isMarkStrChar(str.charAt(i)) == true )
+         retStr += '\\';
+      retStr += str.charAt(i);
+   }
+
+   return retStr;
+}
+
+// Web page manipulation functions
+
+function isVisible(element, sh)
+{
+    var status;
+    
+	if (document.getElementById)
+	{
+		// standard
+		status = document.getElementById(element).style.display ;
+	}
+	else if (document.all)
+	{
+		// old IE
+		status = document.all[element].style.display ;
+	}
+	else if (document.layers)
+	{
+		// Netscape 4
+		status = document.layers[element].display ;
+	}
+	
+    if (status == "none") {
+        return '0';
+    }
+    else {
+        return '1';
+    }	
+
+} 
+
+function showhide(element, sh)
+{
+    var status;
+    if (sh == 1) {
+        status = "";
+    }
+    else {
+        status = "none";
+    }
+    
+	if (document.getElementById)
+	{
+		// standard
+		document.getElementById(element).style.display = status;
+	}
+	else if (document.all)
+	{
+		// old IE
+		document.all[element].style.display = status;
+	}
+	else if (document.layers)
+	{
+		// Netscape 4
+		document.layers[element].display = status;
+	}
+}
+
+function getSelect(item)
+{
+	var idx;
+	if (item.options.length > 0) {
+	    idx = item.selectedIndex;
+	    return item.options[idx].value;
+	}
+	else {
+		return '';
+    }
+}
+
+function setSelect(item, value)
+{
+	for (i=0; i<item.options.length; i++) {
+        if (item.options[i].value == value) {
+        	item.selectedIndex = i;
+        	break;
+        }
+    }
+}
+
+function setCheck(item, value)
+{
+    if ( value == '1' ) {
+         item.checked = true;
+    } else {
+         item.checked = false;
+    }
+}
+
+function setInnerHtml(item,value) {
+	document.getElementById(item).innerHTML=value;
+}
+
+function setDisable(item, value)
+{
+    if ( value == 1 || value == '1' ) {
+         item.disabled = true;
+    } else {
+         item.disabled = false;
+    }     
+}
+
+function submitText(item)
+{
+	return '&' + item.name + '=' + item.value;
+}
+
+function submitSelect(item)
+{
+	return '&' + item.name + '=' + getSelect(item);
+}
+
+
+function submitCheck(item)
+{
+	var val;
+	if (item.checked == true) {
+		val = 1;
+	} 
+	else {
+		val = 0;
+	}
+	return '&' + item.name + '=' + val;
+}
+
+
+function numOfCol(valuelist, rowss, conls){
+	if(typeof(rowss) == 'undefined')
+		rowss = '|,|';
+	if(typeof(conls) == 'undefined')
+		conls = '}-{';
+
+	var numC = 0;
+	if(valuelist != ''){
+		if (rowss != ''){
+			var tnodes = valuelist.split(rowss);
+		}else{
+			var tnodes = valuelist;
+		}
+		if (tnodes.length > 0){
+			if (conls != ''){
+				var tdata = tnodes[0].split(conls);
+				numC = tdata.length - 1;
+			}
+		}
+		return numC;
+	}
+	return numC;
+}
+
+function isValidIpAddressRange(startAddr, endAddr){
+
+   if ( !isValidIpAddress(startAddr) || !isValidIpAddress(endAddr) )
+      return false;
+
+   var i;
+   var startAddrParts = startAddr.split('.');
+   var endAddrParts = endAddr.split('.');
+
+   for ( i = 0; i < 4; i++ ){
+      if ( parseInt(startAddrParts[i]) < parseInt(endAddrParts[i]) )
+         return true;
+      else if ( parseInt(startAddrParts[i]) > parseInt(endAddrParts[i]) )
+         return false;
+   }
+
+   return false;
+}
+
+function isValidSubnetMask(mask) {
+   var i = 0, num = 0;
+   var zeroBitPos = 0, oneBitPos = 0;
+   var zeroBitExisted = false;
+   var c = '';
+
+   if ( mask == '0.0.0.0' )
+      return false;
+
+   for (i = 0; i < mask.length; i++) {
+     c = mask.charAt(i);
+     if((c>='0'&&c<='9')||(c=='.'))
+       continue;
+     else
+     {
+        return false;
+      }
+   }
+
+   maskParts = mask.split('.');
+   if ( maskParts.length != 4 ) return false;
+
+   for (i = 0; i < 4; i++) {
+      if ( isNaN(maskParts[i]) || maskParts[i] ==""){
+         return false;
+      }
+      num = parseInt(maskParts[i]);
+      if ( num < 0 || num > 255 )
+         return false;
+      if (maskParts[i].length > 3)
+      {
+         return false;
+	}
+      if ( zeroBitExisted == true && num != 0 )
+         return false;
+      zeroBitPos = getLeftMostZeroBitPos(num);
+      oneBitPos = getRightMostOneBitPos(num);
+      if ( zeroBitPos < oneBitPos )
+         return false;
+      if ( zeroBitPos < 8 )
+         zeroBitExisted = true;
+   }
+
+   return true;
+}
+
+function isValidNameString( val )
+{
+	var len = val.length;
+
+    for ( i = 0; i < len; i++ )
+    {
+        if ( ( val.charAt(i) > '~' )
+            || ( val.charAt(i) < '!' ) )
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function getIpMaskBit(mask) {
+   var i = 0, num = 0;
+   var oneBitPos = 0;
+   
+   if ( isValidSubnetMask(mask) == false)
+	 return -1;
+
+   maskParts = mask.split('.');
+   for (i = 0; i < 4; i++) {
+      num = parseInt(maskParts[i]);
+      oneBitPos = getRightMostOneBitPos(num);
+	if(oneBitPos < 7){
+		return i*8 + oneBitPos + 1;
+	}
+   }
+   return 32;
+}
+
+function isValidRequestListString(val)
+{
+
+	 var c = '';
+	 
+	 c = val.charAt(0);
+	 if(c==',')
+	 {
+		return false;
+	 }
+
+	 c = val.charAt(val.length-1);
+	 
+	 if(c==',')
+	 {
+		return false;
+	 }
+
+	 var newval = val.split(',');
+	 var len = val.length;
+	 
+	 for ( i = 0; i < newval.length; i++ )
+    {
+			var num;
+			if ( newval[i] == '' )
+			{
+				return false;
+			}
+			for ( j = 0; j < newval[i].length; j++ ) 
+			{
+				c = newval[i].toLowerCase().charAt(j);
+				if ((c < '0' || c > '9'))
+				return false;
+			}	
+			
+			num = parseInt(newval[i]);
+			if(num < 1 || num > 255)
+			{
+         	return false;
+			}
+    }
+
+	return true;
+}
+
+function isValidStringLength(val, min, max){
+   if(val.length < max && val.length >= min)
+       return true;
+   else
+       return false;
+}
+
+function isValidminSessExpireTime(minSessExpireTime){
+
+   var timer = parseInt(minSessExpireTime);
+   var ret;
+
+   if ( timer < 90 )
+   {
+      ret = false;
+   }
+   else
+   {
+      ret = true;
+   }
+
+   return ret;
+}
+
+function isValidAddressExpress(address)
+{
+	var i = 0;
+   	if((address == '0.0.0.0')||(address == '255.255.255.255')) {
+    	return false;
+	}
+
+	addrParts = address.split('.');
+   	if(addrParts.length != 4) {
+		return false;
+	}
+
+	for(i=0; i<4; i++) {
+		if(isNaN(parseInt(addrParts[i]))) {
+			return false;
+		}
+		num = parseInt(addrParts[i]);
+		if(i == 0)
+		{
+			if((num<=0)||(num>=240)) 
+        			return false;
+		}
+		else if(i == 3)
+			{
+				if((num<=0)||(num>255)) 
+        				return false;
+			}
+		else 
+			if((num<0)||(num>255)) {
+        		return false;
+		}
+   	}
+   	return true;
+}
+
+function IsNotDigit(fData)
+{
+      var i;
+
+         for (i = 0; i < fData.length; i++) 
+               {
+                        if (!(fData.charAt(i) >= '0' && fData.charAt(i) <= '9'))
+                                 return true;
+                           }
+
+            return false;
+}
+
+function inttest(s)
+{
+    var   r   =   /^[0-9]*[1-9][0-9]*$/;
+    return r.test(s);
+}
+
+function isNotChineseCharacter(val)
+{
+	var len = val.length;
+	for(i=0;i<len;i++)
+	{
+	    if(val.substring(i,i+1).charCodeAt(0)>255)
+	   {
+		return false;
+	   }
+	}
+	return true;
+}
+
+function isValidHostname(val)
+{
+   var len = val.length;
+
+   if (len > 255)
+      return false;
+
+   for (i = 0; i < len; i++)
+   {
+      if (((val.charAt(i) >= '0') && (val.charAt(i) <= '9'))
+         || ((val.charAt(i) >= 'a') && (val.charAt(i) <= 'z'))
+         || ((val.charAt(i) >= 'A') && (val.charAt(i) <= 'Z'))
+         || (val.charAt(i) == '-') || (val.charAt(i) == ' ')
+         || (val.charAt(i) == '\'') || (val.charAt(i) == '.'))
+         continue;
+      else
+         return false;
+   }
+
+   return true;
+}
+
+function getValueFromList(valuelist, conlN, rowsN, rowss, conls){ 
+	if(typeof(rowss) == 'undefined')
+		rowss = '|,|';
+	if(typeof(conls) == 'undefined')
+		conls = '}-{';
+	if(typeof(rowsN) == 'undefined')
+		rowsN = 0;
+
+	var n;
+	if ( isNaN(conlN) )
+		n = getParamNum(valuelist, conlN, rowss, conls);
+	else
+		n = conlN;
+
+	var mName = new Array();
+	if(valuelist != '' && n != -1){
+		if (rowss != ''){
+			var tnodes = valuelist.split(rowss);
+		}else{
+			var tnodes = valuelist;
+		}
+
+		var tdata = tnodes[rowsN].split(conls);
+		(tdata[n]) ? mName = tdata[n]: mName = '';
+
+		return mName;
+	}
+	return mName;
+}
+
+function isNum(num)
+{
+   var i = 0;
+
+   for(i = 0; i < num.length && num.charAt(i) >= '0' && num.charAt(i) <= '9'; i++);
+   if (i == num.length)
+      return true;
+   else
+      return false;
+}
+
+function isHexaDigit(digit) {
+   var hexVals = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+                           "A", "B", "C", "D", "E", "F", "a", "b", "c", "d", "e", "f");
+   var len = hexVals.length;
+   var i = 0;
+   var ret = false;
+
+   for ( i = 0; i < len; i++ )
+      if ( digit == hexVals[i] ) break;
+
+   if ( i < len )
+      ret = true;
+
+   return ret;
+}
+
+function isValidDigit(digit) {
+   var hexVals = new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
+   var len = hexVals.length;
+   var i = 0;
+   var ret = false;
+
+   for ( i = 0; i < len; i++ )
+      if ( digit == hexVals[i] ) break;
+
+   if ( i < len )
+      ret = true;
+
+   return ret;
+}
+
+
+function isNumber( val )
+{
+	var len = val.length;
+	var sign = 0;
+
+	for( var i = 0; i < len; ++i )
+	{
+		if( ( val.charAt(i) == '-' ) && ( sign == 0 ) )
+		{
+			sign = 1;
+			continue;
+		}
+
+		if( ( val.charAt(i) > '9' )
+		    || ( val.charAt(i) < '0' ) )
+		{
+			return false;
+		}
+		sign = 1;
+	}
+
+	return true;
+}
+
+//W--------------------------------------------------
+function getRequestParameter(name)
+{
+	new RegExp("(^|&)"+name+"=([^&]*)").exec(window.location.search.substr(1));
+	return RegExp.$2
+}
+	
+function numOfRow(valuelist, rowss){ 
+	if(typeof(rowss) == 'undefined')
+		rowss = '|,|';
+
+	var numR = 0;
+	if(valuelist != ''){
+		if (rowss != ''){
+			var tnodes = valuelist.split(rowss);
+		}else{
+			var tnodes = valuelist;
+		}
+		numR = tnodes.length - 2; 
+		return numR;
+	}
+
+	return numR;
+}
+
+function getColFromList(valuelist, conlN, rowss, conls){
+	if(typeof(rowss) == 'undefined')
+		rowss = '|,|';
+	if(typeof(conls) == 'undefined')
+		conls = '}-{';
+
+	var n;
+	if ( isNaN(conlN) )
+		n = getParamNum(valuelist, conlN, rowss, conls);
+	else
+		n = conlN;
+
+	var mName = new Array();
+	if(valuelist != ''){
+		if (rowss != ''){
+			var tnodes = valuelist.split(rowss);
+		}else{
+			var tnodes = valuelist;
+		}
+		for ( i = 0; i < tnodes.length -1; i++ ){
+			var tdata = tnodes[i].split(conls);
+			(tdata[n]) ? mName[i] = tdata[n]: mName[i] = '';
+		}
+		return mName;
+	}
+	return mName;
+}
+
+function getParamNum( valuelist, conlN, rowss, conls ){
+	var i;
+	if(valuelist != ''){
+		if (rowss != ''){
+			var tnodes = valuelist.split(rowss);
+		}else{
+			var tnodes = valuelist;
+		}
+
+		var row = numOfRow(valuelist, rowss);
+		var names = tnodes[row].split(conls);
+
+		for ( i = 0; i < names.length; i++ ){
+			if ( names[i] == conlN ){
+				return i;
+			}
+		}
+	}
+	return -1;
+}
+
+function setCookieE(doc,c_name,value,expiredays)
+{
+	var exdate=new Date()
+	exdate.setDate(exdate.getDate()+expiredays)
+	doc.cookie=c_name+ "=" +escape(value)+
+	((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+}
+
+function getCookieE(doc,c_name)
+{
+	if (doc.cookie.length>0)
+	{
+	  c_start=doc.cookie.indexOf(c_name + "=")
+	  if (c_start!=-1)
+	  { 
+			c_start=c_start + c_name.length+1 
+			c_end=doc.cookie.indexOf(";",c_start)
+			if (c_end==-1) c_end=doc.cookie.length
+			return unescape(doc.cookie.substring(c_start,c_end))
+	  } 
+	}
+	return ""
+}
+
+function setCookie(doc,name,value)
+{
+	name = location.pathname+wordlist+name;
+	if (window.localStorage) {
+		window.localStorage.setItem(name,value);
+		return getCookie(doc,name);
+	} else {
+		setCookieE(doc,name,value,100);
+		return getCookie(doc,name);
+	}
+}
+
+function getCookie(doc,name)      
+{	
+   var tmp
+	name = location.pathname+wordlist+name;
+	if (window.sessionStorage) {
+		//alert(window.sessionStorage);
+		//alert('exploer is support session storage!');
+	} else {
+		//alert('exploer is no support session storage!');
+	}
+	
+	if (window.localStorage) {
+		tmp = window.localStorage.getItem(name);
+	} else {
+		tmp = getCookieE(doc,name);
+	}
+	if (tmp == null)
+		return "";
+	else
+		return tmp;
+}
+
+function carrige_replace(str,carriage_string_in,carriage_string_out){
+   return str.replace(/\|/g,carriage_string_out); 
+}
+
+function trim(str){
+	if (str.length==0)
+		return ""
+	else
+		return str.trim();
+} 
+function ltrim(str){ 
+	return str.replace(/(^\s*)/g,""); 
+} 
+function rtrim(str){ 
+	return str.replace(/(\s*$)/g,""); 
+} 
+
+function wFormLoadInit(){
+	
+}
+
+var WLOCATION_BASE = ".";
+var SEP = "/";
+
+function get_loation_base(cur_url){
+	var main_file = "W.html"; 
+	
+	if (cur_url.indexOf(main_file) >0)
+		WLOCATION_BASE = cur_url.substring(0,cur_url.indexOf(main_file)-1);
+}
+
+function set_volume(player,vol){
+  if (vol<0 ||vol>10)
+	vol = 0;
+  
+  player.volume = vol/10;
+}
+
+function play_html5_audio(player,filename){
+	  var player1;
+
+	  if (player == null){
+		player1 = new Audio(filename);
+		player1.play();
+	  }else{
+		  //player.pause;
+		  player.src = filename;
+		  player.play();
+      }
+}
+
+var mobile = -1;
+function play_voice_html5(player,word){
+	var url2 ;
+	var url;
+    var file_existed;
+	
+	if (mobile ==-1){
+		file_existed = 0
+		
+		if (file_existed == null){
+			mobile =0;
+		}else{
+			mobile =1;
+		}
+	}
+	
+	if (mobile==0){
+		url  = WLOCATION_BASE+SEP+"../../media/"+"voiceW"+SEP; }
+	else{
+		url  = WLOCATION_BASE+SEP+"voiceW"+SEP;
+	}
+	
+	url += word.substring(0,1).toUpperCase();
+	url2 = url+ SEP+word+".mp3";
+	try
+	{
+	 if (player == null){
+		player = new Audio(url2);// player.load();
+	  }else{
+		player.src = url2;
+	  }
+	  player.play();
+	 }
+	   catch(err){
+	} 
+}
+
+function play_voice_old(word)   
+{  
+	var url;
+	var url2;
+
+	url  = WLOCATION_BASE+SEP+"voiceW"+SEP; 
+	url += word.substring(0,1);
+	url2 = url+ SEP+word+".mp3";
+	try
+	{          
+		document.all.bgss.src=url2;     
+		bgss.play(); 
+	}   
+		catch(e){
+	}
+}  
+
+function play_voice(player,word){
+  word = trim(word);
+  if(0){
+		play_voice_old(word);
+	}else{
+		play_voice_html5(player,word);
+	}
+}
+
+function search_W(column,word,max,curpos,forward){
+	var i =0;
+	var found = -1;
+
+	if (max == null)
+		max = column.length-1;	
+		
+	if(typeof(forward)== 'undefined' )
+		forward = true;	
+		
+	if(typeof(curpos)== 'undefined' )
+		curpos = 0;
+    
+	word = word.replace(/([\*])/g,"[\\w]*"); 
+	word ="^"+word+"$";
+	
+	if (forward == true ){
+		for (i = curpos ;i < max+1; i++){
+			var pat = new RegExp(word)
+			if(pat.exec(trim(column[i]))!= null){
+				found  = 1;
+				return i;	
+			}		
+		}
+	}else{
+		for (i = curpos ;i > -1 ; i--){
+			var pat = new RegExp(word)
+			if(pat.exec(trim(column[i]))!= null){
+				found  = 1;
+				return i;	
+			}			
+		}	
+	}
+	if (found == -1)
+		return -1;		
+}
+
+function getCurcularAlement(column,curpos,offset,max){
+	if (max == null)
+		max = column.length-1;
+	var tmp = getRemainder(curpos,offset,max);
+    return tmp;
+}
+
+function getCurcularPossition(table,curpos,offset,max){
+	if (max == null)
+		max = numOfRow(table)-1;
+	var tmp = getRemainder(curpos,offset,max);
+    return tmp;
+}
+
+function getRemainder(curpos,offset,MaxValue){
+	var remainder = (((curpos + offset) % (MaxValue+1)) + (MaxValue+1)) % (MaxValue+1) ;
+	return remainder;
+}
+
+/*
+ http://www.html5tutorial.info/
+ http://www.w3school.com.cn/
+ http://tool.oschina.net/
+ http://msdn.microsoft.com/en-us/library/gg589509%28v=vs.85%29.aspx
+*/
+
+
